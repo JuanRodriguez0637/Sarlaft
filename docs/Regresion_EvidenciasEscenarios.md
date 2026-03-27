@@ -1,0 +1,11 @@
+# Regresión - Evidencias Escenarios
+
+ESCENARIO 1
+COTIZADOR DE CANALES
+PENSION
+
+Salud - CE542689
+
+ESCENARIO 6 PT_02
+
+ARL
