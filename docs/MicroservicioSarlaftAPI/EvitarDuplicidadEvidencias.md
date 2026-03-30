@@ -30,7 +30,7 @@ El error surge cuando se invoca el **servicio de agregar figura** luego de haber
 
 Se modificó la clase **`PrepararEvaluacionUtil`**, específicamente en la función `getNuevasEvidencia`.
 
-> 📎 Imagen de la modificación disponible en Confluence (`image-20250612-195033.png`)
+![Modificación en PrepararEvaluacionUtil](./img/image-20250612-195033.png)
 
 ### Operador `.distinct()` de Project Reactor
 
@@ -44,10 +44,10 @@ El operador `.distinct` en Reactor **conserva la primera evidencia** que aparece
 
 El microservicio consultaba evidencias para un DNI y podía incluir duplicados:
 
-> 📎 Imagen mostrando evidencias duplicadas en consulta disponible en Confluence (`image-20250612-195544.png`)
+![Evidencias duplicadas antes de la corrección](./img/image-20250612-195544.png)
 
 ### Después de la corrección
 
 Cuando se crea el SARLAFT para la nueva figura, solo se crea **una evidencia de cada tipo**, evitando duplicados:
 
-> 📎 Imagen mostrando evidencias sin duplicados disponible en Confluence (`image-20250612-195743.png`)
+![Evidencias sin duplicados después de la corrección](./img/image-20250612-195743.png)

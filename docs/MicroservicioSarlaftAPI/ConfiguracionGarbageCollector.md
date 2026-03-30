@@ -33,7 +33,7 @@ La propiedad `-XX:InitiatingHeapOccupancyPercent` es una opción de la **JVM (Ja
 
 La configuración se realiza en el proyecto **conf** de SarlaftAPI (`892-sarlaft-api-conf`):
 
-> 📎 Imagen de la configuración disponible en Confluence (`image-20250527-150752.png`)
+![Configuración GC en proyecto conf](./img/image-20250527-150752.png)
 
 ---
 

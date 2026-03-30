@@ -1,0 +1,52 @@
+{
+    "id": "fcc7f04b-51a5-4201-aee6-4564d4df077a",
+    "estado": "PENDIENTE",
+    "fechaCreacion": "2021-10-29T20:59:03.074+00:00",
+    "ultimaActualizacion": "2021-10-29T20:59:03.074+00:00",
+    "error": null,
+    "url": "https://local.suranet.com/ED39AFFDD3AADA3591990F4EE1A7A26B0EC0E8F4ABF0ECBACE9033AA7787475C",
+    "sarlafts": [
+        {
+            "dni": "C1050965338",
+            "estado": "PENDIENTE",
+            "requiereFormulario": true,
+            "listaControl": [
+                {
+                    "mensajeControl": "El cliente es PEP (Persona Expuesta Políticamente), por favor tramite con su Líder.",
+                    "control": "PEPS"
+                },
+                {
+                    "mensajeControl": "General OpenSslEngine problem; nested exception is javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem",
+                    "control": "DOCUMENT_PN"
+                },
+                {
+                    "mensajeControl": "Pendiente por validacion de identidad",
+                    "control": "EXPERIAN"
+                }
+            ],
+            "fechaCreacion": "2021-10-29T20:59:03.074+00:00",
+            "fechaActualizacion": "2021-10-29T20:59:03.074+00:00",
+            "mensajeFormulario": "Pendiente el diligenciamiento del formulario SARLAFT con roles: TOMADOR",
+            "tipoFormulario": "INTENSIFICADO"
+        },
+        {
+            "dni": "C17353242",
+            "estado": "PENDIENTE",
+            "requiereFormulario": true,
+            "listaControl": [
+                {
+                    "mensajeControl": "General OpenSslEngine problem; nested exception is javax.net.ssl.SSLHandshakeException: General OpenSslEngine problem",
+                    "control": "DOCUMENT_PN"
+                },
+                {
+                    "mensajeControl": "Pendiente por validacion de identidad",
+                    "control": "EXPERIAN"
+                }
+            ],
+            "fechaCreacion": "2021-10-29T20:59:03.075+00:00",
+            "fechaActualizacion": "2021-10-29T20:59:03.075+00:00",
+            "mensajeFormulario": "Pendiente el diligenciamiento del formulario SARLAFT con roles: ASEGURADO",
+            "tipoFormulario": "INTENSIFICADO"
+        }
+    ]
+}

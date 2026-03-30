@@ -1,50 +1,46 @@
 # Modelo de Dominio, Clases y Base de Datos - SarlaftAPI
 
-> **Fuente:** [Confluence - Modelo Dominio, Clases y BD - SarlaftAPI](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1809908116/Modelo+Dominio+Clases+y+BD+-+SarlaftAPI)  
-> **Página padre:** [Microservicio SarlaftAPI](./index.md)
+**Fuente Confluence:** [Modelo Dominio, Clases y BD - SarlaftAPI](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1809908116)  
+**Página padre:** [Microservicio SarlaftAPI](./index.md)
 
 ---
 
 ## Modelo de Dominio
 
-El modelo de dominio define las entidades principales y sus relaciones en el sistema SARLAFT 4.0.
+Define las entidades de negocio principales y sus relaciones en el sistema SARLAFT 4.0.
 
-> 📎 **Adjunto:** `domain_diagram.jpg` — Diagrama del modelo de dominio  
-> *(Imagen disponible en la página de Confluence)*
+![Modelo de Dominio](./img/domain_diagram.jpg)
 
 ---
 
 ## Modelo de Clases
 
-El modelo de clases representa la estructura orientada a objetos del proyecto.
+Representa la estructura orientada a objetos del proyecto (clases Java del dominio).
 
-> 📎 **Adjunto:** `class_diagram.jpg` — Diagrama del modelo de clases  
-> *(Imagen disponible en la página de Confluence)*
+![Modelo de Clases](./img/class_diagram.jpg)
 
 ---
 
 ## Modelo de Base de Datos
 
-El modelo de base de datos describe las tablas, columnas y relaciones del esquema de persistencia.
+Describe las tablas, columnas y relaciones del esquema de persistencia en PostgreSQL.
 
-> 📎 **Adjunto:** `domain_model_-DB.jpg` — Diagrama del modelo de base de datos  
-> *(Imagen disponible en la página de Confluence)*
+![Modelo BD - versión completa](./img/domain_model_-DB.jpg)
+
+![Modelo BD - diagrama adicional](./img/db_diagram.jpg)
 
 ---
 
 ## Archivo DrawIO
 
-El archivo fuente editable en formato DrawIO (`.xml`) está disponible para modificaciones.
+El archivo fuente editable (`.xml`) se descargó en: [img/domain_model_.xml](./img/domain_model_.xml)
 
-> 📎 **Adjunto:** `domain_model_.xml` — Archivo de diagramas DrawIO  
-
-**Enlace compartido en SharePoint:**  
-[Archivo domain_model\_.xml en SharePoint](https://suramericana-my.sharepoint.com/:u:/g/personal/ldmunoz_sura_com_co/EV1E6FrlpFBKmWmGcUqhXKwB9njsduoUFQLg9kAd56qSVQ?e=ZOMay0)
+También disponible en SharePoint:  
+[domain_model_.xml en SharePoint](https://suramericana-my.sharepoint.com/:u:/g/personal/ldmunoz_sura_com_co/EV1E6FrlpFBKmWmGcUqhXKwB9njsduoUFQLg9kAd56qSVQ?e=ZOMay0)
 
 ---
 
-## Notas
+## Referencias
 
-- Los diagramas están generados con la herramienta **Draw.io**.
-- El modelo de base de datos utiliza **PostgreSQL** con acceso reactivo vía **R2DBC**.
-- Para más detalles sobre la configuración de base de datos, ver [Configuración Base de Datos R2DBC](./ConfiguracionBaseDatosR2DBC.md).
+- [Configuración Base de Datos R2DBC](./ConfiguracionBaseDatosR2DBC.md) — detalles de la configuración R2DBC sobre PostgreSQL
+- [Estructura Proyecto](./EstructuraProyecto.md) — organización hexagonal del código

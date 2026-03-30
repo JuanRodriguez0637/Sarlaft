@@ -1,0 +1,56 @@
+{
+	"solicitudDni": "C000000",
+	"codigoOperacion": "RE",
+	"codigoAplicacion": "6919",
+	"negocioId": "01",
+	"infoPendiente": true,
+	"tomador": {
+		"cliente": {
+			"tipoPersona": "N",
+			"documento": {
+				"tipo": "C",
+				"numero": "11389126"
+			},
+			"persona": {
+				"primerNombre": "Ñestor",
+				"segundoNombre": "Fernando",
+				"primerApellido": "Arevalo",
+				"segundoApellido": "Espitia",
+				"pais": "57"
+			}
+		}
+	},
+	"beneficiarios": [
+		{
+			"cliente": {
+				"tipoPersona": "N",
+				"correo": "mail2@mail.com.co",
+				"celular": "3219006000",
+				"documento": {
+					"tipo": "C",
+					"numero": "11389126",
+					"fechaExpedicion": "2000-05-27"
+				},
+				"persona": {
+					"primerNombre": "Diana",
+					"primerApellido": "Gomez",
+					"segundoApellido": "Perez",
+					"pais": "01"
+				}
+			}
+		}
+	],
+	"polizas": [
+		{
+			"codigoRamo": "1",
+			"codigoProducto": "00",
+			"codigoCanal": "1",
+			"codigoOficina": "00",
+			"codigoAgente": "00",
+			"indProcesoJudicial": true,
+			"juzgado": "TEST",
+			"ciudadProcesoJudicial": "MEDELLIN",
+			"negocio": "INDIVIDUAL"
+		}
+	]
+}

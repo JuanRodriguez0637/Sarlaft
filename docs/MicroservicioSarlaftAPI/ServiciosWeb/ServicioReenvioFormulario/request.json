@@ -1,0 +1,10 @@
+{
+    "evaluacionId": "6ba65005-fb18-4ac3-a42f-5c44c8394437",
+    "cliente": {
+        "correo": "prueba4@pruebas.com",
+        "documento": {
+            "tipo": "C",
+            "numero": "65452313"
+        }
+    }
+}

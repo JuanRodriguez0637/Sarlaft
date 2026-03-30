@@ -1,0 +1,157 @@
+{
+    "catalogos": [
+        {
+            "codigoCatalogo": "TIPO_FORMULARIO",
+            "nombreCatalogo": "Tipos de formulario",
+            "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+            "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+            "fechaBaja": null,
+            "parametros": [
+                {
+                    "codigoCatalogo": "TIPO_FORMULARIO",
+                    "codigoParametro": "NO_APLICA",
+                    "descripcion": "NO APLICA",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FORMULARIO",
+                    "codigoParametro": "ORDINARIO_PN_DE_VIDA",
+                    "descripcion": "ORDINARIO_PN_DE_VIDA",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FORMULARIO",
+                    "codigoParametro": "ORDINARIO_PN",
+                    "descripcion": "ORDINARIO_PN",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FORMULARIO",
+                    "codigoParametro": "SIMPLIFICADO_PJ",
+                    "descripcion": "SIMPLIFICADO_PJ",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FORMULARIO",
+                    "codigoParametro": "SIMPLIFICADO_PN_RELACION_PEPS",
+                    "descripcion": "SIMPLIFICADO_PN_RELACION_PEPS",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FORMULARIO",
+                    "codigoParametro": "SIMPLIFICADO_PJ_DE_VIDA",
+                    "descripcion": "SIMPLIFICADO_PJ_DE_VIDA",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FORMULARIO",
+                    "codigoParametro": "INTENSIFICADO_PN",
+                    "descripcion": "INTENSIFICADO_PN",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FORMULARIO",
+                    "codigoParametro": "SIMPLIFICADO_PJ_RELACION_PEPS",
+                    "descripcion": "SIMPLIFICADO_PJ_RELACION_PEPS",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FORMULARIO",
+                    "codigoParametro": "INTENSIFICADO_PJ_DE_VIDA",
+                    "descripcion": "INTENSIFICADO_PJ_DE_VIDA",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FORMULARIO",
+                    "codigoParametro": "SIMPLIFICADO",
+                    "descripcion": "SIMPLIFICADO",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FORMULARIO",
+                    "codigoParametro": "INTENSIFICADO_PN_DE_VIDA",
+                    "descripcion": "INTENSIFICADO_PN_DE_VIDA",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FORMULARIO",
+                    "codigoParametro": "ORDINARIO_PJ",
+                    "descripcion": "ORDINARIO_PJ",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FORMULARIO",
+                    "codigoParametro": "INTENSIFICADO_PJ",
+                    "descripcion": "INTENSIFICADO_PJ",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FORMULARIO",
+                    "codigoParametro": "ORDINARIO_PJ_DE_VIDA",
+                    "descripcion": "ORDINARIO_PJ_DE_VIDA",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FORMULARIO",
+                    "codigoParametro": "SIMPLIFICADO_PN_DE_VIDA",
+                    "descripcion": "SIMPLIFICADO_PN_DE_VIDA",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FORMULARIO",
+                    "codigoParametro": "SIMPLIFICADO_PN",
+                    "descripcion": "SIMPLIFICADO_PN",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                }
+            ]
+        }
+    ]
+}

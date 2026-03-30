@@ -1,0 +1,31 @@
+{
+    "catalogos": [
+        {
+            "codigoCatalogo": "TIPO_NEGOCIO",
+            "nombreCatalogo": "Tipo de Negocio",
+            "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+            "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+            "fechaBaja": null,
+            "parametros": [
+                {
+                    "codigoCatalogo": "TIPO_NEGOCIO",
+                    "codigoParametro": "INDIVIDUAL",
+                    "descripcion": "Individual",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_NEGOCIO",
+                    "codigoParametro": "COLECTIVO",
+                    "descripcion": "Colectiva",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,145 @@
+ {
+            "evaluacionId": null,
+            "solicitudDni": "C000000",
+            "codigoOperacion": "01",
+            "codigoAplicacion": "1",
+            "negocioId": "01",
+            "infoPendiente": true,
+            "tomador": {
+                "personaPep": "Si",
+                "cliente": {
+                    "tipoPersona": "N",
+                    "correo": "mail_1@mail.com.co",
+                    "celular": "3102345670",
+                    "razonSocial": null,
+                    "documento": {
+                        "tipo": "C",
+                        "numero": "8514798001234",
+                        "fechaExpedicion": "2007-05-27"
+                    },
+                    "persona": {
+                        "primerNombre": "Nestor",
+                        "segundoNombre": "Fernando",
+                        "primerApellido": "Arevalo",
+                        "segundoApellido": "Espitia",
+                        "pais": "01"
+                    }
+                }
+            },
+            "beneficiarios": [
+                {
+                    "cliente": {
+                        "tipoPersona": "N",
+                        "correo": "mail2@mail.com.co",
+                        "celular": "3219006000",
+                        "razonSocial": null,
+                        "entidadEstatal": "SI",
+                        "documento": {
+                            "tipo": "C",
+                            "numero": "32015070012345",
+                            "fechaExpedicion": "2000-05-27"
+                        },
+                        "persona": {
+                            "primerNombre": "Diana",
+                            "primerApellido": "Gomez",
+                            "segundoApellido": "Perez",
+                            "pais": "01"
+                        }
+                    }
+                },
+                {
+                    "cliente": {
+                        "tipoPersona": "N",
+                        "correo": "mail_1@mail.com.co",
+                        "celular": "31023456700",
+                        "razonSocial": null,
+                        "documento": {
+                            "tipo": "C",
+                            "numero": "0010151401234",
+                            "fechaExpedicion": "2007-05-27"
+                        },
+                        "persona": {
+                            "primerNombre": "Nestor",
+                            "segundoNombre": "Fernando",
+                            "primerApellido": "Arevalo",
+                            "segundoApellido": "Espitia",
+                            "pais": "01"
+                        }
+                    }
+                },{
+                    "cliente": {
+                        "tipoPersona": "N",
+                        "correo": "mail_1@mail.com.co",
+                        "celular": "31023456700",
+                        "razonSocial": null,
+                        "documento": {
+                            "tipo": "C",
+                            "numero": "2222299",
+                            "fechaExpedicion": "2007-05-27"
+                        },
+                        "persona": {
+                            "primerNombre": "Nestor",
+                            "segundoNombre": "Fernando",
+                            "primerApellido": "Arevalo",
+                            "segundoApellido": "Espitia",
+                            "pais": "01"
+                        }
+                    }
+                }
+            ],
+            "afiliados": [
+                {
+                    "cliente": {
+                        "tipoPersona": "N",
+                        "correo": "mail2@mail.com.co",
+                        "celular": "3219006000",
+                        "razonSocial": null,
+                        "entidadEstatal": "SI",
+                        "documento": {
+                            "tipo": "C",
+                            "numero": "8882221056",
+                            "fechaExpedicion": "2000-05-27"
+                        },
+                        "persona": {
+                            "primerNombre": "Diana",
+                            "primerApellido": "Gomez",
+                            "segundoApellido": "Perez",
+                            "pais": "01"
+                        }
+                    }
+                },
+                {
+                    "cliente": {
+                        "tipoPersona": "N",
+                        "correo": "mail_1@mail.com.co",
+                        "celular": "31023456700",
+                        "razonSocial": null,
+                        "documento": {
+                            "tipo": "C",
+                            "numero": "7762221056",
+                            "fechaExpedicion": "2007-05-27"
+                        },
+                        "persona": {
+                            "primerNombre": "Nestor",
+                            "segundoNombre": "Fernando",
+                            "primerApellido": "Arevalo",
+                            "segundoApellido": "Espitia",
+                            "pais": "01"
+                        }
+                    }
+                }
+            ],
+            "polizas": [
+                {
+                    "codigoRamo": "1",
+                    "codigoCanal": "1",
+                    "valorAsegurado": 500000,
+                    "valorPrima": 500000,
+                    "negocio": "COLECTIVO",
+                    "coaseguro": "ACEPTADO",
+                    "codigoOficina": "00",
+                    "codigoAgente": "00",
+                    "codigoPlan": "01"
+                }
+            ]
+        }

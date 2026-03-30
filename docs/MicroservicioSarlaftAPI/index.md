@@ -14,7 +14,7 @@ Esta sección contiene la documentación técnica completa del microservicio **S
 |---------|-------------|---------|
 | Modelo de Dominio, Clases y BD | Diagramas del modelo de dominio, clases y base de datos | [ModeloDominioClasesBD.md](./ModeloDominioClasesBD.md) |
 | Configuración Ambiente | Requisitos y pasos para configurar el ambiente de desarrollo | [ConfiguracionAmbiente.md](./ConfiguracionAmbiente.md) |
-| Estructura Proyecto | Arquitectura hexagonal y organización del proyecto | [EstructuraProyecto.md](./EstructuraProyecto.md) |
+| Estructura Proyecto | Arquitectura hexagonal y organización del proyecto | [EstructuraProyecto/index.md](./EstructuraProyecto/index.md) |
 | Configuración Base de Datos R2DBC | Configuración de acceso reactivo a PostgreSQL con R2DBC | [ConfiguracionBaseDatosR2DBC.md](./ConfiguracionBaseDatosR2DBC.md) |
 | Servicios Web | Catálogo de todos los endpoints REST expuestos | [ServiciosWeb/index.md](./ServiciosWeb/index.md) |
 | Proceso Evaluación | Lógica del proceso de evaluación SARLAFT | [ProcesoEvaluacion/index.md](./ProcesoEvaluacion/index.md) |
@@ -26,7 +26,9 @@ Esta sección contiene la documentación técnica completa del microservicio **S
 | Configuración Garbage Collector | Configuración JVM G1GC para el microservicio | [ConfiguracionGarbageCollector.md](./ConfiguracionGarbageCollector.md) |
 | Evitar Duplicidad en Evidencias | Solución para evidencias duplicadas en evaluaciones | [EvitarDuplicidadEvidencias.md](./EvitarDuplicidadEvidencias.md) |
 | Generar URL Validación Identidad | Endpoint para generar URL de validación de identidad | [GenerarUrlValidacionIdentidad.md](./GenerarUrlValidacionIdentidad.md) |
-| Consumo de Nuevos Endpoints (Web Component) | Mapeo de endpoints nuevos para el Web Component | [ConsumoNuevosEndpoints.md](./ConsumoNuevosEndpoints.md) |
+| Consumo de Nuevos Endpoints (Web Component) | Mapeo de endpoints nuevos para el Web Component | [ServiciosWeb/ConsumoNuevosEndpoints/index.md](./ServiciosWeb/ConsumoNuevosEndpoints/index.md) |
+
+> **Nota:** `ConsumoNuevosEndpoints.md` en la raíz es un archivo legado de una sesión anterior. El contenido canónico está en `ServiciosWeb/ConsumoNuevosEndpoints/`.
 
 ## Repositorios
 

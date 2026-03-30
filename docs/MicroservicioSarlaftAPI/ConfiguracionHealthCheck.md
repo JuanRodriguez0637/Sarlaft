@@ -21,7 +21,7 @@ Se usa Spring Actuator: `spring-boot-starter-actuator`
 
 Se incluye en el `build.gradle`:
 
-> 📎 Imagen de configuración disponible en Confluence (`image-20240207-200559.png`)
+![Configuración en build.gradle](./img/image-20240207-200559.png)
 
 ```gradle
 implementation 'org.springframework.boot:spring-boot-starter-actuator'
@@ -49,13 +49,13 @@ implementation 'com.azure:azure-messaging-servicebus:7.14.7'
 implementation 'org.reactivecommons:async-service-bus-starter:1.1.39-BETA'
 ```
 
-> 📎 Imagen de la clase `ServicebusHealthIndicator` disponible en Confluence (`image-20240311-182202.png`)
+![Clase ServicebusHealthIndicator](./img/image-20240311-182202.png)
 
 ---
 
 ## Configuración en `application.yaml`
 
-> 📎 Imagen de configuración disponible en Confluence (`image-20240311-182224.png`)
+![Configuración en application.yaml](./img/image-20240311-182224.png)
 
 ---
 
@@ -63,7 +63,7 @@ implementation 'org.reactivecommons:async-service-bus-starter:1.1.39-BETA'
 
 La configuración del deployment se realiza por ambiente en el proyecto de configuración:
 
-> 📎 Imagen de configuración disponible en Confluence (`image-20240311-182303.png`)
+![Configuración en deployment.yml](./img/image-20240311-182303.png)
 
 ---
 
@@ -75,4 +75,4 @@ Debido a que el microservicio tiene seguridad SEUS, existe una incompatibilidad 
 <logger name="co.com.sura.sso.reactive.listeners" level="ERROR" />
 ```
 
-> 📎 Imagen de configuración disponible en Confluence (`image-20240311-182330.png`)
+![Configuración en Splunk logger](./img/image-20240311-182330.png)

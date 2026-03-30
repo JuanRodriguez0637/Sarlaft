@@ -1,0 +1,24 @@
+{
+   "name":"Sarlaft.masivo.notificacion",
+   "commandId":"cd72b73b-66ef-4dee-8573-01b1c7a53709",
+   "data":{
+      "evaluacionId":"33844214-74d4-4999-940b-01bcef54",
+      "figurasANotificar":[
+         {
+            "tipo":"BENEFICIARIO",
+            "enviarNotificacion":true,
+            "justificacionInformacion":null
+         },
+         {
+            "tipo":"AFIANZADO",
+            "enviarNotificacion":true,
+            "justificacionInformacion":null
+         },
+         {
+            "tipo":"ASEGURADO",
+            "enviarNotificacion":false,
+            "justificacionInformacion":"No cuento con la info"
+         }
+      ]
+   }
+}

@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "2fb7a191-e994-4ef3-a3be-ea568f3ef2a7",
+		"name": "Enviar Notificacion Masivo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "enviarNotificacionMasivo Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic {{header_auth}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"evaluacionId\": \"33844214-74d4-4999-940b-01bcef543b5c\",\r\n    \"figurasANotificar\": [ \r\n        {\r\n            \"tipo\": \"BENEFICIARIO\",\r\n            \"enviarNotificacion\": true, \r\n            \"justificacionInformacion\": \"No no no\"\r\n        },\r\n        {\r\n            \"tipo\": \"AFIANZADO\",\r\n            \"enviarNotificacion\": true, \r\n            \"justificacionInformacion\": null\r\n        },\r\n        {\r\n            \"tipo\": \"ASEGURADO\",\r\n            \"enviarNotificacion\": false, \r\n            \"justificacionInformacion\": \"No cuento con la info x2\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/sarlaftserv/massive/sendNotification",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"massive",
+						"sendNotification"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

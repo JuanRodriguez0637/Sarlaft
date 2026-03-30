@@ -13,15 +13,13 @@ El API para consulta y marcación de clientes PEP está construido a partir del 
 - **Programación Reactiva** (Spring WebFlux + Project Reactor)
 - **Seguridad** a través de **SEUS**
 
-> 📎 Imagen: Estructura generada a partir de lego (*legoapp-0.0.19.jar*) — disponible en Confluence
+![Figura 1. Estructura generada a partir de lego (legoapp-0.0.19.jar)](./img/image-20210326-172658.png)
 
 ---
 
 ## División del Proyecto
 
-El proyecto está dividido en los siguientes subproyectos:
-
-> 📎 Imagen de referencia de la estructura en Confluence: `{90804810-0D90-482B-8093-07D0DCB91127}-20251229-211741.png`
+El proyecto está dividido en los siguientes subproyectos (Figura 2):
 
 ### `applications-app-service`
 
@@ -48,6 +46,8 @@ Aquí también se encuentran las implementaciones de invocación a **servicios S
 ### `helpers-jpa-repository-commons`
 
 Representa objetos utilitarios para el manejo de persistencia. Este es usado directamente por `driven-adapters-jpa-repository`.
+
+![Figura 2. División de proyecto](./img/estructura-subproyectos.png)
 
 ---
 

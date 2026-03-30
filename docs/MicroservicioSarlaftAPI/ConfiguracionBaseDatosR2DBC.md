@@ -30,7 +30,9 @@ Este módulo implementa el acceso reactivo a la base de datos **PostgreSQL** uti
 - **Integración reactiva**: Compatible con `Mono` y `Flux` de Project Reactor
 - **Rendimiento**: Manejo eficiente de alta concurrencia
 
-> 📎 Imágenes de referencia disponibles en Confluence
+![R2DBC — Arquitectura general del módulo](./img/r2dbc-arquitectura-1.png)
+
+![R2DBC — Adaptadores y repositorios](./img/r2dbc-arquitectura-2.png)
 
 ---
 

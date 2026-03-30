@@ -18,7 +18,7 @@ Al microservicio de SarlaftAPI se le implementó la funcionalidad de realizar el
 https://splunk.jfrog.io/splunk/ext-releases-local
 ```
 
-> 📎 Imagen de configuración en `main.gradle` disponible en Confluence
+![Configuración de repositorio en main.gradle](./img/image-20210914-141849.png)
 
 **Librería utilizada:**
 ```
@@ -26,7 +26,7 @@ com.splunk.logging:splunk-library-javalogging:1.7.3
 org.apache.logging.log4j:log4j-core:2.14.1
 ```
 
-> 📎 Imagen de dependencias disponible en Confluence
+![Dependencias en main.gradle](./img/image-20210914-141911.png)
 
 ---
 
@@ -34,7 +34,7 @@ org.apache.logging.log4j:log4j-core:2.14.1
 
 El archivo de configuración `.yml` contiene los datos de conexión y parámetros de Splunk:
 
-> 📎 Imagen de configuración `.yml` disponible en Confluence (`image-20210914-142058.png`)
+![Configuración en application.yml](./img/image-20210914-142058.png)
 
 ---
 
@@ -46,7 +46,7 @@ La configuración y parametrización del log se encuentra en la clase `LoggerUti
 package sura.sarlaft4.logger;
 ```
 
-> 📎 Imagen de la estructura del paquete disponible en Confluence (`image-20210914-142205.png`)
+![Estructura del paquete sura.sarlaft4.logger](./img/image-20210914-142205.png)
 
 ---
 
@@ -57,7 +57,7 @@ En el módulo de **Domain** se crean:
 1. **Clase:** `MensajeSplunk`
 2. **Interfaz:** `MessageLogRepository`
 
-> 📎 Imagen de la estructura disponible en Confluence (`image-20210914-142551.png`)
+![Clases MensajeSplunk y MessageLogRepository en Domain](./img/image-20210914-142551.png)
 
 ---
 
@@ -65,9 +65,9 @@ En el módulo de **Domain** se crean:
 
 Se crea un módulo adicional en infraestructura dentro del paquete de helpers:
 
-> 📎 Imágenes disponibles en Confluence:
-> - `image-20210914-142751.png` — Estructura del paquete helper
-> - `image-20210914-142805.png` — Detalle del módulo helper
+![Estructura del paquete helper en infraestructura](./img/image-20210914-142751.png)
+
+![Detalle del módulo helper en infraestructura](./img/image-20210914-142805.png)
 
 ---
 
@@ -75,4 +75,4 @@ Se crea un módulo adicional en infraestructura dentro del paquete de helpers:
 
 La escritura de logs en Splunk se realiza de la siguiente manera:
 
-> 📎 Imagen de implementación disponible en Confluence (`image-20210914-142844.png`)
+![Implementación de escritura en Splunk](./img/image-20210914-142844.png)

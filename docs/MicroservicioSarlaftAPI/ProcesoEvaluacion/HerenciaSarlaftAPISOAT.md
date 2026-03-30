@@ -28,7 +28,7 @@ Y se ajustaron los siguientes métodos con el objetivo de llevar la evaluación 
 - `procesarListaSarlaft`
 - `requiereDiligenciarFormulario`
 
-> 📎 Imagen: Métodos impactados — disponible en Confluence (`image-20240729-220023.png`)
+![Métodos impactados en PrepararEvaluacion.java](./img/image-20240729-220023.png)
 
 ---
 

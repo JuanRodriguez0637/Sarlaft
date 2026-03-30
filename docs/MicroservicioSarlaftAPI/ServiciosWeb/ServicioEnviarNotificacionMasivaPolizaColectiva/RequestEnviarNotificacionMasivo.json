@@ -1,0 +1,20 @@
+{
+    "evaluacionId": "33844214-74d4-4999-940b-01bcef543b5c",
+    "figurasANotificar": [ 
+        {
+            "tipo": "BENEFICIARIO",
+            "enviarNotificacion": true, 
+            "justificacionInformacion": "No no no"
+        },
+        {
+            "tipo": "AFIANZADO",
+            "enviarNotificacion": true, 
+            "justificacionInformacion": null
+        },
+        {
+            "tipo": "ASEGURADO",
+            "enviarNotificacion": false, 
+            "justificacionInformacion": "No cuento con la info x2"
+        }
+    ]
+}

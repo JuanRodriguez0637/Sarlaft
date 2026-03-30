@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "bc1706cd-9f27-47cd-8562-a2f794eb8164",
+		"name": "Feature-69273_ServicioGuardarFormularioTerceros",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15386046"
+	},
+	"item": [
+		{
+			"name": "1. crear evaluacion",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic {{header_auth}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"null\",\r\n    \"solicitudDni\": \"C1093006597\",\r\n    \"codigoOperacion\": \"01\",\r\n    \"codigoAplicacion\": \"6919\",\r\n    \"negocioId\": \"01\",\r\n    \"infoPendiente\": false,\r\n    \"tomador\": {\r\n        \"cliente\": {\r\n            \"tipoPersona\": \"J\",\r\n            \"correo\": \"maria.zapata@sofka.com.co\",\r\n            \"celular\": \"3125221307\",\r\n            \"razonSocial\": \"YA NO LAVAMOS ACTIVOS LTDA.\",\r\n            \"paisConstitucion\": \"57\",\r\n            \"documento\": {\r\n                \"tipo\": \"A\",\r\n                \"numero\": \"8110463211\"\r\n            }\r\n        }\r\n    },\r\n    \"beneficiarios\": [\r\n        {\r\n            \"personaPep\": \"No\",\r\n            \"cliente\": {\r\n                \"tipoPersona\": \"J\",\r\n                \"correo\": \"maria.zapata@sofka.com.co\",\r\n                \"celular\": \"3125221307\",\r\n                \"razonSocial\": \"AREPITAS DE QUESO S.A.S\",\r\n                \"documento\": {\r\n                    \"tipo\": \"A\",\r\n                    \"numero\": \"8001156101\",\r\n                    \"fechaExpedicion\": \"1985-08-30\"\r\n                }\r\n            }\r\n        }\r\n    ],\r\n    \"asegurados\": [\r\n        {\r\n            \"personaPep\": \"No\",\r\n            \"cliente\": {\r\n                \"tipoPersona\": \"J\",\r\n                \"correo\": \"maria.zapata@sofka.com.co\",\r\n                \"celular\": \"3125221307\",\r\n                \"razonSocial\": \"NARCOBUNUELOS S.A.S\",\r\n                \"documento\": {\r\n                    \"tipo\": \"A\",\r\n                    \"numero\": \"8001156101\",\r\n                    \"fechaExpedicion\": \"1985-08-30\"\r\n                }\r\n            }\r\n        }\r\n    ],\r\n    \"polizas\": [\r\n        {\r\n            \"codigoRamo\": \"081\",\r\n            \"valorAsegurado\": 15000000,\r\n            \"valorPrima\": 37000000,\r\n            \"negocio\": \"INDIVIDUAL\",\r\n            \"cargaMasiva\": false,\r\n            \"codigoOficina\": \"00\",\r\n            \"codigoAgente\": \"00\",\r\n            \"codigoPlan\": \"01\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/sarlaftserv/assessment",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"assessment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. guardar formulario",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic {{header_auth}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"evaluacionId\": \"1f9d710c-9e57-49c9-9275-839b758cf323\",\r\n    \"relacionLaboral\": false,\r\n    \"administradorPep\": false,\r\n    \"sarlafts\": [\r\n        {\r\n            \"tipoFigura\": [\"TOMADOR\"], \r\n            \"personaPep\": false,\r\n            \"cuentaConInformacion\": null,\r\n            \"justificacionInformacion\": \"\",\r\n            \"tieneRelacionPep\": false,\r\n            \"tipoEmpresa\": \"PYMES\",\r\n            \"cliente\": {\r\n                \"celular\": \"3166273241\",\r\n                \"correo\": \"LCORTIZ@SURA.COM.CO\",\r\n                \"porParticipacionSocio\": 0,\r\n                \"tipoPersona\": \"J\",\r\n                \"razonSocial\": \"YA NO LAVAMOS ACTIVOS LTDA.\",\r\n                \"paisConstitucion\": \"57\",\r\n                \"documento\": {\r\n                    \"numero\": \"8110463211\",\r\n                    \"tipo\": \"A\"\r\n                },\r\n                \"persona\": {\r\n                    \"primerApellido\": \"\",\r\n                    \"segundoApellido\": \"\",\r\n                    \"primerNombre\": \"\",\r\n                    \"segundoNombre\": \"\",\r\n                    \"pais\": \"\"\r\n                },\r\n                \"infoFinanciera\": {\r\n                    \"ingresos\": \"2500000\",\r\n                    \"actividadEconomica\": \"N7210\",\r\n                    \"codigoOcupacion\": \"04\",\r\n                    \"activos\": \"2500000\",\r\n                    \"pasivos\": \"2500000\",\r\n                    \"egresos\": \"1300000\",\r\n                    \"origenFondos\": \"AUTOMATIZACION\"\r\n                }\r\n            }\r\n        },\r\n        {\r\n            \"tipoFigura\": [\"BENEFICIARIO\"],\r\n            \"cuentaConInformacion\": true,\r\n            \"justificacionInformacion\": null,\r\n            \"cliente\": {\r\n                \"celular\": \"3166273241\",\r\n                \"correo\": \"maria.zapata@sofka.com.co\",\r\n                \"tipoPersona\": \"J\",\r\n                \"paisConstitucion\": \"57\",\r\n                \"razonSocial\": \"AREPITAS DE QUESO S.A.S\",\r\n                \"documento\": {\r\n                    \"tipo\": \"A\",\r\n                    \"numero\": \"8001156101\"\r\n                },\r\n                \"persona\": {\r\n                    \"primerApellido\": \"\",\r\n                    \"segundoApellido\": \"\",\r\n                    \"primerNombre\": \"\",\r\n                    \"segundoNombre\": \"\"\r\n                },\r\n                \"infoFinanciera\": {\r\n                    \"ingresos\": \"2500000\",\r\n                    \"actividadEconomica\": \"N7210\",\r\n                    \"codigoOcupacion\": \"04\",\r\n                    \"activos\": \"2500000\",\r\n                    \"pasivos\": \"2500000\",\r\n                    \"egresos\": \"1300000\",\r\n                    \"origenFondos\": \"AUTOMATIZACION\"\r\n                }\r\n            }\r\n        },\r\n        {\r\n            \"tipoFigura\": [\"REPRESENTANTE_LEGAL\"],\r\n            \"tipoEmpresa\": \"PYMES\",\r\n            \"cliente\": {\r\n                \"tipoPersona\": \"N\",\r\n                \"correo\": \"johnathan.monsalve@sofka.com.co\",\r\n                \"celular\": \"3117899889\",\r\n                \"documento\": {\r\n                    \"tipo\": \"C\",\r\n                    \"numero\": \"10172157\",\r\n                    \"fechaExpedicion\": \"2005-10-12\"\r\n                },\r\n                \"persona\": {\r\n                    \"primerApellido\": \"cur\",\r\n                    \"segundoApellido\": null,\r\n                    \"primerNombre\": \"camilo\",\r\n                    \"segundoNombre\": null,\r\n                    \"pais\": \"57\"\r\n                }\r\n            }\r\n        },\r\n        {\r\n            \"tipoFigura\": [\"ACCIONISTA\"],\r\n            \"tipoEmpresa\": \"PYMES\",\r\n            \"cliente\": {\r\n                \"porParticipacionSocio\": 5,\r\n                \"tipoPersona\": \"N\",\r\n                \"correo\": \"johnathan.monsalve@sofka.com.co\",\r\n                \"celular\": \"3117899889\",\r\n                \"documento\": {\r\n                    \"tipo\": \"C\",\r\n                    \"numero\": \"1234567800\",\r\n                    \"fechaExpedicion\": \"2005-10-12\"\r\n                },\r\n                \"persona\": {\r\n                    \"primerApellido\": \"johnathan\",\r\n                    \"segundoApellido\": null,\r\n                    \"primerNombre\": \"monsalve\",\r\n                    \"segundoNombre\": null,\r\n                    \"pais\": \"57\"\r\n                }\r\n            }\r\n        },\r\n        {\r\n            \"tipoFigura\": [\"APODERADO\"],\r\n            \"cuentaConInformacion\": true,\r\n            \"justificacionInformacion\": null,\r\n            \"celular\": \"3125221307\",\r\n            \"cliente\": {\r\n                \"tipoPersona\": \"N\",\r\n                \"correo\": \"johnathan.monsalve@sofka.com.co\",\r\n                \"celular\": \"3117899889\",\r\n                \"documento\": {\r\n                    \"tipo\": \"C\",\r\n                    \"numero\": \"1234567890\",\r\n                    \"fechaExpedicion\": \"2005-10-12\"\r\n                },\r\n                \"persona\": {\r\n                    \"primerApellido\": \"johnathan\",\r\n                    \"segundoApellido\": null,\r\n                    \"primerNombre\": \"monsalve\",\r\n                    \"segundoNombre\": null,\r\n                    \"pais\": \"57\"\r\n                }\r\n            }\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/sarlaftserv/api/v1/form/save",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"api",
+						"v1",
+						"form",
+						"save"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

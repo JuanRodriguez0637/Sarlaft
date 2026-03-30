@@ -1,0 +1,67 @@
+{
+    "catalogos": [
+        {
+            "codigoCatalogo": "RELACIONES",
+            "nombreCatalogo": "Tipo Relaciones con el PEP",
+            "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+            "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+            "fechaBaja": null,
+            "parametros": [
+                {
+                    "codigoCatalogo": "RELACIONES",
+                    "codigoParametro": "R1",
+                    "descripcion": "REPRESENTANTE",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "RELACIONES",
+                    "codigoParametro": "R2",
+                    "descripcion": "PRESIDENTE",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "RELACIONES",
+                    "codigoParametro": "R3",
+                    "descripcion": "VICEPRESIDENTE",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "RELACIONES",
+                    "codigoParametro": "R4",
+                    "descripcion": "GERENTE",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "RELACIONES",
+                    "codigoParametro": "R5",
+                    "descripcion": "TESORERO",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "RELACIONES",
+                    "codigoParametro": "R6",
+                    "descripcion": "SOCIO CON PARTICIPACION SUPERIOR AL 5%",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                }
+            ]
+        }
+    ]
+}

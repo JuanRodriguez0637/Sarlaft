@@ -15,8 +15,8 @@ Esta sección documenta los procesos de carga masiva en el microservicio Sarlaft
 
 | Subpágina | Descripción | Enlace Confluence |
 |-----------|-------------|-------------------|
-| Carga Masiva Figuras a Evaluación | Proceso de cargar figuras en bloque a una evaluación | [Ver página](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2394554377/Carga+Masiva+Figuras+a+Evaluaci%C3%B3n) |
-| Servicio Resultado Carga Masiva Excel | Obtención del resultado de una carga masiva en formato Excel | [Ver página](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2653683726/Servicio+Resultado+Carga+Masiva+Excel) |
+| Carga Masiva Figuras a Evaluación | Proceso de cargar figuras en bloque a una evaluación | [CargaMasivaFigurasEvaluacion.md](./CargaMasivaFigurasEvaluacion.md) |
+| Servicio Resultado Carga Masiva Excel | Obtención del resultado de una carga masiva en formato Excel | [ServicioResultadoCargaMasivaExcel.md](./ServicioResultadoCargaMasivaExcel.md) |
 
 ---
 

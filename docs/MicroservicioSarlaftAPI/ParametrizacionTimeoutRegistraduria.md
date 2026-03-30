@@ -15,7 +15,7 @@ Se parametriza el tiempo para el timeout de la respuesta del **web service de Re
 
 En el proyecto `892-sarlaft-api-conf` → `application.yaml`, por medio de la propiedad `timeout`, se parametriza el tiempo en **milisegundos** que se debe esperar la respuesta del WS de la Registraduría antes de manejarse como un error por timeout.
 
-> 📎 Imagen de la propiedad en `application.yaml` disponible en Confluence (`image-20240607-032220.png`)
+![Propiedad timeout en application.yaml](./img/image-20240607-032220.png)
 
 ---
 
@@ -23,7 +23,7 @@ En el proyecto `892-sarlaft-api-conf` → `application.yaml`, por medio de la pr
 
 Este nuevo parámetro se envía a la firma `solicitarValidacionRegistraduriaSincrona` de la interfaz **`ValidacionRegistraduraSincronaGateway`**:
 
-> 📎 Imagen del código disponible en Confluence (`image-20240527-174722.png`)
+![Implementación de timeout en ValidacionRegistraduraSincronaGateway](./img/image-20240527-174722.png)
 
 ---
 

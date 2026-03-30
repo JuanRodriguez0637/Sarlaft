@@ -1,0 +1,49 @@
+{
+    "catalogos": [
+        {
+            "codigoCatalogo": "COD_SUBRAMOS",
+            "nombreCatalogo": "Código de Producto",
+            "fechaCreacion": null,
+            "ultimaActualizacion": null,
+            "fechaBaja": null,
+            "parametros": [
+                {
+                    "codigoCatalogo": "COD_SUBRAMOS",
+                    "codigoParametro": "AG1",
+                    "descripcion": "SEGURO AGRÍCOLA CULTIVO DE BANANO",
+                    "fechaCreacion": "2022-06-21T14:14:08.483+00:00",
+                    "ultimaActualizacion": "2022-06-21T14:14:08.483+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": "006"
+                },
+                {
+                    "codigoCatalogo": "COD_SUBRAMOS",
+                    "codigoParametro": "AGB",
+                    "descripcion": "SEGURO AGRÍCOLA DE RENDIMIENTO Y AJUSTE EN COSECHA",
+                    "fechaCreacion": "2022-06-21T14:14:08.483+00:00",
+                    "ultimaActualizacion": "2022-06-21T14:14:08.483+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": "006"
+                },
+                {
+                    "codigoCatalogo": "COD_SUBRAMOS",
+                    "codigoParametro": "AGP",
+                    "descripcion": "SEGURO AGRICOLA DE DAÑO MATERIAL DIRECTO Y AJUSTE EN PLANTA VIVA",
+                    "fechaCreacion": "2022-06-21T14:14:08.483+00:00",
+                    "ultimaActualizacion": "2022-06-21T14:14:08.483+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": "006"
+                },
+                {
+                    "codigoCatalogo": "COD_SUBRAMOS",
+                    "codigoParametro": "NDX",
+                    "descripcion": "SEGURO AGRÍCOLA",
+                    "fechaCreacion": "2022-06-21T14:14:08.483+00:00",
+                    "ultimaActualizacion": "2022-06-21T14:14:08.483+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": "006"
+                }
+            ]
+        }
+    ]
+}

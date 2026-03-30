@@ -1,0 +1,67 @@
+{
+    "catalogos": [
+        {
+            "codigoCatalogo": "TIPO_EVIDENCIA",
+            "nombreCatalogo": "Tipo de Evidencia ",
+            "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+            "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+            "fechaBaja": null,
+            "parametros": [
+                {
+                    "codigoCatalogo": "TIPO_EVIDENCIA",
+                    "codigoParametro": "CIFIN",
+                    "descripcion": "Evidencia CIFIN",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_EVIDENCIA",
+                    "codigoParametro": "PEPS",
+                    "descripcion": "Evidencia PEPS",
+                    "fechaCreacion": "2021-05-01T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-05-01T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_EVIDENCIA",
+                    "codigoParametro": "RRCC",
+                    "descripcion": "Riesgos Consultables",
+                    "fechaCreacion": "2021-05-02T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-05-02T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_EVIDENCIA",
+                    "codigoParametro": "GAFI",
+                    "descripcion": "GAFI",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_EVIDENCIA",
+                    "codigoParametro": "DOCUMENT_PN",
+                    "descripcion": "DOCUMENT_PN",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_EVIDENCIA",
+                    "codigoParametro": "EXPERIAN",
+                    "descripcion": "EXPERIAN",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                }
+            ]
+        }
+    ]
+}

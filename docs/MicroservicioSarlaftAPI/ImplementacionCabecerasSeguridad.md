@@ -60,4 +60,4 @@ Indica a los navegadores que la política HSTS también debe aplicarse a todos l
 
 ## Imagen de Referencia
 
-> 📎 Imagen de la configuración de cabeceras en código disponible en Confluence (`image-20240902-223852.png`)
+![Configuración de cabeceras de seguridad en código](./img/image-20240902-223852.png)

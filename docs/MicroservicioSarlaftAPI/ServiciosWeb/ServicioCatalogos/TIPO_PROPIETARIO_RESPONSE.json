@@ -1,0 +1,31 @@
+{
+    "catalogos": [
+        {
+            "codigoCatalogo": "TIPO_PROPIETARIO",
+            "nombreCatalogo": "Tipo de propietario",
+            "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+            "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+            "fechaBaja": null,
+            "parametros": [
+                {
+                    "codigoCatalogo": "TIPO_PROPIETARIO",
+                    "codigoParametro": "DIRECTO",
+                    "descripcion": "Directo",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_PROPIETARIO",
+                    "codigoParametro": "INDIRECTO",
+                    "descripcion": "Indirecto",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                }
+            ]
+        }
+    ]
+}

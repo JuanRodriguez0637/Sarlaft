@@ -1,0 +1,37 @@
+{
+	"idEvaluacion": "6e051124-0ece-4897-9fc0-961a92781681",
+	"cliente": {
+		"tipoPersona": "J",
+		"correo": "comunicaciones@variedades.com.co",
+		"celular": "3102345670",
+		"razonSocial": "Variedades SAA",
+		"paisConstitucion": "57",
+		"documento": {
+			"tipo": "A",
+			"numero": "90009987"
+		},
+		"asociaciones": [
+			{
+				"tipoPersona": "N",
+				"correo": "pfarevalo@variedades.com.co",
+				"celular": "3302345670",
+				"tipoAsociacion": "AGENTE_LEGAL",
+				"documento": {
+					"tipo": "C",
+					"numero": "11890431",
+					"fechaExpedicion": "2007-05-27"
+				},
+				"persona": {
+					"primerNombre": "Pestor",
+					"segundoNombre": "Fernando",
+					"primerApellido": "Arevalo",
+					"segundoApellido": "Espitia",
+					"pais": "57"
+				}
+			}
+		]
+	},
+	"figuras": [
+		"CONSORCIO"
+	]
+}

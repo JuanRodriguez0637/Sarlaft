@@ -15,11 +15,11 @@ Esta sección documenta la lógica interna del proceso de evaluación SARLAFT de
 
 | Subpágina | Descripción | Enlace |
 |-----------|-------------|--------|
-| Determinar Estado Evaluación | Lógica para determinar el estado de una evaluación | [Confluence](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2332327941/Determinar+Estado+Evaluaci%C3%B3n) |
-| Proceso Evaluación - Masivo | Proceso de evaluación en modo masivo | [Confluence](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2332262464/Proceso+Evaluaci%C3%B3n+-+Masivo) |
-| Comunicación Requisitos | Comunicación de requisitos en el proceso | [Confluence](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2338947077/Comunicaci%C3%B3n+Requisitos) |
-| Comunicación P8 | Integración con el sistema P8 | [Confluence](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2358509754/Comunicaci%C3%B3n+P8) |
-| Registro de ID documento P8 | Registro del identificador de documento en P8 | [Confluence](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2371649550/Registro+de+ID+documento+P8) |
+| Determinar Estado Evaluación | Lógica para determinar el estado de una evaluación | [DeterminarEstadoEvaluacion.md](./DeterminarEstadoEvaluacion.md) |
+| Proceso Evaluación - Masivo | Proceso de evaluación en modo masivo | [ProcesoEvaluacionMasivo.md](./ProcesoEvaluacionMasivo.md) |
+| Comunicación Requisitos | Comunicación de requisitos en el proceso (CrearRequisito / ActualizarRequisito) | [ComunicacionRequisitos.md](./ComunicacionRequisitos.md) |
+| Comunicación P8 | Integración con el sistema P8 vía RabbitMQ | [ComunicacionP8.md](./ComunicacionP8.md) |
+| Registro de ID documento P8 | Registro del identificador de documento en P8 | [RegistroIDDocumentoP8.md](./RegistroIDDocumentoP8.md) |
 | Estados documento registraduría | Tabla de estados del documento de registraduría | [EstadosDocumentoRegistraduria.md](./EstadosDocumentoRegistraduria.md) |
 | Herencia Sarlaft API para el SOAT | Ajuste de herencia de evidencias para evaluaciones SOAT | [HerenciaSarlaftAPISOAT.md](./HerenciaSarlaftAPISOAT.md) |
 

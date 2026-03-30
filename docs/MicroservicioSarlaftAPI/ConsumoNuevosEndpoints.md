@@ -22,16 +22,13 @@ Documentación del mapeo de endpoints anteriores a los nuevos endpoints resultan
 
 ## Archivos Excel Adjuntos
 
-> 📎 **`Mapeo Nuevas URLs (3).xlsx`** — Especifica el mapeo de los endpoints anteriores a los nuevos endpoints resultantes.  
-> *(Adjunto en Confluence, guardado en [docs/xlsx/](../xlsx/))*
+> 📎 **[`Mapeo Nuevas URLs (3).xlsx`](../xlsx/Mapeo%20Nuevas%20URLs%20(3).xlsx)** — Especifica el mapeo de los endpoints anteriores a los nuevos endpoints resultantes.
 
-> 📎 **`RespuestasErroresSarlaft4_HT505291_ParteBrayan.xlsx`** — Excepciones identificadas para los endpoints coloreadas de amarillo o verde.  
-> *(Adjunto en Confluence, guardado en [docs/xlsx/](../xlsx/))*
+> 📎 **[`RespuestasErroresSarlaft4_HT505291_ParteBrayan.xlsx`](../xlsx/RespuestasErroresSarlaft4_HT505291_ParteBrayan.xlsx)** — Excepciones identificadas para los endpoints coloreadas de amarillo o verde.
 
-> 📎 **`EXCEPCIONES_ENCONTRADAS.xlsx`** — Excepciones identificadas para endpoints adicionales.  
-> *(Adjunto en Confluence, guardado en [docs/xlsx/](../xlsx/))*
+> 📎 **[`EXCEPCIONES_ENCONTRADAS.xlsx`](../xlsx/EXCEPCIONES_ENCONTRADAS.xlsx)** — Excepciones identificadas para endpoints adicionales.
 
-> 📎 Imagen de referencia disponible en Confluence (`image-20240604-191935.png`)
+![Imagen de referencia de nuevos endpoints](./img/image-20240604-191935.png)
 
 ---
 

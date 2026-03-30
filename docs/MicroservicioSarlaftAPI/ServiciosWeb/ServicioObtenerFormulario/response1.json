@@ -1,0 +1,139 @@
+{
+    "formularioOpcional": false,
+    "evaluacionId": "49dc9154-d1c2-460d-9052-8b76fd1fb7ba",
+    "codigoOperacion": "01",
+    "controlesTomador": [
+        {
+            "resultado": "FALLA_TECNICA",
+            "tipo": "DOCUMENT_PN",
+            "observaciones": null,
+            "bloqueante": true
+        },
+        {
+            "resultado": "PENDIENTE",
+            "tipo": "EXPERIAN",
+            "observaciones": "Pendiente por realizar el proceso de validación de identidad para continuar con la vinculación del cliente",
+            "bloqueante": true
+        }
+    ],
+    "relaciones": [],
+    "respuestaRelacionesPeps": "NO_REGISTRA",
+    "sarlafts": [
+        {
+            "estado": "FINALIZADO",
+            "roles": [
+                "ASEGURADO"
+            ],
+            "tipoIdentificacion": "C",
+            "numeroIdentificacion": "8401802",
+            "primerNombre": "JOSE",
+            "segundoNombre": "RICARDO",
+            "primerApellido": "APARICIO",
+            "segundoApellido": "FUENTES",
+            "soportesRequeridos": [],
+            "indicadorRegimenPublico": false,
+            "riesgoVo": {
+                "tipoRiesgo": "SIMPLIFICADO",
+                "bloqueante": false,
+                "mensaje": "Cumple con politicas de SARLAFT. Debe completar el Conocimiento del Cliente si le aplica."
+            },
+            "indicadorPeps": false,
+            "indicadorGafi": false,
+            "respuestaPEPS": "NO_REGISTRA",
+            "tipoFormulario": "NO_APLICA",
+            "terminoFormulario": true,
+            "validacionIdentidad": "NOAPLICA"
+        },
+        {
+            "estado": "FINALIZADO",
+            "roles": [
+                "AFILIADO"
+            ],
+            "tipoIdentificacion": "C",
+            "numeroIdentificacion": "1032434046",
+            "primerNombre": "DIANA",
+            "primerApellido": "GOMEZ",
+            "segundoApellido": "PEREZ",
+            "soportesRequeridos": [],
+            "indicadorRegimenPublico": false,
+            "riesgoVo": {
+                "tipoRiesgo": "SIMPLIFICADO",
+                "bloqueante": false,
+                "mensaje": "Cumple con politicas de SARLAFT. Debe completar el Conocimiento del Cliente si le aplica."
+            },
+            "indicadorPeps": false,
+            "indicadorGafi": false,
+            "respuestaPEPS": "NO_REGISTRA",
+            "tipoFormulario": "NO_APLICA",
+            "terminoFormulario": true,
+            "validacionIdentidad": "NOAPLICA"
+        },
+        {
+            "estado": "FINALIZADO",
+            "roles": [
+                "BENEFICIARIO"
+            ],
+            "tipoIdentificacion": "C",
+            "numeroIdentificacion": "21533892",
+            "primerNombre": "HEIDY",
+            "segundoNombre": "KATHERINE",
+            "primerApellido": "COLORADO",
+            "segundoApellido": "GOMEZ",
+            "soportesRequeridos": [],
+            "indicadorRegimenPublico": false,
+            "riesgoVo": {
+                "tipoRiesgo": "SIMPLIFICADO",
+                "bloqueante": false,
+                "mensaje": "Cumple con politicas de SARLAFT. Debe completar el Conocimiento del Cliente si le aplica."
+            },
+            "indicadorPeps": false,
+            "indicadorGafi": false,
+            "respuestaPEPS": "NO_REGISTRA",
+            "tipoFormulario": "NO_APLICA",
+            "terminoFormulario": true,
+            "validacionIdentidad": "NOAPLICA"
+        },
+        {
+            "estado": "PENDIENTE",
+            "roles": [
+                "TOMADOR"
+            ],
+            "tipoIdentificacion": "C",
+            "numeroIdentificacion": "1231232123",
+            "primerNombre": "JAIME",
+            "segundoNombre": "ANDRES",
+            "primerApellido": "MONTOYA",
+            "segundoApellido": "MONTOYA",
+            "soportesRequeridos": [
+                {
+                    "rutaAbsoluta": "COPIA DE LA DECLARACION DE RENTA DEL ULTIMO PERIODO GRAVABLE",
+                    "nombreArchivo": null,
+                    "codigoRequisito": "2307",
+                    "estado": "PENDIENTE",
+                    "tamanio": 0
+                },
+                {
+                    "rutaAbsoluta": "Certificado de ingresos y retenciones",
+                    "nombreArchivo": null,
+                    "codigoRequisito": "2305",
+                    "estado": "PENDIENTE",
+                    "tamanio": 0
+                }
+            ],
+            "indicadorRegimenPublico": false,
+            "riesgoVo": {
+                "tipoRiesgo": "INTENSIFICADO",
+                "bloqueante": false,
+                "mensaje": "Cumple con politicas de SARLAFT. Debe completar el Conocimiento del Cliente si le aplica."
+            },
+            "indicadorPeps": false,
+            "indicadorGafi": false,
+            "respuestaPEPS": "NO",
+            "tipoFormulario": "INTENSIFICADO_PN",
+            "terminoFormulario": false,
+            "validacionIdentidad": "PENDIENTE"
+        }
+    ],
+    "codigoRamo": "084",
+    "tipoDeNegocio": "INDIVIDUAL"
+}
