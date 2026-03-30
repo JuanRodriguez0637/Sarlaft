@@ -1,0 +1,17 @@
+{
+  "servers": {
+    "confluence": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@aashari/mcp-server-atlassian-confluence"
+      ],
+      "env": {
+        "ATLASSIAN_SITE_URL": "https://segurosti.atlassian.net",
+        "ATLASSIAN_USER_EMAIL": "<TU_EMAIL_AQUI>",
+        "ATLASSIAN_API_TOKEN": "<TU_API_TOKEN_AQUI>"
+      }
+    }
+  }
+}

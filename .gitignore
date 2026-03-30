@@ -1,4 +1,9 @@
 
+# Archivos de configuración local (contienen credenciales)
+# Usar .vscode/*.example como plantilla
+.vscode/mcp.json
+.vscode/settings.json
+
 # Ceiba Method workspace (auto-generated)
 .vscode/ceiba.code-workspace
 .venv
