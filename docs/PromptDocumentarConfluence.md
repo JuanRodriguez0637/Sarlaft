@@ -9,7 +9,7 @@
 
 ## Sección a documentar
 
-- Ruta en Confluence: **Sarlaft 4.0 → Documentación Técnica → Microservicio SarlaftAPI → `<NOMBRE_SECCION>`**
+- Ruta en Confluence: **Sarlaft 4.0 → Documentación Técnica → Microservicio SarlaftAPI → Log Errores Splunk SarlaftApi**
 - Buscar la página principal usando CQL y obtener su ID
 
 ---
@@ -124,6 +124,7 @@ El `index.md` de la subsección debe incluir:
 ## 8. Reglas importantes
 
 - **Un .md por página de Confluence** — nunca mezclar
+- **Solo contenido original:** NO agregar notas, interpretaciones, resúmenes o inferencias propias. El Markdown debe reflejar **exclusivamente** lo que existe en la página de Confluence (cuerpo + comentarios). Si una página solo tiene una tabla, el `.md` solo tiene esa tabla — sin sección "Notas" inventada.
 - Nombres de archivo en **PascalCase**, sin espacios
 - Si una página solo tiene macro `pagetree`, el `.md` es un índice con links
 - Los backticks se preservan: campos BD, endpoints, mensajes, perfiles van con `` ` ``
