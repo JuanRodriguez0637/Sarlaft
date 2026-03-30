@@ -1,78 +1,43 @@
-# Log Errores Splunk - SarlaftAPI
+# Log Errores Splunk SarlaftApi
 
-> **Fuente:** [Confluence - Log Errores Splunk SarlaftApi](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2391769098/Log+Errores+Splunk+SarlaftApi)  
-> **Página padre:** [Microservicio SarlaftAPI](../index.md)
+> **Fuente Confluence:** [Log Errores Splunk SarlaftApi](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2391769098/Log+Errores+Splunk+SarlaftApi)  
+> **Última modificación:** 2021-09-14 — Mateo Valencia Muriel · versión 1  
+> **Sección:** [Microservicio SarlaftAPI](./index.md)
 
----
+Al microservicio de SarlaftApi se le implemento la funcionalidad de realizar el envio de logs a splunk.
 
-## Descripción
+Main.gradle:
 
-Al microservicio de SarlaftAPI se le implementó la funcionalidad de realizar el envío de logs a **Splunk**.
+Repositorio utilizado : `https://splunk.jfrog.io/splunk/ext-releases-local`
 
----
+![image-20210914-141849.png](./img/image-20210914-141849.png)
 
-## Configuración en `main.gradle`
+librería utilizada: `com.splunk.logging:splunk-library-javalogging:1.7.3`
 
-**Repositorio utilizado:**  
-```
-https://splunk.jfrog.io/splunk/ext-releases-local
-```
+`'org.apache.logging.log4j', name: 'log4j-core', version: '2.14.1'`
 
-![Configuración de repositorio en main.gradle](./img/image-20210914-141849.png)
+![image-20210914-141911.png](./img/image-20210914-141911.png)
 
-**Librería utilizada:**
-```
-com.splunk.logging:splunk-library-javalogging:1.7.3
-org.apache.logging.log4j:log4j-core:2.14.1
-```
+En el archivo de configuracion .yml Podemos visualizar los siguientes datos de configuracion:
 
-![Dependencias en main.gradle](./img/image-20210914-141911.png)
+![image-20210914-142058.png](./img/image-20210914-142058.png)
 
----
+En el modulo de application debemos de tener en cuenta las siguientes clases, La configuración y parametrización del log se encuentra en la clase `LoggerUtilConfig` ubicada en el paquete
 
-## Configuración en `application.yml`
+`package sura.sarlaft4.logger;`
 
-El archivo de configuración `.yml` contiene los datos de conexión y parámetros de Splunk:
+![image-20210914-142205.png](./img/image-20210914-142205.png)
 
-![Configuración en application.yml](./img/image-20210914-142058.png)
+En el modulo de Domain se crea 1 clase `MensajeSplunk` y Una interfaz `MessageLogRepository`:
 
----
+![image-20210914-142551.png](./img/image-20210914-142551.png)
 
-## Implementación en el Módulo Application
+Adicional a esto se crea un modulo en infrastructura en el paquete de helpers:
 
-La configuración y parametrización del log se encuentra en la clase `LoggerUtilConfig` ubicada en el paquete:
+![image-20210914-142751.png](./img/image-20210914-142751.png)
 
-```
-package sura.sarlaft4.logger;
-```
+![image-20210914-142805.png](./img/image-20210914-142805.png)
 
-![Estructura del paquete sura.sarlaft4.logger](./img/image-20210914-142205.png)
+La forma de implementar la escritura en splunk es:
 
----
-
-## Implementación en el Módulo Domain
-
-En el módulo de **Domain** se crean:
-
-1. **Clase:** `MensajeSplunk`
-2. **Interfaz:** `MessageLogRepository`
-
-![Clases MensajeSplunk y MessageLogRepository en Domain](./img/image-20210914-142551.png)
-
----
-
-## Módulo en Infraestructura (helpers)
-
-Se crea un módulo adicional en infraestructura dentro del paquete de helpers:
-
-![Estructura del paquete helper en infraestructura](./img/image-20210914-142751.png)
-
-![Detalle del módulo helper en infraestructura](./img/image-20210914-142805.png)
-
----
-
-## Forma de Implementar la Escritura en Splunk
-
-La escritura de logs en Splunk se realiza de la siguiente manera:
-
-![Implementación de escritura en Splunk](./img/image-20210914-142844.png)
+![image-20210914-142844.png](./img/image-20210914-142844.png)

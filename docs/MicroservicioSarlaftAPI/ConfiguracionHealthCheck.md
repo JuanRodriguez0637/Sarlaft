@@ -1,47 +1,22 @@
-# Configuración HealthCheck con Librería Actuator - SarlaftAPI
+# Configuración HealtchCheck con librería actuator - sarlaftapi
 
-> **Fuente:** [Confluence - Configuración HealtchCheck con librería actuator - sarlaftapi](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/3598712863/Configuraci%C3%B3n+HealtchCheck+con+librer%C3%ADa+actuator+-+sarlaftapi)  
-> **Página padre:** [Microservicio SarlaftAPI](../index.md)
-
----
-
-## Descripción
-
-Este servicio web de HealthCheck permite evaluar las conexiones principales del microservicio. Cuando desde el **AKS en Azure** se hace el ping para evaluar la salud del microservicio, se evalúa también la conexión a:
-
-- **Service Bus de Azure**
-- **Base de datos PostgreSQL** (nube)
-- **Redis** (nube)
+> **Fuente Confluence:** [Configuración HealtchCheck con librería actuator - sarlaftapi](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/3598712863/Configuraci%C3%B3n+HealtchCheck+con+librer%C3%ADa+actuator+-+sarlaftapi)
+> **Última modificación:** 2024-03-12 — Julián Andrés Curubo García · versión 6
+> **Sección:** [Microservicio SarlaftAPI](./index.md)
 
 ---
 
-## Librería Utilizada
+Este nuevo servicio web de healthCheck permite evaluar las conexiones principales del microservicio de tal forma que cuando desde el aks en azure, se haga el ping para evaluar la salud del microservicio, se evalué de igual forma la conexión al service bus de azure, base de datos Postgresql (nube) y redis (nube).
 
-Se usa Spring Actuator: `spring-boot-starter-actuator`
+Con la librería de spring actuator `spring-boot-starter-actuator` se logra este objetivo, se incluye la librería en el build.gradle
 
-Se incluye en el `build.gradle`:
+![image-20240207-200559.png](./img/image-20240207-200559.png)
 
-![Configuración en build.gradle](./img/image-20240207-200559.png)
+La validación con la base de datos se hace automáticamente con el indicador por defecto `DataSourceHealthIndicator` que trae la librería, y obtiene el datasource utilizando la información de conexión a la base de datos del archivo `application.yml`.
 
-```gradle
-implementation 'org.springframework.boot:spring-boot-starter-actuator'
-```
+La validación con redis se hace automáticamente con el indicador por defecto `RedisHealthIndicator` que trae la librería, y obtiene la conexión a redis utilizando la información de conexión del archivo `application.yml`.
 
----
-
-## Validaciones por Componente
-
-### Base de Datos (PostgreSQL)
-
-La validación con la base de datos se hace **automáticamente** con el indicador por defecto `DataSourceHealthIndicator`, que obtiene el datasource usando la información de conexión del `application.yml`.
-
-### Redis
-
-La validación con Redis se hace **automáticamente** con el indicador por defecto `RedisHealthIndicator`, usando la configuración de conexión del `application.yml`.
-
-### Service Bus (Azure)
-
-La validación con el Service Bus utiliza una clase **personalizada** `ServicebusHealthIndicator`, que depende de:
+La validación con el sevice bus se utiliza una clase personalizada `ServicebusHealthIndicator` en la cual se usa las dependencias:
 
 ```gradle
 implementation 'com.microsoft.azure:azure-servicebus:3.6.7'
@@ -49,30 +24,18 @@ implementation 'com.azure:azure-messaging-servicebus:7.14.7'
 implementation 'org.reactivecommons:async-service-bus-starter:1.1.39-BETA'
 ```
 
-![Clase ServicebusHealthIndicator](./img/image-20240311-182202.png)
+![image-20240311-182202.png](./img/image-20240311-182202.png)
 
----
+Se realiza la siguiente configuración en el **application.yaml**
 
-## Configuración en `application.yaml`
+![image-20240311-182224.png](./img/image-20240311-182224.png)
 
-![Configuración en application.yaml](./img/image-20240311-182224.png)
+Se realiza la siguiente configuración en el archivo **deployment.yml** en el proyecto de configuración para cada ambiente.
 
----
+![image-20240311-182303.png](./img/image-20240311-182303.png)
 
-## Configuración en `deployment.yml` (Proyecto de Configuración)
+Debido al que el microservicio tiene seguridad seus, se presenta una incompatibilidad entre la librería ssosura y actuator para lo cual se debe incluir la siguiente línea en el archivo de splunk dentro de la sección de loggers:
 
-La configuración del deployment se realiza por ambiente en el proyecto de configuración:
+`<logger name="co.com.sura.sso.reactive.listeners" level="ERROR" />`
 
-![Configuración en deployment.yml](./img/image-20240311-182303.png)
-
----
-
-## Incompatibilidad con SEUS (SSO Sura)
-
-Debido a que el microservicio tiene seguridad SEUS, existe una incompatibilidad entre la librería `ssosura` y `actuator`. Para resolverlo, se debe incluir la siguiente línea en el archivo de Splunk, dentro de la sección de loggers:
-
-```xml
-<logger name="co.com.sura.sso.reactive.listeners" level="ERROR" />
-```
-
-![Configuración en Splunk logger](./img/image-20240311-182330.png)
+![image-20240311-182330.png](./img/image-20240311-182330.png)
