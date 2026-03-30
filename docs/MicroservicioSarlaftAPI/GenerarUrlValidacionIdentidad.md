@@ -1,34 +1,18 @@
-# Generar URL Validación Identidad - SarlaftAPI
+# Generar Url Validación Identidad
 
-> **Fuente:** [Confluence - Generar Url Validación Identidad](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/4927455233/Generar+Url+Validaci%C3%B3n+Identidad)  
-> **Página padre:** [Microservicio SarlaftAPI](../index.md)  
-> **Iniciativa:** [HU 847704](https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_workitems/edit/847704)
-
----
-
-## Descripción del Servicio
-
-| Campo | Valor |
-|-------|-------|
-| **Objetivo** | Permite generar la URL de validación de identidad cuando la evaluación está pendiente para determinado DNI |
-| **Método HTTP** | `GET` |
-| **Endpoint** | `/sarlaftserv/v1/clientes/identidades/formulario` |
-| **Parámetros** | `evaluacionId`, `dni` |
-| **Perfil SEUS4** | `PF_CONSUMSERVSARLAFTAPI`, `PF_CONSUMSERVSARLAFT` |
+> **Fuente Confluence:** [Generar Url Validación Identidad](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/4927455233/Generar+Url+Validaci+n+Identidad)
+> **Última modificación:** 2025-08-14 — Mauricio Marin Martinez · versión 1
+> **Sección:** [Microservicio SarlaftAPI](./index.md)
 
 ---
 
-## Ejemplo de Request
+- **Objetivo:** Permite generar la url de validación de identidad cuando la evaluación esta pendiente para determino dni.
+- **Endpoint: GET** `/sarlaftserv/v1/clientes/identidades/formulario`
+- **Params:** `evaluacionId`, `dni`
+- **Perfil de Seus4:** `PF_CONSUMSERVSARLAFTAPI`, `PF_CONSUMSERVSARLAFT`
+- **Ejemplo Request:** `/sarlaftserv/v1/clientes/identidades/formulario?evaluacionId=412ca3d9-900c-4628-b1cf-9d74513b97c7&dni=C1015397023`
 
-```
-GET /sarlaftserv/v1/clientes/identidades/formulario?evaluacionId=412ca3d9-900c-4628-b1cf-9d74513b97c7&dni=C1015397023
-```
-
----
-
-## Respuestas
-
-### ✅ Response Exitoso (200)
+**Ejemplo Json Response Exitoso:**
 
 ```json
 {
@@ -36,7 +20,7 @@ GET /sarlaftserv/v1/clientes/identidades/formulario?evaluacionId=412ca3d9-900c-4
 }
 ```
 
-### ❌ Error 400 — Evaluación no encontrada
+- **Ejemplo Json Response con error 400 evaluación no encontrada:**
 
 ```json
 {
@@ -51,7 +35,7 @@ GET /sarlaftserv/v1/clientes/identidades/formulario?evaluacionId=412ca3d9-900c-4
 }
 ```
 
-### ❌ Error 400 — DNI no pertenece a la evaluación
+- **Ejemplos Json Response con error 400 dni no pertenece a la evaluacion**
 
 ```json
 {
@@ -66,7 +50,7 @@ GET /sarlaftserv/v1/clientes/identidades/formulario?evaluacionId=412ca3d9-900c-4
 }
 ```
 
-### ❌ Error 400 — Error en datos de entrada
+- **Ejemplos Json Response con error 400 error datos de entrada**
 
 ```json
 {
@@ -80,3 +64,5 @@ GET /sarlaftserv/v1/clientes/identidades/formulario?evaluacionId=412ca3d9-900c-4
     ]
 }
 ```
+
+Iniciativa: [https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_workitems/edit/847704](https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_workitems/edit/847704)

@@ -57,6 +57,7 @@
   - `<Subseccion>/attachments/` → archivos JSON y otros
 - Crea las carpetas si no existen
 - Nombra los archivos descriptivamente (ej: `ProcesoMasivoRequest.json` en vez de `Request.json`)
+- **NO descargar adjuntos huérfanos:** solo descargar imágenes y archivos que estén referenciados en el cuerpo de la página (`body.storage`) o en comentarios. Si un adjunto existe en Confluence pero no aparece en ningún macro `ac:image`, `ri:attachment` o `view-file` del contenido, ignorarlo.
 
 ## 5. Generación de archivos Markdown
 
