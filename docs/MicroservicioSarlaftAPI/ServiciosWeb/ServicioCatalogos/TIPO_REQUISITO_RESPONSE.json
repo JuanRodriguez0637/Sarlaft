@@ -1,0 +1,58 @@
+{
+    "catalogos": [
+        {
+            "codigoCatalogo": "TIPO_REQUISITO",
+            "nombreCatalogo": "Tipos de requisitos",
+            "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+            "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+            "fechaBaja": null,
+            "parametros": [
+                {
+                    "codigoCatalogo": "TIPO_REQUISITO",
+                    "codigoParametro": "828",
+                    "descripcion": "Documento Apoderado",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_REQUISITO",
+                    "codigoParametro": "2305",
+                    "descripcion": "Certificado de ingresos y retenciones",
+                    "fechaCreacion": "2022-07-12T05:00:00.000+00:00",
+                    "ultimaActualizacion": "2022-07-12T05:00:00.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_REQUISITO",
+                    "codigoParametro": "2307",
+                    "descripcion": "COPIA DE LA DECLARACION DE RENTA DEL ULTIMO PERIODO GRAVABLE",
+                    "fechaCreacion": "2022-07-12T05:00:00.000+00:00",
+                    "ultimaActualizacion": "2022-07-12T05:00:00.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_REQUISITO",
+                    "codigoParametro": "2037",
+                    "descripcion": "Estados Financieros",
+                    "fechaCreacion": "2022-07-12T05:00:00.000+00:00",
+                    "ultimaActualizacion": "2022-07-12T05:00:00.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_REQUISITO",
+                    "codigoParametro": "2303",
+                    "descripcion": "Certificado de Existencia y Representacion Legal",
+                    "fechaCreacion": "2022-07-12T05:00:00.000+00:00",
+                    "ultimaActualizacion": "2022-07-12T05:00:00.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                }
+            ]
+        }
+    ]
+}

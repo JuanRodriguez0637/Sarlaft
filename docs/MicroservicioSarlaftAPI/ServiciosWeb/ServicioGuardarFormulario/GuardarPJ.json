@@ -1,0 +1,135 @@
+{
+    "evaluacionId": "54dc0186-5007-4cb3-a68e-44481e005e39",
+    "relacionLaboral": false,
+    "administradorPep": false,
+    "esApoderado": false,
+    "figuras": [
+        {
+            "tipoFigura": "TOMADOR",
+            "tieneRelacionPep": true,
+            "personaPep": true,
+            "cliente": {
+                "correo": "pruebas@pruebas.com",
+                "celular": "3016504896",
+                "razonSocial": "Pirulitos",
+                "paisConstitucion": "01",
+                "documento": {
+                    "tipo": "A",
+                    "numero": "890903407"
+                },
+                "direcciones": [
+                    {
+                        "tipo": "RS",
+                        "pais": "57",
+                        "ciudad": "4292",
+                        "departamento": "05",
+                        "direccion": "Centro calle de la moneda"
+                    }
+                ],
+                "relaciones": [
+                    {
+                        "relacionPeps": true,
+                        "tipo": "CONYUGUE",
+                        "parentescoPeps": null,
+                        "tipoPropietario": null,
+                        "porParticipacionAccionista": null,
+                        "documento": {
+                            "tipo": "C",
+                            "numero": "1111111",
+                            "fechaExpedicion": "2006-08-12"
+                        },
+                        "persona": {
+                            "primerNombre": "Espitia",
+                            "segundoNombre": "Arevalo",
+                            "primerApellido": "Arevalo",
+                            "segundoApellido": "Mileno",
+                            "pais": "57"
+                        }
+                    },
+                    {
+                        "relacionPeps": true,
+                        "tipo": "FAMILIA",
+                        "parentescoPeps": "01",
+                        "tipoPropietario": null,
+                        "porParticipacionAccionista": null,
+                        "documento": {
+                            "tipo": "C",
+                            "numero": "222222",
+                            "fechaExpedicion": "2005-12-31"
+                        },
+                        "persona": {
+                            "primerNombre": "Sandra",
+                            "segundoNombre": "Milena",
+                            "primerApellido": "Arevalo",
+                            "segundoApellido": "Espitia",
+                            "pais": "57"
+                        }
+                    },
+                    {
+                        "relacionPeps": true,
+                        "tipo": "SOCIO",
+                        "parentescoPeps": null,
+                        "porParticipacionAccionista": "10",
+                        "documento": {
+                            "tipo": "C",
+                            "numero": "333333",
+                            "fechaExpedicion": "2000-11-05"
+                        },
+                        "persona": {
+                            "primerNombre": "Espitia",
+                            "segundoNombre": "Arevalo",
+                            "primerApellido": "Arevalo",
+                            "segundoApellido": "Mileno",
+                            "pais": "57"
+                        }
+                    }
+                ],
+                "infoFinanciera": {
+                    "ingresos": "10",
+                    "egresos": "11",
+                    "activos": 10,
+                    "pasivos": 10,
+                    "actividadEconomica": "N1313",
+                    "codigoOcupacion": "D08",
+                    "origenFondos": "Mi trabajo como diseñador"
+                }
+            }
+        },
+        {
+            "tipoFigura": "ASEGURADO",
+            "cuentaConInformacion": true,
+            "cliente": {
+                "celular": "3016504896",
+                "correo": "pruebas@pruebas.com",
+                "documento": {
+                    "tipo": "C",
+                    "numero": "1036926701",
+                    "fechaExpedicion": "2007-05-27"
+                },
+                "persona": {
+                    "primerNombre": "Nestor",
+                    "segundoNombre": "Fernando",
+                    "primerApellido": "Arevalo",
+                    "segundoApellido": "Espitia",
+                    "pais": "57"
+                },
+                "direcciones": [
+                    {
+                        "tipo": "RS",
+                        "pais": "57",
+                        "ciudad": "4292",
+                        "departamento": "13",
+                        "direccion": "Centro calle de la moneda"
+                    }
+                ],
+                "infoFinanciera": {
+                    "ingresos": "10",
+                    "egresos": "11",
+                    "actividadEconomica": "N1313",
+                    "codigoOcupacion": "I26",
+                    "origenFondos": "Mi trabajo como INGENIERO DE SISTEMAS"
+                }
+            }
+        }
+    ]
+}

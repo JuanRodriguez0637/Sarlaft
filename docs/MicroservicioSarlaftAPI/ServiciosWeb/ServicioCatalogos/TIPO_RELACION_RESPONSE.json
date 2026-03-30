@@ -1,0 +1,40 @@
+{
+    "catalogos": [
+        {
+            "codigoCatalogo": "TIPO_RELACION",
+            "nombreCatalogo": "Tipo de Relación",
+            "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+            "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+            "fechaBaja": null,
+            "parametros": [
+                {
+                    "codigoCatalogo": "TIPO_RELACION",
+                    "codigoParametro": "FAMILIA",
+                    "descripcion": "FAMILIAR",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_RELACION",
+                    "codigoParametro": "SOCIO",
+                    "descripcion": "SOCIEDAD",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_RELACION",
+                    "codigoParametro": "CONYUGUE",
+                    "descripcion": "CONYUGAL",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                }
+            ]
+        }
+    ]
+}

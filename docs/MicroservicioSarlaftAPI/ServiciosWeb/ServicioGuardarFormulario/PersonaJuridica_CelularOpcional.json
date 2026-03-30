@@ -1,0 +1,45 @@
+{
+    "evaluacionId": "21fa48fb-e70a-416f-8b14-1da9214ef69d",
+    "relacionLaboral": false,
+    "administradorPep": false,
+    "figuras": [
+        {
+            "tipoEmpresa": "PYMES",
+            "tipoFigura": "TOMADOR",
+            "personaPep": false,
+            "cuentaConInformacion": null,
+            "justificacionInformacion": "",
+            "tieneRelacionPep": false,
+            "cliente": {
+                "correo": "preuab@gmail.com",
+                "porParticipacionSocio": 100,
+                "razonSocial": "EMPRESA SAS",
+                "paisConstitucion": "57",
+                "documento": {
+                    "tipo": "A",
+                    "numero": "8906202321"
+                },
+                "direcciones": [
+                    {
+                        "tipo": "RS",
+                        "pais": "57",
+                        "ciudad": "4292",
+                        "departamento": "05",
+                        "direccion": "calle 12"
+                    }
+                ],
+                "infoFinanciera": {
+                    "activos":10000,
+                    "pasivos":"1000000",
+                    "ingresos": 100000,
+                    "egresos": "150000",
+                    "actividadEconomica": "N1313",
+                    "codigoOcupacion": "A72",
+                    "origenFondos": "Mi trabajo"
+                }
+            }
+        }
+    ],
+    "esApoderado": false,
+    "confirmacionRegistro": true
+}

@@ -1,0 +1,40 @@
+{
+    "catalogos": [
+        {
+            "codigoCatalogo": "OPERACION",
+            "nombreCatalogo": "Codigos de operacion",
+            "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+            "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+            "fechaBaja": null,
+            "parametros": [
+                {
+                    "codigoCatalogo": "OPERACION",
+                    "codigoParametro": "01",
+                    "descripcion": "Negocio Nuevo",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "OPERACION",
+                    "codigoParametro": "AC",
+                    "descripcion": "Actualizacion",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "OPERACION",
+                    "codigoParametro": "RE",
+                    "descripcion": "Reclamacion",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                }
+            ]
+        }
+    ]
+}

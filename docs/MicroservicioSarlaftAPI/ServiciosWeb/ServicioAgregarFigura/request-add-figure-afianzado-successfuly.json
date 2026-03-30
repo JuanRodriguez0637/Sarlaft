@@ -1,0 +1,38 @@
+{
+	"idEvaluacion": "32ede65d-459d-4a72-9f8b-08662f6e52f0",
+	"cliente": {
+		"tipoPersona": "J",
+		"correo": "mi.empresa2@fondoemprender.com.co",
+		"celular": "3008527896",
+		"documento": {
+			"tipo": "A",
+			"numero": "900870532"
+		},
+		"razonSocial": "My Pyme Emprender # 2",
+		"persona": {
+			"pais": "57"
+		},
+		"asociaciones": [
+			{
+				"tipoPersona": "N",
+				"correo": "DEIVID.URREGO@SOFKA.COM.CO",
+				"celular": "3147987385",
+				"tipoAsociacion": "REPRESENTANTE_LEGAL",
+				"documento": {
+					"tipo": "C",
+					"numero": "1110487104"
+				},
+				"persona": {
+					"primerApellido": "CARRILLO",
+					"segundoApellido": null,
+					"primerNombre": "FERNANDA",
+					"segundoNombre": null,
+					"pais": "57"
+				}
+			}
+		]
+	},
+	"figuras": [
+		"AFIANZADO"
+	]
+}

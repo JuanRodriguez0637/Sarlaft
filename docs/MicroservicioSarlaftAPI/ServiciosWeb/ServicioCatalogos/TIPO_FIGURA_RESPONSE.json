@@ -1,0 +1,94 @@
+{
+    "catalogos": [
+        {
+            "codigoCatalogo": "TIPO_FIGURA",
+            "nombreCatalogo": "Tipos de entidad",
+            "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+            "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+            "fechaBaja": null,
+            "parametros": [
+                {
+                    "codigoCatalogo": "TIPO_FIGURA",
+                    "codigoParametro": "APODERADO",
+                    "descripcion": "APODERADO",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FIGURA",
+                    "codigoParametro": "BENEFICIARIO",
+                    "descripcion": "BENEFICIARIO",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FIGURA",
+                    "codigoParametro": "TOMADOR",
+                    "descripcion": "TOMADOR",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FIGURA",
+                    "codigoParametro": "ASEGURADO",
+                    "descripcion": "ASEGURADO",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FIGURA",
+                    "codigoParametro": "AFILIADO",
+                    "descripcion": "AFILIADO",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FIGURA",
+                    "codigoParametro": "AFIANZADO",
+                    "descripcion": "AFIANZADO",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FIGURA",
+                    "codigoParametro": "REPRESENTANTE_LEGAL",
+                    "descripcion": "REPRESENTANTE_LEGAL",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FIGURA",
+                    "codigoParametro": "ACCIONISTA",
+                    "descripcion": "ACCIONISTA",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "TIPO_FIGURA",
+                    "codigoParametro": "CONSORCIO",
+                    "descripcion": "CONSORCIO",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                }
+            ]
+        }
+    ]
+}

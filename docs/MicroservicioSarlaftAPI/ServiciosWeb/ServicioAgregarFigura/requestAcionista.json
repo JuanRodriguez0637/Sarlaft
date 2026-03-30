@@ -1,0 +1,27 @@
+{
+  "idEvaluacion": "a76bd279-c3ed-41c2-8525-bab82f08c034",
+  "cliente": {
+    "tipoPersona": "N",
+    "correo": "mail@mail.com.co",
+    "celular": "3122661620",
+    "porParticipacionSocio": 50,
+    "documento": {
+      "tipo": "C",
+      "numero": "1040181391",
+      "fechaExpedicion": "2007-05-27"
+    },
+    "persona": {
+      "primerNombre": "Andres",
+      "segundoNombre": "Velez",
+      "primerApellido": "Velez",
+      "pais": "57"
+    },
+    "relaciones": []
+  },
+  "figuras": [
+    "ACCIONISTA"
+  ],
+  "evidencias": [],
+  "dniClientePadre": "A15380424450",
+  "tipoEmpresa": "SAS"
+}

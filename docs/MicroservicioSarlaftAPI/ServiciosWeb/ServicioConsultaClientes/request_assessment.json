@@ -1,0 +1,145 @@
+{
+	"assessmentId": "7e89f801-cfa2-469b-8c5d-bec8ad35c690",
+	"requestDni": "C9709055",
+    "operationCode": "1",
+    "beneficiaryAnswer": true,
+    "applicationCode": "1",
+	"borrower": {
+		"client": {
+			"personType": "N",
+			"email": "mail_1@mail.com.co",
+			"cellphone": "3102345670",
+			"companyName": null,
+			"document": {
+				"type": "C",
+				"number": "1049676100",
+				"expedition": "2007-05-27"
+			},
+			"person": {
+				"firstName": "Nestor",
+				"secondName": "Fernando",
+				"firstSurname": "Arevalo",
+				"secondSurname": "Espitia",
+                "country": "01"
+			},
+			"relations": [
+				{
+					"pepRelationship": true,
+					"type": "FAMILY",
+					"document": {
+						"type": "C",
+						"number": "1049900800"
+					},
+					"person": {
+						"firstName": "Sandra",
+						"secondName": "Milena",
+						"firstSurname": "Arevalo",
+						"secondSurname": "Espitia"
+					}
+				}
+			]
+		}
+	},
+	"beneficiaries": [
+		{
+			"client": {
+				"personType": "N",
+				"email": "mail2@mail.com.co",
+				"cellphone": "3219006000",
+				"companyName": null,
+				"manager": true,
+				"document": {
+					"type": "C",
+					"number": "1090800800",
+					"expedition": "2000-05-27"
+				},
+				"person": {
+					"firstName": "Diana",
+					"firstSurname": "Gomez",
+					"secondSurname": null,
+					"country": "01"
+				}
+			},
+			"evidences": [
+				{
+					"dni": "C1090800800",
+					"result": "SUCCESSFUL",
+					"type": "CIFIN",
+					"observations": null
+				}
+			]
+		},
+		{
+			"client": {
+				"personType": "N",
+				"email": "mail3@mail.com.co",
+				"cellphone": "3146677888",
+				"companyName": null,
+				"document": {
+					"type": "C",
+					"number": "40056098",
+					"expedition": "2007-05-27"
+				},
+				"person": {
+					"firstName": "Isabel",
+					"secondName": "Lucia",
+					"firstSurname": "Mejia",
+					"secondSurname": "Mejia",
+					"country": "01"
+				}
+			}
+		}
+	],
+	"insured": [
+		{
+			"client": {
+				"personType": "N",
+				"email": "mail4@mail.com.co",
+				"cellphone": "3200007999",
+				"companyName": "",
+				"document": {
+					"type": "C",
+					"number": "1045777123",
+					"expedition": "2001-05-27"
+				},
+				"person": {
+					"firstName": "Carla",
+					"firstSurname": "Diaz",
+					"country": "01"
+				}
+			}
+		},
+		{
+			"client": {
+				"personType": "N",
+				"email": "mail5@mail.com.co",
+				"cellphone": "3101546121",
+				"companyName": null,
+				"document": {
+					"type": "C",
+					"number": "10009987",
+					"expedition": "2000-05-27"
+				},
+				"person": {
+					"firstName": "Mario",
+					"secondName": null,
+					"firstSurname": "Duarte",
+					"secondSurname": null,
+					"country": "01"
+				}
+			}
+		}
+	],
+	"policies": [
+		{
+			"branchCode": "1",
+			"productCode": "1",
+			"channelCode": "1",    
+			"insuredValue": 500000,
+			"bonusValue": 500000,
+			"wayPaying": "CASH",
+			"wayCollecting": "PSE",
+			"business": "COLLECTIVE"
+		}
+	]	
+}

@@ -1,0 +1,139 @@
+{
+    "catalogos": [
+        {
+            "codigoCatalogo": "PARENTESCO_PN",
+            "nombreCatalogo": "Parentesco PEPS",
+            "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+            "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+            "fechaBaja": null,
+            "parametros": [
+                {
+                    "codigoCatalogo": "PARENTESCO_PN",
+                    "codigoParametro": "01",
+                    "descripcion": "Padres",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "PARENTESCO_PN",
+                    "codigoParametro": "02",
+                    "descripcion": "Abuelos",
+                    "fechaCreacion": "2021-05-01T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-05-01T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "PARENTESCO_PN",
+                    "codigoParametro": "03",
+                    "descripcion": "Hermanos",
+                    "fechaCreacion": "2021-05-02T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-05-02T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "PARENTESCO_PN",
+                    "codigoParametro": "04",
+                    "descripcion": "Hijos",
+                    "fechaCreacion": "2021-05-03T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-05-03T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "PARENTESCO_PN",
+                    "codigoParametro": "05",
+                    "descripcion": "Nietos",
+                    "fechaCreacion": "2021-05-04T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-05-04T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "PARENTESCO_PN",
+                    "codigoParametro": "06",
+                    "descripcion": "Yernos",
+                    "fechaCreacion": "2021-05-05T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-05-05T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "PARENTESCO_PN",
+                    "codigoParametro": "07",
+                    "descripcion": "Nueras",
+                    "fechaCreacion": "2021-05-06T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-05-06T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "PARENTESCO_PN",
+                    "codigoParametro": "08",
+                    "descripcion": "Suegros",
+                    "fechaCreacion": "2021-05-07T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-05-07T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "PARENTESCO_PN",
+                    "codigoParametro": "10",
+                    "descripcion": "Abuelos del conyugue",
+                    "fechaCreacion": "2021-05-09T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-05-09T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "PARENTESCO_PN",
+                    "codigoParametro": "12",
+                    "descripcion": "Hijos adoptivos",
+                    "fechaCreacion": "2021-05-11T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-05-11T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "PARENTESCO_PN",
+                    "codigoParametro": "13",
+                    "descripcion": "Padres Adoptantes",
+                    "fechaCreacion": "2021-05-12T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-05-12T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "PARENTESCO_PN",
+                    "codigoParametro": "14",
+                    "descripcion": "Conyugal",
+                    "fechaCreacion": "2021-05-12T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-05-12T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "PARENTESCO_PN",
+                    "codigoParametro": "11",
+                    "descripcion": "Compañero Permanente",
+                    "fechaCreacion": "2021-05-10T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-05-10T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "PARENTESCO_PN",
+                    "codigoParametro": "09",
+                    "descripcion": "Cuñados",
+                    "fechaCreacion": "2021-05-08T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-05-08T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+[
+		{
+			"dni": "C123",
+			"result": "SUCCESSFUL",
+			"type": "1",    
+			"observations": "",
+			"controlConsecutive": "",
+			"assessmentId": "CASH",
+			"applicationCode": "118"
+		},
+        {
+			"dni": "C12388",
+			"result": "SUCCESSFUL",
+			"type": "1",    
+			"observations": "",
+			"controlConsecutive": "",
+			"assessmentId": "CASH",
+			"applicationCode": "118"
+		}
+]

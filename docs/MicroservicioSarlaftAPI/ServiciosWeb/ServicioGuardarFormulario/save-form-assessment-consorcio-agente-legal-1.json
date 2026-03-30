@@ -1,0 +1,24 @@
+{
+	"evaluacionId": "50a52e21-3b35-46e5-8791-8f64056cb885",
+	"figuras": [
+		{
+			"tipoFigura": "AGENTE_LEGAL",
+			"cliente": {
+				"celular": "3016504896",
+				"correo": "contacto@somosunion.com",
+				"documento": {
+					"tipo": "C",
+					"numero": "9872561",
+					"fechaExpedicion": "2001-09-12"
+				},
+				"persona": {
+					"primerNombre": "Pedro",
+					"segundoNombre": "Joaquin",
+					"primerApellido": "Rodriguez",
+					"segundoApellido": "Perez",
+					"pais": "57"
+				}
+			}
+		}
+	]
+}

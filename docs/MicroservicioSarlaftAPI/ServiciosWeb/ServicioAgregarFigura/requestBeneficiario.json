@@ -1,0 +1,41 @@
+{
+  "idEvaluacion": "a76bd279-c3ed-41c2-8525-bab82f08c034",
+  "cliente": {
+    "tipoPersona": "N",
+    "correo": "mail@mail.com.co",
+    "celular": "3122661620",
+    "documento": {
+      "tipo": "C",
+      "numero": "1040181392",
+      "fechaExpedicion": "2007-05-27"
+    },
+    "persona": {
+      "primerNombre": "Andres",
+      "segundoNombre": "Velez",
+      "primerApellido": "Velez",
+      "pais": "57"
+    },
+    "relaciones": [
+      {
+        "relacionPeps": true,
+        "parentescoPeps": "01",
+        "tipo": "FAMILIA",
+        "documento": {
+          "tipo": "C",
+          "numero": "1049900800"
+        },
+        "persona": {
+          "primerNombre": "Sandra",
+          "segundoNombre": "Milena",
+          "primerApellido": "Arevalo",
+          "segundoApellido": "Espitia"
+        }
+      }
+    ]
+  },
+  "figuras": [
+    "BENEFICIARIO",
+    "AFILIADO"
+  ],
+  "evidencias": []
+}

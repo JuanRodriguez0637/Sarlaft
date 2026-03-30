@@ -1,0 +1,12 @@
+{
+	"evaluacionId": "6c570107-db58-42df-97ea-12760f927d7d",
+	"relacionLaboral": null,
+	"licitacionPublica": null,
+	"cliente": [
+		{
+			"dniCliente": "C1040181015",
+			"personaPep": false,
+			"administradorPep": null
+		}
+	]
+}

@@ -1,0 +1,46 @@
+{
+    "evaluacionId": "21fa48fb-e70a-416f-8b14-1da9214ef69d",
+    "figuras": [
+        {
+            "tipoEmpresa": "PYMES",
+            "tipoFigura": "ACCIONISTA",
+            "personaPep": false,
+            "cuentaConInformacion": null,
+            "justificacionInformacion": "",
+            "tieneRelacionPep": false,
+            "cliente": {
+                "porParticipacionSocio": 100,
+                "paisConstitucion": "57",
+                "documento": {
+                    "tipo": "C",
+                    "numero": "1040181393",
+                    "fechaExpedicion": "2007-05-27"
+                },
+                "persona": {
+                    "primerNombre": "Andres",
+                    "segundoNombre": "Velez",
+                    "primerApellido": "Velez",
+                    "pais": "57"
+                },
+                "direcciones": [
+                    {
+                        "tipo": "RS",
+                        "pais": "57",
+                        "ciudad": "4292",
+                        "departamento": "05",
+                        "direccion": "calle 12"
+                    }
+                ],
+                "infoFinanciera": {
+                    "ingresos": 100000,
+                    "egresos": "150000",
+                    "actividadEconomica": "N1313",
+                    "codigoOcupacion": "A72",
+                    "origenFondos": "Mi trabajo"
+                }
+            }
+        }
+    ],
+    "esApoderado": false,
+    "confirmacionRegistro": true
+}

@@ -1,0 +1,544 @@
+{
+    "catalogos": [
+        {
+            "codigoCatalogo": "COD_RAMOS",
+            "nombreCatalogo": "Código de Ramo ",
+            "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+            "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+            "fechaBaja": null,
+            "parametros": [
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "003",
+                    "descripcion": "VIVIENDA SEGURA",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "005",
+                    "descripcion": "FINANCIACION AGRICOLA",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "006",
+                    "descripcion": "SEGURO AGRÍCOLA",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "007",
+                    "descripcion": "AERONAVE CASCO",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "008",
+                    "descripcion": "AERONAVES RESPONSABILIDAD CIVIL",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "009",
+                    "descripcion": "EQUIPO ELECTRÓNICO",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "010",
+                    "descripcion": "RESPONSABILIDAD CIVIL",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "011",
+                    "descripcion": "MANEJO",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "012",
+                    "descripcion": "CUMPLIMIENTO",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "013",
+                    "descripcion": "RESPONSABILIDAD CIVIL",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "014",
+                    "descripcion": "VIDRIOS PLANOS",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "015",
+                    "descripcion": "SUSTRACCION ESTABLECIMIENTOS",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "016",
+                    "descripcion": "SUSTRACCION RESIDENCIAS",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "017",
+                    "descripcion": "MANEJO BANCARIO",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "018",
+                    "descripcion": "R.C. TARJETA DE CREDITO",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "019",
+                    "descripcion": "ROTURA DE MAQUINARIA",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "020",
+                    "descripcion": "TRANSPORTE DE MERCANCIAS",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "021",
+                    "descripcion": "NAVEGACION",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "022",
+                    "descripcion": "NAVEGACION PANDI",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "023",
+                    "descripcion": "TRANSPORTES ALGODON",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "024",
+                    "descripcion": "TRANSPORTE DE VALORES",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "025",
+                    "descripcion": "SEGURO DE DESEMPLEO",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "026",
+                    "descripcion": "SECAL",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "027",
+                    "descripcion": "INTEGRAL COPROPIEDADES",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "028",
+                    "descripcion": "HOGAR",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "029",
+                    "descripcion": "MAQUINARIA AGRICOLA",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "030",
+                    "descripcion": "INCENDIO",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "031",
+                    "descripcion": "ARRENDAMIENTO",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "032",
+                    "descripcion": "MAQUINARIA Y EQUIPO CONTRATISTAS",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "033",
+                    "descripcion": "MONTAJE TODO RIESGO",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "034",
+                    "descripcion": "CONSTRUCCIÓN",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "035",
+                    "descripcion": "INCENDIO ALGODON",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "036",
+                    "descripcion": "LUCRO CESANTE INCENDIO",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "037",
+                    "descripcion": "LUCRO CESANTE ROTURA",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "039",
+                    "descripcion": "OBRAS CIVILES",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "040",
+                    "descripcion": "AUTOMOVILES",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "041",
+                    "descripcion": "SOAT",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "048",
+                    "descripcion": "INGRESOS VARIOS DE GENERALES",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "049",
+                    "descripcion": "EGRESOS VARIOS DE GENERALES",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "069",
+                    "descripcion": "DESEMPLEO",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "081",
+                    "descripcion": "VIDA INDIVIDUAL",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "083",
+                    "descripcion": "VIDA DE GRUPO",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "084",
+                    "descripcion": "ACCIDENTES PERSONALES",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "085",
+                    "descripcion": "JUVENIL",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "086",
+                    "descripcion": "EXEQUIAL",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "090",
+                    "descripcion": "SALUD FAMILIAR",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "091",
+                    "descripcion": "SALUD COLECTIVO",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "092",
+                    "descripcion": "SEGUROS PREVISIONALES",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "094",
+                    "descripcion": "ATEP",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "095",
+                    "descripcion": "SEGURO COLECTIVO DE PENSIONES",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "096",
+                    "descripcion": "SEGURO EDUCATIVO",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "181",
+                    "descripcion": "MAS VIDA",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "097",
+                    "descripcion": "ENFERMEDADES DE ALTO COSTO",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "113",
+                    "descripcion": "PLAN COMPLEMENTARIO FAMILIAR",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "114",
+                    "descripcion": "PLAN COMPLEMENTARIO COLECTIVO",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "183",
+                    "descripcion": "SURENTA",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "193",
+                    "descripcion": "SEGURO DE PENSIÓN",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "196",
+                    "descripcion": "SEGURO DE EDUCACIÓN",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "COD_RAMOS",
+                    "codigoParametro": "BAN",
+                    "descripcion": "BANCASEGUROS",
+                    "fechaCreacion": "2022-06-21T13:51:11.765+00:00",
+                    "ultimaActualizacion": "2022-06-21T13:51:11.765+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                }
+            ]
+        }
+    ]
+}

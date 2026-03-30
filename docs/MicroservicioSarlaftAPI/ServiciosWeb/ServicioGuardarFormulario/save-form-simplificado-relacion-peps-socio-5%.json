@@ -1,0 +1,53 @@
+{
+	"evaluacionId": "42f4b7b1-15a3-4ac9-97b8-509b843201c9",
+	"figuras": [
+		{
+			"tipoFigura": "TOMADOR",
+			"tieneRelacionPep": true,
+			"personaPep": true,
+			"cliente": {
+				"celular": "3013588000",
+				"correo": "tomador1@pruebas.com",
+				"documento": {
+					"tipo": "C",
+					"numero": "71287053",
+					"fechaExpedicion": "2007-06-27"
+				},
+				"persona": {
+					"primerNombre": "Ruben",
+					"segundoNombre": "Jose",
+					"primerApellido": "Abello",
+					"segundoApellido": "Rodriguez",
+					"pais": "57"
+				},
+				"infoFinanciera": {
+					"ingresos": "900000",
+					"egresos": "500000",
+					"actividadEconomica": "N1313",
+					"codigoOcupacion": "D08",
+					"origenFondos": "Diseño"
+				},
+				"relaciones": [
+					{
+						"relacionPeps": true,
+						"tipo": "SOCIO",
+						"codigoRelacion": "R6",
+                        "porParticipacionAccionista": 6,
+						"documento": {
+							"tipo": "C",
+							"numero": "33789520",
+							"fechaExpedicion": "2000-11-05"
+						},
+						"persona": {
+							"primerNombre": "Emilse",
+							"segundoNombre": "Alejandra",
+							"primerApellido": "Rodriguez",
+							"segundoApellido": "Perez",
+							"pais": "57"
+						}
+					}
+				]
+			}
+		}
+	]
+}

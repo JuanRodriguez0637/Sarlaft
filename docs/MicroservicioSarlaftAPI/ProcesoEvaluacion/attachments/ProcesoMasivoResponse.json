@@ -1,0 +1,28 @@
+{
+	"codigoAplicacion": "018",
+    "solicitudesRecibidas": 4,
+    "solicitudesExitosas": 3,
+	"errorValidaciones":null,
+    "evaluaciones": [
+        {
+            "evaluacionId": "fwefwef-f2131231-rewrwefew451222",
+            "mensajeError": null,
+			"idNegocio": "1s5vsd5vsdv-1vds5vsd95v-1svd59vs9d59sd"
+        },
+        {
+            "evaluacionId": null,
+            "mensajeError": "Informacion incompleta: RelacionPep",
+			"idNegocio": "v4sd8vsdv4sdv4sd-v4sd5v4sdv4sd98v4d1-svsd1"
+        },
+        {
+            "evaluacionId": "rtretrr-f213432231-wefewxsc84ghggfnf12",
+            "mensajeError": null,
+			"idNegocio": "01"
+        },
+        {
+            "evaluacionId": "wevfvv45d45sd-6sd5vs6dvd-dsv7sd4v45sd",
+            "mensajeError": null,
+			"idNegocio": "5sdv5sd4vds8-1vsdv54sd51v-1sdvsdv5-vsdv69"
+        }
+    ]
+}

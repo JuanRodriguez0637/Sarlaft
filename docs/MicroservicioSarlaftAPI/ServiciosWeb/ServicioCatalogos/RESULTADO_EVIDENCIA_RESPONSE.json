@@ -1,0 +1,58 @@
+{
+    "catalogos": [
+        {
+            "codigoCatalogo": "RESULTADO_EVIDENCIA",
+            "nombreCatalogo": "Resultados de Evidencia",
+            "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+            "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+            "fechaBaja": null,
+            "parametros": [
+                {
+                    "codigoCatalogo": "RESULTADO_EVIDENCIA",
+                    "codigoParametro": "EXITOSO",
+                    "descripcion": "EXITOSO",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "RESULTADO_EVIDENCIA",
+                    "codigoParametro": "FALLIDO",
+                    "descripcion": "FALLIDO",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "RESULTADO_EVIDENCIA",
+                    "codigoParametro": "PENDIENTE",
+                    "descripcion": "PENDIENTE",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "RESULTADO_EVIDENCIA",
+                    "codigoParametro": "CANCELADA",
+                    "descripcion": "CANCELADA",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "RESULTADO_EVIDENCIA",
+                    "codigoParametro": "FALLA_TECNICA",
+                    "descripcion": "FALLA_TECNICA",
+                    "fechaCreacion": "2022-03-24T02:28:45.831+00:00",
+                    "ultimaActualizacion": "2022-03-24T02:28:45.831+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                }
+            ]
+        }
+    ]
+}

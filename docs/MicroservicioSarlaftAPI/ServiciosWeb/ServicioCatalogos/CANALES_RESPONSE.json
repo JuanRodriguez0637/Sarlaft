@@ -1,0 +1,409 @@
+{
+    "catalogos": [
+        {
+            "codigoCatalogo": "CANALES",
+            "nombreCatalogo": "Canales",
+            "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+            "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+            "fechaBaja": null,
+            "parametros": [
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC001",
+                    "descripcion": "BANCASEGUROS - BANCOLOMBIA",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC002",
+                    "descripcion": "BANCASEGUROS - CONAVI",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC003",
+                    "descripcion": "BANCASEGUROS - CORFINSURA",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC004",
+                    "descripcion": "CORPORATIVO",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC005",
+                    "descripcion": "DIRECTO - AUTOS SURA",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC006",
+                    "descripcion": "DIRECTO - OF.CENTRAL",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC007",
+                    "descripcion": "DIRECTO - OTROS",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC008",
+                    "descripcion": "DIRECTO - RENTAS",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC009",
+                    "descripcion": "ALIANZA EXITO",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC010",
+                    "descripcion": "MÓDULOS DE SEGUROS",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC011",
+                    "descripcion": "PROMOTORAS",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC012",
+                    "descripcion": "PROMOTORÍAS",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC013",
+                    "descripcion": "SUCURSALES",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC014",
+                    "descripcion": "ALIANZA TUYA",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC015",
+                    "descripcion": "TELEVENTAS",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC016",
+                    "descripcion": "VENTA EN LÍNEA",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC017",
+                    "descripcion": "CORP. BANCOLOMBIA",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC018",
+                    "descripcion": "VENTA POR CATALOGO",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC019",
+                    "descripcion": "TARJETA ALKOSTO",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC020",
+                    "descripcion": "LIDERES VENTA DIRECTA",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC021",
+                    "descripcion": "PROTECCION",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC099",
+                    "descripcion": "SALVAMENTO",
+                    "fechaCreacion": "2022-06-28T19:49:46.456+00:00",
+                    "ultimaActualizacion": "2022-06-28T19:49:46.456+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC022",
+                    "descripcion": "CONSULTORES FINANCIEROS",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC023",
+                    "descripcion": "EXPANSION LOCAL",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC024",
+                    "descripcion": "PENDIENTE",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC025",
+                    "descripcion": "ALKOMPRAR",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC026",
+                    "descripcion": "WESURA",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC027",
+                    "descripcion": "ALIANZA CORBETA",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC028",
+                    "descripcion": "AFFINNITY",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC029",
+                    "descripcion": "BANCASEGUROS BANCOLOMBIA",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC030",
+                    "descripcion": "BANCASEGUROS FALABELLA",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC031",
+                    "descripcion": "BANCASEGUROS CONFIAR",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC032",
+                    "descripcion": "OTRAS ENTIDADES FINANCIERAS",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC033",
+                    "descripcion": "TELEVENTAS DIRECTO",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC034",
+                    "descripcion": "TELEVENTAS BANCASEGUROS",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC035",
+                    "descripcion": "TELEVENTAS TRADICIONAL",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC037",
+                    "descripcion": "TELEVENTAS RETAIL",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC038",
+                    "descripcion": "TELEVENTAS PROTECCION",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC039",
+                    "descripcion": "MIS ALIADOS",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC040",
+                    "descripcion": "CORRESPONSALES",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC041",
+                    "descripcion": "ALIANZA EURO",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC042",
+                    "descripcion": "ALIANZA FLAMINGO",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC043",
+                    "descripcion": "ALIANZA CENCOSUD",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                },
+                {
+                    "codigoCatalogo": "CANALES",
+                    "codigoParametro": "CC044",
+                    "descripcion": "GRAN EMPRESA",
+                    "fechaCreacion": "2021-04-30T22:52:51.000+00:00",
+                    "ultimaActualizacion": "2021-04-30T22:52:51.000+00:00",
+                    "fechaBaja": null,
+                    "subCodigoParametro": ""
+                }
+            ]
+        }
+    ]
+}

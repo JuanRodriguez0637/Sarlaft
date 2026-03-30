@@ -1,0 +1,57 @@
+{
+	"evaluacionId": "50a52e21-3b35-46e5-8791-8f64056cb885",
+	"figuras": [
+		{
+			"tipoFigura": "CONSORCIO",
+			"tipoEmpresa": "SAS",
+			"tieneRelacionPep": true,
+			"personaPep": false,
+			"cliente": {
+				"celular": "3016504896",
+				"correo": "pruebas@pruebas.com",
+				"razonSocial": "Desarrollos SAS",
+				"paisConstitucion": "57",
+				"documento": {
+					"tipo": "A",
+					"numero": "10009987"
+				},
+				"direcciones": [
+					{
+						"tipo": "RS",
+						"pais": "57",
+						"ciudad": "4292",
+						"departamento": "05",
+						"direccion": "Centro calle de la moneda"
+					}
+				],
+				"relaciones": [
+					{
+						"relacionPeps": true,
+						"tipo": "SOCIO",
+						"codigoRelacion": "R6",
+                        "porParticipacionAccionista": 6,
+						"documento": {
+							"tipo": "C",
+							"numero": "33789520",
+							"fechaExpedicion": "2000-11-05"
+						},
+						"persona": {
+							"primerNombre": "Emilse",
+							"segundoNombre": "Alejandra",
+							"primerApellido": "Rodriguez",
+							"segundoApellido": "Perez",
+							"pais": "57"
+						}
+					}
+				],
+				"infoFinanciera": {
+					"activos": 10,
+					"pasivos": 11,
+					"actividadEconomica": "N1313",
+					"codigoOcupacion": "D08",
+					"origenFondos": "Mi trabajo como diseñador"
+				}
+			}
+		}
+	]
+}

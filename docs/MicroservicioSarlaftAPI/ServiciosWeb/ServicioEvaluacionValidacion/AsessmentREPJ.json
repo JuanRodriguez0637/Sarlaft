@@ -1,0 +1,43 @@
+{
+    "solicitudDni": "C000000",
+    "codigoOperacion": "RE",
+    "codigoAplicacion": "6919",
+    "negocioId": "01",
+    "infoPendiente": true,
+    "tomador": {
+        "cliente": {
+            "tipoPersona": "J",
+            "documento": {
+                "tipo": "A",
+                "numero": "11389126"
+            }
+        }
+    },
+    "beneficiarios": [
+        {
+            "cliente": {
+                "tipoPersona": "J",
+                "correo": "mail2@mail.com.co",
+                "celular": "3219006000",
+                "documento": {
+                    "tipo": "A",
+                    "numero": "11389126"
+                },
+                "razonSocial": "Pirulitos S.A",
+				"paisConstitucion": "01"
+            }
+        }
+    ],
+    "polizas": [
+        {
+            "codigoRamo": "1",
+			"codigoProducto": "00",
+            "codigoCanal": "1",    
+            "codigoOficina": "00",
+            "codigoAgente": "00",
+			"indProcesoJudicial": true,
+			"juzgado": "TEST",
+			"ciudadProcesoJudicial": "MEDELLIN"
+        }
+    ]   
+}

@@ -1,0 +1,11 @@
+{
+    "evaluacionId": "fcc7f04b-51a5-4201-aee6-4564d4df077a",
+    "relacionLaboral": true,
+    "cliente": [
+        {
+            "dniCliente": "C1050965338",
+            "personaPep": true,
+            "administradorPep": null
+        }
+    ]
+}
