@@ -1,7 +1,8 @@
 # Herencia Sarlaft API para el SOAT
 
-> **Fuente:** [Confluence - Herencia Sarlat API para el SOAT](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/3917152264/Herencia+Sarlat+API+para+el+SOAT)  
-> **Página padre:** [Proceso Evaluación - SarlaftAPI](./index.md)
+> **Fuente Confluence:** [Herencia Sarlat API para el SOAT](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/3917152264/Herencia+Sarlat+API+para+el+SOAT)  
+> **Última modificación:** 29 jul 2024 — Brayan Estiven Sepúlveda Quintero · versión 1  
+> **Sección:** [Proceso Evaluación - SarlaftAPI](./index.md)
 
 ---
 

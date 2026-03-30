@@ -1,0 +1,78 @@
+[ 
+         {
+            "codigoCatalogo":"OCUPACIONESCLIENTE",
+            "departamento": null,
+            "pais": null,
+            "tipoPersona":null,
+            "subCodigoParametro": null
+		},
+        {
+            "codigoCatalogo":"CANALES",
+            "departamento": null,
+            "pais": null,
+            "tipoPersona":null,
+            "subCodigoParametro": null
+        },{
+            "codigoCatalogo":"TIPO_PERSONA",
+            "departamento": null,
+            "pais": null,
+            "tipoPersona":null,
+            "subCodigoParametro": null
+        },
+        {
+            "codigoCatalogo":"COD_RAMOS",
+            "departamento": null,
+            "pais": null,
+            "tipoPersona":null,
+            "subCodigoParametro": null
+        },
+        {
+            "codigoCatalogo":"RANGOSINGRESOSNATJUR",
+            "departamento": null,
+            "pais": null,
+            "tipoPersona":null,
+            "subCodigoParametro": null
+		},
+        {
+            "codigoCatalogo":"PARENTEZCO_PN",
+            "departamento": null,
+            "pais": null,
+            "tipoPersona":null,
+            "subCodigoParametro": null
+        },
+        {
+            "codigoCatalogo":"TIPOSDOCUMENTOS1_2",
+            "departamento": "001",
+            "pais": "57",
+            "tipoPersona":"N",
+            "subCodigoParametro": null
+		}
+        ,{
+            "codigoCatalogo":"DEPARTAMENTOS",
+            "departamento": null,
+            "pais": "57",
+            "tipoPersona":null,
+            "subCodigoParametro": null
+		},
+        {
+            "codigoCatalogo":"CIUDADESDPTO",
+            "departamento": "05",
+            "pais": "57",
+            "tipoPersona":null,
+            "subCodigoParametro": null
+		},
+        {
+            "codigoCatalogo":"COD_SUBRAMOS",
+            "departamento": null,
+            "pais": null,
+            "tipoPersona":null,
+            "subCodigoParametro": "006"
+		},
+         {
+            "codigoCatalogo":"ACTIVIDADESECO",
+            "departamento": null,
+            "pais": null,
+            "tipoPersona":null,
+            "subCodigoParametro": null
+		}   
+]

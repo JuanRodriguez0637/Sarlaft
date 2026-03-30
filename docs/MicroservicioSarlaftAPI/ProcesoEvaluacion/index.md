@@ -1,32 +1,25 @@
 # Proceso Evaluación - SarlaftAPI
 
-> **Fuente:** [Confluence - Proceso Evaluación - SarlaftAPI](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1804861546/Proceso+Evaluaci%C3%B3n+-+SarlaftAPI)  
-> **Página padre:** [Microservicio SarlaftAPI](../index.md)
+> **Fuente Confluence:** [Proceso Evaluación - SarlaftAPI](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1804861546/Proceso+Evaluaci%C3%B3n+-+SarlaftAPI)  
+> **Última modificación:** 24 mar 2021 — Diana Muñoz · versión 1  
+> **Sección:** [Microservicio SarlaftAPI](../index.md)
 
 ---
 
 ## Descripción
 
-Esta sección documenta la lógica interna del proceso de evaluación SARLAFT dentro del microservicio, incluyendo la determinación de estados, comunicación con sistemas externos (P8), y el manejo de procesos masivos.
+Sección que documenta la lógica interna del **proceso de evaluación SARLAFT** dentro del microservicio, incluyendo la determinación de estados, comunicación con sistemas externos (P8) y el manejo de procesos masivos.
 
 ---
 
-## Subpáginas
+## Sub-páginas
 
-| Subpágina | Descripción | Enlace |
-|-----------|-------------|--------|
-| Determinar Estado Evaluación | Lógica para determinar el estado de una evaluación | [DeterminarEstadoEvaluacion.md](./DeterminarEstadoEvaluacion.md) |
-| Proceso Evaluación - Masivo | Proceso de evaluación en modo masivo | [ProcesoEvaluacionMasivo.md](./ProcesoEvaluacionMasivo.md) |
-| Comunicación Requisitos | Comunicación de requisitos en el proceso (CrearRequisito / ActualizarRequisito) | [ComunicacionRequisitos.md](./ComunicacionRequisitos.md) |
-| Comunicación P8 | Integración con el sistema P8 vía RabbitMQ | [ComunicacionP8.md](./ComunicacionP8.md) |
-| Registro de ID documento P8 | Registro del identificador de documento en P8 | [RegistroIDDocumentoP8.md](./RegistroIDDocumentoP8.md) |
-| Estados documento registraduría | Tabla de estados del documento de registraduría | [EstadosDocumentoRegistraduria.md](./EstadosDocumentoRegistraduria.md) |
-| Herencia Sarlaft API para el SOAT | Ajuste de herencia de evidencias para evaluaciones SOAT | [HerenciaSarlaftAPISOAT.md](./HerenciaSarlaftAPISOAT.md) |
-
----
-
-## Notas de Implementación
-
-- La lógica del proceso de evaluación se encuentra en la clase abstracta `PrepararEvaluacion.java` del módulo `domain-usecase`.
-- El proceso incluye validaciones de identidad vía **Registraduría**, manejo de **formularios** y comunicación con el sistema **P8**.
-- Para la herencia de evaluaciones SOAT, ver [Herencia Sarlaft API para el SOAT](./HerenciaSarlaftAPISOAT.md).
+| Sub-página | Descripción | Última modificación |
+|------------|-------------|----------------------|
+| [Determinar Estado Evaluación](./DeterminarEstadoEvaluacion.md) | Lógica para determinar el estado de una evaluación (FINALIZADO, RECHAZADO, PENDIENTE, etc.) | 17 ago 2021 |
+| [Proceso Evaluación - Masivo](./ProcesoEvaluacionMasivo.md) | Proceso masivo vía RabbitMQ — msg request `Sarlaft.batch.start`, response `Assessment.process.evaluated` | 17 ago 2021 |
+| [Comunicación Requisitos](./ComunicacionRequisitos.md) | CrearRequisito y ActualizarRequisito vía comandos asíncronos | 20 ago 2021 |
+| [Comunicación P8](./ComunicacionP8.md) | Envío de mensaje a la función `appp8` de RabbitMQ al cargar documento | 31 ago 2021 |
+| [Registro de ID documento P8](./RegistroIDDocumentoP8.md) | Recepción del ID de documento desde la cola `sarlaft-api` de RabbitMQ | 08 sep 2021 |
+| [Estados documento registraduría](./EstadosDocumentoRegistraduria.md) | Tabla de códigos de estado `CodigoEstadoDocumentoRegistraduria` | 22 jul 2024 |
+| [Herencia Sarlaft API para el SOAT](./HerenciaSarlaftAPISOAT.md) | Ajuste de herencia de validación de identidad (EXPERIAN) para SEL vs. SOAT SURA | 29 jul 2024 |

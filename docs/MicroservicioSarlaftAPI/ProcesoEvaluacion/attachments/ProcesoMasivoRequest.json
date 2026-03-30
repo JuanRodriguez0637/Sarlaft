@@ -1,0 +1,73 @@
+{
+    "name": "Sarlaft.batch.start",
+    "commandId": "f0b989a6-e6f4-49a5-be98-d90621471ffd",
+    "data": {
+        "name": "solicitud-sarlaft",
+        "occurred": 1631025683171,
+        "data": {
+            "numeroMensaje": null,
+            "solicitudEvaluacion": [
+                {
+                    "evaluacionId": null,
+                    "solicitudDni": "C71690076",
+                    "codigoOperacion": "1",
+                    "codigoAplicacion": "118",
+                    "negocioId": "374_9027b2b5-5979-4998-9daf-7f73a82a7705_c96ff",
+                    "tomador": {
+                        "cliente": {
+                            "tipoPersona": "J",
+                            "correo": "camara@camaraarmenia.org.co",
+                            "celular": "3113083014",
+                            "razonSocial": "Camara de comercio de armenia y del quindio",
+                            "paisConstitucion": "01",
+                            "documento": {
+                                "tipo": "A",
+                                "numero": "8900003321",
+                                "fechaExpedicion": "1900-01-27"
+                            },
+                            "persona": null
+                        }
+                    },
+                    "beneficiarios": null,
+                    "asegurados": [
+                        {
+                            "cliente": {
+                                "tipoPersona": "N",
+                                "correo": "germansastre14@yahoo.es",
+                                "celular": "3108308380",
+                                "razonSocial": null,
+                                "paisConstitucion": null,
+                                "documento": {
+                                    "tipo": "C",
+                                    "numero": "4377989",
+                                    "fechaExpedicion": "1900-01-27"
+                                },
+                                "persona": {
+                                    "primerNombre": "GERMAN",
+                                    "segundoNombre": "ADOLFO",
+                                    "primerApellido": "SASTRE ",
+                                    "segundoApellido": "GARCIA",
+                                    "pais": null
+                                }
+                            }
+                        }
+                    ],
+                    "polizas": [
+                        {
+                            "codigoRamo": "1",
+                            "codigoProducto": null,
+                            "codigoCanal": null,
+                            "valorAsegurado": null,
+                            "valorPrima": null,
+                            "medioPago": null,
+                            "negocio": "INDIVIDUAL",
+                            "coaseguro": null,
+                            "codigoOficina": "2640",
+                            "codigoAgente": "54984"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
