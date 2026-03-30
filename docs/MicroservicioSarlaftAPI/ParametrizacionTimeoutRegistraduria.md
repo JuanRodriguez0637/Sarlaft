@@ -1,34 +1,17 @@
-# Parametrización para Tiempo de Timeout - Consumo Registraduría - SarlaftAPI
+# Parametrización para tiempo de timeout consumo registraduria - sarlaftapi
 
-> **Fuente:** [Confluence - Parametrización para tiempo de timeout consumo registraduria - sarlaftapi](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/3768090815/Parametrizaci%C3%B3n+para+tiempo+de+timeout+consumo+registraduria+-+sarlaftapi)  
-> **Página padre:** [Microservicio SarlaftAPI](../index.md)
-
----
-
-## Descripción
-
-Se parametriza el tiempo para el timeout de la respuesta del **web service de Registraduría**.
+> **Fuente Confluence:** [Parametrización para tiempo de timeout consumo registraduria - sarlaftapi](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/3768090815/Parametrizaci%C3%B3n+para+tiempo+de+timeout+consumo+registraduria+-+sarlaftapi)
+> **Última modificación:** 2024-06-07 — Julián Andrés Curubo García · versión 4
+> **Sección:** [Microservicio SarlaftAPI](./index.md)
 
 ---
 
-## Configuración en `application.yaml`
+Se parametriza el tiempo para el timeout de la respuesta de ws de registraduría.
 
-En el proyecto `892-sarlaft-api-conf` → `application.yaml`, por medio de la propiedad `timeout`, se parametriza el tiempo en **milisegundos** que se debe esperar la respuesta del WS de la Registraduría antes de manejarse como un error por timeout.
+En el proyecto `892-sarlaft-api-conf` → `application.yaml` por medio de la propiedad `timeout` se parametriza el tiempo en milisegundos que se considere se deba esperar la respuesta del ws de la registraduría antes de manejarse como un error por timeout:
 
-![Propiedad timeout en application.yaml](./img/image-20240607-032220.png)
+![image-20240607-032220.png](./img/image-20240607-032220.png)
 
----
+Este nuevo parámetro se envía a la firma **`solicitarValidacionRegistraduriaSincrona`** de la interfaz **`ValidacionRegistraduraSincronaGateway`**:
 
-## Implementación en Código
-
-Este nuevo parámetro se envía a la firma `solicitarValidacionRegistraduriaSincrona` de la interfaz **`ValidacionRegistraduraSincronaGateway`**:
-
-![Implementación de timeout en ValidacionRegistraduraSincronaGateway](./img/image-20240527-174722.png)
-
----
-
-## Notas
-
-- La parametrización permite ajustar el timeout sin necesidad de un despliegue del microservicio principal.
-- El valor se configura por ambiente en el repositorio de configuración `892-sarlaft-api-conf`.
-- Para más información sobre el HealthCheck que también valida la conexión a Registraduría, ver [Configuración HealthCheck](./ConfiguracionHealthCheck.md).
+![image-20240527-174722.png](./img/image-20240527-174722.png)
