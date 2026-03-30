@@ -1,0 +1,38 @@
+# Microservicio Webhook
+
+> **Fuente Confluence:** [Microservicio Webhook](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2314207324/Microservicio+Webhook)
+> **Última modificación:** 2024-07-12 — Kelvin Alejandro López David - Ceiba Software · versión 4
+> **Sección:** [Documentación Técnica](../DocumentacionTecnicaSarlaft.md)
+
+Los siguiente documentos buscan dar referencias de los cambios efectuados en los microservicios que de webhoook del sistema de sarlaft los cuales fueron modificados con el fin de realizar el ajuste en el json de notificación y respuesta REST o Queue para incluir los códigos de errores de la evidencia de `document_pn`.
+
+[`HISTORIA_WEBHOOK_AUDITORIA.pdf`](./attachments/HISTORIA_WEBHOOK_AUDITORIA.pdf)
+
+[`HISTORIA_WEBHOOK.pdf`](./attachments/HISTORIA_WEBHOOK.pdf)
+
+Links asociados a la estructura de webhook.
+
+- [7. Webhook (Assessment)](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2310865646) 
+- [Estructura Proyecto - MicroServicio Webhook](./EstructuraProyecto.md) 
+
+Se agrega diagrama de clases basado en los microservicios de webhook llamadas `sarlaft_callback-ms` y `sarlaft-function_webhook-mi`.
+
+`sarlaft_callback-ms`.
+
+![webhook.Callback-20240507-155301.png](./img/webhook.Callback-20240507-155301.png)
+
+`sarlaft-function_webhook-mi`.
+
+![WEBHOOK_FUNCTIONS-20240507-182617.png](./img/WEBHOOK_FUNCTIONS-20240507-182617.png)
+
+## Páginas de esta sección
+
+| Página | Descripción | Última modificación |
+|--------|-------------|---------------------|
+| [Diseño Arquitectura](./DisenoArquitectura.md) | Diagrama de interacción de componentes en Sarlaft Webhook | 2021-08-09 |
+| [Estructura Proyecto](./EstructuraProyecto.md) | Estructura del proyecto basada en arquitectura hexagonal | 2022-01-04 |
+| [Configuración Ambiente](./ConfiguracionAmbiente.md) | Requisitos, repositorios y configuración de perfiles | 2025-10-30 |
+| [Comunicaciones](./Comunicaciones/index.md) | Operaciones intermedias sobre Evaluaciones | 2021-08-20 |
+| [Webhook Log de Errores en Splunk](./WebhookLogErroresSplunk.md) | Implementación de envío de logs a Splunk | 2021-09-13 |
+| [Configuración HealthCheck](./ConfiguracionHealthCheck.md) | HealthCheck con librería actuator | 2024-03-11 |
+| [Webhook - Sarlaft](./WebhookSarlaft.md) | Cambios en JSON de notificación y respuesta, diccionario | 2024-07-16 |
