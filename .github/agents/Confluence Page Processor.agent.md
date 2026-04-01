@@ -97,6 +97,55 @@ Extrae el contenido con `body-format: storage` usando la API v2:
 <contenido convertido a Markdown>
 ```
 
+### 4b. Regla de la ruta en `**Sección:**`
+
+- Si el archivo está en `MiSeccion/index.md` (índice de primer nivel): `./index.md` apunta a sí mismo — usar `../index.md` para subir al padre real solo cuando exista un nivel superior.
+- Si el archivo está en `MiSeccion/SubDir/index.md` (índice de subcarpeta): **siempre usar `../index.md`** para apuntar al `index.md` de `MiSeccion/`.
+- Si el archivo es una página normal `MiSeccion/SubDir/Pagina.md`: usar `./index.md` — apunta correctamente al `index.md` de `SubDir/`.
+
+### 4c. Corrección de advertencias Markdown (obligatorio)
+
+Aplica estas correcciones a **cada archivo `.md` generado**, antes de escribirlo en disco:
+
+**MD032 — Listas rodeadas de líneas en blanco / ítems rotos**
+- El patrón Confluence genera ítems de lista partidos: una línea con solo `-` seguida del contenido en la línea siguiente. Siempre unirlos en una sola línea: `- contenido`.
+- Asegurar una línea en blanco antes y después de cada bloque de lista.
+
+**MD040 — Fenced code blocks con lenguaje especificado**
+- Nunca generar ` ``` ` sin lenguaje. Inferir el lenguaje por el contenido:
+  - `package`, `import`, `@Bean`, `public class` → `java`
+  - `spring:`, `azure:`, `server:` (indentado YAML) → `yaml`
+  - Comienza con `{` o `[` → `json`
+  - `implementation`, `dependencies {`, `plugins {` → `groovy`
+  - `SELECT`, `INSERT`, `CREATE TABLE` → `sql`
+  - Respuesta de texto plano o mensaje corto → `text`
+
+**MD047 — Newline al final del archivo**
+- Todo archivo `.md` debe terminar exactamente con `\n`.
+
+**MD010 — No usar tabs**
+- Convertir todos los caracteres tab (`\t`) a 4 espacios, incluso dentro de bloques de código.
+
+**MD012 — Máximo una línea en blanco consecutiva**
+- Colapsar 3 o más saltos de línea seguidos a exactamente 2 (`\n\n`).
+
+**heading-order (axe-linter) — Jerarquía de headings**
+- El título principal del archivo es `#`. El primer subnivel debe ser `##`, nunca saltar de `#` a `###` o `####`.
+- Al convertir headings de Confluence (`<h1>`→`##`, `<h2>`→`###`, etc.) verificar que el primer heading interior no sea nivel 3 o inferior si no hay un `##` antes.
+
+**MD009 — Sin espacios finales**
+- Ninguna línea debe terminar con un espacio suelto (excepción: dos espacios finales deliberados para `<br>`).
+- Aplica también a celdas de tabla.
+
+**MD034 — Sin URLs ni emails desnudos**
+- Toda URL (`http://`, `https://`) y todo email (`usuario@dominio.tld`) que aparezca en texto libre debe ir envuelto en `<url>` o como link `[texto](url)`.
+- NO aplicar dentro de code spans ni dentro de links ya formateados `[...](...)`.
+
+**MD056 — Número uniforme de columnas en tablas**
+- Todas las filas de una tabla Markdown deben tener exactamente el mismo número de celdas que la fila de encabezado.
+- Al convertir tablas HTML de Confluence, contar las columnas del encabezado (`<th>`) y completar con celdas vacías (`|  |`) las filas que tengan menos columnas.
+- Nunca emitir filas con 2 o 3 celdas si el encabezado declara 4 columnas.
+
 ### 5. Actualización de existentes
 
 Si `existingMdPath` no está vacío:
