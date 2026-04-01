@@ -1,7 +1,7 @@
-# Webhook Log de Errores en Splunk
+﻿# Webhook Log de Errores en Splunk
 
 > **Fuente Confluence:** [Webhook Log de Errores en Splunk](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2390524298/Webhook+Log+de+Errores+en+Splunk)
-> **Última modificación:** 2021-09-13 — juan camilo muñoz burgos · versión 2
+> **Última modificación:** 2021-09-13 — juan camilo muñoz burgos (Unlicensed) · versión 2
 > **Sección:** [Microservicio Webhook](./index.md)
 
 Al microservicio de Webhook se le implemento la funcionalidad de realizar el envió de logs a Splunk.

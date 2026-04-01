@@ -1,12 +1,12 @@
-# Levantar Control PEPS - Microservicio Webhook
+﻿# Levantar Control PEPS - Microservicio Webhook
 
 > **Fuente Confluence:** [Levantar Control PEPS - Microservicio Webhook](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2314240187/Levantar+Control+PEPS+-+Microservicio+Webhook)
-> **Última modificación:** 2021-08-09 — erikson.sanchez · versión 2
+> **Última modificación:** 2021-08-09 — erikson.sanchez (Unlicensed) · versión 2
 > **Sección:** [Comunicaciones](./index.md)
 
-Esta integración se realiza por medio del Event Bus al escuchar el comando `Clients.clientpeps.enabled`, que llega a la aplicación `sarlaftwebhook` esta integración al levantar el evento se encarga de registrar la evidencia PEP y se encarga de consultar el calculo de la evaluación en el que se encuentre el sarlaft para el cual se inserto la evidencia PEP y si ó solo si la Evaluacion se dio con un estado que entra en **FINALIZADO**, **FINALIZADOS SIN CARGA**, ó **PENDIENTE_ACCION_MANUAL**, se envía un comando `Notification.sarlaft.finished` a la aplicacion `webhook`.
+Esta integración se realiza por medio del Event Bus al escuchar el comando ***`Clients.clientpeps.enabled`***, que llega a la aplicación ***`sarlaftwebhook`*** esta integración al levantar el evento se encarga de registrar la evidencia PEP y se encarga de consultar el calculo de la evaluación en el que se encuentre el sarlaft para el cual se inserto la evidencia PEP y si ó solo si la Evaluacion se dio con un estado que entra en **FINALIZADO**, **FINALIZADOS SIN CARGA**, ó **PENDIENTE_ACCION_MANUAL**, se envía un comando ***`Notification.sarlaft.finished`*** a la aplicacion ***`webhook.`***
 
-`Clients.clientpeps.enabled`
+***`Clients.clientpeps.enabled`***
 
 **Json Entrada:**
 
@@ -25,7 +25,7 @@ Esta integración se realiza por medio del Event Bus al escuchar el comando `Cli
 }
 ```
 
-`Notification.sarlaft.finished`
+***`Notification.sarlaft.finished`***
 
 **Json Salida:**
 

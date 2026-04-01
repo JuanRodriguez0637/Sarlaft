@@ -29,6 +29,30 @@ docs/
 │   ├── WebhookLogErroresSplunk.md
 │   ├── ConfiguracionHealthCheck.md
 │   └── WebhookSarlaft.md
+├── MicroservicioSarlaftBatch/        # Documentación del microservicio SarlaftBatch (legacy)
+│   ├── Entidades/                    # Entidades genéricas y del proceso de actualización
+│   │   └── img/
+│   ├── img/                          # Diagramas de procesos y capturas
+│   ├── attachments/                  # Archivos drawio
+│   ├── EstructuraProyecto.md
+│   ├── ConfiguracionAmbiente.md
+│   ├── EstructuraProcesos.md
+│   ├── ServiciosWeb.md
+│   ├── ProcesoActualizacion.md
+│   └── ConfiguracionHealthCheck.md
+├── Sarlaft40/                        # Documentación con jerarquía Confluence Sarlaft 4.0
+│   └── DocumentacionTecnica/
+│       └── MicroservicioSarlaftBatch/  # Microservicio SarlaftBatch (ruta Confluence)
+│           ├── Entidades/              # Entidades genéricas y proceso actualización
+│           │   └── img/
+│           ├── img/                    # Diagramas de procesos y capturas
+│           ├── attachments/            # Archivos drawio
+│           ├── EstructuraProyecto.md
+│           ├── ConfiguracionAmbiente.md
+│           ├── EstructuraProcesos.md
+│           ├── ServiciosWeb.md
+│           ├── ProcesoActualizacion.md
+│           └── ConfiguracionHealthCheck.md
 ├── AtributosCalidadDesarrollo.md
 ├── ConfiguracionInfraestructura.md
 ├── DocumentacionTecnicaSarlaft.md
@@ -60,6 +84,7 @@ docs/
 | `Documentacion` | Rama principal con la documentación base del proyecto |
 | `MicroservicioSarlaftAPI` | Documentación completa del microservicio SarlaftAPI |
 | `MicroservicioWebhook` | Documentación completa del microservicio Webhook (comunicaciones, healthcheck, splunk) |
+| `MicroservicioSarlaftBatch` | Documentación del microservicio SarlaftBatch (procesos batch, entidades, healthcheck) |
 
 ## Configuración del entorno local
 

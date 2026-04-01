@@ -1,4 +1,4 @@
-# Configuración Ambiente - Microservicio Webhook
+﻿# Configuración Ambiente - Microservicio Webhook
 
 > **Fuente Confluence:** [Configuración Ambiente - Microservicio Webhook](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2314174657/Configuraci%C3%B3n+Ambiente+-+Microservicio+Webhook)
 > **Última modificación:** 2025-10-30 — Diana Muñoz · versión 6
@@ -6,9 +6,8 @@
 
 **Requisitos:**
 
-● Java 21
-
-● Gradle `8.10.2`
+- Java 21
+- Gradle `8.10.2`
 
 **URL Repositorio:**
 
@@ -16,11 +15,11 @@
 
 **URL Repositorio proyecto configuración:**
 
-[https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/892-sarlaft_callback-conf](https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/892-sarlaft_callback-ms)
+[https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/892-sarlaft_callback-conf](https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/892-sarlaft_callback-conf)
 
 **URL Proyecto Pruebas SoapUI y JMeter:**
 
-[https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/892-sarlaft_callback-pa](https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/892-sarlaft_callback-ms)
+[https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/892-sarlaft_callback-pa](https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/892-sarlaft_callback-pa)
 
 **Pipeline con template:**
 

@@ -40,6 +40,21 @@ La estructura de carpetas local **replica la jerarquía de páginas en Confluenc
 
 Sigue estos pasos **en orden estricto** para cada sección solicitada:
 
+### Paso 0 — Verificación de documentación existente
+
+Antes de comenzar la extracción, **verificar si ya existe un folder local** con documentación para la misma sección:
+
+1. Calcular la ruta destino según la convención de carpetas (ej: `docs/Sarlaft40/DocumentacionTecnica/MicroservicioSarlaftBatch/`)
+2. Buscar también en `docs/` si existe un folder con nombre equivalente (ej: `docs/MicroservicioSarlaftBatch/`) — puede haber documentación previa que no seguía la jerarquía completa
+3. Si **existe documentación previa**:
+   - Leer los `.md` existentes para entender qué ya está documentado
+   - **Re-actualizar** los archivos existentes con el contenido actual de Confluence en lugar de crear desde cero — aplicar todas las reglas del prompt (cabecera, formato, fidelidad HTML→Markdown)
+   - Comparar la versión del `.md` local con la versión actual en Confluence — si cambió, actualizar el contenido
+   - Agregar páginas nuevas que no estuvieran documentadas
+   - Mover archivos al folder correcto si la ruta no coincide con la convención de carpetas
+   - Descargar adjuntos faltantes y eliminar referencias a adjuntos que ya no existen en Confluence
+4. Si **NO existe documentación previa** → proceder normalmente con la extracción completa
+
 ### Paso 1 — Exploración de estructura
 
 1. Busca la página principal usando CQL:
@@ -127,8 +142,53 @@ La carpeta raíz se determina convirtiendo la ruta Confluence enviada por el usu
 - Macros `ac:image` → `![alt](./img/<filename>)`
 - Links internos de Confluence → referencias relativas entre los `.md` creados
 - Nombres técnicos (tablas BD, campos, endpoints, perfiles) → backticks: `` `nombre` ``
+- Sub-ítems con prefijos **a.**, **b.**, **c.** dentro de `<li>` (separados por `<br />`) → usar line breaks con `\`, **NO** viñetas con `- `. Ejemplo: `**a.** **model**: texto...\` en una nueva línea indentada
 
-### Paso 6 — Sección de comentarios en el Markdown
+#### 5.1 Resolución de links internos (`ac:link` / `ri:page`) — CRÍTICO
+
+Los macros `ac:link` con `ri:page` referencian páginas de Confluence **por título**. Para cada uno:
+
+1. **Buscar el ID de la página destino** con CQL: `space = "EPA" AND title = "<content-title>" AND type = page`
+2. **Construir la URL completa** de Confluence: `https://segurosti.atlassian.net/wiki/spaces/EPA/pages/<id>/<titulo_encoded>`
+3. **Verificar si ya existe un `.md` local** para esa página dentro de la documentación generada
+4. Si existe `.md` local → usar **referencia relativa** al `.md` (ej: `[Título](./EstructuraProyecto.md)`)
+5. Si NO existe `.md` local → usar **URL de Confluence** Y registrar en `docs/BitacoraEnlaces.md` sección 3 ("Secciones aún NO documentadas") con la página origen, línea y prioridad
+
+**NUNCA dejar un `ac:link` como texto plano sin hipervínculo.** Siempre debe resolverse a un link funcional (local o Confluence).
+
+#### 5.2 Fidelidad en la conversión HTML → Markdown — CRÍTICO
+
+La conversión debe ser **fiel al formato original** de Confluence. No transformar ni reinterpretar la estructura:
+
+- Si Confluence usa `<ol>` con `<li>` que contienen `<p>` con prefijos como **a.**, **b.**, **c.** → mantener como párrafos indentados con prefijo en negrita, **NO** convertir a sub-listas con viñetas (`-`)
+- Si Confluence usa una lista numerada `<ol>` → usar lista numerada Markdown (`1.`, `2.`, `3.`)
+- Si Confluence usa una lista con viñetas `<ul>` → usar viñetas Markdown (`-`)
+- Si los sub-items son párrafos `<p>` dentro de un `<li>`, mantenerlos como párrafos indentados, no como sub-viñetas
+- Imágenes con `<ac:caption>` → agregar texto de caption como línea en cursiva debajo: `*Texto caption*`
+
+**Ejemplo concreto — sub-ítems dentro de `<li>` con `<br />`:**
+
+Cuando el HTML de Confluence tiene sub-ítems separados por `<br />` dentro de un `<li>`, como:
+
+```html
+<li><p><strong>domain</strong>: descripción...<br />
+<strong>a.</strong> <strong>model</strong>: texto...<br />
+<strong>b.</strong> <strong>use-case</strong>: texto...</p></li>
+```
+
+Usar line breaks con `\` al final de cada línea, **NO** viñetas con `- `:
+
+```markdown
+<!-- ✅ CORRECTO -->
+2. **domain**: descripción...\
+   **a.** **model**: texto...\
+   **b.** **use-case**: texto...
+
+<!-- ❌ INCORRECTO — genera bullets/viñetas no deseadas -->
+2. **domain**: descripción...
+   - **a.** **model**: texto...
+   - **b.** **use-case**: texto...
+```
 
 Si una página tiene comentarios, agrega al final del `.md`:
 

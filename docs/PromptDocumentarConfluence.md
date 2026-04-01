@@ -4,8 +4,30 @@
 
 - Instancia de Confluence: https://segurosti.atlassian.net/wiki
 - Espacio: EPA ("07) Dominio Soluciones Corporativas")
-- Las credenciales están en el archivo `.vscode/mcp.json` del workspace
+- Las credenciales están en el archivo `.env` del workspace (variables `CONF_USERNAME`, `CONF_TOKEN`, `CONF_BASE_URL`)
 - Directorio base del proyecto: `D:\Proyectos\Sarlaft\Documentacion\Sarlaft\docs\`
+
+## Convención de carpetas
+
+La estructura de carpetas local **replica la jerarquía de páginas en Confluence**, convirtiendo cada nivel del breadcrumb en un directorio con nombre en **PascalCase** (sin espacios, sin tildes, sin caracteres especiales).
+
+**Regla:** El usuario envía la ruta de Confluence con `→` como separador. Cada segmento se convierte en una carpeta:
+
+| Ruta Confluence | Carpeta local |
+|----------------|---------------|
+| `Sarlaft 4.0` | `Sarlaft40/` |
+| `Sarlaft 4.0 → Documentación Técnica` | `Sarlaft40/DocumentacionTecnica/` |
+| `Sarlaft 4.0 → Documentación Técnica → Microservicio SarlaftAPI` | `Sarlaft40/DocumentacionTecnica/MicroservicioSarlaftAPI/` |
+| `Sarlaft 4.0 → Documentación Técnica → Mircroservicio sarlaftBatch` | `Sarlaft40/DocumentacionTecnica/MicroservicioSarlaftBatch/` |
+| `Sarlaft 4.0 → Documentación Técnica → Microservicio Webhook` | `Sarlaft40/DocumentacionTecnica/MicroservicioWebhook/` |
+
+**Conversión de nombres:**
+- Espacios → eliminados y PascalCase (`Documentación Técnica` → `DocumentacionTecnica`)
+- Tildes → sin tilde (`Documentación` → `Documentacion`)
+- Versiones numéricas → pegadas (`Sarlaft 4.0` → `Sarlaft40`)
+- Solo se crean los folders **a partir de la ruta que envió el usuario** — no se crean carpetas para niveles superiores que no fueron solicitados
+
+**Ruta completa local:** `docs/<RutaConvertida>/`
 
 ## Sección a documentar
 
@@ -13,6 +35,21 @@
 - Buscar la página principal usando CQL y obtener su ID
 
 ---
+
+## 0. Verificación de documentación existente
+
+Antes de comenzar la extracción, **verificar si ya existe un folder local** con documentación para la misma sección:
+
+1. Calcular la ruta destino según la convención de carpetas (ej: `docs/Sarlaft40/DocumentacionTecnica/MicroservicioSarlaftBatch/`)
+2. Buscar también en `docs/` si existe un folder con nombre equivalente (ej: `docs/MicroservicioSarlaftBatch/`) — puede haber documentación previa que no seguía la jerarquía completa
+3. Si **existe documentación previa**:
+   - Leer los `.md` existentes para entender qué ya está documentado
+   - **Re-actualizar** los archivos existentes con el contenido actual de Confluence en lugar de crear desde cero — aplicar todas las reglas del prompt (cabecera, formato, fidelidad HTML→Markdown)
+   - Comparar la versión del `.md` local con la versión actual en Confluence — si cambió, actualizar el contenido
+   - Agregar páginas nuevas que no estuvieran documentadas
+   - Mover archivos al folder correcto si la ruta no coincide con la convención de carpetas
+   - Descargar adjuntos faltantes y eliminar referencias a adjuntos que ya no existen en Confluence
+4. Si **NO existe documentación previa** → proceder normalmente con la extracción completa
 
 ## 1. Exploración de estructura
 
@@ -33,7 +70,7 @@
 ## 3. Extracción de comentarios
 
 - Para **cada página**, consulta los comentarios footer:
-  - `/rest/api/content/<id>/child/comment` con `depth=all`, `expand=body.storage,version`
+  - `/api/v2/pages/<id>/footer-comments` con `body-format=storage`
 - Busca también comentarios inline vía CQL: `parent = <id> AND type = comment`
 - Para cada comentario encontrado, registra:
   - **Autor** (`version.by.displayName`)
@@ -47,7 +84,7 @@
 - Lista los adjuntos de **cada página** (`/rest/api/content/<id>/child/attachment`)
 - Lista los adjuntos del **comentario** si los referencia (`/rest/api/content/<id_comentario>/child/attachment`)
   - Si los adjuntos del comentario no están en el comentario mismo, búscalos en la página padre
-- Descarga usando curl con autenticación Basic Auth (email + token del mcp.json):
+- Descarga usando curl con autenticación Basic Auth (email + token del `.env`):
   - URL base: `https://segurosti.atlassian.net/wiki` + `_links.download`
 - Guarda según tipo:
   - `docs/docx/` → archivos Word
@@ -65,11 +102,21 @@
 - Respeta la jerarquía de carpetas:
 
 ```
-MicroservicioSarlaftAPI/<Subseccion>/index.md        — índice de la subsección
-MicroservicioSarlaftAPI/<Subseccion>/<Pagina>.md      — una por sub-página
-MicroservicioSarlaftAPI/<Subseccion>/img/             — imágenes
-MicroservicioSarlaftAPI/<Subseccion>/attachments/     — JSON y otros adjuntos
+docs/
+└── Sarlaft40/
+    └── DocumentacionTecnica/
+        └── MicroservicioSarlaftAPI/
+            ├── index.md                  — índice de la sección principal
+            ├── <Pagina>.md               — una por sub-página directa
+            ├── <Subseccion>/             — carpeta por cada sub-sección con hijas
+            │   ├── index.md
+            │   ├── <Pagina>.md
+            │   └── img/
+            ├── img/                      — imágenes de la sección
+            └── attachments/              — PDF, XLSX, JSON y otros adjuntos
 ```
+
+La carpeta raíz se determina convirtiendo la ruta Confluence enviada por el usuario según la convención de carpetas descrita arriba.
 
 - Cada `.md` debe incluir al inicio:
 
@@ -89,6 +136,52 @@ MicroservicioSarlaftAPI/<Subseccion>/attachments/     — JSON y otros adjuntos
   - Macros `ac:image` → `![alt](./img/<filename>)`
   - Links internos de Confluence → referencias relativas entre los .md creados
   - Nombres técnicos (tablas BD, campos, endpoints, perfiles) → backticks: `` `nombre` ``
+
+### 5.1 Resolución de links internos (`ac:link` / `ri:page`) — CRÍTICO
+
+Los macros `ac:link` con `ri:page` referencian páginas de Confluence **por título**. Para cada uno:
+
+1. **Buscar el ID de la página destino** con CQL: `space = "EPA" AND title = "<content-title>" AND type = page`
+2. **Construir la URL completa** de Confluence: `https://segurosti.atlassian.net/wiki/spaces/EPA/pages/<id>/<titulo_encoded>`
+3. **Verificar si ya existe un `.md` local** para esa página dentro de la documentación generada
+4. Si existe `.md` local → usar **referencia relativa** al `.md` (ej: `[Título](./EstructuraProyecto.md)`)
+5. Si NO existe `.md` local → usar **URL de Confluence** Y registrar en `docs/BitacoraEnlaces.md` sección 3 ("Secciones aún NO documentadas") con la página origen, línea y prioridad
+
+**NUNCA dejar un `ac:link` como texto plano sin hipervínculo.** Siempre debe resolverse a un link funcional (local o Confluence).
+
+### 5.2 Fidelidad en la conversión HTML → Markdown — CRÍTICO
+
+La conversión debe ser **fiel al formato original** de Confluence. No transformar ni reinterpretar la estructura:
+
+- Si Confluence usa `<ol>` con `<li>` que contienen `<p>` con prefijos como **a.**, **b.**, **c.** → mantener como párrafos indentados con prefijo en negrita, **NO** convertir a sub-listas con viñetas (`-`)
+- Si Confluence usa una lista numerada `<ol>` → usar lista numerada Markdown (`1.`, `2.`, `3.`)
+- Si Confluence usa una lista con viñetas `<ul>` → usar viñetas Markdown (`-`)
+- Si los sub-items son párrafos `<p>` dentro de un `<li>`, mantenerlos como párrafos indentados, no como sub-viñetas
+- Imágenes con `<ac:caption>` → agregar texto de caption como línea en cursiva debajo: `*Texto caption*`
+
+**Ejemplo concreto — sub-ítems dentro de `<li>` con `<br />`:**
+
+Cuando el HTML de Confluence tiene sub-ítems separados por `<br />` dentro de un `<li>`, como:
+
+```html
+<li><p><strong>domain</strong>: descripción...<br />
+<strong>a.</strong> <strong>model</strong>: texto...<br />
+<strong>b.</strong> <strong>use-case</strong>: texto...</p></li>
+```
+
+Usar line breaks con `\` al final de cada línea, **NO** viñetas con `- `:
+
+```markdown
+<!-- ✅ CORRECTO -->
+2. **domain**: descripción...\
+   **a.** **model**: texto...\
+   **b.** **use-case**: texto...
+
+<!-- ❌ INCORRECTO — genera bullets/viñetas no deseadas -->
+2. **domain**: descripción...
+   - **a.** **model**: texto...
+   - **b.** **use-case**: texto...
+```
 
 ## 6. Sección de comentarios en el Markdown
 
@@ -134,7 +227,42 @@ El `index.md` de la subsección debe incluir:
 ```powershell
 Get-ChildItem $base -Recurse -File | Select-Object @{N='Ruta';E={$_.FullName.Replace("$base\",'')}}, @{N='Bytes';E={$_.Length}} | Sort-Object Ruta | Format-Table -AutoSize
 ```
-## 9. Actualizar README.md
+
+## 9. Validación de enlaces (Bitácora)
+
+Después de generar la documentación, ejecutar una **validación post-proceso** de enlaces:
+
+1. **Escanear enlaces rotos** en los `.md` recién creados y en toda la documentación:
+```powershell
+$base = "D:\Proyectos\Sarlaft\Documentacion\Sarlaft\docs"
+$mdFiles = Get-ChildItem $base -Recurse -Filter "*.md" | Where-Object { $_.Name -ne "PromptDocumentarConfluence.md" -and $_.Name -ne "BitacoraEnlaces.md" }
+foreach ($f in $mdFiles) {
+    $lines = Get-Content $f.FullName
+    for ($i = 0; $i -lt $lines.Count; $i++) {
+        $ms = [regex]::Matches($lines[$i], '\[([^\]]+)\]\((\.\.?/[^\)]+\.md[^\)]*)\)')
+        foreach ($m in $ms) {
+            $lp = $m.Groups[2].Value -replace '#.*$',''
+            $rp = [System.IO.Path]::GetFullPath([System.IO.Path]::Combine($f.DirectoryName, $lp))
+            if (-not (Test-Path $rp)) {
+                $rf = $f.FullName.Replace("$base\","")
+                Write-Host "BROKEN | $rf | L$($i+1) | $lp | $($m.Groups[1].Value)"
+            }
+        }
+    }
+}
+```
+
+2. **Si se detectan enlaces rotos**, registrarlos en `docs/BitacoraEnlaces.md` sección 1 con: archivo origen, línea, enlace roto, texto del enlace y corrección sugerida.
+
+3. **Revisar la bitácora existente** (`docs/BitacoraEnlaces.md`):
+   - ¿Algún enlace roto previo se resuelve con los `.md` recién creados? → Corregir el enlace y registrar en "Correcciones aplicadas"
+   - ¿La sección 3 ("Secciones aún NO documentadas") lista alguna página que acabamos de documentar? → Marcarla como completada
+
+4. **Preguntar al usuario**: _"Se encontraron N hallazgos en la bitácora que podrían resolverse con la documentación recién extraída. ¿Desea que aplique las correcciones?"_
+
+5. Si el usuario acepta, aplicar las correcciones y actualizar la bitácora (sección "Registro de correcciones aplicadas").
+
+## 10. Actualizar README.md
 
 Después de generar toda la documentación, **actualizar el archivo `README.md`** en la raíz del repositorio:
 

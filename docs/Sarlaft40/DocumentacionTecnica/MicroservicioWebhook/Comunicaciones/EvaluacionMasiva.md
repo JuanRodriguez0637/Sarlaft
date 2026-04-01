@@ -1,12 +1,12 @@
-# Evaluación Masiva - Microservicio Webhook
+﻿# Evaluación Masiva - Microservicio Webhook
 
 > **Fuente Confluence:** [Evaluación Masiva - Microservicio Webhook](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2340126826/Evaluaci%C3%B3n+Masiva+-+Microservicio+Webhook)
-> **Última modificación:** 2021-08-20 — erikson.sanchez · versión 2
+> **Última modificación:** 2021-08-20 — erikson.sanchez (Unlicensed) · versión 2
 > **Sección:** [Comunicaciones](./index.md)
 
-Esta integración se realiza por medio del Event Bus al escuchar el comando `Assessment.process.evaluated` que se emite desde el **sarlaftapi**, y que llega a la aplicación `sarlaftwebhook` esta integración al levantar el evento se encarga de consultar la evaluación y construir el objeto de Notificacion y envía un comando `Notification.sarlaft.evaluated` a la aplicación `webhook`.
+Esta integración se realiza por medio del Event Bus al escuchar el comando ***`Assessment.process.evaluated`*** que se emite desde el ***sarlaftapi***, y que llega a la aplicación ***`sarlaftwebhook`*** esta integración al levantar el evento se encarga de consultar la evaluación y construir el objeto de Notificacion y envía un comando ***`Notification.sarlaft.evaluated`*** a la aplicación ***`webhook.`***
 
-`Assessment.process.evaluated`
+***`Assessment.process.evaluated`***
 
 **Json Entrada:**
 
@@ -57,7 +57,7 @@ Esta integración se realiza por medio del Event Bus al escuchar el comando `Ass
 }
 ```
 
-`Notification.sarlaft.evaluated`
+***`Notification.sarlaft.evaluated`***
 
 **Json Salida:**
 

@@ -1,4 +1,4 @@
-# Configuración HealthCheck con librería actuator - sarlaftwebhook
+﻿# Configuración HealtchCheck con librería actuator - sarlaftwebhook
 
 > **Fuente Confluence:** [Configuración HealtchCheck con librería actuator - sarlaftwebhook](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/3598385216/Configuraci%C3%B3n+HealtchCheck+con+librer%C3%ADa+actuator+-+sarlaftwebhook)
 > **Última modificación:** 2024-03-11 — Julián Andrés Curubo García · versión 1

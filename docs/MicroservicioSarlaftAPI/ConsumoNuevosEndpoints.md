@@ -1,7 +1,7 @@
 # Consumo de Nuevos Endpoints para el Web Component - SarlaftAPI
 
 > **Fuente:** [Confluence - Consumo de Nuevos Endpoints para el Web Component](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/3784671252/Consumo+de+Nuevos+Endpoints+para+el+Web+Component)  
-> **Página padre:** [Microservicio SarlaftAPI](../index.md)
+> **Página padre:** [Servicios Web - SarlaftAPI](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1801126297/Servicios+Web+-+SarlaftAPI)
 
 ---
 
