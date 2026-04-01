@@ -1,4 +1,5 @@
 # Arquitectura del Sistema - GPS Principal
+
 ## Sarlaft 4.0 — Plataforma de Gestión de Riesgos LAFT
 
 > **Generado:** 27 de Marzo de 2026  
@@ -14,6 +15,7 @@
 **Sarlaft 4.0** es la plataforma centralizada de Seguros Sura para cumplir la **Circular Básica 027 del 2020 (SARLAFT 4.0)** emitida el 02 de septiembre de 2020 por la **Superintendencia Financiera de Colombia**, que establece nuevos mecanismos de Prevención de Lavado de Activos y de la Financiación del Terrorismo (LAFT).
 
 **Responsabilidades core del sistema:**
+
 - Centralizar la evaluación del riesgo y captura de información SARLAFT de cada cliente
 - Clasificar al cliente en nivel de riesgo: **Simplificado**, **Ordinario** o **Intensificado**
 - Almacenar evidencias, trazabilidad de validaciones y cambios en datos
@@ -35,6 +37,7 @@
 | **Config PEPS** | `adm_y_fin-sarlaft-peps-conf` | Configuración por ambiente de PEPS |
 
 **Límites del sistema:**
+
 - ✅ Incluye: evaluación de riesgo, formularios dinámicos, almacenamiento de evidencias, notificaciones callback, procesos masivos
 - ❌ Excluye: expedición de pólizas (responsabilidad del aplicativo cliente), validaciones de identidad externas directas (Registraduría, CIFIN/Experian — delegadas a servicios externos)
 
@@ -329,6 +332,7 @@ graph LR
 ```
 
 **Convenciones de nombre:**
+
 - Back: `[HU/Bug]-[Nombre]` → ej: `TSTAR-32-WSConsultaClientes`
 - Front: `[HU/Bug]-[App]-[Nombre]` → ej: `TSTAR-31-Redirect-FormularioPN`
 

@@ -97,6 +97,41 @@ MicroservicioSarlaftAPI/<Subseccion>/attachments/     — JSON y otros adjuntos
 - Links internos de Confluence → referencias relativas entre los `.md` creados
 - Nombres técnicos (tablas BD, campos, endpoints, perfiles) → backticks: `` `nombre` ``
 
+### Paso 5b — Corrección de advertencias Markdown (obligatorio)
+
+Aplica estas correcciones a **cada archivo `.md` generado**, antes de escribirlo en disco:
+
+**MD032 — Listas rodeadas de líneas en blanco / ítems rotos**
+- El patrón Confluence genera ítems de lista partidos: una línea con solo `-` seguida del contenido en la línea siguiente. Siempre unirlos en una sola línea: `- contenido`.
+- Asegurar una línea en blanco antes y después de cada bloque de lista.
+
+**MD040 — Fenced code blocks con lenguaje especificado**
+- Nunca generar ` ``` ` sin lenguaje. Inferir el lenguaje por el contenido:
+  - `package`, `import`, `@Bean`, `public class` → `java`
+  - `spring:`, `azure:`, `server:` (indentado YAML) → `yaml`
+  - Comienza con `{` o `[` → `json`
+  - `implementation`, `dependencies {`, `plugins {` → `groovy`
+  - `SELECT`, `INSERT`, `CREATE TABLE` → `sql`
+  - Respuesta de texto plano o mensaje corto → `text`
+
+**MD047 — Newline al final del archivo**
+- Todo archivo `.md` debe terminar exactamente con `\n`.
+
+**MD010 — No usar tabs**
+- Convertir todos los caracteres tab (`\t`) a 4 espacios, incluso dentro de bloques de código.
+
+**MD012 — Máximo una línea en blanco consecutiva**
+- Colapsar 3 o más saltos de línea seguidos a exactamente 2 (`\n\n`).
+
+**heading-order (axe-linter) — Jerarquía de headings**
+- El título principal del archivo es `#`. El primer subnivel debe ser `##`, nunca saltar de `#` a `###` o `####`.
+- Al convertir headings de Confluence (`<h1>`→`##`, `<h2>`→`###`, etc.) verificar que el primer heading interior no sea nivel 3 o inferior si no hay un `##` antes.
+
+**MD056 — Número uniforme de columnas en tablas**
+- Todas las filas de una tabla Markdown deben tener exactamente el mismo número de celdas que la fila de encabezado.
+- Al convertir tablas HTML de Confluence, contar las columnas del encabezado (`<th>`) y completar con celdas vacías (`|  |`) las filas que tengan menos columnas.
+- Nunca emitir filas con 2 o 3 celdas si el encabezado declara 4 columnas.
+
 ### Paso 6 — Sección de comentarios en el Markdown
 
 Si una página tiene comentarios, agrega al final del `.md`:
@@ -135,6 +170,11 @@ Ejecuta un listado recursivo para confirmar que todos los archivos fueron creado
 Get-ChildItem $base -Recurse -File | Select-Object @{N='Ruta';E={$_.FullName.Replace("$base\",'')}}, @{N='Bytes';E={$_.Length}} | Sort-Object Ruta | Format-Table -AutoSize
 ```
 
+Ejecuta también el script `fix_markdown_lint_section.py` (disponible en `scripts/`) para validar que 0 archivos quedan con cambios pendientes:
+```powershell
+python scripts/fix_markdown_lint_section.py "<RUTA_SECCION>"
+```
+
 ## Restricciones
 
 - **NO** agregar notas, interpretaciones, resúmenes ni inferencias propias — el Markdown debe reflejar **exclusivamente** lo que existe en Confluence (cuerpo + comentarios)
@@ -142,10 +182,14 @@ Get-ChildItem $base -Recurse -File | Select-Object @{N='Ruta';E={$_.FullName.Rep
 - **NO** inventar secciones "Notas" o "Resumen" — si una página solo tiene una tabla, el `.md` solo tiene esa tabla
 - **NO** descargar adjuntos huérfanos — solo descargar archivos referenciados en el `body.storage` o en comentarios (macros `ac:image`, `ri:attachment`, `view-file`)
 - **NO** modificar ni eliminar archivos existentes del workspace sin confirmación del usuario
+- **NO** generar ítems de lista rotos (`-` solitario en su propia línea) — siempre `- contenido` en una sola línea
+- **NO** generar code fences sin lenguaje (` ``` `) — siempre especificar el lenguaje
+- **NO** generar tablas con filas de distinto número de columnas — completar siempre con celdas vacías `|  |` hasta igualar el encabezado (MD056)
 - Nombres de archivo en **PascalCase**, sin espacios
 - Si una página solo tiene macro `pagetree`, el `.md` es un índice con links
 - Los backticks se preservan: campos BD, endpoints, mensajes, perfiles van con backticks
 - Siempre usar `jq` en las llamadas a Confluence para optimizar tokens
+- Los archivos generados deben pasar sin advertencias: MD032, MD040, MD047, MD010, MD012, MD056, heading-order
 
 ## Formato de salida
 
