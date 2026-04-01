@@ -2,12 +2,12 @@
 
 > **Fuente Confluence:** [Documento Diseño Técnico](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1801159177/Documento+Dise+o+T+cnico)  
 > **Última modificación:** 2021-04-15 — Diana Muñoz · versión 6  
-> **Sección:** [Documento Diseño Técnico](./index.md)
+> **Sección:** [Documento Diseño Técnico](../index.md)
 
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `DocumentacionTecnicaSarlaft_1.5.pdf` | [DocumentacionTecnicaSarlaft_1.5.pdf](./attachments/DocumentacionTecnicaSarlaft_1.5.pdf) |
 | `Integraciones_1.xml` | [Integraciones_1.xml](./attachments/Integraciones_1.xml) |
 | `DocumentacionTecnicaSarlaft_1.4.pdf` | [DocumentacionTecnicaSarlaft_1.4.pdf](./attachments/DocumentacionTecnicaSarlaft_1.4.pdf) |
@@ -27,5 +27,5 @@ Compartido en la ruta:
 ## Sub-páginas
 
 | Página | Nivel |
-|--------|-------|
+| -------- | ------- |
 | [Respuestas de error (propuesta aun no implementada)](./RespuestasDeErrorPropuestaAunNoImplementada.md) | 0 |

@@ -2,12 +2,12 @@
 
 > **Fuente Confluence:** [Configuración Ambiente - Motor Evaluación](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1809941012/Configuraci+n+Ambiente+-+Motor+Evaluaci+n)
 > **Última modificación:** 2024-05-30 — Santiago Valencia Ochoa (Unlicensed) · versión 14
-> **Sección:** [Configuración Ambiente - Motor Evaluación](./index.md)
+> **Sección:** [Configuración Ambiente - Motor Evaluación](../index.md)
 
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `image-20210629-025050.png` | [image-20210629-025050.png](./attachments/image-20210629-025050.png) |
 | `image-20210629-025021.png` | [image-20210629-025021.png](./attachments/image-20210629-025021.png) |
 

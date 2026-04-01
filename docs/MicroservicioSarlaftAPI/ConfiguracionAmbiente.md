@@ -30,38 +30,38 @@
 
 ```text
 https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/892-sarlaft-api-ms
-```
+```text
 
 ### Repositorio de Configuración
 
 ```text
 https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/892-sarlaft-api-conf
-```
+```text
 
 ### Repositorio Pruebas SoapUI y JMeter
 
 ```text
 https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/892-sarlaft-pa
-```
+```text
 
 ## Pipelines
 
 ```text
 https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_build?definitionId=3349
-```
+```text
 
 ## SonarQube
 
 ```text
 https://sonarqube.suramericana.com.co/solucionescorporativas/dashboard?id=892-sarlaft-api-ms
-```
+```text
 
 ---
 
 ## Ambientes
 
 | Ambiente | URL |
-|---------|-----|
+| --------- | ----- |
 | Local | <http://local.suramericana.com.co:8091/sarlaftserv> |
 | Desarrollo | <https://sarlaftapi.dllosura.com/sarlaftserv> |
 | Laboratorio | <https://sarlaftapi.labsura.com/sarlaftserv> |

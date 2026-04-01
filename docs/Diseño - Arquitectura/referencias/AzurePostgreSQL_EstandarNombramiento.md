@@ -54,20 +54,20 @@ La base de datos debe crearse con la siguiente notación.
 
 La instancia debe alojar únicamente bases de datos correspondientes a la compañía con la cual fue nombrada.
 
-|
+||
 
 **NOTACIÓN**
 
- |
+||
 
 **DEFINICIÓN DE CAMPOS**
 
- |
-|
+||
+||
 
 psql-com+nombredescriptivo+ambiente+randomsufijo
 
- |
+||
 
 **psql:**indicador base de datos Azure postgresql
 
@@ -81,7 +81,7 @@ psql-com+nombredescriptivo+ambiente+randomsufijo
 
 **Nota:** El signo + no debe ir dentro del nombre
 
- |
+||
 
 | **
 
@@ -90,7 +90,7 @@ psql-com+nombredescriptivo+ambiente+randomsufijo
 **Plantilla de Ambientes**
 ** |
 
-|
+||
 
 `sr` – suramericana, transversal.
 
@@ -102,7 +102,7 @@ psql-com+nombredescriptivo+ambiente+randomsufijo
 
 `seg` – Maquina que presta servicio a las compañías de Seguros.
 
- |
+||
 
 [`p`] Producción
 
@@ -112,7 +112,7 @@ psql-com+nombredescriptivo+ambiente+randomsufijo
 
 [`sa`] Sitio Alterno
 
- |
+||
 
  **Ejemplo:**
 
@@ -140,26 +140,26 @@ Evite abreviaciones (puede llevar a una a la interpretación de los nombres)
 
 Evite usar espacios en blanco en los nombres.
 
-|
+||
 
 **NOTACIÓN**
 
- |
+||
 
 **DEFINICIÓN DE CAMPOS**
 
- |
-|
+||
+||
 
 `amb+nombredescriptivo`
 
- |
+||
 
 `amb`: Ambiente en el cual se encuentra la base de datos (ver plantilla de ambientes).
 
 `nombredescriptivo`: Nombre del Producto, aplicación o proyecto que hará uso de la base de datos.
 
- |
+||
 
 **Ejemplo:**  `pdnseus`
 
@@ -181,26 +181,26 @@ Evite abreviaciones (puede llevar a una a la interpretación de los nombres)
 
 Evite usar espacios en blanco en los nombres.
 
-|
+||
 
 **NOTACIÓN**
 
- |
+||
 
 **DEFINICIÓN DE CAMPOS**
 
- |
-|
+||
+||
 
 ESQ+NOMBREDESCRIPTIVO + AMB
 
- |
+||
 
 **AMB**: Ambiente en el cual se encuentra la base de datos (ver plantilla de ambientes).
 
 **NOMBREDESCRIPTIVO**: Nombre del Producto, aplicación o proyecto que hará uso de la base de datos.
 
- |
+||
 
 **Ejemplo:**  ESQSEUSPDN
 
@@ -218,20 +218,20 @@ No debe contener caracteres especiales, tales como "%", "$", etc.
 
 Los nombres deben ser en minúscula.
 
-|
+||
 
 **NOTACIÓN**
 
- |
+||
 
 **DEFINICIÓN DE CAMPOS**
 
- |
-|
+||
+||
 
 nombre_tabla_ck##
 
- |
+||
 
 **nombre_tabla**: Nombre de la tabla a la que se le crea  el constraint
 
@@ -239,7 +239,7 @@ nombre_tabla_ck##
 
 **##:**Consecutivo que indica el n-ésimo constraint de chequeo de la tabla
 
- |
+||
 
 **Ejemplo:**  tcpt_datos_basicos_ck03
 
@@ -253,20 +253,20 @@ No debe contener caracteres especiales, tales como "%", "$", etc.
 
 Los nombres deben ser en minúscula.
 
-|
+||
 
 **NOTACIÓN**
 
- |
+||
 
 **DEFINICIÓN DE CAMPOS**
 
- |
-|
+||
+||
 
 nombre_tabla_uk##
 
- |
+||
 
 **nombre_tabla**: Nombre de la tabla a la que se le crea  el constraint
 
@@ -274,7 +274,7 @@ nombre_tabla_uk##
 
 **##:**Consecutivo que indica la n-ésima llave única de la tabla
 
- |
+||
 
   **Ejemplo:**  tcpt_datos_basicos _uk02
 
@@ -290,22 +290,22 @@ No debe contener caracteres especiales, tales como "%", "$", etc.
 
 Los nombres deben ser en minúscula.
 
-|
+||
 
 **NOTACIÓN**
 
- |
-|
+||
+||
 
 nombre_tabla_referenciante_nombre_tabla_referenciada_fk##
 
- |
-|
+||
+||
 
 **DEFINICIÓN DE CAMPOS**
 
- |
-|
+||
+||
 
 **nombre_tabla_referenciante**: Nombre de la tabla a la que se le crea el constraint**nombre_tabla_referenciada**: Nombre de la tabla que se referencia con el constraint
 
@@ -313,7 +313,7 @@ nombre_tabla_referenciante_nombre_tabla_referenciada_fk##
 
 **##:**Consecutivo que indica la n-ésima llave foránea de la tabla
 
- |
+||
 
   **NOTAS:**
 
@@ -341,24 +341,24 @@ No debe contener caracteres especiales, tales como "%", "$", etc.
 
 Los nombres deben ser en minúscula.
 
-|
+||
 
 **NOTACIÓN**
 
- |
+||
 
 **DEFINICIÓN DE CAMPOS**
 
- |
-|
+||
+||
 
 nombre_tabla_pk
 
- |
+||
 
 **nombre_tabla**: Nombre de la tabla a la que se le crea el constraint**pk**: Identificador del constraint de clave primaria.
 
- |
+||
 
  **Ejemplo:**  tcpt_datos_basicos_pk
 
@@ -370,20 +370,20 @@ No debe contener caracteres especiales, tales como "%", "$", etc.
 
 Los nombres deben ser en minúscula.
 
-|
+||
 
 **NOTACIÓN**
 
- |
+||
 
 **DEFINICIÓN DE CAMPOS**
 
- |
-|
+||
+||
 
 nombre_tabla_i##
 
- |
+||
 
 **nombre_tabla**: Nombre de la tabla a la que se le crea el índice
 
@@ -391,7 +391,7 @@ i: Identificador del índice.
 
 **##:**Consecutivo que indica el n-ésimo índice de la tabla
 
- |
+||
 
  **Ejemplo:**  tpersonas_subgrupos_mvtos _i03
 
@@ -415,20 +415,20 @@ No debe contener caracteres especiales, tales como "%", "$", etc.
 
 Debe indicar que información va a almacenar la tabla
 
-|
+||
 
 **NOTACIÓN**
 
- |
+||
 
 **DEFINICIÓN DE CAMPOS**
 
- |
-|
+||
+||
 
 TNNN_XXXXX
 
- |
+||
 
 **T**: Indicador de tabla
 
@@ -438,7 +438,7 @@ TNNN_XXXXX
 
 plural
 
- |
+||
 
  **Ejemplo**:
 
@@ -456,20 +456,20 @@ Es permitido usar el underscore ( _ ) para nombres compuestos por varias palabra
 
 Debe ser en singular
 
-|
+||
 
 **NOTACIÓN**
 
- |
+||
 
 **DEFINICIÓN DE CAMPOS**
 
- |
-|
+||
+||
 
 XXNOMBRE_COLUMNA
 
- |
+||
 
 **XX**: Son dos letras que identifican el contenido de la columna así:
 
@@ -489,7 +489,7 @@ XXNOMBRE_COLUMNA
 
 **NOMBRE_COLUMNA:**Nombre de la columna
 
- |
+||
 
  **Ejemplos:**
 
@@ -509,26 +509,26 @@ OPACCION: Acción a tomar (S, I, D, U )
 
 **Consideraciones especiales:**  La columna nombrada DNI en la cual se almacena un número de identificación (cédula,  NIT, tarjeta de identidad, etc.) se debe nombrar de la siguiente manera:
 
-|
+||
 
 **NOTACIÓN**
 
- |
+||
 
 **DEFINICIÓN DE CAMPOS**
 
- |
-|
+||
+||
 
 DNI_`<XXXXXX>`
 
- |
+||
 
 **DNI**: Indica que es un documento de identidad
 
 **XXXXXX:**El sujeto que se está identificando (agente, usuario, afiliado, tomador, paciente, etc.)
 
- |
+||
 
  **Nota**:
 
@@ -574,20 +574,20 @@ Debe estar en plural
 
 Se puede usar el caracter underscore ( _ ) para crear nombres más lógicos
 
-|
+||
 
 **NOTACIÓN**
 
- |
+||
 
 **DEFINICIÓN DE CAMPOS**
 
- |
-|
+||
+||
 
 WNNN_NOMBRE_VISTA
 
- |
+||
 
 **W**: Identificador de vista.
 
@@ -595,7 +595,7 @@ WNNN_NOMBRE_VISTA
 
 **NOMBRE_VISTA:** Nombre nemotécnico de la vista
 
- |
+||
 
 **Ejemplo:**  WDIN_Resultados_Laboratorio
 
@@ -603,24 +603,24 @@ WNNN_NOMBRE_VISTA
 
 **Objetos con el mismo nombre en diferentes bases de datos**
 
-|
+||
 
 **NOTACIÓN**
 
- |
+||
 
 **DEFINICIÓN DE CAMPOS**
 
- |
-|
+||
+||
 
 NOMBRE_OBJETO_NNN
 
- |
+||
 
 **NOMBRE_OBJETO:**Nombre nemotécnico del objeto referenciado**NNN:** Prefijo del nombre de la base de datos donde se encuentra el objeto.
 
- |
+||
 
  **Ejemplo:**  CUERPOLIZA_BAN
 
@@ -634,20 +634,20 @@ Debe estar en plural
 
 Es permitido usar el underscore ( _ ) para crear nombres más lógicos
 
-|
+||
 
 **NOTACIÓN**
 
- |
+||
 
 **DEFINICIÓN DE CAMPOS**
 
- |
-|
+||
+||
 
 MNNN_NOMBRE_VISTA
 
- |
+||
 
 **M:** Identificador de vista materializada
 
@@ -657,7 +657,7 @@ aplicación)
 
 **NOMBRE_VISTA:**Nombre nemotécnico de la vista materializada
 
- |
+||
 
  **Ejemplos:**
 
@@ -677,20 +677,20 @@ Este no debe exceder los **30 caracteres**
 
 No debe contener caracteres especiales, tales como "%", "$", etc.
 
-|
+||
 
 **NOTACIÓN**
 
- |
+||
 
 **DEFINICIÓN DE CAMPOS**
 
- |
-|
+||
+||
 
 FN_NNN_<NOMBRE_FUNCION>
 
- |
+||
 
 **FN**: Identificador de función.
 
@@ -698,7 +698,7 @@ FN_NNN_<NOMBRE_FUNCION>
 
 **NOMBRE_FUNCION:** Nombre nemotécnico de la función
 
- |
+||
 
  **Ejemplo:**  FN_SCI_CALCULAR_CDRAMO
 
@@ -710,20 +710,20 @@ Para el caso en que la abreviación para el usuario sea ampliamente conocida o q
 
   Usuario administrador de instancia
 
-|
+||
 
 **NOTACIÓN**
 
- |
+||
 
 **DEFINICIÓN DE CAMPOS**
 
- |
-|
+||
+||
 
 ADMPGXXXA
 
- |
+||
 
 **ADM:**Identificador de usuario dueño de esquema
 
@@ -741,26 +741,26 @@ ADMPGXXXA
 
      [SA] Sitio Alterno
 
- |
+||
 
 EJEMPLO: **ADMPGSEUSL**
 
 - **Usuario dueño de esquema:**
 
-|
+||
 
 **NOTACIÓN**
 
- |
+||
 
 **DEFINICIÓN DE CAMPOS**
 
- |
-|
+||
+||
 
 ADMXXXAMB
 
- |
+||
 
 **ADM:**Identificador de usuario dueño de esquema
 
@@ -776,26 +776,26 @@ ADMXXXAMB
 
     [SA] Sitio Alterno
 
- |
+||
 
 EJEMPLO: **ADMSEUSLAB**
 
 - **Usuario de conexión a la aplicación:**
 
-|
+||
 
  **NOTACIÓN**
 
- |
+||
 
 **DEFINICIÓN DE CAMPOS**
 
- |
-|
+||
+||
 
 MODXXXAMB
 
- |
+||
 
 **MOD**: Identificador del aplicativo para el usuario
 
@@ -811,6 +811,6 @@ MODXXXAMB
 
      [SA] Sitio Alterno
 
- |
+||
 
 **Ejemplo:MODSEUSLAB**

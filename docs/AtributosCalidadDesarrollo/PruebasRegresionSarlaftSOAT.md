@@ -29,7 +29,7 @@ Tarea de referencia en Azure DevOps: [Tarea 538482: Pruebas sistema SARLAFT sin 
 ## Archivos Adjuntos
 
 | Archivo | Descripción |
-|---------|-------------|
+| --------- | ------------- |
 | [`EvidenciaGlobalWebRegresion.pdf`](./attachments/EvidenciaGlobalWebRegresion.pdf) | Evidencias Global Web regresión |
 | [`EvidenciasEscenarios_SOAT.docx`](./attachments/EvidenciasEscenarios_SOAT.docx) | Evidencias de escenarios de prueba |
 | [`Regresion_CotizadorAutos_062024.docx`](./attachments/Regresion_CotizadorAutos_062024.docx) | Regresión Cotizador Autos – Junio 2024 |
@@ -41,7 +41,7 @@ Tarea de referencia en Azure DevOps: [Tarea 538482: Pruebas sistema SARLAFT sin 
 ## Escenarios de Prueba (Markdown)
 
 | Archivo | Descripción |
-|---------|-------------|
+| --------- | ------------- |
 | [Regresion_CotizadorAutos.md](./Regresion_CotizadorAutos.md) | Escenarios Cotizador Autos (Registraduría, PEP, INTENSIFICADO) |
 | [Regresion_EvidenciasEscenarios.md](./Regresion_EvidenciasEscenarios.md) | Evidencias escenarios generales (Policy Center, ARL, PYME, C/S Vida, etc.) |
 | [Regresion_SEL_SOAT.md](./Regresion_SEL_SOAT.md) | Escenarios SuraEnLínea distinto a SOAT (Migración, Experian, PEPS) |

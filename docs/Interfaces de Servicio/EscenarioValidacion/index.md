@@ -9,6 +9,6 @@ Escenario de Validación de Sarlaft para **WeSura, SuraEnLinea, algunos producto
 ## Archivos Adjuntos
 
 | Archivo | Descripción |
-|---------|-------------|
+| --------- | ------------- |
 | [`SERVICIO DE VALIDAR SARLAFT_WeSuraSuraEnLinea.pdf`](./attachments/SERVICIO%20DE%20VALIDAR%20SARLAFT_WeSuraSuraEnLinea.pdf) | Escenario de validación para WeSura y SuraEnLinea |
 | [`SERVICIO DE VALIDAR SARLAFT_WeSuraSuraEnLineaSalud.pdf`](./attachments/SERVICIO%20DE%20VALIDAR%20SARLAFT_WeSuraSuraEnLineaSalud.pdf) | Escenario de validación para SuraEnLinea Salud |

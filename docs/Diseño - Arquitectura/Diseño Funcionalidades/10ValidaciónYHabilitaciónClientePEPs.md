@@ -7,7 +7,7 @@
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `Sarlaft_Laura-FlujoPEPS_Marcacion (1)-20230616-164358.jpg` | [Sarlaft_Laura-FlujoPEPS_Marcacion (1)-20230616-164358.jpg](./attachments/Sarlaft_Laura-FlujoPEPS_Marcacion (1)-20230616-164358.jpg) |
 | `Sarlaft_Laura-FlujoPEPS_Marcacion-20230616-133457.jpg` | [Sarlaft_Laura-FlujoPEPS_Marcacion-20230616-133457.jpg](./attachments/Sarlaft_Laura-FlujoPEPS_Marcacion-20230616-133457.jpg) |
 | `image-20230616-131617.png` | [image-20230616-131617.png](./attachments/image-20230616-131617.png) |
@@ -21,7 +21,7 @@
 Dentro del proceso de evaluación para el tomador y las figuras que determine el motor se debe realizar la validación de PEPs (Persona expuesta políticamente). Dentro del proceso una persona PEPS es aquella que se autodenomina Peps a través de una respuesta en el formulario de sarlaft o aquella que se encuentran marcada en la base de datos de peps de Sura.
 
 Es de aclara que la validación Peps aplica solo para personas naturales, por eso cuando el tomador o figura es una persona jurídica, la validación de Peps reace en los administradores de esta, tales como representante legal, accionista o socio, el motor es quien determina sobre cual figura debe realizarse la validación.
- 
+
 > Solicitud Peps: es una solicitud para habilitar que se puedan expedir negocios para personas marcadas como Peps en el modelo de Sura. Esta solicitud es realizada por el director/gerente de la oficina donde se radica el negocio y tiene una vigencia de 15 días calendario. Esta habitación es realizada por medio del aplicativo de Riesgos Consultables (externo a Sarlaft 4.0). Esta solicitud es un medio por la cual Sura puede evidenciar ante la Superintendencia Financiera que se ha hecho un análisis y conocimiento de las persona que tienen esta marca y representan un mayor riesgo según la norma de sarlaft.
 
 #### Escenario persona PEPs marcada en BD de Sura:

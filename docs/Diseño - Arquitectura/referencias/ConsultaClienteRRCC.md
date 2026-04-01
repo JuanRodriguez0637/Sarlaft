@@ -67,60 +67,60 @@ Se convierten los campos, siguiendo el manual del modelo de clientes para crear 
 
 **Mapeo entre datos:**
 
-|
+||
 
 documentType
 
- |
+||
 
 Dato del cliente recibido en el mensaje de entrada
 
- |
-|
+||
+||
 
 documentNumber
 
- |
+||
 
 Dato del cliente recibido en el mensaje de entrada
 
- |
-|
+||
+||
 
 isRisk
 
- |
+||
 
 esRiesgo (Dato de response de servicio)
 
- |
-|
+||
+||
 
 typeValidation
 
- |
+||
 
 tipoValidacion (Dato de response de servicio)
 
- |
-|
+||
+||
 
 message
 
- |
+||
 
 mensajeValidacion (Dato de response de servicio)
 
- |
-|
+||
+||
 
 idValidation
 
- |
+||
 
 idRegistroValidacion (Dato de response de servicio)
 
- |
+||
 
 **Dependencias Ecosistema Sura:**
 

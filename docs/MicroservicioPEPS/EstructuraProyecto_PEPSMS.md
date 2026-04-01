@@ -59,7 +59,7 @@ spring:
     username: OPS$PROCEDIM
     password: IBMPROCEDIM
     dialect: org.hibernate.dialect.Oracle12cDialect
-```
+```text
 
 ### Conexión principal
 
@@ -106,7 +106,7 @@ public class PDNConfiguration {
         return new JpaTransactionManager(primaryEntityManagerFactory);
     }
 }
-```
+```text
 
 ### Conexión secundaria
 
@@ -151,7 +151,7 @@ public class PDNHAConfiguration {
         return new JpaTransactionManager(pdnhaEntityManagerFactory);
     }
 }
-```
+```text
 
 ## Servicios para consulta y registro de información de personas
 
@@ -161,7 +161,7 @@ Se consumen servicios SOAP para consultar y registrar información de personas (
 soap-client:
    query-endpoint: http://appslab.suranet.com/ServiciosWebSic/services/ConsultaModeloClientesWS?wsdl
    update-endpoint: https://appslab.suranet.com/ServiciosWebSic/services/ActualizacionModeloClientesWS?wsdl
-```
+```text
 
 ### Configuración sevicios SOAP
 

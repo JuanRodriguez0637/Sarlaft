@@ -2,7 +2,7 @@
 
 > **Fuente Confluence:** [Servicios Web - Microservicio Backweb](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2398486540)
 > **Última modificación:** 2021-09-17 · versión 2
-> **Sección:** [Microservicio Backweb](./index.md)
+> **Sección:** [Microservicio Backweb](../index.md)
 
 ## Contenido
 

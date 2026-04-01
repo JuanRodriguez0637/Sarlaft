@@ -17,180 +17,180 @@
 
 **Información viasTrafficProps:**
 
-|
+||
 
 **codigoAplicacion**
 
- |
+||
 
 9082
 
- |
+||
 
 9082
 
- |
+||
 
 9082
 
- |
+||
 
 9082
 
- |
+||
 
 9082
 
- |
+||
 
 9082
 
- |
-|
+||
+||
 
 **descripcionProceso**
 
- |
+||
 
 SARLAFT
 
- |
+||
 
 SARLAFT
 
- |
+||
 
 SARLAFT
 
- |
+||
 
 SARLAFT
 
- |
+||
 
 SARLAFT
 
- |
+||
 
 SARLAFT
 
- |
-|
+||
+||
 
 **descripcionSolucion**
 
- |
+||
 
 \*
 
- |
+||
 
 \*
 
- |
+||
 
 \*
 
- |
+||
 
 \*
 
- |
+||
 
 \*
 
- |
+||
 
 \*
 
- |
-|
+||
+||
 
 **descripcionOperacion**
 
- |
+||
 
 ACTUALIZACIONPENDIENTE
 
- |
+||
 
 ACTUALIZACIONASESORES
 
- |
+||
 
 CONFIRMACIONACTUALIZACION
 
- |
+||
 
 VINCULACIONNUEVA
 
- |
+||
 
 VALIDACIONIDENTIDAD
 
- |
+||
 
 ACTIVACION
 
- |
-|
+||
+||
 
 **compania**
 
- |
+||
 
 TRANSVERSAL
 
- |
+||
 
 TRANSVERSAL
 
- |
+||
 
 TRANSVERSAL
 
- |
+||
 
 TRANSVERSAL
 
- |
+||
 
 TRANSVERSAL
 
- |
+||
 
 TRANSVERSAL
 
- |
-|
+||
+||
 
 **procesoSura**
 
- |
+||
 
 ADMINISTRACION RIESGOS DEL CLIENTE
 
- |
+||
 
 ADMINISTRACION RIESGOS DEL CLIENTE
 
- |
+||
 
 ADMINISTRACION RIESGOS DEL CLIENTE
 
- |
+||
 
 ADMINISTRACION RIESGOS DEL CLIENTE
 
- |
+||
 
 ADMINISTRACION RIESGOS DEL CLIENTE
 
- |
+||
 
 ADMINISTRACION RIESGOS DEL CLIENTE
 
- |
+||
 
 **Mapeo de campos de todas las comunicaciones:**
 

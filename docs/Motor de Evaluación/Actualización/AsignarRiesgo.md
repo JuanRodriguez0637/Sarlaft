@@ -7,7 +7,7 @@
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `Json-Query-Response.json` | [Json-Query-Response.json](./attachments/Json-Query-Response.json) |
 | `Json-Query-Request.json` | [Json-Query-Request.json](./attachments/Json-Query-Request.json) |
 | `image-20220829-162646.png` | [image-20220829-162646.png](./attachments/image-20220829-162646.png) |

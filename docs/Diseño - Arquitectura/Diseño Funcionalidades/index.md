@@ -2,12 +2,12 @@
 
 > **Fuente Confluence:** [Diseño Funcionalidades](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/3214016543/Dise+o+Funcionalidades)  
 > **Última modificación:** 2023-06-16 — Diana Muñoz · versión 3  
-> **Sección:** [Diseño Funcionalidades](./index.md)
+> **Sección:** [Diseño Funcionalidades](../index.md)
 
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `OrganizacionDocumentacion.pdf` | [OrganizacionDocumentacion.pdf](./attachments/OrganizacionDocumentacion.pdf) |
 
 Guía Documentación
@@ -15,7 +15,7 @@ Guía Documentación
 ## Sub-páginas
 
 | Página | Nivel |
-|--------|-------|
+| -------- | ------- |
 | [1. Proceso de la Evaluación (Assessment)](./1ProcesoDeLaEvaluaciónAssessment.md) | 0 |
 | [2. Entradas a Evaluación (Assessment)](./2EntradasAEvaluaciónAssessment.md) | 0 |
 | [3. Validaciones (Assessment)](./3ValidacionesAssessment.md) | 0 |

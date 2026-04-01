@@ -7,7 +7,7 @@
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `Sarlaft_Laura-ValidacionIdentidadarlaft2 (1)-20230613-210653.jpg` | [Sarlaft_Laura-ValidacionIdentidadarlaft2 (1)-20230613-210653.jpg](./attachments/Sarlaft_Laura-ValidacionIdentidadarlaft2 (1)-20230613-210653.jpg) |
 | `Sarlaft_Laura-ValidacionIdentidadarlaft (1)-20230613-210351.jpg` | [Sarlaft_Laura-ValidacionIdentidadarlaft (1)-20230613-210351.jpg](./attachments/Sarlaft_Laura-ValidacionIdentidadarlaft (1)-20230613-210351.jpg) |
 | `Sarlaft_Laura-ValidacionIdentidadarlaft2-20230613-150241.jpg` | [Sarlaft_Laura-ValidacionIdentidadarlaft2-20230613-150241.jpg](./attachments/Sarlaft_Laura-ValidacionIdentidadarlaft2-20230613-150241.jpg) |
@@ -19,17 +19,13 @@
 
 [data-colorid=xe2myvu1ua]{color:#0747a6} html[data-color-mode=dark] [data-colorid=xe2myvu1ua]{color:#5999f8}[data-colorid=oifl00oy26]{color:#0747a6} html[data-color-mode=dark] [data-colorid=oifl00oy26]{color:#5999f8}[data-colorid=pmzm2qlbsd]{color:#0747a6} html[data-color-mode=dark] [data-colorid=pmzm2qlbsd]{color:#5999f8}[data-colorid=b5hzvagq59]{color:#0747a6} html[data-color-mode=dark] [data-colorid=b5hzvagq59]{color:#5999f8}[data-colorid=ieq59kql34]{color:#0747a6} html[data-color-mode=dark] [data-colorid=ieq59kql34]{color:#5999f8}[data-colorid=tnrekhoy0m]{color:#0747a6} html[data-color-mode=dark] [data-colorid=tnrekhoy0m]{color:#5999f8}[data-colorid=krnhufm0iz]{color:#0747a6} html[data-color-mode=dark] [data-colorid=krnhufm0iz]{color:#5999f8}[data-colorid=ip7oqb2zsv]{color:#0747a6} html[data-color-mode=dark] [data-colorid=ip7oqb2zsv]{color:#5999f8}[data-colorid=kvnk5nrobs]{color:#0747a6} html[data-color-mode=dark] [data-colorid=kvnk5nrobs]{color:#5999f8}[data-colorid=m2fuiyx5jh]{color:#0747a6} html[data-color-mode=dark] [data-colorid=m2fuiyx5jh]{color:#5999f8}[data-colorid=dtc2nrli04]{color:#0747a6} html[data-color-mode=dark] [data-colorid=dtc2nrli04]{color:#5999f8}[data-colorid=wzaz9nowta]{color:#0747a6} html[data-color-mode=dark] [data-colorid=wzaz9nowta]{color:#5999f8}[data-colorid=ipwfhezh7i]{color:#0747a6} html[data-color-mode=dark] [data-colorid=ipwfhezh7i]{color:#5999f8}[data-colorid=jy20qenspq]{color:#0747a6} html[data-color-mode=dark] [data-colorid=jy20qenspq]{color:#5999f8}[data-colorid=k9t9w0y4se]{color:#0747a6} html[data-color-mode=dark] [data-colorid=k9t9w0y4se]{color:#5999f8}[data-colorid=brhcl9902y]{color:#0747a6} html[data-color-mode=dark] [data-colorid=brhcl9902y]{color:#5999f8}[data-colorid=ox6jd3vvj4]{color:#0747a6} html[data-color-mode=dark] [data-colorid=ox6jd3vvj4]{color:#5999f8}[data-colorid=ovpf6uig9k]{color:#0747a6} html[data-color-mode=dark] [data-colorid=ovpf6uig9k]{color:#5999f8}[data-colorid=gwa35c25ri]{color:#0747a6} html[data-color-mode=dark] [data-colorid=gwa35c25ri]{color:#5999f8}[data-colorid=wncs0j3in0]{color:#0747a6} html[data-color-mode=dark] [data-colorid=wncs0j3in0]{color:#5999f8}[data-colorid=vbeucu9s87]{color:#0747a6} html[data-color-mode=dark] [data-colorid=vbeucu9s87]{color:#5999f8}[data-colorid=n9iln0nbnz]{color:#0747a6} html[data-color-mode=dark] [data-colorid=n9iln0nbnz]{color:#5999f8}[data-colorid=hmosrev536]{color:#0747a6} html[data-color-mode=dark] [data-colorid=hmosrev536]{color:#5999f8}[data-colorid=odoecn58jx]{color:#0747a6} html[data-color-mode=dark] [data-colorid=odoecn58jx]{color:#5999f8}[data-colorid=n4nkdoe4p3]{color:#0747a6} html[data-color-mode=dark] [data-colorid=n4nkdoe4p3]{color:#5999f8}[data-colorid=y32v1bim0y]{color:#0747a6} html[data-color-mode=dark] [data-colorid=y32v1bim0y]{color:#5999f8}[data-colorid=re1hobj1cn]{color:#0747a6} html[data-color-mode=dark] [data-colorid=re1hobj1cn]{color:#5999f8}[data-colorid=lx0uqlati5]{color:#0747a6} html[data-color-mode=dark] [data-colorid=lx0uqlati5]{color:#5999f8}[data-colorid=ctcm8aeynt]{color:#0747a6} html[data-color-mode=dark] [data-colorid=ctcm8aeynt]{color:#5999f8}[data-colorid=fi8g0wext8]{color:#0747a6} html[data-color-mode=dark] [data-colorid=fi8g0wext8]{color:#5999f8}Las validaciones que se realizan en el proceso de evaluación de sarlaft tiene las siguientes características:
 
-- 
-Pueden ser síncronas o asíncronas de acuerdo a como estén definidas y esto no cambia.
+- Pueden ser síncronas o asíncronas de acuerdo a como estén definidas y esto no cambia.
 
-- 
-Pueden bloquear o no la finalización de un sarlaft, esto quiere decir que si la validación esta marcada como no bloqueante, el sarlaft puede finalizar sin que la validación se haya realizado o aun así haya sido fallida. Por ejemplo las validaciones de identidad para los accionistas de una persona jurídica son no bloqueantes.
+- Pueden bloquear o no la finalización de un sarlaft, esto quiere decir que si la validación esta marcada como no bloqueante, el sarlaft puede finalizar sin que la validación se haya realizado o aun así haya sido fallida. Por ejemplo las validaciones de identidad para los accionistas de una persona jurídica son no bloqueantes.
 
-- 
-Todas las validaciones ejecutadas dejan una evidencia en el sarlaft. (_Tabla: sarlaft.tsaf_evidencia_)
+- Todas las validaciones ejecutadas dejan una evidencia en el sarlaft. (_Tabla: sarlaft.tsaf_evidencia_)
 
-- 
-Las validaciones se heredan de sarlaft anteriores para cuando una persona tiene un sarlaft vigente de un tipo de riesgo igual o superior al determinado en la evaluación; esto quiere decir que la evaluación no se repite si no que la evidencia es clonada al nuevo sarlaft.
+- Las validaciones se heredan de sarlaft anteriores para cuando una persona tiene un sarlaft vigente de un tipo de riesgo igual o superior al determinado en la evaluación; esto quiere decir que la evaluación no se repite si no que la evidencia es clonada al nuevo sarlaft.
 
 ### **Tipos de Validaciones:**
 
@@ -47,11 +43,9 @@ Un cliente PEPS es una Persona Políticamente Expuesta, se identifica dado que c
 
 Esta validación también utiliza la respuesta dada por el cliente a si se considera una persona públicamente expuesta o si tiene cierto grado de consanguinidad con una personas PEPS. Para responder a esta pregunta el cliente tiene dos opciones:  
 
-- 
-Responder a la pregunta en el mismo aplicativo expedidor: Algunos aplicativos como el cotizador tiene esta opción, en la cual antes de solicitar la creación de la evaluación en sarlaft 4.0, preguntan al cliente si se considera o tiene relacion con un PEPS, para este caso en el json de entrada al servicio de assessment envian S en el siguiente parámetro:  (Esta pregunta solo aplica para el tomador.) Servicio de crear evaluacion: [Servicio Evaluación Validación Sarlaft - EGV Procesos Administrativos - Confluence (atlassian.net)](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1814233305/Servicio+Evaluaci+n+Validaci+n+Sarlaft)
+- Responder a la pregunta en el mismo aplicativo expedidor: Algunos aplicativos como el cotizador tiene esta opción, en la cual antes de solicitar la creación de la evaluación en sarlaft 4.0, preguntan al cliente si se considera o tiene relacion con un PEPS, para este caso en el json de entrada al servicio de assessment envian S en el siguiente parámetro:  (Esta pregunta solo aplica para el tomador.) Servicio de crear evaluacion: [Servicio Evaluación Validación Sarlaft - EGV Procesos Administrativos - Confluence (atlassian.net)](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1814233305/Servicio+Evaluaci+n+Validaci+n+Sarlaft)
 ![imagen](./attachments/image-20230607-190150.png)
-- 
-Responder a la pregunta en el formulario de Sarlaft 4.0: al iniciar el formulario al cliente se le realiza la pregunta PEPS, y con esta respuesta se solicita recategorizar la evaluación, donde si el cliente responde afirmativamente la evaluación podría recategorizarse a un riesgo intensificado. Servicio utilizado desde el Front de sarlaft ([Servicio Recategorización Evaluación Sarlaft - EGV Procesos Administrativos - Confluence (atlassian.net)](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2476834835/Servicio+Recategorizaci+n+Evaluaci+n+Sarlaft))
+- Responder a la pregunta en el formulario de Sarlaft 4.0: al iniciar el formulario al cliente se le realiza la pregunta PEPS, y con esta respuesta se solicita recategorizar la evaluación, donde si el cliente responde afirmativamente la evaluación podría recategorizarse a un riesgo intensificado. Servicio utilizado desde el Front de sarlaft ([Servicio Recategorización Evaluación Sarlaft - EGV Procesos Administrativos - Confluence (atlassian.net)](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2476834835/Servicio+Recategorizaci+n+Evaluaci+n+Sarlaft))
 
 #### Validación GAFI
 
@@ -93,7 +87,7 @@ Información de consumo del servicio rest de RRCC [Consulta Cliente RRCC - EGV P
 
 La validación de Registraduría permite validar si una persona natural tiene una documentación valida en la registraduría nacional, para esta validación Sura tiene contrato con la empresa Experian, quien es la encargada de realizar esta validación directamente con la registraduría.
 
-Esta validación es de tipo Asíncrono para casi todas las soluciones y debe permanecer así por decisión de arquitectura, debido a que los tiempos de respuesta de el servicio de experian no son óptimos. 
+Esta validación es de tipo Asíncrono para casi todas las soluciones y debe permanecer así por decisión de arquitectura, debido a que los tiempos de respuesta de el servicio de experian no son óptimos.
 
 Solo existe una excepción para el aplicativo expedidor del cotizador (codigos 6919 y 6918) para la cual la validación de registraduría se organizo de manera síncrona, esta excepción esta parametrizada en la siguiente tabla: sarlaft.tsaf_aplicacion campo snregistraduria_sincrona.
 
@@ -128,7 +122,7 @@ La evidencia de CIFIN es valida como evidencia de que el cliente ya realizo la v
 
 ##### Flujo para Validación Identidad por Experian:
 
-En el momento que el cliente termina de diligenciar el formulario de sarlaft, por medio de una opción en el formulario, puede enviar la notificación de solicitud de validación de identidad a todas las figuras que están involucradas en la evaluación y aplica la validación de identidad de tipo EXPERIAN. Este envío se realiza por medio del servicio web: _**/validaridentidad/validate**_ del microservicio del sarlaft api, el cual se encarga de consultar la información necesaria para el correo, incluyendo el token JWT (utilizado como mecanismo de seguridad para cuando el cliente abra el formulario de sarlaft). 
+En el momento que el cliente termina de diligenciar el formulario de sarlaft, por medio de una opción en el formulario, puede enviar la notificación de solicitud de validación de identidad a todas las figuras que están involucradas en la evaluación y aplica la validación de identidad de tipo EXPERIAN. Este envío se realiza por medio del servicio web: _**/validaridentidad/validate**_ del microservicio del sarlaft api, el cual se encarga de consultar la información necesaria para el correo, incluyendo el token JWT (utilizado como mecanismo de seguridad para cuando el cliente abra el formulario de sarlaft).
 
 El envío de la comunicación a CCM se realiza por medio del mecanismo de integración de Rabbit MQ ([Microservicio - CCM - EGV Procesos Administrativos - Confluence (atlassian.net)](/wiki/spaces/EPA/pages/2345730088/Microservicio+-+CCM))
 ![imagen](https://segurosti.atlassian.net/wiki/download/attachments/3214082137/Sarlaft_Laura-ValidacionIdentidadarlaft%20(1)-20230613-210351.jpg?version=1&modificationDate=1686690391708&cacheVersion=1&api=v2)

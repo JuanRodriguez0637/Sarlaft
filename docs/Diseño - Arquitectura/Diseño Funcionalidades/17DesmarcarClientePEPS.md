@@ -7,11 +7,11 @@
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `Sarlaft_Laura-FlujoPEPS_Desmarcar-20230623-212620.jpg` | [Sarlaft_Laura-FlujoPEPS_Desmarcar-20230623-212620.jpg](./attachments/Sarlaft_Laura-FlujoPEPS_Desmarcar-20230623-212620.jpg) |
 | `image-20230623-212934.png` | [image-20230623-212934.png](./attachments/image-20230623-212934.png) |
 
-La demarcación de clientes Peps se realiza por medio del modulo de configuración Cliente PEP - Desmarcar. 
+La demarcación de clientes Peps se realiza por medio del modulo de configuración Cliente PEP - Desmarcar.
 ![imagen](./attachments/image-20230623-212934.png)
 Esta opcion utiliza el servicio web rest /sarlaftbackweb/clientes/peps/desmarcar del microservicio de sarlaft backweb, el cual por medio del microintegrador de peps consume el servicio web rest /pepsserv/pep/uncheck del microservicio PEPS que realiza la desmarcacion en la tabla de base de datos de oracle: tsic_pregunta_respuestas_sipla.
 

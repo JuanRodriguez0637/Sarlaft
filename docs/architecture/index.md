@@ -28,7 +28,7 @@
 ### Dominios y repositorios críticos
 
 | Dominio | Repositorio | Descripción |
-|---|---|---|
+| --- | --- | --- |
 | **API Core** | `adm_y_fin-sarlaft-api-ms` | Microservicio principal — evaluación, formularios, webhook |
 | **PEPS** | `adm_y_fin-sarlaft-peps-ms` | Microservicio de validación Personas Expuestas Políticamente |
 | **Pruebas Automatizadas** | `adm_y_fin-sarlaft-pa` | SoapUI + JMeter (branches: dev, lab, master) |
@@ -125,7 +125,7 @@ graph TB
     API -->|async| RRCC
     API -->|async| CAM
     API -->|read| MOD_CLI
-```
+```text
 
 ### Diagrama del proceso de evaluación Sarlaft (Flujo principal)
 
@@ -159,7 +159,7 @@ sequenceDiagram
     alt Estado = RECHAZADO
         SAPI-->>C: Bloquea expedición
     end
-```
+```text
 
 ### Diagrama de proceso masivo (Canales Masivos / Sura Masivos)
 
@@ -184,7 +184,7 @@ sequenceDiagram
         SAPI->>WH: Webhook terminación sarlaft individual
         WH->>SM: POST resultado póliza
     end
-```
+```text
 
 ---
 
@@ -193,7 +193,7 @@ sequenceDiagram
 ### Tecnologías que condicionan la arquitectura
 
 | Capa | Tecnología | Rol Arquitectónico |
-|---|---|---|
+| --- | --- | --- |
 | **Backend Core** | Spring Boot / Java (Reactive) | Microservicios principal y PEPS |
 | **Build** | Gradle | Build y cobertura de pruebas unitarias |
 | **Frontend** | Angular (WebComponent) | Formularios dinámicos embebibles en apps cliente |
@@ -210,7 +210,7 @@ sequenceDiagram
 ### Patrones arquitectónicos relevantes
 
 | Patrón | Aplicación | Impacto |
-|---|---|---|
+| --- | --- | --- |
 | **Microservicios** | sarlaft-api-ms + sarlaft-peps-ms desacoplados | Escalabilidad independiente, modularidad ante cambios regulatorios |
 | **API Gateway** | Apigee como punto de entrada único | Seguridad centralizada, desacoplamiento entre clientes y servicios internos |
 | **Event-Driven / Async** | RabbitMQ + Event Hub + WebhookNotificator | No bloquea los procesos de negocio de los aplicativos cliente |
@@ -226,7 +226,7 @@ sequenceDiagram
 ### Integraciones con aplicativos cliente (consumidores de Sarlaft)
 
 | Canal / Aplicativo | Tipo Negocio | Protocolo | Notas |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Cotizador Salud (AyV + PAC) | Negocio Nuevo | REST + RabbitMQ async | Usa infoPendiente para envío en pasos |
 | Cotizador Autos | Negocio Nuevo | REST + Webhook | 3 escenarios críticos de regresión validados |
 | Cotizador Viajes / SOAT / Hogar / Vida / Educación / Pensión | Negocio Nuevo | REST + Webhook | Integración estándar |
@@ -240,7 +240,7 @@ sequenceDiagram
 ### Integraciones con sistemas externos (Sarlaft como consumidor)
 
 | Sistema Externo | Propósito | Modalidad | Criticidad |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Registraduría Nacional** | Validación documento CC — nombre vs documento | Async (no bloquea disponibilidad) | Alta — rechazo si apellido errado |
 | **Migración Colombia** | Validación CE, PPT, Permiso Protección Temporal | Async | Alta — falla técnica manejada gracefully |
 | **CIFIN / Experian** | Validación de identidad (OTP + cuestionario) | Async | Alta — levanta control identidad |
@@ -255,7 +255,7 @@ sequenceDiagram
 ### Seguridad de integración (Auth/Authz)
 
 | Mecanismo | Dónde Aplica | Notas |
-|---|---|---|
+| --- | --- | --- |
 | **Seus4 (ApiKey básica)** | Todos los aplicativos Sura (excepto WeSura/SuraEnLínea) | Perfil: `PF_CONSUMSERVSARLAFTAPI` del SP Sarlaft4 |
 | **JWT** | WeSura, SuraEnLínea, WebComponent | No tienen Seus4; autenticación propia |
 | **ApiKey Apigee** | Capa de API Gateway | Solicitada en Apigee para cada consumidor |
@@ -268,7 +268,7 @@ sequenceDiagram
 ## 📦 Dependencias Externas Estratégicas
 
 | Servicio | Rol Arquitectónico | Impacto si falla/cambia |
-|---|---|---|
+| --- | --- | --- |
 | **Superintendencia Financiera** | Ente regulador — define el modelo de datos y flujos | Cambio normativo → modificación obligatoria del sistema |
 | **Azure Cloud (AKS, App Gateway, CDN, ExpressRoute)** | Infraestructura de despliegue completa | Indisponibilidad impacta 100% del ecosistema integrado |
 | **RabbitMQ Sura** | Mensajería para masivos y notificaciones | Sin MQ: procesos masivos y algunos webhooks no funcionan |
@@ -285,7 +285,7 @@ sequenceDiagram
 ## 🌍 Ambientes y URLs
 
 | Ambiente | API Base URL | Integrador Cotizadores | RabbitMQ |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Desarrollo** | `https://sarlaftapi.dllosura.com` | `https://apiinternal.dllosura.com/sarlaft/v1/evaluaciones` | `msgdllo.suramericana.com.co` |
 | **Laboratorio** | `http://sarlaftapi.labsura.com` | `https://apisarlaftcotizadoreslab.suranet.com/sarcot/validarSarlaft` | `msglab.suramericana.com.co` |
 | **Producción** | *(interno — ver Confluence EPA)* | `https://apisarlaftcotizadores.suranet.com/sarcot/validarSarlaft` | `msg.suramericana.com.co` |
@@ -293,7 +293,7 @@ sequenceDiagram
 ### Servicios REST expuestos
 
 | Endpoint | Método | Descripción |
-|---|---|---|
+| --- | --- | --- |
 | `/sarlaftserv/assessment` | POST | Validar Sarlaft — evaluación individual (sincrónico + async webhook) |
 | `/sarlaftserv/assessment/checkStatus` | GET | Consultar estado Sarlaft (alternativa a webhook) |
 | `/sarlaftserv/assessment/massive` | POST | Validar Sarlaft masivo (hasta 100 pólizas, async) |
@@ -304,7 +304,7 @@ sequenceDiagram
 ## 📋 Atributos de Calidad (NFRs)
 
 | Atributo | Clasificación | Requisito |
-|---|---|---|
+| --- | --- | --- |
 | **Escalabilidad** | Crítico | Atender todas las solicitudes de todos los canales integrados (24/7) |
 | **Disponibilidad** | Crítico | 24/7 — alineado con disponibilidad de los aplicativos de negocio |
 | **Interoperabilidad** | Crítico | API REST + WebComponent + Webhook + RabbitMQ para todos los canales |
@@ -345,7 +345,7 @@ graph LR
 Los siguientes canales fueron validados en pruebas de regresión frente a la iniciativa SOAT Orden Administrativa:
 
 | Canal | Archivo Evidencia Local |
-|---|---|
+| --- | --- |
 | Cotizadores (Salud, PAC, Pensión, Hogar, Vida, Autos, Educación) | `../AtributosCalidadDesarrollo/Regresion_CotizadorAutos.md` |
 | Global Web | `../AtributosCalidadDesarrollo/attachments/EvidenciaGlobalWebRegresion.pdf` |
 | Policy Center | `../AtributosCalidadDesarrollo/Regresion_EvidenciasEscenarios.md` |
@@ -366,7 +366,7 @@ Los siguientes canales fueron validados en pruebas de regresión frente a la ini
 ### Documentación local analizada (17 archivos)
 
 | Archivo | Contenido |
-|---|---|
+| --- | --- |
 | `../Interfaces de Servicio/DescripcionInterfacesPrincipales/DocumentacionTecnicaSarlaft.md` | Arquitectura general, interfaces de servicio, campos API v1.8 |
 | `../GestionConfiguracion/ConfiguracionInfraestructura/index.md` | Azure, Terraform IaC, networking, ambientes |
 | `../GestionConfiguracion/index.md` | Repositorios Azure DevOps, GitFlow, CI/CD lineamientos |
@@ -392,7 +392,7 @@ Los siguientes canales fueron validados en pruebas de regresión frente a la ini
 > Los siguientes links fueron encontrados en la documentación. No fue posible acceder a todos en el momento del análisis. Se dejan como referencia para investigación posterior.
 
 | URL / Referencia | Origen | Descripción |
-|---|---|---|
+| --- | --- | --- |
 | `https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1955070150` | `../Interfaces de Servicio/DescripcionInterfacesPrincipales/DocumentacionTecnicaSarlaft.md` | **📌 Página principal** — Descripción de Interfaces Principales Sarlaft |
 | `https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1750892627` | Confluence / Integración Sarlaft 4.0 | Sarlaft 4.0 — Tecnologías y componentes del equipo EPA |
 | `https://segurosti.atlassian.net/wiki/spaces/EPA/pages/3228270786` | Confluence EPA | Guía de Aprendizaje Sarlaft 4.0 — Desarrollo |

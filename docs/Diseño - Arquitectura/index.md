@@ -4,12 +4,10 @@
 > **Última modificación:** 2021-03-26 — Diana Muñoz · versión 4  
 > **Sección:** [Diseño - Arquitectura](./index.md)
 
-
-
 ## Secciones
 
 | Sección | Enlace |
-|---------|--------|
+| --------- | -------- |
 | Requisitos No Funcionales | [./Requisitos No Funcionales/index.md](./Requisitos No Funcionales/index.md) |
 | Diagramas de Arquitectura | [./Diagramas de Arquitectura/index.md](./Diagramas de Arquitectura/index.md) |
 | Contextualización de Arquitectura | [./Contextualización de Arquitectura/index.md](./Contextualización de Arquitectura/index.md) |

@@ -7,7 +7,7 @@
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `Sarlaft_Laura-FlujoRequisitos1 (1)-20230621-153310.jpg` | [Sarlaft_Laura-FlujoRequisitos1 (1)-20230621-153310.jpg](./attachments/Sarlaft_Laura-FlujoRequisitos1 (1)-20230621-153310.jpg) |
 | `Sarlaft_Laura-FlujoRequisitos2-20230616-191116.jpg` | [Sarlaft_Laura-FlujoRequisitos2-20230616-191116.jpg](./attachments/Sarlaft_Laura-FlujoRequisitos2-20230616-191116.jpg) |
 | `Sarlaft_Laura-FlujoRequisitos1-20230616-191103.jpg` | [Sarlaft_Laura-FlujoRequisitos1-20230616-191103.jpg](./attachments/Sarlaft_Laura-FlujoRequisitos1-20230616-191103.jpg) |

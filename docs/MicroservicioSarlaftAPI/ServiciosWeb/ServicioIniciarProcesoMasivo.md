@@ -11,9 +11,9 @@
 - **Ejemplo Json Request:**
 
 ```json
-	{
-			"totalMensajes": "2",
-			"codigoAplicacion": "118",
+    {
+            "totalMensajes": "2",
+            "codigoAplicacion": "118",
             "identificadorNegocio": "001"
     }
 ```

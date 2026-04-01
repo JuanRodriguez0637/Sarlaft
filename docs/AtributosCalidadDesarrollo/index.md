@@ -22,7 +22,7 @@ Adicional para HUs que expongan servicios web:
 ## Sub-páginas
 
 | Página | Descripción | Última modificación | Autor |
-|--------|-------------|---------------------|-------|
+| -------- | ------------- | --------------------- | ------- |
 | [Pruebas Unitarias](./PruebasUnitarias.md) | Cobertura JaCoCo local y seguimiento en SonarQube | 2021-03-26 | Diana Muñoz |
 | [Documentación Confluence](./DocumentacionConfluence.md) | Lineamientos para documentar componentes en Confluence | 2021-03-26 | Diana Muñoz |
 | [Deuda Técnica](./DeudaTecnica.md) | Seguimiento de deuda técnica en SonarQube | 2021-03-26 | Diana Muñoz |

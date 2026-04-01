@@ -11,5 +11,5 @@ Documentación asociada a los pasos y procedimiento necesario para montar una in
 ## Adjuntos
 
 | Archivo | Descripción |
-|---------|-------------|
+| --------- | ------------- |
 | [`ConfiguracionInfraestructura_DocumentacionTecnica.docx`](./attachments/ConfiguracionInfraestructura_DocumentacionTecnica.docx) | Documentación técnica del proceso de infraestructura en Azure |

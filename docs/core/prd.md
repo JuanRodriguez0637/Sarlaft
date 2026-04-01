@@ -12,7 +12,7 @@ Fortalecer la plataforma Sarlaft 4.0 de Suramericana para cerrar brechas normati
 ## 2. Objetivos
 
 | # | Objetivo | Métrica de éxito |
-|---|---|---|
+| --- | --- | --- |
 | O1 | Completar las validaciones de formularios SARLAFT para cumplimiento normativo | 100% de historias del Feature Formularios desplegadas en producción |
 | O2 | Reducir costos por consultas duplicadas a Experian/Registraduría/Migración | Eliminación de consultas redundantes mediante caché y estados bloqueantes |
 | O3 | Depurar la base de datos de evaluaciones obsoletas | Eliminación controlada de evaluaciones Pendientes (>6 meses) y Canceladas (>1 año) |
@@ -23,7 +23,7 @@ Fortalecer la plataforma Sarlaft 4.0 de Suramericana para cerrar brechas normati
 ## 3. Usuarios y Roles
 
 | Usuario | Descripción |
-|---|---|
+| --- | --- |
 | **Analista SARLAFT** | Opera los formularios de conocimiento del cliente. Principal usuario de las modificaciones de formularios. |
 | **Administrador SARLAFT** | Configura parametrías, gestiona estados de documentos, administra reglas del motor. |
 | **Sistemas terceros (APIs)** | Aliados y aplicativos de negocio que consumen APIs de creación de evaluaciones y guardado de formularios. |
@@ -350,7 +350,7 @@ Fortalecer la plataforma Sarlaft 4.0 de Suramericana para cerrar brechas normati
 ## 5. Requisitos No Funcionales
 
 | Categoría | Requisito |
-|---|---|
+| --- | --- |
 | **Seguridad** | Pruebas de seguridad dinámicas en back y front. Validación de archivos adjuntos con Apache Tika. Autenticación/autorización con SEUS para todos los servicios. |
 | **Rendimiento** | Búsquedas en formularios con respuesta en tiempo operativo razonable. Depuración BD en ventana no productiva sin afectar transacciones. |
 | **Trazabilidad** | Logs en Splunk para operaciones críticas. Registros de auditoría en BD para cambios de estado, parametrías, y datos del cliente. |
@@ -363,7 +363,7 @@ Fortalecer la plataforma Sarlaft 4.0 de Suramericana para cerrar brechas normati
 ## 6. Dependencias
 
 | Dependencia | Descripción | Responsable |
-|---|---|---|
+| --- | --- | --- |
 | Experian | Servicio de consulta Registraduría, Migración Colombia, validación de identidad | Externo |
 | IBM P8 | Gestor documental para carga de requisitos | Externo |
 | Modelo de Clientes | Servicio para sincronizar autorización de tratamiento de datos | Equipo interno Sura |
@@ -389,7 +389,7 @@ Fortalecer la plataforma Sarlaft 4.0 de Suramericana para cerrar brechas normati
 ## 8. Resumen de Esfuerzo
 
 | Feature | Historias | Puntos | % del total |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Modificaciones Formulario | 10 | 172 | 54% |
 | Optimización BD y Servicios | 8 | 144 | 46% |
 | **Total** | **18** | **316** | **100%** |

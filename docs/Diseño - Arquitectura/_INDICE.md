@@ -6,7 +6,7 @@
 ## Secciones
 
 | Sección | Páginas | Estado |
-|---------|---------|--------|
+| --------- | --------- | -------- |
 | [Requisitos No Funcionales](./Requisitos No Funcionales/index.md) | 1 | OK |
 | [Diagramas de Arquitectura](./Diagramas de Arquitectura/index.md) | 1 | OK |
 | [Contextualización de Arquitectura](./Contextualización de Arquitectura/index.md) | 1 | OK |

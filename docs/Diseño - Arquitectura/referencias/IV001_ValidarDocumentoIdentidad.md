@@ -23,11 +23,11 @@ Este servicio permite consultar información sobre el documento de identidad con
 
 ##### Campos de Entrada
 
-|
+||
 
 **Campo**
 
- |
+||
 
 **Tipo de dato**
 
@@ -38,11 +38,11 @@ Este servicio permite consultar información sobre el documento de identidad con
 **Obligatorio**
 **|
 
-|
+||
 
 tipoDocumento
 
- |
+||
 
 String
 
@@ -56,78 +56,78 @@ String
 
 **E**- Cédula de extranjería
 
- |
+||
 
  1-2
 
- |
+||
 
 SI
 
- |
-|
+||
+||
 
 numeroDocumento
 
- |
+||
 
 String
 
- |
+||
 
 3-16
 
- |
+||
 
 SI
 
- |
-|
+||
+||
 
 primerApellido
 
- |
+||
 
 String
 
- |
+||
 
 100
 
- |
+||
 
 SI
 
- |
-|
+||
+||
 
 aplicacionOrigen
 
- |
+||
 
 String
 
- |
+||
 
 15
 
- |
+||
 
 SI
 
- |
+||
 
 ###### Campos de Salida
 
-|
+||
 
 **Campo**
 
- |
+||
 
 **Subcampo**
 
- |
+||
 
 **Tipo de dato**
 
@@ -136,74 +136,74 @@ SI
 **Longitud/Comentario**
 **|
 
-|
+||
 
 fechaConsulta
 
- |
- |
+||
+||
 
 Date (Formato ISO8601 2021-01-01T00:00:00)
 
- |
+||
 
- |
-|
+||
+||
 
 codigoSeguridad
 
- |
- |
+||
+||
 
 String
 
- |
+||
 
 8-10
 
- |
-|
+||
+||
 
 validado
 
- |
- |
+||
+||
 
 Boolean
 
- |
+||
 
 Este campo de la respuesta es entregado directamente por Experian-Registraduria, en la cual indica que los datos entregados se trajeron de registraduría o se consultaron de Registraduría.**No tiene ninguna validación de negocio adicional.**
 
- |
-|
+||
+||
 
 datosRespuestaValidacion
 
- |
- |
+||
+||
 
 Object
 
- |
- |
-|
- |
+||
+||
+||
+||
 
 rut
 
- |
+||
 
 Boolean
 
- |
- |
-|
- |
+||
+||
+||
+||
 
 tipoPersona
 
- |
+||
 
 String
 
@@ -219,13 +219,13 @@ PERSONA JURIDICA EXTRANJERA
 
 24-27
 
- |
-|
- |
+||
+||
+||
 
 tipoDocumento
 
- |
+||
 
 String
 
@@ -239,75 +239,75 @@ String
 
 **E**- Cédula de extranjería
 
- |
+||
 
 1-2
 
- |
-|
- |
+||
+||
+||
 
 numeroDocumento
 
- |
+||
 
 String
 
- |
+||
 
 3-16
 
- |
-|
- |
+||
+||
+||
 
 nombreCompleto
 
- |
+||
 
 String
 
- |
- |
-|
- |
+||
+||
+||
+||
 
 nombres
 
- |
+||
 
 String
 
- |
- |
-|
- |
+||
+||
+||
+||
 
 primerApellido
 
- |
+||
 
 String
 
- |
- |
-|
- |
+||
+||
+||
+||
 
 segundoApellido
 
- |
+||
 
 String
 
- |
- |
-|
- |
+||
+||
+||
+||
 
 codigoEstadoDocumento
 
- |
+||
 
 String
 
@@ -317,17 +317,17 @@ Dependiendo de los estados de respuesta:
 
 00 - 99
 
- |
+||
 
 0-2
 
- |
-|
- |
+||
+||
+||
 
 estadoDocumento
 
- |
+||
 
 String
 
@@ -345,68 +345,68 @@ NO EXPEDIDA
 
 EN TRAMITE
 
- |
-|
- |
+||
+||
+||
 
 fechaExpedicion
 
- |
+||
 
 Date (Formato ISO8601 2021-01-01T00:00:00)
 
- |
- |
-|
- |
+||
+||
+||
+||
 
 ciudadExpedicion
 
- |
+||
 
 String
 
- |
- |
-|
- |
+||
+||
+||
+||
 
 departamentoExpedicion
 
- |
+||
 
 String
 
- |
- |
-|
- |
+||
+||
+||
+||
 
 nacionalidad
 
- |
+||
 
 String
 
- |
- |
-|
- |
+||
+||
+||
+||
 
 fechaNacimiento
 
- |
+||
 
 Date (Formato ISO8601 2021-01-01T00:00:00)
 
- |
- |
-|
- |
+||
+||
+||
+||
 
 estadoCivil
 
- |
+||
 
 String
 
@@ -422,13 +422,13 @@ HOMBRE
 
 5-6
 
- |
-|
- |
+||
+||
+||
 
 genero
 
- |
+||
 
 String
 
@@ -440,13 +440,13 @@ HOMBRE
 
 5-6
 
- |
-|
- |
+||
+||
+||
 
 rangoEdad
 
- |
+||
 
 String
 
@@ -454,8 +454,8 @@ String
 
 Edad mínima-Edad máxima (29-35)
 
- |
- |
+||
+||
 
 ###### 3. Diseño Técnico
 
@@ -475,7 +475,7 @@ Edad mínima-Edad máxima (29-35)
     "primerApellido": "PRUEBAS",
     "aplicacionOrigen": "SARLAFT"
 }
-```
+```text
 
 ###### 3.3. Diseño Consulta documento identidad en Registraduría expuesto por Data Credito Experian
 
@@ -521,7 +521,7 @@ Mensaje de entrada:
     "primerApellido": "PRUEBAS",
     "aplicacionOrigen": "SARLAFT"
 }
-```
+```text
 
 Mensaje de salida:
 

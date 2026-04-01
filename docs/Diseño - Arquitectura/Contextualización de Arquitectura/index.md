@@ -2,9 +2,9 @@
 
 > **Fuente Confluence:** [Contextualización de Arquitectura](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1801126348/Contextualizaci+n+de+Arquitectura)  
 > **Última modificación:** 2023-03-27 — Diana Muñoz · versión 3  
-> **Sección:** [Contextualización de Arquitectura](./index.md)
+> **Sección:** [Contextualización de Arquitectura](../index.md)
 
-Los siguientes videos son explicativos a los diseños de la arquitectura de la aplicación Saralft 4.0 
+Los siguientes videos son explicativos a los diseños de la arquitectura de la aplicación Saralft 4.0
 
 [ExplicacionArquitecturaBase.mp4](https://suramericana.sharepoint.com/:v:/r/sites/MESA7-CALIDADDEINFORMACIN/Shared%20Documents/General/Proyecto%20SARLAFT%204.0/Arquitectura/DocumentacionArquitectura/ExplicacionArquitecturaBase.mp4?csf=1&web=1&e=2IexbN)
 

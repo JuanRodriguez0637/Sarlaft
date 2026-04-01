@@ -3,7 +3,7 @@
 ## 1. Información General
 
 | Campo | Detalle |
-|---|---|
+| --- | --- |
 | **Cliente** | Suramericana S.A. (Sura) |
 | **Proyecto** | Fortalecimiento Sarlaft 4.0 |
 | **Coordinadora TI Cliente** | Elizabeth Zapata |
@@ -41,7 +41,7 @@ Implementar un conjunto de mejoras evolutivas y nuevas funcionalidades sobre la 
 ### 4.1 Feature: Modificaciones Formulario
 
 | ID | Historia | Puntos |
-|---|---|---|
+| --- | --- | --- |
 | 1025877 | Modificar campo actividad económica (CIIU 4) | 9 |
 | 1025884 | Eliminar requisito Ingresos y Retenciones PN — Back Validación Adjuntos | 14 |
 | 1026762 | Solicitar ingresos y egresos a PN y PJ | 9 |
@@ -57,7 +57,7 @@ Implementar un conjunto de mejoras evolutivas y nuevas funcionalidades sobre la 
 ### 4.2 Feature: Optimización BD y Servicios Externos
 
 | ID | Historia | Puntos |
-|---|---|---|
+| --- | --- | --- |
 | 1035141 | Depuración evaluaciones BD — Proceso automático (DataFactory) | 47 |
 | 1035171 | Depuración evaluaciones BD — Histórico (one-off) | 5 |
 | 1035498 | Evitar duplicidad validación identidad — Datos básicos | 4 |
@@ -69,7 +69,7 @@ Implementar un conjunto de mejoras evolutivas y nuevas funcionalidades sobre la 
 | | **Subtotal Optimización** | **144** |
 
 | | **TOTAL** | **316 puntos** |
-|---|---|---|
+| --- | --- | --- |
 
 ---
 
@@ -92,7 +92,7 @@ Implementar un conjunto de mejoras evolutivas y nuevas funcionalidades sobre la 
 ## 6. Complejidades y Riesgos Identificados
 
 | Riesgo | Mitigación |
-|---|---|
+| --- | --- |
 | Integración con Experian (tercero) — no se tiene 100% control | Coordinación con proveedor, pruebas tempranas de integración |
 | Nuevo microservicio de Validador de Identidad (infraestructura IaC nueva) | Sprint dedicado a onboarding de infraestructura |
 | Depuración masiva de BD en producción — riesgo de integridad | Backup previo, ejecución por rangos de fechas, ventana no productiva |
@@ -116,7 +116,7 @@ Implementar un conjunto de mejoras evolutivas y nuevas funcionalidades sobre la 
 ## 8. Equipo Propuesto por el Cliente
 
 | Rol | Cantidad |
-|---|---|
+| --- | --- |
 | Desarrollador Full Stack | 3 |
 | QA Automatizador | 1 |
 

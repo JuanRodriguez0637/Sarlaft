@@ -55,51 +55,51 @@ Con el mensaje de entrada se realiza la consulta con el cliente web y se convier
 
 **Mapeo de los campos de respuesta con los del mensaje de salida:**
 
-|
+||
 
 tipoDocumento
 
- |
+||
 
 Dato del cliente recibido en el mensaje de entrada
 
- |
-|
+||
+||
 
 numeroDocumento
 
- |
+||
 
 Dato del cliente recibido en el mensaje de entrada
 
- |
-|
+||
+||
 
 isPEP
 
- |
+||
 
 pep
 
- |
-|
+||
+||
 
 mensaje
 
- |
+||
 
 message
 
- |
-|
+||
+||
 
 solicitudes
 
- |
+||
 
 request
 
- |
+||
 
 **Dependencias Ecosistema Sura:**
 

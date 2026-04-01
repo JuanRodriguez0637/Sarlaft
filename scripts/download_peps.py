@@ -47,7 +47,7 @@ PDF_DIR  = os.path.join(DOCS_ROOT, "pdf")
 DOCX_DIR = os.path.join(DOCS_ROOT, "docx")
 XLSX_DIR = os.path.join(DOCS_ROOT, "xlsx")
 
-for folder in [PEPS_ROOT, IMG_PEPS, PDF_DIR, DOCX_DIR, XLSX_DIR]:
+for folder in [PEPS_ROOT, IMG_PEPS]:
     os.makedirs(folder, exist_ok=True)
 
 # ---------------------------------------------------------------------------
@@ -350,6 +350,7 @@ def process_attachments(page_id: str, out_dir: str) -> list:
 
         ok = True
         if not os.path.exists(dest_file):
+            os.makedirs(os.path.dirname(dest_file), exist_ok=True)
             ok = download_binary(dl_path, dest_file)
             if ok:
                 print(f"  [DESCARGADO] {filename}")

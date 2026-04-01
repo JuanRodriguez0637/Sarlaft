@@ -2,12 +2,12 @@
 
 > **Fuente Confluence:** [Estructura Proyecto - Motor Evaluación](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1809941019/Estructura+Proyecto+-+Motor+Evaluaci+n)
 > **Última modificación:** 2021-06-29 — Edwin Didier Méndez Rojas - Ceiba Software · versión 2
-> **Sección:** [Estructura Proyecto - Motor Evaluación](./index.md)
+> **Sección:** [Estructura Proyecto - Motor Evaluación](../index.md)
 
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `image-20210629-013238.png` | [image-20210629-013238.png](./attachments/image-20210629-013238.png) |
 | `image-20210629-005159.png` | [image-20210629-005159.png](./attachments/image-20210629-005159.png) |
 

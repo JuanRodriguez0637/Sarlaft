@@ -25,7 +25,7 @@
 ## Adjuntos de Ejemplo
 
 | Archivo | Descripción |
-|---------|-------------|
+| --------- | ------------- |
 | [`EjemploDeterminarEstadoEvaluacionApi.json`](./attachments/EjemploDeterminarEstadoEvaluacionApi.json) | Ejemplo JSON Request SarlaftApi |
 | [`EjemploDeterminarEstadoEvaluacionWebhook.json`](./attachments/EjemploDeterminarEstadoEvaluacionWebhook.json) | Ejemplo JSON Request SarlaftWebhook (mensaje RabbitMQ) |
 | [`EjemploDeterminarEstadoEvaluacionWebhookResponse.json`](./attachments/EjemploDeterminarEstadoEvaluacionWebhookResponse.json) | Ejemplo JSON Response SarlaftWebhook |

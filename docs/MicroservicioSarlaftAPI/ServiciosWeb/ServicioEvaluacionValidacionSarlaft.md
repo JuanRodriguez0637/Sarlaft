@@ -26,7 +26,7 @@
 Los archivos están disponibles en [`ServicioEvaluacionValidacion/`](./ServicioEvaluacionValidacion/).
 
 | Archivo | Descripción |
-|---------|-------------|
+| --------- | ------------- |
 | [AsessmentREPJ.json](./ServicioEvaluacionValidacion/AsessmentREPJ.json) | Request de evaluación para Reclamación PJ |
 | [AsessmentREPN.json](./ServicioEvaluacionValidacion/AsessmentREPN.json) | Request de evaluación para Reclamación PN |
 | [TomadorPJ.json](./ServicioEvaluacionValidacion/TomadorPJ.json) | Request de evaluación para Tomador Persona Jurídica |

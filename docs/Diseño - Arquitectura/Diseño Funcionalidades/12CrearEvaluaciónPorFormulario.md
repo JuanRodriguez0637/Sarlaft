@@ -7,7 +7,7 @@
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `image-20230622-163240.png` | [image-20230622-163240.png](./attachments/image-20230622-163240.png) |
 | `image-20230622-163037.png` | [image-20230622-163037.png](./attachments/image-20230622-163037.png) |
 | `image-20230622-163014.png` | [image-20230622-163014.png](./attachments/image-20230622-163014.png) |
@@ -20,7 +20,7 @@ Para esto se tiene la opción en el visor de aplicaciones_** Sarlaft 4.0 Modulo 
 ![imagen](./attachments/image-20230622-162005.png)
 Al seleccionar la opción se presentan dos opciones: _Consultar cliente_ y _Crear evaluacion_. Para ingresar directamente a esta pantalla en laboratorio se puede ingresar por medio de esta url: [https://sarlaft.labsura.com/admsarlaft/inicio](https://sarlaft.labsura.com/admsarlaft/inicio)  con el usuario _**pedrvevi**_.
 ![imagen](./attachments/image-20230622-162048.png)
-Con la opción de Crear evaluación se solicitan los datos básicos de la evaluación: 
+Con la opción de Crear evaluación se solicitan los datos básicos de la evaluación:
 ![imagen](./attachments/image-20230622-163014.png)
 ![imagen](./attachments/image-20230622-163037.png)
 Al crear la evaluación se muestra la información resumen:

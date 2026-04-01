@@ -2,7 +2,7 @@
 
 > **Fuente Confluence:** [Motor Evaluación - Retirar evidencia de IDENTITY para asesores directos del canal Affinity en la solución de movilidad](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/3988389894/Motor+Evaluaci+n+-+Retirar+evidencia+de+IDENTITY+para+asesores+directos+del+canal+Affinity+en+la+soluci+n+de+movilidad)
 > **Última modificación:** 2024-08-23 — Jose Mosquera · versión 2
-> **Sección:** [Motor Evaluación - Retirar evidencia de IDENTITY para asesores](./index.md)
+> **Sección:** [Motor Evaluación - Retirar evidencia de IDENTITY para asesores](../index.md)
 
 **Generalidades:**
 
@@ -84,7 +84,7 @@ Tomamos como ejemplo el siguiente criterio que nos da un ejemplo claro de como s
         }
     ]
 }
-```
+```text
 
 - **Ejemplo1 Json Response:**
 
@@ -115,7 +115,7 @@ Tomamos como ejemplo el siguiente criterio que nos da un ejemplo claro de como s
         }
     ]
 }
-```
+```text
 
 - **Ejemplo2 Json Request:**
 
@@ -157,7 +157,7 @@ Tomamos como ejemplo el siguiente criterio que nos da un ejemplo claro de como s
         }
     ]
 }
-```
+```text
 
 - **Ejemplo2 Json Response:**
 

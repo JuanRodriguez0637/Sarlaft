@@ -7,7 +7,7 @@
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `Sarlaft_Laura-WebhookFinalizacion3.jpg` | [Sarlaft_Laura-WebhookFinalizacion3.jpg](./attachments/Sarlaft_Laura-WebhookFinalizacion3.jpg) |
 | `Sarlaft_Laura-WebhookFinalizacion2.jpg` | [Sarlaft_Laura-WebhookFinalizacion2.jpg](./attachments/Sarlaft_Laura-WebhookFinalizacion2.jpg) |
 | `Sarlaft_Laura-WebhookFinalizacion1.jpg` | [Sarlaft_Laura-WebhookFinalizacion1.jpg](./attachments/Sarlaft_Laura-WebhookFinalizacion1.jpg) |
@@ -29,7 +29,7 @@ Este mecanismo permite comunicar al aplicativo que envió la solicitud de crear 
 | FINALIZADO_EXCEPCION | Es un estado especial para cuando un sarlaft finaliza sin diligenciar formulario, aplica para ciertos negocios que constituyen excepción en las reglas de negocio de Sarlaft 4.0.  Por estar finalizado el negocio puede expedirse. |
 | FINALIZADO_SIN_CARGA | La evaluación ha cumplido todos los pasos: validaciones, formulario, requisitos. Algunos requisitos pudiesen haberse adjuntado pero no se han subido al gestor documental P8. Por estar finalizado el negocio puede expedirse. |
 
-Existen dos tipos de comunicación de webhook, cada aplicativo puede elegir aquel que sea acorde a su arquitectura. 
+Existen dos tipos de comunicación de webhook, cada aplicativo puede elegir aquel que sea acorde a su arquitectura.
 
 #### Mecanismo QUEUE:
 

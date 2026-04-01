@@ -85,8 +85,13 @@ MicroservicioSarlaftAPI/<Subseccion>/attachments/     — JSON y otros adjuntos
 
 > **Fuente Confluence:** [<Título>](<URL completa>)
 > **Última modificación:** <fecha> — <autor> · versión <N>
-> **Sección:** [<Padre>](./index.md)
+> **Sección:** [<Padre>](<ruta-relativa-al-index-padre>)
 ```
+
+**Regla de la ruta en `**Sección:**`:**
+- Si el archivo está en `MiSeccion/index.md` (índice de primer nivel): `./index.md` apunta a sí mismo — usar `../index.md` para subir al padre real solo cuando exista un nivel superior.
+- Si el archivo está en `MiSeccion/SubDir/index.md` (índice de subcarpeta): **siempre usar `../index.md`** para apuntar al `index.md` de `MiSeccion/`.
+- Si el archivo es una página normal `MiSeccion/SubDir/Pagina.md`: usar `./index.md` — apunta correctamente al `index.md` de `SubDir/`.
 
 **Reglas de conversión HTML → Markdown:**
 - Tablas HTML → tablas Markdown
@@ -126,6 +131,14 @@ Aplica estas correcciones a **cada archivo `.md` generado**, antes de escribirlo
 **heading-order (axe-linter) — Jerarquía de headings**
 - El título principal del archivo es `#`. El primer subnivel debe ser `##`, nunca saltar de `#` a `###` o `####`.
 - Al convertir headings de Confluence (`<h1>`→`##`, `<h2>`→`###`, etc.) verificar que el primer heading interior no sea nivel 3 o inferior si no hay un `##` antes.
+
+**MD009 — Sin espacios finales**
+- Ninguna línea debe terminar con un espacio suelto (excepción: dos espacios finales deliberados para `<br>`).
+- Aplica también a celdas de tabla.
+
+**MD034 — Sin URLs ni emails desnudos**
+- Toda URL (`http://`, `https://`) y todo email (`usuario@dominio.tld`) que aparezca en texto libre debe ir envuelto en `<url>` o como link `[texto](url)`.
+- NO aplicar dentro de code spans ni dentro de links ya formateados `[...](...)`.
 
 **MD056 — Número uniforme de columnas en tablas**
 - Todas las filas de una tabla Markdown deben tener exactamente el mismo número de celdas que la fila de encabezado.
@@ -189,7 +202,7 @@ python scripts/fix_markdown_lint_section.py "<RUTA_SECCION>"
 - Si una página solo tiene macro `pagetree`, el `.md` es un índice con links
 - Los backticks se preservan: campos BD, endpoints, mensajes, perfiles van con backticks
 - Siempre usar `jq` en las llamadas a Confluence para optimizar tokens
-- Los archivos generados deben pasar sin advertencias: MD032, MD040, MD047, MD010, MD012, MD056, heading-order
+- Los archivos generados deben pasar sin advertencias: MD009, MD010, MD012, MD032, MD034, MD040, MD047, MD056, heading-order
 
 ## Formato de salida
 

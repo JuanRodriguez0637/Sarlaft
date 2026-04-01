@@ -7,7 +7,7 @@
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `Query-Error-Reponse.json` | [Query-Error-Reponse.json](./attachments/Query-Error-Reponse.json) |
 | `Query-Reponse.json` | [Query-Reponse.json](./attachments/Query-Reponse.json) |
 | `response.png` | [response.png](./attachments/response.png) |

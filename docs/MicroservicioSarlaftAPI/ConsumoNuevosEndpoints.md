@@ -14,7 +14,7 @@ Documentación del mapeo de endpoints anteriores a los nuevos endpoints resultan
 ## Recursos de Referencia
 
 | Recurso | Enlace |
-|---------|--------|
+| --------- | -------- |
 | Colección de Postman para probar la nueva API REST | [Enlace a la colección](https://suramericana.sharepoint.com/:f:/r/sites/MESA7-CALIDADDEINFORMACIN/Shared%20Documents/General/Proyecto%20SARLAFT%204.0/DocumentacionDesarrollo/IniciativaSoat_2024/Documentos%20Complementarios%20SARLAFT/sarlaft/nuevos%20endpoints?csf=1&web=1&e=igXtjV) |
 | Ambientes configurados | [Enlace a los ambientes](https://suramericana.sharepoint.com/:f:/r/sites/MESA7-CALIDADDEINFORMACIN/Shared%20Documents/General/Proyecto%20SARLAFT%204.0/DocumentacionDesarrollo/IniciativaSoat_2024/Documentos%20Complementarios%20SARLAFT/sarlaft?csf=1&web=1&e=JJ7Cu4) |
 

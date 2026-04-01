@@ -14,7 +14,7 @@ Esta sección documenta todos los endpoints REST expuestos por el microservicio 
 ## Catálogo de Servicios
 
 | # | Servicio | Archivo Local | Confluence |
-|---|---------|--------------|------------|
+| --- | --------- | -------------- | ------------ |
 | 1 | Servicio Catálogos | [ServicioCatalogos.md](./ServicioCatalogos.md) | [Ver](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2709094564) |
 | 2 | Servicio Evaluación Validación Sarlaft | [ServicioEvaluacionValidacionSarlaft.md](./ServicioEvaluacionValidacionSarlaft.md) | [Ver](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1814233305) |
 | 3 | Servicio Adicionar Evidencias | [ServicioAdicionarEvidencias.md](./ServicioAdicionarEvidencias.md) | [Ver](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1814003981) |

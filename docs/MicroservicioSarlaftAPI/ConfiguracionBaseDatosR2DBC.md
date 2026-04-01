@@ -15,7 +15,7 @@ spring.r2dbc.pool.initialSize: 10
 spring.r2dbc.pool.maxSize: 10
 spring.r2dbc.pool.maxAcquireTime: PT60S
 spring.r2dbc.pool.maxIdleTime: PT30M
-```
+```text
 
 ---
 
@@ -92,7 +92,7 @@ El método `isNew()` de `Persistable<T>` determina la operación:
 public boolean isNew() {
     return this.fechaCreacion == null;
 }
-```
+```sql
 
 **Lógica:**
 - `true` (fechaCreacion == null) → INSERT

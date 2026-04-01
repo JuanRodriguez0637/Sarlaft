@@ -18,7 +18,7 @@
 Los archivos JSON de request y response están disponibles en [`ServicioCatalogos/`](./ServicioCatalogos/).
 
 | Catálogo | Request | Response |
-|----------|---------|----------|
+| ---------- | --------- | ---------- |
 | `TIPO_PERSONA` | `{"codigoCatalogo": "TIPO_PERSONA", "departamento": null, "pais": null, "tipoPersona": null, "subCodigoParametro": null}` | [TIPO_PERSONA_RESPONSE.json](./ServicioCatalogos/TIPO_PERSONA_RESPONSE.json) |
 | `COD_RAMOS` | `{"codigoCatalogo": "COD_RAMOS", "departamento": null, "pais": null, "tipoPersona": null, "subCodigoParametro": null, "fraccionTexto": null}` | [COD_RAMOS_RESPONSE.json](./ServicioCatalogos/COD_RAMOS_RESPONSE.json) |
 | `COD_SUBRAMOS` | `{"codigoCatalogo": "COD_SUBRAMOS", "departamento": null, "pais": null, "tipoPersona": null, "subCodigoParametro": "006"}` | [COD_SUBRAMOS_RESPONSE.json](./ServicioCatalogos/COD_SUBRAMOS_RESPONSE.json) |

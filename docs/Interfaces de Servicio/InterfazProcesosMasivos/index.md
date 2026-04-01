@@ -13,5 +13,5 @@ Cambio: Nombre del exchange de RabbitMQ para comunicaciones de webhook.
 ## Archivos Adjuntos
 
 | Archivo | Descripción |
-|---------|-------------|
+| --------- | ------------- |
 | [`SERVICIO DE VALIDAR SARLAFT_MASIVO.pdf`](./attachments/SERVICIO%20DE%20VALIDAR%20SARLAFT_MASIVO.pdf) | Especificación del servicio de validación Sarlaft para procesos masivos |

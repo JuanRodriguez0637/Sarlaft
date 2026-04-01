@@ -2,12 +2,12 @@
 
 > **Fuente Confluence:** [Regla Tablas Paramétricas PJ_SOAT - Motor Evaluación Tipo Formulario](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/3890151437/Regla+Tablas+Param+tricas+PJ_SOAT+-+Motor+Evaluaci+n+Tipo+Formulario)
 > **Última modificación:** 2024-09-24 — Brayan Estiven Sepúlveda Quintero · versión 4
-> **Sección:** [Regla Tablas Paramétricas PJ_SOAT - Motor Evaluación](./index.md)
+> **Sección:** [Regla Tablas Paramétricas PJ_SOAT - Motor Evaluación](../index.md)
 
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `lab.postman_environment.json` | [lab.postman_environment.json](./attachments/lab.postman_environment.json) |
 | `local.postman_environment.json` | [local.postman_environment.json](./attachments/local.postman_environment.json) |
 | `Invalid file id - 598b4cd7-5174-4510-87ee-ba9e6e6f335c` | [Invalid file id - 598b4cd7-5174-4510-87ee-ba9e6e6f335c](./attachments/Invalid file id - 598b4cd7-5174-4510-87ee-ba9e6e6f335c) |

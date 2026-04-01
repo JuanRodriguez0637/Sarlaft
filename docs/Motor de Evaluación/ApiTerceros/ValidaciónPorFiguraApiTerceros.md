@@ -7,7 +7,7 @@
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `Query-Error-Response.json` | [Query-Error-Response.json](./attachments/Query-Error-Response.json) |
 | `Query-Response.json` | [Query-Response.json](./attachments/Query-Response.json) |
 | `Query-Request.json` | [Query-Request.json](./attachments/Query-Request.json) |

@@ -6,7 +6,7 @@
 ## Secciones
 
 | Sección | Páginas | Estado |
-|---------|---------|--------|
+| --------- | --------- | -------- |
 | [Diseño - Motor Evaluación](./Diseño - Motor Evaluación/index.md) | 1 | OK |
 | [Configuración Ambiente - Motor Evaluación](./Configuración Ambiente - Motor Evaluación/index.md) | 1 | OK |
 | [Estructura Proyecto - Motor Evaluación](./Estructura Proyecto - Motor Evaluación/index.md) | 1 | OK |

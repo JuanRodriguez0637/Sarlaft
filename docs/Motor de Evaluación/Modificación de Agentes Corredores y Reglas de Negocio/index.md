@@ -2,12 +2,12 @@
 
 > **Fuente Confluence:** [Modificación de Agentes Corredores y Reglas de Negocio](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/3779330147/Modificaci+n+de+Agentes+Corredores+y+Reglas+de+Negocio)
 > **Última modificación:** 2024-09-24 — Brayan Estiven Sepúlveda Quintero · versión 12
-> **Sección:** [Modificación de Agentes Corredores y Reglas de Negocio](./index.md)
+> **Sección:** [Modificación de Agentes Corredores y Reglas de Negocio](../index.md)
 
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `Base corredores_julio2024.xlsx` | [Base corredores_julio2024.xlsx](./attachments/Base corredores_julio2024.xlsx) |
 | `Escenarios HU 461762(Lab).postman_environment.json` | [Escenarios HU 461762(Lab).postman_environment.json](./attachments/Escenarios HU 461762(Lab).postman_environment.json) |
 | `Escenarios HU 461762.postman_environment.json` | [Escenarios HU 461762.postman_environment.json](./attachments/Escenarios HU 461762.postman_environment.json) |
@@ -114,7 +114,7 @@ INSERT INTO sarlaft.tsaf_agente (cdagente, tipoagente) VALUES ('3040051', 'CORRE
 INSERT INTO sarlaft.tsaf_agente (cdagente, tipoagente) VALUES ('3040159', 'CORREDOR') ON CONFLICT (cdagente) DO NOTHING;
 INSERT INTO sarlaft.tsaf_agente (cdagente, tipoagente) VALUES ('3501001', 'CORREDOR') ON CONFLICT (cdagente) DO NOTHING;
 INSERT INTO sarlaft.tsaf_agente (cdagente, tipoagente) VALUES ('3501005', 'CORREDOR') ON CONFLICT (cdagente) DO NOTHING;
-```
+```text
 
 Y la entidad que se configuró en el proyecto 892-sarlaft-api-ms para configurar la tabla a través de JPA es la siguiente:
 

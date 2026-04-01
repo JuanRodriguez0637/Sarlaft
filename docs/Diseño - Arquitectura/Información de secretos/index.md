@@ -2,7 +2,7 @@
 
 > **Fuente Confluence:** [Información de secretos](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/4703420517/Informaci+n+de+secretos)  
 > **Última modificación:** 2025-05-27 — Diana Muñoz · versión 2  
-> **Sección:** [Información de secretos](./index.md)
+> **Sección:** [Información de secretos](../index.md)
 
 Los siguientes corresponden a los secretos utilizados por todos los microservicios de Sarlaft 4.0
 
@@ -17,7 +17,7 @@ Los siguientes corresponden a los secretos utilizados por todos los microservici
 | RabbitMQ - Password - seguros.sarlaftmsv.usr | var_tf_kv_rabbitmq_sarlaftmsvusr_pwd | kv-secret-rabbitmq-sarlaftmsvusr-pwd | Batch MI |
 | RabbitMQ - Password - seguros.sarlaftwebhook.usr | var_tf_kv_rabbitmq_sarlaftwebhook_pwd | kv-secret-rabbitmq-sarlaftwebhook-pwd | Webhook MI |
 | Secret JWT - Rest | var_tf_kv_webhookmi_jwt_secret | kv-secret-webhookmi-jwt-secret | Webhook MI |
-| Salesforce - Password - usuario - consultaclientes@sura.com.co | var_tf_kv_salesforce_pwd | kv-secret-salesforce-pwd | Clientes MI |
+| Salesforce - Password - usuario - <consultaclientes@sura.com.co> | var_tf_kv_salesforce_pwd | kv-secret-salesforce-pwd | Clientes MI |
 | Salesforce - clave cliente | var_tf_kv_salesforce_clave | kv-secret-salesforce-clave | Clientes MI |
 | Informa colombia - key | var_tf_kv_infocolombia_key | kv-secret-infocolombia-key | Clientes PJ MI |
 | Base de Datos Oracle PDN - Password - Usuario - MODSARLAFT | var_tf_kv_oracleusr_pwd | kv-secret-oracleusr-pwd | Clientes PN MI |

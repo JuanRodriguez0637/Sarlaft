@@ -2,7 +2,7 @@
 
 > **Fuente Confluence:** [Pruebas automatizadas Motor](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/3735683077/Pruebas+automatizadas+Motor)
 > **Última modificación:** 2024-05-15 — Juan David Tamayo Molina (Unlicensed) · versión 3
-> **Sección:** [Pruebas automatizadas Motor](./index.md)
+> **Sección:** [Pruebas automatizadas Motor](../index.md)
 
 ## Informe de actualización de automatización Motores de Reglas SARLAFT.
 

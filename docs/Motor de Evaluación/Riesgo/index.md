@@ -2,12 +2,12 @@
 
 > **Fuente Confluence:** [Riesgo](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2365718886/Riesgo)
 > **Última modificación:** 2025-10-14 — Antiguo usuario (Deleted) · versión 4
-> **Sección:** [Riesgo](./index.md)
+> **Sección:** [Riesgo](../index.md)
 
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `image-20251014-130444.png` | [image-20251014-130444.png](./attachments/image-20251014-130444.png) |
 
 - **Clasificación del Riesgo**
@@ -40,5 +40,5 @@ Para ver cómo se documenta y se desarrolla una historia de usuario(HU) ver  la 
 ### Sub-páginas
 
 | Página | Nivel |
-|--------|-------|
+| -------- | ------- |
 | [Cómo desarrollar una HU para inclusión de reglas.](./CómoDesarrollarUnaHUParaInclusiónDeReglas.md) | 0 |

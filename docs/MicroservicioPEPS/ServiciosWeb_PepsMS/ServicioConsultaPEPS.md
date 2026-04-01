@@ -34,7 +34,7 @@ Base de Datos PDN y PDNHA
     "secondSurname": null
   }
 }
-```
+```text
 
 ### `request_checkpeps.json`
 

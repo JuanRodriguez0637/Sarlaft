@@ -17,7 +17,7 @@ Se documentan las siguientes interfaces:
 ## Archivos Adjuntos
 
 | Archivo | Versión | Tipo |
-|---------|---------|------|
+| --------- | --------- | ------ |
 | [`DocumentacionTecnicaSarlaft_1.8.4.docx`](./attachments/DocumentacionTecnicaSarlaft_1.8.4.docx) | 1.8.4 | Word |
 | [`DocumentacionTecnicaSarlaft_1.8.3.docx`](./attachments/DocumentacionTecnicaSarlaft_1.8.3.docx) | 1.8.3 | Word |
 | [`DocumentacionTecnicaSarlaft_1.8.2.pdf`](./attachments/DocumentacionTecnicaSarlaft_1.8.2.pdf) | 1.8.2 | PDF |

@@ -13,7 +13,7 @@ Se ajusta request del ws de assessment, se incluye ejemplo de consumo del ws de 
 ## Proyectos Postman
 
 | Archivo | Descripción |
-|---------|-------------|
+| --------- | ------------- |
 | [`Sarlaft 4.0 DLLO.postman_environment.json`](./attachments/Sarlaft%204.0%20DLLO.postman_environment.json) | Environment Postman — Ambiente Desarrollo |
 | [`Sarlaft 4.0 LABO.postman_environment.json`](./attachments/Sarlaft%204.0%20LABO.postman_environment.json) | Environment Postman — Ambiente Laboratorio |
 | [`Sarlaft 4.0 Interfaces.postman_collection.json`](./attachments/Sarlaft%204.0%20Interfaces.postman_collection.json) | Colección Postman de interfaces Sarlaft 4.0 |
@@ -21,7 +21,7 @@ Se ajusta request del ws de assessment, se incluye ejemplo de consumo del ws de 
 ## Sub-secciones
 
 | Página | Descripción | Última modificación |
-|--------|-------------|---------------------|
+| -------- | ------------- | --------------------- |
 | [Descripción de Interfaces Principales](./DescripcionInterfacesPrincipales/index.md) | Descripción de las interfaces principales: Validar Sarlaft, Almacenar Evidencias, Consultar Formulario Sarlaft, WebHook, Web Component | 2025-11-07 |
 | [Interfaz Procesos Masivos](./InterfazProcesosMasivos/index.md) | Diseño asíncrono para validación masiva de hasta 100 pólizas mediante mensajería RabbitMQ | 2021-08-18 |
 | [Escenario de Validación Sarlaft en varios request](./EscenarioValidacion/index.md) | Escenario de validación para WeSura, SuraEnLinea y algunos productos de Salud | 2021-05-05 |

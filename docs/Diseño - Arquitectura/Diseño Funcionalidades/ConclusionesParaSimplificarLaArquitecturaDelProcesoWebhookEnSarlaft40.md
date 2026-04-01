@@ -6,20 +6,14 @@
 
 Tras el análisis de las dos posibles soluciones planteadas, se llega a las siguientes conclusiones:
 
-- 
-Se ha decidido implementar la [solución#1](/wiki/spaces/EPA/pages/3742892047/Propuesta+1+-+Omitir+la+comunicaci+n+que+pasa+por+Azure+Service+Bus), que consiste en eliminar la comunicación a través del Azure Service Bus entre los microservicios sarlaftapi y sarlaftwebhook, sustituyendo el intercambio de queries y comandos.
+- Se ha decidido implementar la [solución#1](/wiki/spaces/EPA/pages/3742892047/Propuesta+1+-+Omitir+la+comunicaci+n+que+pasa+por+Azure+Service+Bus), que consiste en eliminar la comunicación a través del Azure Service Bus entre los microservicios sarlaftapi y sarlaftwebhook, sustituyendo el intercambio de queries y comandos.
 
-- 
-Se elimina el punto de fallo del microservicio de sarlaftwebhook.
+- Se elimina el punto de fallo del microservicio de sarlaftwebhook.
 
-- 
-Se elimina el cuello de botella de atender el query por parte del microservicio de sarlaftapi.
+- Se elimina el cuello de botella de atender el query por parte del microservicio de sarlaftapi.
 
-- 
-Los cambios realizados en el microservicio de sarlaftapi no requerirían pruebas de seguridad dinámicas lo cual elimina la espera que implica que sean programadas.
+- Los cambios realizados en el microservicio de sarlaftapi no requerirían pruebas de seguridad dinámicas lo cual elimina la espera que implica que sean programadas.
 
-- 
-Al trasladarse la responsabilidad que tiene actualmente el microservicio sarlaftwebhook (pensando en ser eliminado en un futuro) al microservicio sarlaftapi, podría aumentar los tiempos de las transacciones sobre todo con los servicios de assessment y guardar formulario.
+- Al trasladarse la responsabilidad que tiene actualmente el microservicio sarlaftwebhook (pensando en ser eliminado en un futuro) al microservicio sarlaftapi, podría aumentar los tiempos de las transacciones sobre todo con los servicios de assessment y guardar formulario.
 
-- 
-Aumenta la complejidad accidental en el microservicio de sarlaftapi.
+- Aumenta la complejidad accidental en el microservicio de sarlaftapi.

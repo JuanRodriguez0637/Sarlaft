@@ -11,5 +11,5 @@ Caso especial para algunos cotizadores y `Policy Center`.
 ## Archivos Adjuntos
 
 | Archivo | Descripción |
-|---------|-------------|
+| --------- | ------------- |
 | [`SERVICIO CONSULTAR ESTADO SARLAFT.pdf`](./attachments/SERVICIO%20CONSULTAR%20ESTADO%20SARLAFT.pdf) | Especificación del servicio de consulta de estado Sarlaft |

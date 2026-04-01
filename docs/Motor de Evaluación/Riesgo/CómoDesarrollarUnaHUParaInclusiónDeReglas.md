@@ -7,7 +7,7 @@
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `image-20251014-185741.png` | [image-20251014-185741.png](./attachments/image-20251014-185741.png) |
 
 Para el desarrollo de la HU es necesario tener configurado el [ambiente del motor](/wiki/spaces/EPA/pages/1809941012/Configuraci+n+Ambiente+-+Motor+Evaluaci+n), también se recomienda por facilidad de pruebas tener configurado el [ambiente de SarlaftAPI](/wiki/spaces/EPA/pages/1801159141/Configuraci+n+Ambiente+-+SarlaftAPI).

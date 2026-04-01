@@ -7,7 +7,7 @@
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `Response.json` | [Response.json](./attachments/Response.json) |
 | `Request.json` | [Request.json](./attachments/Request.json) |
 | `image-20220523-174620.png` | [image-20220523-174620.png](./attachments/image-20220523-174620.png) |

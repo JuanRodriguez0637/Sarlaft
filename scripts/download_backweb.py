@@ -85,7 +85,7 @@ DOCX_DIR = os.path.join(DOCS_ROOT, "docx")
 XLSX_DIR = os.path.join(DOCS_ROOT, "xlsx")
 TODAY    = date.today().strftime("%Y-%m-%d")
 
-for folder in [BW_ROOT, IMG_DIR, ATT_DIR, PDF_DIR, DOCX_DIR, XLSX_DIR]:
+for folder in [BW_ROOT, IMG_DIR, ATT_DIR]:
     os.makedirs(folder, exist_ok=True)
 
 # ---------------------------------------------------------------------------
@@ -551,6 +551,7 @@ def process_attachments(page_id: str, referenced: set, out_dir: str) -> dict:
             rel_path  = os.path.relpath(ATT_DIR, out_dir).replace("\\", "/") + f"/{filename}"
 
         if not os.path.exists(dest_file):
+            os.makedirs(os.path.dirname(dest_file), exist_ok=True)
             ok = download_binary(dl_path, dest_file)
             if ok:
                 print(f"  [DESCARGADO] {filename} ({media_type})")

@@ -7,7 +7,7 @@
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `image-20240418-000241.png` | [image-20240418-000241.png](./attachments/image-20240418-000241.png) |
 | `image-20240417-235835.png` | [image-20240417-235835.png](./attachments/image-20240417-235835.png) |
 | `image-20240417-235814.png` | [image-20240417-235814.png](./attachments/image-20240417-235814.png) |
@@ -57,7 +57,7 @@
     "codigoRamo": "1"
   }
 }
-```
+```text
 
 - **Ejemplo Json Response:**
 

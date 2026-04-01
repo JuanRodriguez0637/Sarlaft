@@ -104,7 +104,7 @@
         "licitacionPublica": false
     }
 }
-```
+```text
 
 **Ejemplo de Response Correcto:**
 

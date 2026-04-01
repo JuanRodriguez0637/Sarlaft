@@ -7,7 +7,7 @@
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `DocumentacionSarlaft.xlsx` | [DocumentacionSarlaft.xlsx](./attachments/DocumentacionSarlaft.xlsx) |
 | `wsrest_postman.zip` | [wsrest_postman.zip](./attachments/wsrest_postman.zip) |
 

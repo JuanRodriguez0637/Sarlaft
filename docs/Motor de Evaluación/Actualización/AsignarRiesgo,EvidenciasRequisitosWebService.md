@@ -7,7 +7,7 @@
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `Json-Response.json` | [Json-Response.json](./attachments/Json-Response.json) |
 | `Json-Request.json` | [Json-Request.json](./attachments/Json-Request.json) |
 | `Json-Response.json.txt` | [Json-Response.json.txt](./attachments/Json-Response.json.txt) |

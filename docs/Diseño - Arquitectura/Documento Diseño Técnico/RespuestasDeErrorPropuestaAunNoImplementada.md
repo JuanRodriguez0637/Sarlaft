@@ -7,7 +7,7 @@
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `respuestasErroresSarlaft4.xlsx` | [respuestasErroresSarlaft4.xlsx](./attachments/respuestasErroresSarlaft4.xlsx) |
 
 De acuerdo a los lineamientos de servicios rest en cuanto al manejo de errores [Lineamientos para servicios REST - Arquitectura técnica - Confluence (atlassian.net)](/wiki/spaces/AR/pages/256672056/Lineamientos+para+servicios+REST) se tienen las siguientes definiciones para el manejo de error de los servicios web que expone el aplicativo de Sarlaft 4.0
@@ -57,7 +57,7 @@ _**Errores Formato:**_ aquellos errores que se originan por que un campo no tien
 
 Donde el campo id sea incremental para los diferentes errores presentados. El campo tipo Formato sea constante. El campo mensaje inicie con el prefijo “Formato incorrecto: “ y XXX corresponda al nombre de campo en particular ; el campo detalle corresponda de un mensaje aclaratorio.
 
-El siguiente excel contiene el listado de servicios expuestos en la aplicación a través de tres microservicios:  sarlaftapi, saralftadmin y sarlaftbatch. Y las respuestas en los formatos anteriores para los mensajes de los servicios web del microservicio de sarlaftapi [/wiki/download/attachments/3307601991/respuestasErroresSarlaft4.xlsx?version=2&modificationDate=1692995714983&cacheVersion=1&api=v2](/wiki/download/attachments/3307601991/respuestasErroresSarlaft4.xlsx?version=2&modificationDate=1692995714983&cacheVersion=1&api=v2) 
+El siguiente excel contiene el listado de servicios expuestos en la aplicación a través de tres microservicios:  sarlaftapi, saralftadmin y sarlaftbatch. Y las respuestas en los formatos anteriores para los mensajes de los servicios web del microservicio de sarlaftapi [/wiki/download/attachments/3307601991/respuestasErroresSarlaft4.xlsx?version=2&modificationDate=1692995714983&cacheVersion=1&api=v2](/wiki/download/attachments/3307601991/respuestasErroresSarlaft4.xlsx?version=2&modificationDate=1692995714983&cacheVersion=1&api=v2)
 
 **Nota: **para el caso de funcionalidades que son expuestas por procesos masivos no se afectaran las respuestas en esta etapa del cambio, solo a nivel de servicio web.
 

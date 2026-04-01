@@ -7,7 +7,7 @@
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `image-20240207-200559.png` | [image-20240207-200559.png](./attachments/image-20240207-200559.png) |
 | `image-20240315-031220.png` | [image-20240315-031220.png](./attachments/image-20240315-031220.png) |
 | `image-20240315-031217.png` | [image-20240315-031217.png](./attachments/image-20240315-031217.png) |

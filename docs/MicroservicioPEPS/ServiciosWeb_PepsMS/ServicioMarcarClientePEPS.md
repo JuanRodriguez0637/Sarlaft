@@ -175,7 +175,7 @@ URL: [https://sic.suranet.com/ServiciosWebSic/services/ConsultaModeloClientesWS?
     }
   ]
 }
-```
+```text
 
 ### `request_mark.json`
 
@@ -192,7 +192,7 @@ URL: [https://sic.suranet.com/ServiciosWebSic/services/ConsultaModeloClientesWS?
     "secondSurname": null
   }
 }
-```
+```text
 
 ### `request.json`
 

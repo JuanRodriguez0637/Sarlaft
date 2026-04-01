@@ -7,7 +7,7 @@
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `Sarlaft_Laura-PrecargaCliente2 (1)-20230615-151307.jpg` | [Sarlaft_Laura-PrecargaCliente2 (1)-20230615-151307.jpg](./attachments/Sarlaft_Laura-PrecargaCliente2 (1)-20230615-151307.jpg) |
 | `Sarlaft_Laura-PrecargaCliente2-20230615-135502.jpg` | [Sarlaft_Laura-PrecargaCliente2-20230615-135502.jpg](./attachments/Sarlaft_Laura-PrecargaCliente2-20230615-135502.jpg) |
 

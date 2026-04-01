@@ -43,5 +43,5 @@ Al momento del despliegue el porcentaje de cobertura se puede ver en: <https://s
 ## Sub-secciones
 
 | Sub-sección | Descripción | Última modificación |
-|-------------|-------------|---------------------|
+| ------------- | ------------- | --------------------- |
 | [Configuración Infraestructura](./ConfiguracionInfraestructura/index.md) | Documentación asociada a los pasos y procedimientos necesarios para montar una infraestructura en Azure. | 2021-07-06 |

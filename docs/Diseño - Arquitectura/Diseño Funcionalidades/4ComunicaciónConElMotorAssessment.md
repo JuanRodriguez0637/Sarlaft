@@ -7,7 +7,7 @@
 ## Archivos adjuntos
 
 | Archivo | Enlace |
-|---------|--------|
+| --------- | -------- |
 | `motor.jpg` | [motor.jpg](./attachments/motor.jpg) |
 | `Sarlaft_Laura-ComunicacionMotor-20230613-154909.jpg` | [Sarlaft_Laura-ComunicacionMotor-20230613-154909.jpg](./attachments/Sarlaft_Laura-ComunicacionMotor-20230613-154909.jpg) |
 
