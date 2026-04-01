@@ -39,8 +39,8 @@ PDF_ROOT  = Path(DOCS_ROOT) / "pdf"
 DOCX_ROOT = Path(DOCS_ROOT) / "docx"
 XLSX_ROOT = Path(DOCS_ROOT) / "xlsx"
 
-for _p in [ARQ_ROOT, PDF_ROOT, DOCX_ROOT, XLSX_ROOT]:
-    _p.mkdir(parents=True, exist_ok=True)
+# pdf/docx/xlsx se crean bajo demanda en download_bin → dest.parent.mkdir
+ARQ_ROOT.mkdir(parents=True, exist_ok=True)
 
 # ─── Secciones (hijos directos de "Diseño - Arquitectura" 1804697669) ────────
 ROOT_ID = "1804697669"

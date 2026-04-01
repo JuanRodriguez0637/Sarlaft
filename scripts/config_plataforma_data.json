@@ -1,0 +1,77 @@
+{
+  "2389114940": {
+    "id": "2389114940",
+    "title": "Configuración Plataforma Base Sarlaft",
+    "version": 1,
+    "author": "Jhon Edison Mesa Bedoya",
+    "date": "2021-09-13T18:02:38.553Z",
+    "webui": "/spaces/EPA/pages/2389114940/Configuraci+n+Plataforma+Base+Sarlaft",
+    "body": "<p />",
+    "comments": [],
+    "attachments": []
+  },
+  "2388918331": {
+    "id": "2388918331",
+    "title": "Instalación del Agente Dynatrace en AKS Sarlaft",
+    "version": 4,
+    "author": "Jhon Edison Mesa Bedoya",
+    "date": "2021-09-20T03:07:42.427Z",
+    "webui": "/spaces/EPA/pages/2388918331/Instalaci+n+del+Agente+Dynatrace+en+AKS+Sarlaft",
+    "body": "<p>Basado en: <a href=\"https://www.dynatrace.com/support/help/setup-and-configuration/setup-on-container-platforms/kubernetes/deploy-oneagent-on-kubernetes-for-application-only-monitoring/#tabgroup-annotations--namespace-annotations\" data-card-appearance=\"inline\">https://www.dynatrace.com/support/help/setup-and-configuration/setup-on-container-platforms/kubernetes/deploy-oneagent-on-kubernetes-for-application-only-monitoring/#tabgroup-annotations--namespace-annotations</a> </p><ol><li><p><strong>LABORATORIO AKS</strong><br /><br /><strong>PREREQUISTOS:</strong></p><p>a. Abrir una consola de windows y conectarse al AKS a modificar asi:</p><p><em>az account set --subscription f6278fb3-d372-470e-b355-70025248eb80</em></p><p><em>az aks get-credentials --resource-group rg-sarlaft-lab-001 --name aks-sarlaft</em></p></li></ol><p>Pasos seguidos para desplegar el agente en el AKS:</p><p>a. Crear el namespace de Dynatrace: <code>kubectl create namespace dynatrace</code></p><p>b. Instalar el Agente OneAgent: </p><p><code>kubectl apply -f https://github.com/Dynatrace/dynatrace-oneagent-operator/releases/latest/download/kubernetes.yaml </code></p><p>nota: Para verificar que este tomando logs, ejecutar:</p><p><code>kubectl -n dynatrace logs -f deployment/dynatrace-oneagent-operator</code></p><p>c. Adicionar el Token para logueo en las cuentas de Dynatrace en Sura. Cambiar PAAS_TOKEN por el token asignado en el equipo de Monitoreo</p><p><code>kubectl -n dynatrace create secret generic oneagent --from-literal=&quot;paasToken=PAAS_TOKEN&quot;</code></p><p>d. Marcar el namespaace de sarlaft (nombre=default) para env&iacute;o de logs a Dynatrace</p><p><code>kubectl label namespace default oneagent.dynatrace.com/instance=oneagentapm</code></p><p>e. Anotar namespace de sarlaft (nombre=default) para inyectar el agente en los contenedores asociados en el namespace</p><p><code>kubectl annotate namespace default oneagent.dynatrace.com/inject=true</code></p><p>f. Activar el logueo a Dynatrace laboratorio Sura por medio del archivo de configuraci&oacute;n</p><p><code>kubectl apply -f cr-apm-sarlaft-lab.yaml</code></p><p class=\"media-group\"><ac:structured-macro ac:name=\"view-file\" ac:schema-version=\"1\" ac:macro-id=\"0abd6cfa-ea9b-4729-a7bc-ee23aaed5381\"><ac:parameter ac:name=\"name\"><ri:attachment ri:filename=\"cr-apm-sarlaft-lab.yaml\" ri:version-at-save=\"2\" /></ac:parameter></ac:structured-macro></p><p><strong>2. PRODUCCI&Oacute;N AKS</strong></p><p><strong>PREREQUISTOS:</strong></p><p>a. Abrir una consola de windows y conectarse al AKS a modificar asi:</p><p><em>az account set --subscription ddd54223-6562-4c9f-ad31-92a04e786760</em></p><p><em>az aks get-credentials --resource-group rg-sarlaft-pdn-001 --name aks-sarlaft</em></p><p>Pasos seguidos para desplegar el agente en el AKS:</p><p>a. Crear el namespace de Dynatrace: <code>kubectl create namespace dynatrace</code></p><p>b. Instalar el Agente OneAgent:</p><p><code>kubectl apply -f https://github.com/Dynatrace/dynatrace-oneagent-operator/releases/latest/download/kubernetes.yaml</code></p><p>nota: Para verificar que este tomando logs, ejecutar:</p><p><code>kubectl -n dynatrace logs -f deployment/dynatrace-oneagent-operator</code></p><p>c. Adicionar el Token para logueo en las cuentas de Dynatrace en Sura. Cambiar PAAS_TOKEN por el token asignado en el equipo de Monitoreo</p><p><code>kubectl -n dynatrace create secret generic oneagent --from-literal=&quot;paasToken=PAAS_TOKEN&quot;</code></p><p>d. Marcar el namespaace de sarlaft (nombre=default) para env&iacute;o de logs a Dynatrace</p><p><code>kubectl label namespace default oneagent.dynatrace.com/instance=oneagentapm</code></p><p>e. Anotar namespace de sarlaft (nombre=default) para inyectar el agente en los contenedores asociados en el namespace</p><p><code>kubectl annotate namespace default oneagent.dynatrace.com/inject=true</code></p><p>f. Activar el logueo a Dynatrace laboratorio Sura por medio del archivo de configuraci&oacute;n</p><p><code>kubectl apply -f cr-apm-sarlaft-pdn.yaml</code></p><p class=\"media-group\"><ac:structured-macro ac:name=\"view-file\" ac:schema-version=\"1\" ac:macro-id=\"905d2694-36c0-4f59-9545-be6d0d954f04\"><ac:parameter ac:name=\"name\"><ri:attachment ri:filename=\"cr-apm-sarlaft-pdn.yaml\" ri:version-at-save=\"1\" /></ac:parameter></ac:structured-macro></p><p />",
+    "comments": [],
+    "attachments": [
+      {
+        "id": "att2399830176",
+        "title": "cr-apm-sarlaft-pdn.yaml",
+        "download": "/download/attachments/2388918331/cr-apm-sarlaft-pdn.yaml?version=1&modificationDate=1632107016900&cacheVersion=1&api=v2"
+      },
+      {
+        "id": "att2389344338",
+        "title": "cr-apm-sarlaft-lab.yaml",
+        "download": "/download/attachments/2388918331/cr-apm-sarlaft-lab.yaml?version=2&modificationDate=1631556072868&cacheVersion=1&api=v2"
+      }
+    ]
+  },
+  "1880817708": {
+    "id": "1880817708",
+    "title": "Instalación RabbitMQ en AKS Sarlaft",
+    "version": 1,
+    "author": "Jhon Edison Mesa Bedoya",
+    "date": "2021-04-12T18:10:05.280Z",
+    "webui": "/spaces/EPA/pages/1880817708/Instalaci+n+RabbitMQ+en+AKS+Sarlaft",
+    "body": "<p>A continuaci&oacute;n se describe el proceso de instalaci&oacute;n de RabbitMQ en el AKS de Sarlaft por medio de RabbitMQ Cluster Operator for Kubernetes <a href=\"https://www.rabbitmq.com/kubernetes/operator/operator-overview.html\">https://www.rabbitmq.com/kubernetes/operator/operator-overview.html</a></p><p>Requisitos:</p><ol><li><p>Acceso al Cluster de Kubernetes en versi&oacute;n 1.17 o superior. </p></li><li><p>Kubectl configurado en el local para acceso al cluster. <br /></p></li></ol><p><strong>SECCI&Oacute;N 1: Instalar RabbitMQ Cluster Operator</strong></p><p><u>a. Conectarse al AKS por medio</u> </p><p>az account set --subscription f6278fb3-d372-470e-b355-70025248eb80</p><p>Donde f6278fb3-d372-470e-b355-70025248eb80 es el ID de la suscripci&oacute;n donde esta instalado el AKS. </p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"110\" ac:original-width=\"1069\"><ri:attachment ri:filename=\"image-20210412-151622.png\" ri:version-at-save=\"1\" /></ac:image><p><u>b. Importar en el local, las credenciales de acceso al AKS para poder usar el comando kubectl</u><br />az aks get-credentials --resource-group rg-sarlaft-lab-001 --name aks-sarlaft</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"34\" ac:original-width=\"1095\"><ri:attachment ri:filename=\"image-20210412-151305.png\" ri:version-at-save=\"1\" /></ac:image><p>c. Instalar RabbitMQ cluster operator por medio de la instrucci&oacute;n:<br /><code>kubectl apply -f &quot;https://github.com/rabbitmq/cluster-operator/releases/latest/download/cluster-operator.yml&quot;</code></p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"331\" ac:original-width=\"1352\"><ri:attachment ri:filename=\"image-20210412-151504.png\" ri:version-at-save=\"1\" /></ac:image><p>Con estos pasos, se finaliza la instalaci&oacute;n de RabbitMQ cluster operator. </p><p><strong>SECCION 2: Iniciar un cluster RabbitMQ en el AKS</strong></p><p>A continuaci&oacute;n se describe como inicializar un cluster de Rabbitmq por medio de un archivo de definci&oacute;n yaml: <a href=\"https://www.rabbitmq.com/kubernetes/operator/using-operator.html\">https://www.rabbitmq.com/kubernetes/operator/using-operator.html</a></p><p class=\"media-group\"><ac:structured-macro ac:name=\"view-file\" ac:schema-version=\"1\" ac:macro-id=\"8b82782f-85a8-400a-b46d-d9345fc38228\"><ac:parameter ac:name=\"name\"><ri:attachment ri:filename=\"RabbitMQCluster.yaml\" ri:version-at-save=\"1\" /></ac:parameter></ac:structured-macro></p><p>a. Ejecutar el comando <code>kubectl apply -f RabbitMQCluster.yaml</code> con la definici&oacute;n de la configuraci&oacute;n del Cluster</p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"57\" ac:original-width=\"647\"><ri:attachment ri:filename=\"image-20210412-180626.png\" ri:version-at-save=\"1\" /></ac:image><p>b. Obtener el nombre de usuario y clave del administrador generada para el sitio:</p><p><code>kubectl -n default get secret sarlaft-rabbitmq-default-user -o jsonpath=&quot;{.data.username}&quot; | base64 --decode</code><br /><code>kubectl -n default get secret sarlaft-rabbitmq-default-user -o jsonpath=&quot;{.data.password}&quot; | base64 --decode</code></p><p><br /></p><p />",
+    "comments": [],
+    "attachments": [
+      {
+        "id": "att1866662958",
+        "title": "image-20210412-180626.png",
+        "download": "/download/attachments/1880817708/image-20210412-180626.png?version=1&modificationDate=1618250788526&cacheVersion=1&api=v2"
+      },
+      {
+        "id": "att1866629990",
+        "title": "RabbitMQCluster.yaml",
+        "download": "/download/attachments/1880817708/RabbitMQCluster.yaml?version=1&modificationDate=1618250556367&cacheVersion=1&api=v2"
+      },
+      {
+        "id": "att1880490062",
+        "title": "image-20210412-151622.png",
+        "download": "/download/attachments/1880817708/image-20210412-151622.png?version=1&modificationDate=1618240584197&cacheVersion=1&api=v2"
+      },
+      {
+        "id": "att1880850488",
+        "title": "image-20210412-151504.png",
+        "download": "/download/attachments/1880817708/image-20210412-151504.png?version=1&modificationDate=1618240506724&cacheVersion=1&api=v2"
+      },
+      {
+        "id": "att1880457272",
+        "title": "image-20210412-151305.png",
+        "download": "/download/attachments/1880817708/image-20210412-151305.png?version=1&modificationDate=1618240387134&cacheVersion=1&api=v2"
+      },
+      {
+        "id": "att1866662892",
+        "title": "image-20210412-150916.png",
+        "download": "/download/attachments/1880817708/image-20210412-150916.png?version=1&modificationDate=1618240159324&cacheVersion=1&api=v2"
+      }
+    ]
+  }
+}
