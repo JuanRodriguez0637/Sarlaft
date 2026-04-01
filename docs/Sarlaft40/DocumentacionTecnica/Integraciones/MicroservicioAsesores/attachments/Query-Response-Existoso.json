@@ -1,0 +1,40 @@
+{
+    "error": null,
+    "nombreAsesor": "MARIA DEL SOCORRO CARO DE ARMAS CQLII",
+    "oficinas": [{
+            "codigo": "2630",
+            "nombre": "PROM CHICAMOCHA",
+            "codigoCanal": "CC011",
+            "tipoOficina": "15",
+            "indicadorOficinaRadicacion": false
+        },
+        {
+            "codigo": "2630",
+            "nombre": "PROM CHICAMOCHA",
+            "codigoCanal": "CC011",
+            "tipoOficina": "15",
+            "indicadorOficinaRadicacion": false
+        },
+        {
+            "codigo": "2630",
+            "nombre": "PROM CHICAMOCHA",
+            "codigoCanal": "CC011",
+            "tipoOficina": "15",
+            "indicadorOficinaRadicacion": false
+        },
+        {
+            "codigo": "2630",
+            "nombre": "PROM CHICAMOCHA",
+            "codigoCanal": "CC011",
+            "tipoOficina": "15",
+            "indicadorOficinaRadicacion": false
+        },
+        {
+            "codigo": "2630",
+            "nombre": "PROM CHICAMOCHA",
+            "codigoCanal": "CC011",
+            "tipoOficina": "15",
+            "indicadorOficinaRadicacion": false
+        }
+    ]
+}
