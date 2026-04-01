@@ -1,0 +1,14 @@
+AUDIT REPORT — Integraciones Documentation
+Generated: 2026-04-01T15:48:23.340207
+======================================================================
+
+
+--- CONF_URL (5 issues) ---
+  [WARN] FrontSarlaft\WebComponent\CambiosIntegracionSOAT.md:L19 — Confluence URL in body: Este cambio incluye crear nuevos endpoints para los servicios de sarlaft 4.0 (esto para evitar repro
+  [WARN] FrontSarlaft\WebComponent\Integracion.md:L24 — Confluence URL in body: **Token: **Token Jwt de seguridad expuesto por la API. Ver: [Creación token JWT](https://segurosti.a
+  [WARN] MicroservicioAsesores\ComunicacionServicioOficinasAsesor.md:L8 — Confluence URL in body: - **Información:** [Servicio Web Consultar Oficinas Asesor.](https://segurosti.atlassian.net/wiki/sp
+  [WARN] MicroservicioAzureClientes\IntegracionConsultaClienteSalesforce.md:L13 — Confluence URL in body: [Servicio Consulta de Clientes](https://segurosti.atlassian.net/wiki/spaces/EPA/pages?title=Servicio
+  [WARN] MicroservicioCCM\index.md:L9 — Confluence URL in body: **Manual de integración CCM:** [Manual de Integración asíncrona con CCM](https://segurosti.atlassian
+
+======================================================================
+TOTAL: 0 errors, 5 warnings
