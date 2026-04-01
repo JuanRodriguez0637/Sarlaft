@@ -12,7 +12,7 @@ Sección que documenta la lógica interna del **proceso de evaluación SARLAFT**
 ## Sub-páginas
 
 | Sub-página | Descripción | Última modificación |
-|------------|-------------|----------------------|
+| ------------ | ------------- | ---------------------- |
 | [Determinar Estado Evaluación](./DeterminarEstadoEvaluacion.md) | Lógica para determinar el estado de una evaluación (FINALIZADO, RECHAZADO, PENDIENTE, etc.) | 17 ago 2021 |
 | [Proceso Evaluación - Masivo](./ProcesoEvaluacionMasivo.md) | Proceso masivo vía RabbitMQ — msg request `Sarlaft.batch.start`, response `Assessment.process.evaluated` | 17 ago 2021 |
 | [Comunicación Requisitos](./ComunicacionRequisitos.md) | CrearRequisito y ActualizarRequisito vía comandos asíncronos | 20 ago 2021 |

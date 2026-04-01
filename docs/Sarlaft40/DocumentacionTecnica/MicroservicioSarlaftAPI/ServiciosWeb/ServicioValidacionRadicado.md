@@ -43,7 +43,7 @@
         }
     ]
 }
-```
+```text
 
 Response:
 
@@ -78,7 +78,7 @@ Response:
         }
     ]
 }
-```
+```text
 
 Respuesta en caso de datos diferentes a la base de datos:
 

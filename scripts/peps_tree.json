@@ -1,0 +1,98 @@
+{
+  "root_id": "1804861539",
+  "tree": [
+    {
+      "id": "1804861539",
+      "title": "Microservicio PEPS",
+      "level": 0,
+      "children": [
+        {
+          "id": "1800700343",
+          "title": "Diseño y Arquitectura PEPS MS",
+          "level": 1,
+          "children": [
+            {
+              "id": "4516380673",
+              "title": "Configuración base de datos en producción",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "1801126290",
+          "title": "Configuración Ambiente - PEPSMS",
+          "level": 1,
+          "children": []
+        },
+        {
+          "id": "1809908172",
+          "title": "Estructura Proyecto - PEPSMS",
+          "level": 1,
+          "children": []
+        },
+        {
+          "id": "1804927095",
+          "title": "Servicios Web - PepsMS",
+          "level": 1,
+          "children": [
+            {
+              "id": "1814200586",
+              "title": "Servicio Marcar Cliente PEPS",
+              "level": 2,
+              "children": []
+            },
+            {
+              "id": "1813971266",
+              "title": "Servicio Consulta PEPS",
+              "level": 2,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "flat": [
+    {
+      "id": "1804861539",
+      "title": "Microservicio PEPS",
+      "level": 0
+    },
+    {
+      "id": "1800700343",
+      "title": "Diseño y Arquitectura PEPS MS",
+      "level": 1
+    },
+    {
+      "id": "4516380673",
+      "title": "Configuración base de datos en producción",
+      "level": 2
+    },
+    {
+      "id": "1801126290",
+      "title": "Configuración Ambiente - PEPSMS",
+      "level": 1
+    },
+    {
+      "id": "1809908172",
+      "title": "Estructura Proyecto - PEPSMS",
+      "level": 1
+    },
+    {
+      "id": "1804927095",
+      "title": "Servicios Web - PepsMS",
+      "level": 1
+    },
+    {
+      "id": "1814200586",
+      "title": "Servicio Marcar Cliente PEPS",
+      "level": 2
+    },
+    {
+      "id": "1813971266",
+      "title": "Servicio Consulta PEPS",
+      "level": 2
+    }
+  ]
+}

@@ -26,7 +26,7 @@
 
 Se implementó la validación a nivel de los bytes del archivo binario que se adjuntan a través de los servicios **sarlaftserv/v1/documentos** y **sarlaftserv/form/upload** usando la librería **org.apache.tika:tika-core:2.9.2** de tal forma que ya no se valide el tipo de archivo por medio de la extensión que lleva el nombre sino que se valide a nivel de sus bytes[]. Los tipos de archivos permitidos son los siguientes:
 
-```
+```text
 JPG("image/jpeg"),
 PDF("application/pdf"),
 EML("message/rfc822"),

@@ -27,7 +27,7 @@
 ## Adjuntos de Ejemplo
 
 | Archivo | Descripción |
-|---------|-------------|
+| --------- | ------------- |
 | [`mensaje_NO_ERROR_1507.json`](./attachments/mensaje_NO_ERROR_1507.json) | Ejemplo del mensaje **sin error** para RabbitMQ |
 | [`mensaje_ERROR_1507.json`](./attachments/mensaje_ERROR_1507.json) | Ejemplo del mensaje **con error** para RabbitMQ |
 

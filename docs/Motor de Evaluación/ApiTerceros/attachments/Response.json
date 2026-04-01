@@ -1,0 +1,46 @@
+{
+    "id": null,
+    "sarlafts": [
+        {
+            "id": "Beneficiario",
+            "tipoPersona": "N",
+            "tipoRiesgo": "INTENSIFICADO",
+            "tipoFormulario": "INTENSIFICADO_PN",
+            "requisitos": [
+                {
+                    "id": null,
+                    "codigo": "2305",
+                    "nombre": "Certificado de ingresos y retenciones",
+                    "fechaCreacion": null,
+                    "ultimaActualizacion": null,
+                    "estado": "PENDIENTE",
+                    "estadoRequisito": null,
+                    "idGestorDocumental": null,
+                    "nombreDocumento": null,
+                    "extension": null,
+                    "vigencia": 0,
+                    "obligatorio": false
+                },
+                {
+                    "id": null,
+                    "codigo": "2307",
+                    "nombre": "COPIA DE LA DECLARACION DE RENTA DEL ULTIMO PERIODO GRAVABLE",
+                    "fechaCreacion": null,
+                    "ultimaActualizacion": null,
+                    "estado": "PENDIENTE",
+                    "estadoRequisito": null,
+                    "idGestorDocumental": null,
+                    "nombreDocumento": null,
+                    "extension": null,
+                    "vigencia": 0,
+                    "obligatorio": false
+                }
+            ],
+            "flowlog": [
+                "Condición TSTAR-7440_7"
+            ]
+        }
+    ],
+    "codigoRamo": "094",
+    "error": null
+}

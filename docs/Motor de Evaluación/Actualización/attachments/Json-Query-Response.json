@@ -1,0 +1,89 @@
+{
+    "id": "Carga-Eva-HU-83304-1-04",
+    "codigoOperacion": "01",
+    "sarlafts": [
+        {
+            "id": "Carga-Sarlaft-HU-83304-1",
+            "riesgoOriginal": {
+                "id": null,
+                "condicion": null,
+                "tipoRiesgo": "SIMPLIFICADO",
+                "mensaje": null,
+                "causales": []
+            },
+            "riesgoActualizado": {
+                "id": null,
+                "condicion": "HU 83304 1",
+                "tipoRiesgo": "INTENSIFICADO",
+                "mensaje": "El cliente es PEP (Persona Expuesta Políticamente), por favor tramite con su Líder",
+                "causales": [
+                    "Cliente con riesgo simplificado y recategorizado como PEP por el proceso de actualización"
+                ]
+            },
+            "cliente": {
+                "dni": "9292022",
+                "peps": true,
+                "tipoPersona": "N",
+                "paisConstitucion": "0",
+                "persona": {
+                    "pais": "0"
+                },
+                "segmentacion": {
+                    "score": 1.0
+                },
+                "relaciones": [
+                    {
+                        "tipo": "ACCIONISTA",
+                        "relacionPeps": true,
+                        "fechaBaja": null
+                    }
+                ]
+            },
+            "administradorPep": false,
+            "reglasConsecutivas": [
+                {
+                    "id": null,
+                    "condicion": "HU 83304 4",
+                    "tipoRiesgo": "INTENSIFICADO",
+                    "mensaje": "No es posible continuar con el proceso. Debe completar el Conocimiento del Cliente si le aplica.",
+                    "causales": [
+                        "Cliente con riesgo intensificado y recategorizado como PEP por el proceso de actualización"
+                    ]
+                },
+                {
+                    "id": null,
+                    "condicion": "HU 83304 7",
+                    "tipoRiesgo": "INTENSIFICADO",
+                    "mensaje": "No es posible continuar con el proceso. Debe completar el Conocimiento del Cliente si le aplica.",
+                    "causales": [
+                        "Cliente con riesgo simplificado  y recategorizado por SCORE DE RIESGOS por el proceso de actualización"
+                    ]
+                },
+                {
+                    "id": null,
+                    "condicion": "HU 83304 16",
+                    "tipoRiesgo": "SIMPLIFICADO",
+                    "mensaje": "Cumple con politicas de SARLAFT. Debe completar el Conocimiento del Cliente si le aplica.",
+                    "causales": [
+                        "Cliente con riesgo simplificado por el proceso de actualización"
+                    ]                }
+            ],
+            "evidencias": [
+                {
+                    "consecutivo": "f0a6c182-aef9-45d2-b551-98a497cd2617",
+                    "consecutivoControl": null,
+                    "dni": "9292022",
+                    "resultado": "EXITOSO",
+                    "tipo": "GAFI",
+                    "observaciones": "No es Gafi",
+                    "fechaCreacion": "2022-08-29T16:38:30.589+00:00",
+                    "ultimaActualizacion": "2022-08-29T16:38:30.589+00:00",
+                    "codigoAplicacion": "9995",
+                    "bloqueante": false,
+                    "codigoEstadoDocumento": null
+                }
+            ]
+        }
+    ],
+    "error": null
+}

@@ -16,7 +16,7 @@ Caso 1
             "evaluacionId": "c476527c-9b11-40ad-8532-8986f3bb730b",
             "idSarlaft": null
     }
-```
+```text
 
 Caso 2
 
@@ -28,7 +28,7 @@ Cuando se quiera consultar por idSarlaft es necesario ingresar el Token o la Eva
             "evaluacionId": "49dc9154-d1c2-460d-9052-8b76fd1fb7ba",
             "idSarlaft": "b807eb04-9f1b-4468-9f4c-d8fc07ca0dd5"
     }
-```
+```text
 
 - **Ejemplo Json Response:**
 
@@ -57,54 +57,54 @@ Cuando el servicio detecta que el código de la aplicación consultada es SEL, p
     {     
           "token": null,     
           "evaluacionId": "372d1c2d-5746-49d3-9bf3-01a7fd7f2e94",     
-          "idSarlaft": null 
+          "idSarlaft": null
     }
-    ```
+    ```text
 
   - Response:
 
     ```json
     {
-    	"formularioOpcional": false,
-    	"evaluacionId": "372d1c2d-5746-49d3-9bf3-01a7fd7f2e94",
-    	"codigoOperacion": "01",
-    	"codigoAplicacion": "6919",
-    	"controlesTomador": [],
-    	"relaciones": [
-    		{
-    			"relacionPeps": false,
-    			"tipo": "SOCIO",
-    			"parentescoPeps": null,
-    			"documento": {
-    				"scanAvailable": true
-    			},
-    			"persona": {
-    				"scanAvailable": true
-    			},
-    			"fechaCreacion": null,
-    			"ultimaActualizacion": null,
-    			"porcentajeParticipacion": null,
-    			"codigoRelacion": null
-    		}
-    	],
-    	"respuestaRelacionesPeps": "Si",
-    	"sarlafts": [
-    		{
-    			"idSarlaft": "627a1e8f-f2e0-49bb-8da3-3e567e1d9c74",
-    			"estado": "PENDIENTE",
-    			"roles": ["ACCIONISTA"],
-    			"tipoIdentificacion": "P",
-    			"numeroIdentificacion": "1040181391",
-    			"tipoFormulario": null,
-    			"terminoFormulario": false,
-    			"validacionIdentidad": "PENDIENTE"
-    		}
-    	],
-    	"codigoRamo": "040",
-    	"esCargaMasiva": false,
-    	"tipoDeNegocio": "INDIVIDUAL"
+        "formularioOpcional": false,
+        "evaluacionId": "372d1c2d-5746-49d3-9bf3-01a7fd7f2e94",
+        "codigoOperacion": "01",
+        "codigoAplicacion": "6919",
+        "controlesTomador": [],
+        "relaciones": [
+            {
+                "relacionPeps": false,
+                "tipo": "SOCIO",
+                "parentescoPeps": null,
+                "documento": {
+                    "scanAvailable": true
+                },
+                "persona": {
+                    "scanAvailable": true
+                },
+                "fechaCreacion": null,
+                "ultimaActualizacion": null,
+                "porcentajeParticipacion": null,
+                "codigoRelacion": null
+            }
+        ],
+        "respuestaRelacionesPeps": "Si",
+        "sarlafts": [
+            {
+                "idSarlaft": "627a1e8f-f2e0-49bb-8da3-3e567e1d9c74",
+                "estado": "PENDIENTE",
+                "roles": ["ACCIONISTA"],
+                "tipoIdentificacion": "P",
+                "numeroIdentificacion": "1040181391",
+                "tipoFormulario": null,
+                "terminoFormulario": false,
+                "validacionIdentidad": "PENDIENTE"
+            }
+        ],
+        "codigoRamo": "040",
+        "esCargaMasiva": false,
+        "tipoDeNegocio": "INDIVIDUAL"
     }
-    ```
+    ```text
 
 - Y si se consulta el servicio sólo para un sarlaft y este sarlaft tiene asociaciones, entonces, los sarlafts de cada asociación saldrán en el response del servicio.
   - Ejemplo:
@@ -116,7 +116,7 @@ Cuando el servicio detecta que el código de la aplicación consultada es SEL, p
          "evaluacionId":"4800aab7-2d9e-4c63-8eee-9d566fb0e16b",
          "idSarlaft":"27606e34-1067-420f-8604-f040f6ce1405"
       }
-      ```
+      ```text
 
     - Response:
 

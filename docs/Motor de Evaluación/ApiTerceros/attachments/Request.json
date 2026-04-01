@@ -1,0 +1,11 @@
+{
+    "codigoRamo": "094",
+    "error": null,
+    "sarlafts": [
+        {
+            "id": "Beneficiario",
+            "tipoRiesgo": "INTENSIFICADO",
+            "tipoPersona": "N"
+        }
+    ]
+}

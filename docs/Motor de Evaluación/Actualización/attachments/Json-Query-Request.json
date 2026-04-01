@@ -1,0 +1,33 @@
+{
+    "id": "Carga-Eva-HU-83304-1-04",
+    "codigoOperacion": "01",
+    "sarlafts": [
+        {
+            "id": "Carga-Sarlaft-HU-83304-1",
+            "riesgoOriginal": {
+                "tipoRiesgo": "SIMPLIFICADO"
+            },
+            "cliente": {
+                "dni": "9292022",
+                "peps": true,
+                "tipoPersona": "N",
+                "paisConstitucion": "0",
+                "persona": {
+                    "pais": "0"
+                },
+                "segmentacion": {
+                    "score": 1.0
+                },
+                "relaciones": [
+                    {
+                        "tipo": "ACCIONISTA",
+                        "relacionPeps": true,
+                        "fechaBaja": null
+                    }
+                ]
+            },
+            "administradorPep": false
+        }
+    ],
+    "error": null
+}

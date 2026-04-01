@@ -30,7 +30,7 @@ Proceso de evaluación masivo iniciado por mensajería de **RabbitMQ**.
 ### Adjuntos del comentario
 
 | Archivo | Descripción |
-|---------|-------------|
+| --------- | ------------- |
 | [`ProcesoMasivoRequest.json`](./attachments/ProcesoMasivoRequest.json) | Ejemplo JSON Request recibido en SarlaftApi |
 | [`ProcesoMasivoResponse.json`](./attachments/ProcesoMasivoResponse.json) | Ejemplo JSON Response enviado a SarlaftWebhook mediante RabbitMQ |
 

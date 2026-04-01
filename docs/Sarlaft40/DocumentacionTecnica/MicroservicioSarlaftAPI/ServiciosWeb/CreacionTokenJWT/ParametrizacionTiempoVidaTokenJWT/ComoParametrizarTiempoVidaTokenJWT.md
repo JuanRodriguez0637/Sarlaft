@@ -10,7 +10,7 @@ Para parametrizar el tiempo de vida del token JWT para un aplicativo que requier
 Para los siguientes pasos se tomó como ejemplo la parametrización realizada para el aplicativo SEL.
 
 1. Identificar el código del aplicativo con el que se solicita el token a sarlaftapi.
-   Entiéndase como código del aplicativo, aquel que se envía como valor al header **x-app** cuando se consume el servicio https://sarlaftapi.labsura.com/sarlaftserv/security/getToken.
+   Entiéndase como código del aplicativo, aquel que se envía como valor al header **x-app** cuando se consume el servicio <https://sarlaftapi.labsura.com/sarlaftserv/security/getToken>.
 
    ![image-20230809-202308.png](./attachments/image-20230809-202308.png)
 
@@ -20,7 +20,7 @@ Para los siguientes pasos se tomó como ejemplo la parametrización realizada pa
    INSERT INTO sarlaft.tsaf_aplicacion
    (cdaplicacion, snaccion_manual, dsnombre, snregistraduria_sincrona, opreqnotificacion, opautentica_seus, nmtiempo_vigencia_token)
    VALUES('SEL', false, 'SuraEnLinea', false, NULL, true, 15);
-   ```
+   ```text
 
    En caso de que ya exista el aplicativo parametrizado en la tabla `TSAF_APLICACION` y se requiera asignar el valor para el campo `NMTIEMPO_VIGENCIA_TOKEN` puede ejecutar la siguiente sentencia SQL:
 

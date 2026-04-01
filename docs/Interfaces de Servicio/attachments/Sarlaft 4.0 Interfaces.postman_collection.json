@@ -1,0 +1,318 @@
+{
+	"info": {
+		"_postman_id": "688704a7-86e5-4549-98ef-6708f77fae8b",
+		"name": "Sarlaft 4.0 Interfaces",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "assessment",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic {{header_auth}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"solicitudDni\": \"C000000\",\r\n    \"codigoOperacion\": \"01\",\r\n    \"codigoAplicacion\": \"1\",\r\n    \"negocioId\": \"01\",\r\n    \"infoPendiente\": false,\r\n    \"tomador\": {\r\n        \"personaPep\": \"Si\",\r\n        \"cliente\": {\r\n            \"tipoPersona\": \"N\",\r\n            \"correo\": \"mail_1@mail.com.co\",\r\n            \"celular\": \"3102345670\",\r\n            \"razonSocial\": null,\r\n            \"documento\": {\r\n                \"tipo\": \"C\",\r\n                \"numero\": \"11389126\",\r\n                \"fechaExpedicion\": \"2007-05-27\"\r\n            },\r\n            \"persona\": {\r\n                \"primerNombre\": \"Nestor\",\r\n                \"segundoNombre\": \"Fernando\",\r\n                \"primerApellido\": \"Arevalo\",\r\n                \"segundoApellido\": \"Espitia\",\r\n                \"pais\": \"01\"\r\n            }\r\n        }\r\n    },\r\n    \"beneficiarios\": [\r\n        {\r\n            \"cliente\": {\r\n                \"tipoPersona\": \"N\",\r\n                \"correo\": \"mail2@mail.com.co\",\r\n                \"celular\": \"3219006000\",\r\n                \"razonSocial\": null,\r\n                \"entidadEstatal\": \"SI\",\r\n                \"documento\": {\r\n                    \"tipo\": \"C\",\r\n                    \"numero\": \"11389126\",\r\n                    \"fechaExpedicion\": \"2000-05-27\"\r\n                },\r\n                \"persona\": {\r\n                    \"primerNombre\": \"Diana\",\r\n                    \"primerApellido\": \"Gomez\",\r\n                    \"segundoApellido\": \"Perez\",\r\n                    \"pais\": \"01\"\r\n                }\r\n            }\r\n        }\r\n    ],\r\n    \"asegurados\": [\r\n        {\r\n            \"cliente\": {\r\n                \"tipoPersona\": \"N\",\r\n                \"correo\": \"mail4@mail.com.co\",\r\n                \"celular\": \"3200007999\",\r\n                \"razonSocial\": \"\",\r\n                \"documento\": {\r\n                    \"tipo\": \"C\",\r\n                    \"numero\": \"436042707\",\r\n                    \"fechaExpedicion\": \"2001-05-27\"\r\n                },\r\n                \"persona\": {\r\n                    \"primerNombre\": \"Carla\",\r\n                    \"primerApellido\": \"Diaz\",\r\n                    \"segundoApellido\": \"Gomez\",\r\n                    \"pais\": \"01\"\r\n                }\r\n            }\r\n        }\r\n    ],\r\n    \"polizas\": [\r\n        {\r\n            \"codigoRamo\": \"1\",\r\n            \"codigoCanal\": \"1\",    \r\n            \"valorAsegurado\": 500000,\r\n            \"valorPrima\": 500000,\r\n            \"negocio\": \"COLECTIVO\",\r\n            \"coaseguro\": \"ACEPTADO\",\r\n            \"codigoOficina\": \"00\",\r\n            \"codigoAgente\": \"00\",\r\n            \"codigoPlan\": \"01\"\r\n        }\r\n    ]   \r\n \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{domain}}/sarlaftserv/assessment",
+					"protocol": "https",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"assessment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "assessment massive",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic {{header_auth}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"solicitudDni\": \"C000000\",\r\n    \"codigoOperacion\": \"01\",\r\n    \"codigoAplicacion\": \"1\",\r\n    \"negocioId\": \"01\",\r\n    \"infoPendiente\": false,\r\n    \"tomador\": {\r\n        \"personaPep\": \"Si\",\r\n        \"cliente\": {\r\n            \"tipoPersona\": \"N\",\r\n            \"correo\": \"mail_1@mail.com.co\",\r\n            \"celular\": \"3102345670\",\r\n            \"razonSocial\": null,\r\n            \"documento\": {\r\n                \"tipo\": \"C\",\r\n                \"numero\": \"11389126\",\r\n                \"fechaExpedicion\": \"2007-05-27\"\r\n            },\r\n            \"persona\": {\r\n                \"primerNombre\": \"Nestor\",\r\n                \"segundoNombre\": \"Fernando\",\r\n                \"primerApellido\": \"Arevalo\",\r\n                \"segundoApellido\": \"Espitia\",\r\n                \"pais\": \"01\"\r\n            }\r\n        }\r\n    },\r\n    \"beneficiarios\": [\r\n        {\r\n            \"cliente\": {\r\n                \"tipoPersona\": \"N\",\r\n                \"correo\": \"mail2@mail.com.co\",\r\n                \"celular\": \"3219006000\",\r\n                \"razonSocial\": null,\r\n                \"entidadEstatal\": \"SI\",\r\n                \"documento\": {\r\n                    \"tipo\": \"C\",\r\n                    \"numero\": \"11389126\",\r\n                    \"fechaExpedicion\": \"2000-05-27\"\r\n                },\r\n                \"persona\": {\r\n                    \"primerNombre\": \"Diana\",\r\n                    \"primerApellido\": \"Gomez\",\r\n                    \"segundoApellido\": \"Perez\",\r\n                    \"pais\": \"01\"\r\n                }\r\n            }\r\n        }\r\n    ],\r\n    \"asegurados\": [\r\n        {\r\n            \"cliente\": {\r\n                \"tipoPersona\": \"N\",\r\n                \"correo\": \"mail4@mail.com.co\",\r\n                \"celular\": \"3200007999\",\r\n                \"razonSocial\": \"\",\r\n                \"documento\": {\r\n                    \"tipo\": \"C\",\r\n                    \"numero\": \"436042707\",\r\n                    \"fechaExpedicion\": \"2001-05-27\"\r\n                },\r\n                \"persona\": {\r\n                    \"primerNombre\": \"Carla\",\r\n                    \"primerApellido\": \"Diaz\",\r\n                    \"segundoApellido\": \"Gomez\",\r\n                    \"pais\": \"01\"\r\n                }\r\n            }\r\n        }\r\n    ],\r\n    \"polizas\": [\r\n        {\r\n            \"codigoRamo\": \"1\",\r\n            \"codigoCanal\": \"1\",    \r\n            \"valorAsegurado\": 500000,\r\n            \"valorPrima\": 500000,\r\n            \"negocio\": \"COLECTIVO\",\r\n            \"coaseguro\": \"ACEPTADO\",\r\n            \"codigoOficina\": \"00\",\r\n            \"codigoAgente\": \"00\",\r\n            \"codigoPlan\": \"01\"\r\n        }\r\n    ]   \r\n \r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{domain}}/sarlaftserv/assessment/massive",
+					"protocol": "https",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"assessment",
+						"massive"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "init massive",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic {{header_auth}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\t\"totalMensajes\": \"2\",\r\n\t\t\t\"codigoAplicacion\": \"118\",\r\n            \"identificadorNegocio\": \"001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{domain}}/sarlaftserv/assessment/massive/start",
+					"protocol": "https",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"assessment",
+						"massive",
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddEvidence",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic {{header_auth}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n\t\t{\r\n\t\t\t\"dni\": \"C1045777123\",\r\n\t\t\t\"resultado\": \"EXITOSO\",\r\n\t\t\t\"tipo\": \"CIFIN\",    \r\n\t\t\t\"observaciones\": \"VALIDACION IDENTIDAD\",\r\n\t\t\t\"controlConsecutivo\": \"487878787878\",\r\n\t\t\t\"evaluacionId\": \"277f99cf-ffd6-4f2a-b0f8-90584146a517\",\r\n\t\t\t\"codigoAplicacion\": \"118\"\r\n\t\t},\r\n        \t{\r\n\t\t\t\"dni\": \"C1045777123\",\r\n\t\t\t\"resultado\": \"EXITOSO\",\r\n\t\t\t\"tipo\": \"RRCC\",    \r\n\t\t\t\"observaciones\": \"validacion riesgos por dni y nombres\",\r\n\t\t\t\"controlConsecutivo\": \"487878787878\",\r\n\t\t\t\"evaluacionId\": \"277f99cf-ffd6-4f2a-b0f8-90584146a517\",\r\n\t\t\t\"codigoAplicacion\": \"118\"\r\n\t\t}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{domain}}/sarlaftserv/assessment/addevidence",
+					"protocol": "https",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"assessment",
+						"addevidence"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkStatus",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic {{header_auth}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"evaluacionId\":\"668d8971-eb65-40d8-beb3-8b4bdaf40263\",\r\n    \"codigoAplicacion\":\"118\",\r\n    \"consultarEstadoSarlaftRoles\" : true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{domain}}/sarlaftserv/assessment/checkStatus",
+					"protocol": "https",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"assessment",
+						"checkStatus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkForm",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic {{header_auth}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"evaluacionId\":\"668d8971-eb65-40d8-beb3-8b4bdaf40263\",\r\n    \"codigoAplicacion\":\"118\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{domain}}/sarlaftserv/assessment/checkForm",
+					"protocol": "https",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"assessment",
+						"checkForm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCatalogue",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic {{header_auth}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[ \r\n         {\r\n            \"codigoCatalogo\":\"TIPO_COASEGURO\",\r\n            \"departamento\": null,\r\n            \"pais\": \"57\",\r\n            \"tipoPersona\":null,\r\n            \"subCodigoParametro\": null\r\n        } ,\r\n         {\r\n            \"codigoCatalogo\":\"TIPO_RELACION\",\r\n            \"departamento\": null,\r\n            \"pais\": \"57\",\r\n            \"tipoPersona\":null,\r\n            \"subCodigoParametro\": null\r\n        } ,\r\n         {\r\n            \"codigoCatalogo\":\"RELACIONES\",\r\n            \"departamento\": null,\r\n            \"pais\": \"57\",\r\n            \"tipoPersona\":null,\r\n            \"subCodigoParametro\": null\r\n        } ,\r\n        {\r\n            \"codigoCatalogo\":\"PARENTESCO_PN\",\r\n            \"departamento\": null,\r\n            \"pais\": \"57\",\r\n            \"tipoPersona\":null,\r\n            \"subCodigoParametro\": null\r\n        }                      \r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{domain}}/sarlaftserv/catalogue/findCatalogue",
+					"protocol": "https",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"catalogue",
+						"findCatalogue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getToken",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic {{header_auth}}",
+						"type": "text"
+					},
+					{
+						"key": "x-app",
+						"value": "SEL",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\t\t\"totalMensajes\": \"2\",\r\n\t\t\t\"codigoAplicacion\": \"118\",\r\n            \"identificadorNegocio\": \"001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{domain}}/sarlaftserv/security/getToken",
+					"protocol": "https",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"security",
+						"getToken"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

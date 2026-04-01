@@ -9,7 +9,7 @@ Esta sección contiene la documentación técnica completa del microservicio **S
 ## Contenido
 
 | Sección | Descripción | Archivo |
-|---------|-------------|---------|
+| --------- | ------------- | --------- |
 | Modelo de Dominio, Clases y BD | Diagramas del modelo de dominio, clases y base de datos | [ModeloDominioClasesBD.md](./ModeloDominioClasesBD.md) |
 | Configuración Ambiente | Requisitos y pasos para configurar el ambiente de desarrollo | [ConfiguracionAmbiente.md](./ConfiguracionAmbiente.md) |
 | Estructura Proyecto | Arquitectura hexagonal y organización del proyecto | [EstructuraProyecto/index.md](./EstructuraProyecto/index.md) |
@@ -31,7 +31,7 @@ Esta sección contiene la documentación técnica completa del microservicio **S
 ## Repositorios
 
 | Repositorio | Descripción |
-|------------|-------------|
+| ------------ | ------------- |
 | [892-sarlaft-api-ms](https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/892-sarlaft-api-ms) | Repositorio principal |
 | [892-sarlaft-api-conf](https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/892-sarlaft-api-conf) | Repositorio de configuración |
 | [892-sarlaft-pa](https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/892-sarlaft-pa) | Pruebas SoapUI y JMeter |
@@ -44,8 +44,8 @@ Esta sección contiene la documentación técnica completa del microservicio **S
 ## Ambientes
 
 | Ambiente | URL |
-|---------|-----|
-| Local | http://local.suramericana.com.co:8091/sarlaftserv |
-| Desarrollo | https://sarlaftapi.dllosura.com/sarlaftserv |
-| Laboratorio | https://sarlaftapi.labsura.com/sarlaftserv |
-| Producción | https://sarlaftapi.sura.com.co/sarlaftserv |
+| --------- | ----- |
+| Local | <http://local.suramericana.com.co:8091/sarlaftserv> |
+| Desarrollo | <https://sarlaftapi.dllosura.com/sarlaftserv> |
+| Laboratorio | <https://sarlaftapi.labsura.com/sarlaftserv> |
+| Producción | <https://sarlaftapi.sura.com.co/sarlaftserv> |

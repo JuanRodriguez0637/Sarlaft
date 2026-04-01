@@ -1,0 +1,18 @@
+{
+  "root": {
+    "id": "2389114940",
+    "title": "Configuración Plataforma Base Sarlaft"
+  },
+  "descendants": [
+    {
+      "id": "2388918331",
+      "title": "Instalación del Agente Dynatrace en AKS Sarlaft",
+      "depth": 0
+    },
+    {
+      "id": "1880817708",
+      "title": "Instalación RabbitMQ en AKS Sarlaft",
+      "depth": 0
+    }
+  ]
+}

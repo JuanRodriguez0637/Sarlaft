@@ -86,7 +86,7 @@ Además, en caso que el tomador sea una persona jurídica, permite agregar el sa
         }
     ]
 }
-```
+```text
 
 - **Ejemplo Response:**
 

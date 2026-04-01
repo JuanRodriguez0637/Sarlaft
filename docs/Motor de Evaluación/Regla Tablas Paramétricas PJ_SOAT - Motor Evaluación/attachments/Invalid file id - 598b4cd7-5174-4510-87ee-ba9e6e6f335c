@@ -1,0 +1,15 @@
+{
+	"id": "3ed03fde-5459-41a8-a1bf-d037eeb4338d",
+	"name": "Bug Validacion - Local",
+	"values": [
+		{
+			"key": "SARLAFT-API",
+			"value": "http://localhost.suramericana.com:8091",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2024-06-20T16:23:16.492Z",
+	"_postman_exported_using": "Postman/11.2.12"
+}

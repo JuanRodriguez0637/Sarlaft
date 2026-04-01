@@ -18,7 +18,7 @@
 ## Adjuntos de Ejemplo
 
 | Archivo | Descripción |
-|---------|-------------|
+| --------- | ------------- |
 | [`json_ejemplo_lanzar_mensaje_p8.json`](./attachments/json_ejemplo_lanzar_mensaje_p8.json) | Ejemplo JSON Request |
 | [`mensaje_rabbit_mq_p8.json`](./attachments/mensaje_rabbit_mq_p8.json) | Ejemplo de resultado en la función `appp8` |
 

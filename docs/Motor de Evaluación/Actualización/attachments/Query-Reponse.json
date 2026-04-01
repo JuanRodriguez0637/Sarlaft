@@ -1,0 +1,27 @@
+{
+    "validacionesDTO": [
+        {
+            "sarlaft": {
+                "id": "HU 83305 Figura 1",
+                "tipoPersona": "J",
+                "tipoRiesgo": "INTENSIFICADO"
+            },
+            "validaciones": [
+                {
+                    "codigo": "RRCC",
+                    "bloqueante": true
+                },
+                {
+                    "codigo": "CLIENTE_ACTIVO",
+                    "bloqueante": true
+                }
+            ],
+            "flowlog": [
+                "HU 83305 Validacion 6"
+            ],
+            "lastFlowlog": "HU 83305 Validacion 6"
+        }
+    ],
+    "error": null,
+    "evaluacionId": "HU 83305 Figuras 1"
+}

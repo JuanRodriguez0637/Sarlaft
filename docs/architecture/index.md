@@ -1,4 +1,5 @@
 # Arquitectura del Sistema - GPS Principal
+
 ## Sarlaft 4.0 — Plataforma de Gestión de Riesgos LAFT
 
 > **Generado:** 27 de Marzo de 2026  
@@ -14,6 +15,7 @@
 **Sarlaft 4.0** es la plataforma centralizada de Seguros Sura para cumplir la **Circular Básica 027 del 2020 (SARLAFT 4.0)** emitida el 02 de septiembre de 2020 por la **Superintendencia Financiera de Colombia**, que establece nuevos mecanismos de Prevención de Lavado de Activos y de la Financiación del Terrorismo (LAFT).
 
 **Responsabilidades core del sistema:**
+
 - Centralizar la evaluación del riesgo y captura de información SARLAFT de cada cliente
 - Clasificar al cliente en nivel de riesgo: **Simplificado**, **Ordinario** o **Intensificado**
 - Almacenar evidencias, trazabilidad de validaciones y cambios en datos
@@ -26,7 +28,7 @@
 ### Dominios y repositorios críticos
 
 | Dominio | Repositorio | Descripción |
-|---|---|---|
+| --- | --- | --- |
 | **API Core** | `adm_y_fin-sarlaft-api-ms` | Microservicio principal — evaluación, formularios, webhook |
 | **PEPS** | `adm_y_fin-sarlaft-peps-ms` | Microservicio de validación Personas Expuestas Políticamente |
 | **Pruebas Automatizadas** | `adm_y_fin-sarlaft-pa` | SoapUI + JMeter (branches: dev, lab, master) |
@@ -35,6 +37,7 @@
 | **Config PEPS** | `adm_y_fin-sarlaft-peps-conf` | Configuración por ambiente de PEPS |
 
 **Límites del sistema:**
+
 - ✅ Incluye: evaluación de riesgo, formularios dinámicos, almacenamiento de evidencias, notificaciones callback, procesos masivos
 - ❌ Excluye: expedición de pólizas (responsabilidad del aplicativo cliente), validaciones de identidad externas directas (Registraduría, CIFIN/Experian — delegadas a servicios externos)
 
@@ -122,7 +125,7 @@ graph TB
     API -->|async| RRCC
     API -->|async| CAM
     API -->|read| MOD_CLI
-```
+```text
 
 ### Diagrama del proceso de evaluación Sarlaft (Flujo principal)
 
@@ -156,7 +159,7 @@ sequenceDiagram
     alt Estado = RECHAZADO
         SAPI-->>C: Bloquea expedición
     end
-```
+```text
 
 ### Diagrama de proceso masivo (Canales Masivos / Sura Masivos)
 
@@ -181,7 +184,7 @@ sequenceDiagram
         SAPI->>WH: Webhook terminación sarlaft individual
         WH->>SM: POST resultado póliza
     end
-```
+```text
 
 ---
 
@@ -190,7 +193,7 @@ sequenceDiagram
 ### Tecnologías que condicionan la arquitectura
 
 | Capa | Tecnología | Rol Arquitectónico |
-|---|---|---|
+| --- | --- | --- |
 | **Backend Core** | Spring Boot / Java (Reactive) | Microservicios principal y PEPS |
 | **Build** | Gradle | Build y cobertura de pruebas unitarias |
 | **Frontend** | Angular (WebComponent) | Formularios dinámicos embebibles en apps cliente |
@@ -207,7 +210,7 @@ sequenceDiagram
 ### Patrones arquitectónicos relevantes
 
 | Patrón | Aplicación | Impacto |
-|---|---|---|
+| --- | --- | --- |
 | **Microservicios** | sarlaft-api-ms + sarlaft-peps-ms desacoplados | Escalabilidad independiente, modularidad ante cambios regulatorios |
 | **API Gateway** | Apigee como punto de entrada único | Seguridad centralizada, desacoplamiento entre clientes y servicios internos |
 | **Event-Driven / Async** | RabbitMQ + Event Hub + WebhookNotificator | No bloquea los procesos de negocio de los aplicativos cliente |
@@ -223,7 +226,7 @@ sequenceDiagram
 ### Integraciones con aplicativos cliente (consumidores de Sarlaft)
 
 | Canal / Aplicativo | Tipo Negocio | Protocolo | Notas |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Cotizador Salud (AyV + PAC) | Negocio Nuevo | REST + RabbitMQ async | Usa infoPendiente para envío en pasos |
 | Cotizador Autos | Negocio Nuevo | REST + Webhook | 3 escenarios críticos de regresión validados |
 | Cotizador Viajes / SOAT / Hogar / Vida / Educación / Pensión | Negocio Nuevo | REST + Webhook | Integración estándar |
@@ -237,7 +240,7 @@ sequenceDiagram
 ### Integraciones con sistemas externos (Sarlaft como consumidor)
 
 | Sistema Externo | Propósito | Modalidad | Criticidad |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Registraduría Nacional** | Validación documento CC — nombre vs documento | Async (no bloquea disponibilidad) | Alta — rechazo si apellido errado |
 | **Migración Colombia** | Validación CE, PPT, Permiso Protección Temporal | Async | Alta — falla técnica manejada gracefully |
 | **CIFIN / Experian** | Validación de identidad (OTP + cuestionario) | Async | Alta — levanta control identidad |
@@ -252,7 +255,7 @@ sequenceDiagram
 ### Seguridad de integración (Auth/Authz)
 
 | Mecanismo | Dónde Aplica | Notas |
-|---|---|---|
+| --- | --- | --- |
 | **Seus4 (ApiKey básica)** | Todos los aplicativos Sura (excepto WeSura/SuraEnLínea) | Perfil: `PF_CONSUMSERVSARLAFTAPI` del SP Sarlaft4 |
 | **JWT** | WeSura, SuraEnLínea, WebComponent | No tienen Seus4; autenticación propia |
 | **ApiKey Apigee** | Capa de API Gateway | Solicitada en Apigee para cada consumidor |
@@ -265,7 +268,7 @@ sequenceDiagram
 ## 📦 Dependencias Externas Estratégicas
 
 | Servicio | Rol Arquitectónico | Impacto si falla/cambia |
-|---|---|---|
+| --- | --- | --- |
 | **Superintendencia Financiera** | Ente regulador — define el modelo de datos y flujos | Cambio normativo → modificación obligatoria del sistema |
 | **Azure Cloud (AKS, App Gateway, CDN, ExpressRoute)** | Infraestructura de despliegue completa | Indisponibilidad impacta 100% del ecosistema integrado |
 | **RabbitMQ Sura** | Mensajería para masivos y notificaciones | Sin MQ: procesos masivos y algunos webhooks no funcionan |
@@ -282,7 +285,7 @@ sequenceDiagram
 ## 🌍 Ambientes y URLs
 
 | Ambiente | API Base URL | Integrador Cotizadores | RabbitMQ |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Desarrollo** | `https://sarlaftapi.dllosura.com` | `https://apiinternal.dllosura.com/sarlaft/v1/evaluaciones` | `msgdllo.suramericana.com.co` |
 | **Laboratorio** | `http://sarlaftapi.labsura.com` | `https://apisarlaftcotizadoreslab.suranet.com/sarcot/validarSarlaft` | `msglab.suramericana.com.co` |
 | **Producción** | *(interno — ver Confluence EPA)* | `https://apisarlaftcotizadores.suranet.com/sarcot/validarSarlaft` | `msg.suramericana.com.co` |
@@ -290,7 +293,7 @@ sequenceDiagram
 ### Servicios REST expuestos
 
 | Endpoint | Método | Descripción |
-|---|---|---|
+| --- | --- | --- |
 | `/sarlaftserv/assessment` | POST | Validar Sarlaft — evaluación individual (sincrónico + async webhook) |
 | `/sarlaftserv/assessment/checkStatus` | GET | Consultar estado Sarlaft (alternativa a webhook) |
 | `/sarlaftserv/assessment/massive` | POST | Validar Sarlaft masivo (hasta 100 pólizas, async) |
@@ -301,7 +304,7 @@ sequenceDiagram
 ## 📋 Atributos de Calidad (NFRs)
 
 | Atributo | Clasificación | Requisito |
-|---|---|---|
+| --- | --- | --- |
 | **Escalabilidad** | Crítico | Atender todas las solicitudes de todos los canales integrados (24/7) |
 | **Disponibilidad** | Crítico | 24/7 — alineado con disponibilidad de los aplicativos de negocio |
 | **Interoperabilidad** | Crítico | API REST + WebComponent + Webhook + RabbitMQ para todos los canales |
@@ -329,6 +332,7 @@ graph LR
 ```
 
 **Convenciones de nombre:**
+
 - Back: `[HU/Bug]-[Nombre]` → ej: `TSTAR-32-WSConsultaClientes`
 - Front: `[HU/Bug]-[App]-[Nombre]` → ej: `TSTAR-31-Redirect-FormularioPN`
 
@@ -341,17 +345,17 @@ graph LR
 Los siguientes canales fueron validados en pruebas de regresión frente a la iniciativa SOAT Orden Administrativa:
 
 | Canal | Archivo Evidencia Local |
-|---|---|
-| Cotizadores (Salud, PAC, Pensión, Hogar, Vida, Autos, Educación) | `../Regresion_CotizadorAutos.md` |
-| Global Web | `../pdf/Evidencia_Global_Web_regresión.pdf` |
-| Policy Center | `../Regresion_EvidenciasEscenarios.md` |
-| GW Autos Colectivo | `../Regresion_EvidenciasEscenarios.md` |
-| Reclamaciones Autos | `../Regresion_EvidenciasEscenarios.md` |
-| ARL, PYME, ATR Reclamaciones Vida | `../Regresion_EvidenciasEscenarios.md` |
-| Core Empresariales, Cumplimiento Web | `../Regresion_EvidenciasEscenarios.md` |
-| SuraEnLínea (distinto a SOAT) | `../Regresion_SEL_SOAT.md` |
-| SIS Bancaseguros / Sura Masivos | `../Regresion_SIS_Suramasivos.md` |
-| C/S Vida | `../Regresion_EvidenciasEscenarios.md` |
+| --- | --- |
+| Cotizadores (Salud, PAC, Pensión, Hogar, Vida, Autos, Educación) | `../AtributosCalidadDesarrollo/Regresion_CotizadorAutos.md` |
+| Global Web | `../AtributosCalidadDesarrollo/attachments/EvidenciaGlobalWebRegresion.pdf` |
+| Policy Center | `../AtributosCalidadDesarrollo/Regresion_EvidenciasEscenarios.md` |
+| GW Autos Colectivo | `../AtributosCalidadDesarrollo/Regresion_EvidenciasEscenarios.md` |
+| Reclamaciones Autos | `../AtributosCalidadDesarrollo/Regresion_EvidenciasEscenarios.md` |
+| ARL, PYME, ATR Reclamaciones Vida | `../AtributosCalidadDesarrollo/Regresion_EvidenciasEscenarios.md` |
+| Core Empresariales, Cumplimiento Web | `../AtributosCalidadDesarrollo/Regresion_EvidenciasEscenarios.md` |
+| SuraEnLínea (distinto a SOAT) | `../AtributosCalidadDesarrollo/Regresion_SEL_SOAT.md` |
+| SIS Bancaseguros / Sura Masivos | `../AtributosCalidadDesarrollo/Regresion_SIS_Suramasivos.md` |
+| C/S Vida | `../AtributosCalidadDesarrollo/Regresion_EvidenciasEscenarios.md` |
 
 **Tarea Azure de regresión:** [538482](https://dev.azure.com/SuraColombia/Portafolios/_workitems/edit/538482) | Evidencias adicionales: [546392](https://dev.azure.com/SuraColombia/Portafolios/_workitems/edit/546392)
 
@@ -362,34 +366,34 @@ Los siguientes canales fueron validados en pruebas de regresión frente a la ini
 ### Documentación local analizada (17 archivos)
 
 | Archivo | Contenido |
-|---|---|
-| `../DocumentacionTecnicaSarlaft.md` | Arquitectura general, interfaces de servicio, campos API v1.8 |
-| `../ConfiguracionInfraestructura.md` | Azure, Terraform IaC, networking, ambientes |
-| `../GestionConfiguracion.md` | Repositorios Azure DevOps, GitFlow, CI/CD lineamientos |
-| `../AtributosCalidadDesarrollo.md` | NFRs de desarrollo, acuerdos equipo, entregables HU |
-| `../InterfazConsultaEstadoSarlaft.md` | Servicio checkStatus — alternativa a webhook |
-| `../InterfazProcesosMasivos.md` | Servicios masivos — REST + RabbitMQ, payloads y flujos |
-| `../EscenarioValidacion_WeSuraSuraEnLinea.md` | Flujo especial infoPendiente para WeSura/SuraEnLínea/Salud |
-| `../EvaluacionReclamaciones.md` | Proceso de evaluación para reclamaciones — figura reclamante |
-| `../PruebasIntegracionSoapUI.md` | Guía SoapUI — repositorio pa, branches, assertions |
-| `../PruebasDesempenoJMeter.md` | Guía JMeter — rendimiento_SarlaftAPI.jmx, Thread Groups |
-| `../PruebasRegresionSOAT.md` | Índice de regresión Jun-2024, aplicativos cubiertos |
-| `../Regresion_CotizadorAutos.md` | Escenarios Cotizador Autos (Registraduría, PEP, INTENSIFICADO) |
-| `../Regresion_SEL_SOAT.md` | Escenarios SEL distinto a SOAT (Migración, Experian, PEPS) |
-| `../Regresion_SIS_Suramasivos.md` | Escenarios SIS y Suramasivos (GAFI, PEP, Registraduría) |
-| `../docx/DocumentacionTecnicaSarlaft_1.8.4.docx` | Versión Word de la doc técnica — ⚠️ requiere revisión manual |
-| `../pdf/SERVICIO CONSULTAR ESTADO SARLAFT.pdf` | Spec PDF del servicio checkStatus |
-| `../pdf/SERVICIO_DE_VALIDAR_SARLAFT_MASIVO.pdf` | Spec PDF del servicio masivo |
-| `../pdf/SERVICIO DE VALIDAR SARLAFT_WeSuraSuraEnLinea.pdf` | Spec PDF WeSura/SuraEnLínea |
-| `../pdf/ServicioReclamaciones_1.0.pdf` | Spec PDF Reclamaciones |
+| --- | --- |
+| `../Interfaces de Servicio/DescripcionInterfacesPrincipales/DocumentacionTecnicaSarlaft.md` | Arquitectura general, interfaces de servicio, campos API v1.8 |
+| `../GestionConfiguracion/ConfiguracionInfraestructura/index.md` | Azure, Terraform IaC, networking, ambientes |
+| `../GestionConfiguracion/index.md` | Repositorios Azure DevOps, GitFlow, CI/CD lineamientos |
+| `../AtributosCalidadDesarrollo/index.md` | NFRs de desarrollo, acuerdos equipo, entregables HU |
+| `../Interfaces de Servicio/InterfazConsultaEstadoSarlaft/index.md` | Servicio checkStatus — alternativa a webhook |
+| `../Interfaces de Servicio/InterfazProcesosMasivos/index.md` | Servicios masivos — REST + RabbitMQ, payloads y flujos |
+| `../Interfaces de Servicio/EscenarioValidacion/index.md` | Flujo especial infoPendiente para WeSura/SuraEnLínea/Salud |
+| `../Interfaces de Servicio/EvaluacionReclamaciones/index.md` | Proceso de evaluación para reclamaciones — figura reclamante |
+| `../AtributosCalidadDesarrollo/PruebasIntegracionSoapUI.md` | Guía SoapUI — repositorio pa, branches, assertions |
+| `../AtributosCalidadDesarrollo/PruebasDesempenoJMeter.md` | Guía JMeter — rendimiento_SarlaftAPI.jmx, Thread Groups |
+| `../AtributosCalidadDesarrollo/PruebasRegresionSarlaftSOAT.md` | Índice de regresión Jun-2024, aplicativos cubiertos |
+| `../AtributosCalidadDesarrollo/Regresion_CotizadorAutos.md` | Escenarios Cotizador Autos (Registraduría, PEP, INTENSIFICADO) |
+| `../AtributosCalidadDesarrollo/Regresion_SEL_SOAT.md` | Escenarios SEL distinto a SOAT (Migración, Experian, PEPS) |
+| `../AtributosCalidadDesarrollo/Regresion_SIS_Suramasivos.md` | Escenarios SIS y Suramasivos (GAFI, PEP, Registraduría) |
+| `../Interfaces de Servicio/DescripcionInterfacesPrincipales/attachments/DocumentacionTecnicaSarlaft_1.8.4.docx` | Versión Word de la doc técnica — ⚠️ requiere revisión manual |
+| `../Interfaces de Servicio/InterfazConsultaEstadoSarlaft/attachments/SERVICIO CONSULTAR ESTADO SARLAFT.pdf` | Spec PDF del servicio checkStatus |
+| `../Interfaces de Servicio/InterfazProcesosMasivos/attachments/SERVICIO DE VALIDAR SARLAFT_MASIVO.pdf` | Spec PDF del servicio masivo |
+| `../Interfaces de Servicio/EscenarioValidacion/attachments/SERVICIO DE VALIDAR SARLAFT_WeSuraSuraEnLinea.pdf` | Spec PDF WeSura/SuraEnLínea |
+| `../Interfaces de Servicio/EvaluacionReclamaciones/attachments/ServicioReclamaciones_1.0.pdf` | Spec PDF Reclamaciones |
 
 ### 🔗 Hipervínculos documentados (requieren acceso Sura)
 
 > Los siguientes links fueron encontrados en la documentación. No fue posible acceder a todos en el momento del análisis. Se dejan como referencia para investigación posterior.
 
 | URL / Referencia | Origen | Descripción |
-|---|---|---|
-| `https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1955070150` | `../DocumentacionTecnicaSarlaft.md` | **📌 Página principal** — Descripción de Interfaces Principales Sarlaft |
+| --- | --- | --- |
+| `https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1955070150` | `../Interfaces de Servicio/DescripcionInterfacesPrincipales/DocumentacionTecnicaSarlaft.md` | **📌 Página principal** — Descripción de Interfaces Principales Sarlaft |
 | `https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1750892627` | Confluence / Integración Sarlaft 4.0 | Sarlaft 4.0 — Tecnologías y componentes del equipo EPA |
 | `https://segurosti.atlassian.net/wiki/spaces/EPA/pages/3228270786` | Confluence EPA | Guía de Aprendizaje Sarlaft 4.0 — Desarrollo |
 | `https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2071921548` | Confluence EPA | Documentación Técnica Integrador C/S Sarlaft 4.0 |
@@ -400,18 +404,18 @@ Los siguientes canales fueron validados en pruebas de regresión frente a la ini
 | `https://segurosti.atlassian.net/wiki/spaces/ban/pages/3420030796` | Confluence ban | SARLAFT 4.0 — Plataforma Canales Masivos (doc técnica + pptx) |
 | `https://segurosti.atlassian.net/wiki/spaces/EDO/pages/3570237602` | Confluence EDO | Sarlaft 4.0 — Equipos de Operación |
 | `https://segurosti.atlassian.net/wiki/spaces/EDM/pages/5150441473` | Confluence EDM | Aseguramiento de la calidad QA SARLAFT 4.0 |
-| `https://segurosti.atlassian.net/wiki/spaces/AR/pages/799015790` | `../ConfiguracionInfraestructura.md` | Infraestructura como código en Azure — guía Terraform |
-| `https://artifactory.suramericana.com.co/ui/repos/tree/General/sura-share%2Fsura%2Flnf%2Flegoapp` | `../ConfiguracionInfraestructura.md` | Lego Sura — herramienta IaC (última versión) |
-| `https://appadminip.suramericana.com.co` | `../ConfiguracionInfraestructura.md` | Administración de IPs para Azure |
-| `https://suramericana.sharepoint.com/sites/INGENIERIATELCO/...` | `../ConfiguracionInfraestructura.md` | Solicitud conexión ExpressRoute |
-| `https://releases.hashicorp.com/terraform/0.13.7/` | `../ConfiguracionInfraestructura.md` | Terraform v0.13.7 (versión recomendada para el proyecto) |
-| `https://sonar.suramericana.com.co/dashboard?id=sarlaftapi` | `../GestionConfiguracion.md` / `../AtributosCalidadDesarrollo.md` | Dashboard SonarQube del proyecto Sarlaft API |
-| `https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/adm_y_fin-sarlaft-api-ms` | `../GestionConfiguracion.md` | Repositorio principal API microservicio |
-| `https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/adm_y_fin-sarlaft-peps-ms` | `../GestionConfiguracion.md` | Repositorio PEPS microservicio |
-| `https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/adm_y_fin-sarlaft-pa` | `../GestionConfiguracion.md` / `../PruebasIntegracionSoapUI.md` | Repositorio pruebas automatizadas (SoapUI + JMeter) |
-| `https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/adm_y_fin-sarlaft-iac` | `../GestionConfiguracion.md` | Repositorio IaC Terraform |
-| `https://dev.azure.com/SuraColombia/Portafolios/_workitems/edit/538482` | `../PruebasRegresionSOAT.md` | Tarea Azure — Pruebas sistema SARLAFT sin SOAT |
-| `https://dev.azure.com/SuraColombia/Portafolios/_workitems/edit/546392` | `../PruebasRegresionSOAT.md` | Tarea Azure — Evidencias adicionales regresión |
+| `https://segurosti.atlassian.net/wiki/spaces/AR/pages/799015790` | `../GestionConfiguracion/ConfiguracionInfraestructura/index.md` | Infraestructura como código en Azure — guía Terraform |
+| `https://artifactory.suramericana.com.co/ui/repos/tree/General/sura-share%2Fsura%2Flnf%2Flegoapp` | `../GestionConfiguracion/ConfiguracionInfraestructura/index.md` | Lego Sura — herramienta IaC (última versión) |
+| `https://appadminip.suramericana.com.co` | `../GestionConfiguracion/ConfiguracionInfraestructura/index.md` | Administración de IPs para Azure |
+| `https://suramericana.sharepoint.com/sites/INGENIERIATELCO/...` | `../GestionConfiguracion/ConfiguracionInfraestructura/index.md` | Solicitud conexión ExpressRoute |
+| `https://releases.hashicorp.com/terraform/0.13.7/` | `../GestionConfiguracion/ConfiguracionInfraestructura/index.md` | Terraform v0.13.7 (versión recomendada para el proyecto) |
+| `https://sonar.suramericana.com.co/dashboard?id=sarlaftapi` | `../GestionConfiguracion/index.md` / `../AtributosCalidadDesarrollo/index.md` | Dashboard SonarQube del proyecto Sarlaft API |
+| `https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/adm_y_fin-sarlaft-api-ms` | `../GestionConfiguracion/index.md` | Repositorio principal API microservicio |
+| `https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/adm_y_fin-sarlaft-peps-ms` | `../GestionConfiguracion/index.md` | Repositorio PEPS microservicio |
+| `https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/adm_y_fin-sarlaft-pa` | `../GestionConfiguracion/index.md` / `../AtributosCalidadDesarrollo/PruebasIntegracionSoapUI.md` | Repositorio pruebas automatizadas (SoapUI + JMeter) |
+| `https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_git/adm_y_fin-sarlaft-iac` | `../GestionConfiguracion/index.md` | Repositorio IaC Terraform |
+| `https://dev.azure.com/SuraColombia/Portafolios/_workitems/edit/538482` | `../AtributosCalidadDesarrollo/PruebasRegresionSarlaftSOAT.md` | Tarea Azure — Pruebas sistema SARLAFT sin SOAT |
+| `https://dev.azure.com/SuraColombia/Portafolios/_workitems/edit/546392` | `../AtributosCalidadDesarrollo/PruebasRegresionSarlaftSOAT.md` | Tarea Azure — Evidencias adicionales regresión |
 
 ---
 

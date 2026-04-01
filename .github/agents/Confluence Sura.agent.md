@@ -180,6 +180,57 @@ docs/
             └── attachments/
 ```
 
+
+### Regla de la ruta en `**Sección:**`
+
+- Si el archivo está en `MiSeccion/index.md` (índice de primer nivel): `./index.md` apunta a sí mismo — usar `../index.md` para subir al padre real solo cuando exista un nivel superior.
+- Si el archivo está en `MiSeccion/SubDir/index.md` (índice de subcarpeta): **siempre usar `../index.md`** para apuntar al `index.md` de `MiSeccion/`.
+- Si el archivo es una página normal `MiSeccion/SubDir/Pagina.md`: usar `./index.md` — apunta correctamente al `index.md` de `SubDir/`.
+
+### Paso 5b — Corrección de advertencias Markdown (obligatorio)
+
+Aplica estas correcciones a **cada archivo `.md` generado**, antes de escribirlo en disco:
+
+**MD032 — Listas rodeadas de líneas en blanco / ítems rotos**
+- El patrón Confluence genera ítems de lista partidos: una línea con solo `-` seguida del contenido en la línea siguiente. Siempre unirlos en una sola línea: `- contenido`.
+- Asegurar una línea en blanco antes y después de cada bloque de lista.
+
+**MD040 — Fenced code blocks con lenguaje especificado**
+- Nunca generar ` ``` ` sin lenguaje. Inferir el lenguaje por el contenido:
+  - `package`, `import`, `@Bean`, `public class` → `java`
+  - `spring:`, `azure:`, `server:` (indentado YAML) → `yaml`
+  - Comienza con `{` o `[` → `json`
+  - `implementation`, `dependencies {`, `plugins {` → `groovy`
+  - `SELECT`, `INSERT`, `CREATE TABLE` → `sql`
+  - Respuesta de texto plano o mensaje corto → `text`
+
+**MD047 — Newline al final del archivo**
+- Todo archivo `.md` debe terminar exactamente con `\n`.
+
+**MD010 — No usar tabs**
+- Convertir todos los caracteres tab (`\t`) a 4 espacios, incluso dentro de bloques de código.
+
+**MD012 — Máximo una línea en blanco consecutiva**
+- Colapsar 3 o más saltos de línea seguidos a exactamente 2 (`\n\n`).
+
+**heading-order (axe-linter) — Jerarquía de headings**
+- El título principal del archivo es `#`. El primer subnivel debe ser `##`, nunca saltar de `#` a `###` o `####`.
+- Al convertir headings de Confluence (`<h1>`→`##`, `<h2>`→`###`, etc.) verificar que el primer heading interior no sea nivel 3 o inferior si no hay un `##` antes.
+
+**MD009 — Sin espacios finales**
+- Ninguna línea debe terminar con un espacio suelto (excepción: dos espacios finales deliberados para `<br>`).
+- Aplica también a celdas de tabla.
+
+**MD034 — Sin URLs ni emails desnudos**
+- Toda URL (`http://`, `https://`) y todo email (`usuario@dominio.tld`) que aparezca en texto libre debe ir envuelto en `<url>` o como link `[texto](url)`.
+- NO aplicar dentro de code spans ni dentro de links ya formateados `[...](...)`.
+
+**MD056 — Número uniforme de columnas en tablas**
+- Todas las filas de una tabla Markdown deben tener exactamente el mismo número de celdas que la fila de encabezado.
+- Al convertir tablas HTML de Confluence, contar las columnas del encabezado (`<th>`) y completar con celdas vacías (`|  |`) las filas que tengan menos columnas.
+- Nunca emitir filas con 2 o 3 celdas si el encabezado declara 4 columnas.
+
+
 ### Paso 7 — Archivo índice (DELEGADO a sub-agente)
 
 Para cada sección que tenga sub-páginas, invoca al sub-agente **Confluence Index Generator** pasándole:
@@ -203,6 +254,13 @@ Ejecuta un listado recursivo para confirmar que todos los archivos fueron creado
 ```powershell
 Get-ChildItem $base -Recurse -File | Select-Object @{N='Ruta';E={$_.FullName.Replace("$base\",'')}}, @{N='Bytes';E={$_.Length}} | Sort-Object Ruta | Format-Table -AutoSize
 ```
+
+Ejecuta también el script `fix_markdown_lint_section.py` (disponible en `scripts/`) para validar que 0 archivos quedan con cambios pendientes:
+```powershell
+python scripts/fix_markdown_lint_section.py "<RUTA_SECCION>"
+```
+
+
 
 ### Paso 9 — Validación de enlaces (DELEGADO a sub-agente)
 
@@ -233,6 +291,10 @@ Si el Link Validator reporta enlaces que se pueden corregir, **preguntar al usua
 - Si una página solo tiene macro `pagetree`, el `.md` es un índice con links
 - Los backticks se preservan: campos BD, endpoints, mensajes, perfiles van con backticks
 - Siempre usar `jq` en las llamadas a Confluence para optimizar tokens
+- **NO** generar ítems de lista rotos (`-` solitario en su propia línea) — siempre `- contenido` en una sola línea
+- **NO** generar code fences sin lenguaje (` ``` `) — siempre especificar el lenguaje
+- **NO** generar tablas con filas de distinto número de columnas — completar siempre con celdas vacías `|  |` hasta igualar el encabezado (MD056)
+- Los archivos generados deben pasar sin advertencias: MD009, MD010, MD012, MD032, MD034, MD040, MD047, MD056, heading-order
 
 ## Paso 10 — Actualizar README.md
 

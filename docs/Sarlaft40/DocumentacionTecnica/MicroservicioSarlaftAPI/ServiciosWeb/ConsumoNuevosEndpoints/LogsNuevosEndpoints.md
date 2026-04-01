@@ -4,7 +4,7 @@
 > **Última modificación:** 2024-06-04 — Brayan Estiven Sepúlveda Quintero · versión 4
 > **Sección:** [Consumo Nuevos Endpoints](./index.md)
 | Servicio Viejo | Servicio Nuevo | Filtro de Splunk para Request y Response |
-|---|---|---|
+| --- | --- | --- |
 | assessment | /evaluaciones | `index="idx_sarlaft4_*" message="*modulo=SARLAFTAPI*" message="*operacion=WEBFILTER*" message="*/sarlaftserv/v1/evaluaciones*"` |
 | assessment/recategorize | /evaluaciones/recategorizar | `index="idx_sarlaft4_*" message="*modulo=SARLAFTAPI*" message="*operacion=WEBFILTER*" message="*/sarlaftserv/v1/evaluaciones/recategorizar*"` |
 | assessment/figure/add | /evaluaciones/figuras | `index="idx_sarlaft4_*" message="*modulo=SARLAFTAPI*" message="*operacion=WEBFILTER*" message="*/sarlaftserv/v1/evaluaciones/figuras*"` |

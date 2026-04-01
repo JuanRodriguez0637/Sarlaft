@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "6fd7b4e5-ffc9-4cbc-8263-4be43f8b78fb",
+		"name": "Endpoints HU 565396",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33144964"
+	},
+	"item": [
+		{
+			"name": "Tablas regimen_SOAT_ 1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"solicitudDni\":\"C0000001\",\r\n   \"codigoOperacion\":\"01\",\r\n   \"codigoAplicacion\":\"SEL\",\r\n   \"negocioId\":\"8934894-489438\",\r\n   \"infoPendiente\":false,\r\n   \"tomador\":{\r\n      \"personaPep\":null,\r\n      \"administradorPep\":null,\r\n      \"cliente\":{\r\n         \"tipoPersona\":\"J\",\r\n         \"correo\":\"lcortiz@sura.com.co\",\r\n         \"celular\":\"3166273241\",\r\n         \"razonSocial\":\"Procuraduría General de la Nación\",\r\n         \"paisConstitucion\":\"57\",\r\n         \"documento\":{\r\n            \"tipo\":\"A\",\r\n            \"numero\":\"8999991197\",\r\n            \"fechaExpedicion\":null\r\n         }\r\n      }\r\n   },\r\n   \"polizas\":[\r\n      {\r\n         \"codigoRamo\": \"041\",\r\n            \"codigoCanal\": \"CC016\",\r\n            \"valorAsegurado\": 500000,\r\n            \"valorPrima\": 500000,\r\n            \"negocio\": \"INDIVIDUAL\",\r\n            \"codigoOficina\": \"099\",\r\n            \"codigoAgente\": \"4999\"\r\n      }\r\n   ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SARLAFT-API}}/sarlaftserv/v1/evaluaciones",
+					"host": [
+						"{{SARLAFT-API}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"v1",
+						"evaluaciones"
+					]
+				},
+				"description": "StartFragment1- Dado que se crea una evaluación de SOAT- 041  \nY es un tomador y/o asegurado igual  \nY es del aplicativo SEL  \nCuando es asesor tipo corredor  \nEntonces se asigne la validación de identidad (EXPERIAN)EndFragment"
+			},
+			"response": []
+		},
+		{
+			"name": "Tablas financieras_SOAT 2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"solicitudDni\": \"C0000001\",\r\n    \"codigoOperacion\": \"01\",\r\n    \"codigoAplicacion\": \"SEL\",\r\n    \"negocioId\": \"8934894-489438\",\r\n    \"infoPendiente\": false,\r\n    \"tomador\": {\r\n        \"personaPep\": null,\r\n        \"administradorPep\": null,\r\n        \"cliente\": {\r\n            \"tipoPersona\": \"J\",\r\n            \"correo\": \"lcortiz@sura.com.co\",\r\n            \"celular\": \"3166273241\",\r\n            \"razonSocial\": \"B.F.R. S.a. Sociedad Corredora De Seguros\",\r\n            \"paisConstitucion\": \"57\",\r\n            \"documento\": {\r\n                \"tipo\": \"A\",\r\n                \"numero\": \"8002250410\",\r\n                \"fechaExpedicion\": null\r\n            }\r\n        }\r\n    },\r\n    \"polizas\": [\r\n        {\r\n            \"codigoRamo\": \"041\",\r\n            \"codigoCanal\": \"CC016\",\r\n            \"valorAsegurado\": 500000,\r\n            \"valorPrima\": 500000,\r\n            \"negocio\": \"INDIVIDUAL\",\r\n            \"codigoOficina\": \"099\",\r\n            \"codigoAgente\": \"4999\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SARLAFT-API}}/sarlaftserv/v1/evaluaciones",
+					"host": [
+						"{{SARLAFT-API}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"v1",
+						"evaluaciones"
+					]
+				},
+				"description": "StartFragment1- Dado que se crea una evaluación de SOAT- 041  \nY es un tomador y/o asegurado igual  \nY es del aplicativo SEL  \nCuando es asesor tipo corredor  \nEntonces se asigne la validación de identidad (EXPERIAN)EndFragment"
+			},
+			"response": []
+		}
+	]
+}

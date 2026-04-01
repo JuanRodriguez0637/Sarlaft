@@ -93,7 +93,7 @@ Se crea un entrypoint para recibir un requisito por comando. Al recibirlo se ver
 ## Clases Relacionadas
 
 | Clase | Paquete | Path |
-|-------|---------|------|
+| ------- | --------- | ------ |
 | NotificacionRepository (interface) | sura.sarlaft4.domain.requisito.gateway | domain/model/.../gateway/RequisitoRepository.java |
 | RequisitoRepositoryAdapter | sura.sarlaft4.jpa.requerido | infraestructure/driven-adapters/jpa-repository/.../RequisitoRepositoryAdapter.java |
 | RequisitoRepository (interface) | sura.sarlaft4.domain.requisito.gateway | domain/model/.../gateway/RequisitoRepository.java |

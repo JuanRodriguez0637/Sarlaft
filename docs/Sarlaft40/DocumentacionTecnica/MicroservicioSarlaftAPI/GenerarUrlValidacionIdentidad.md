@@ -15,7 +15,7 @@
 {
     "url": "https://sarlaft.labsura.com/redirect/validar-identidad/4c31e64e-884d-45e5-a2c1-654334e5f40a/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJTYXJsYWZ0Iiwic3ViIjoiU0FSTEFGVCIsImlzcyI6IlN1cmEuY29tIiwiZXhwIjoxNzU2NDg1MDc2LCJpYXQiOjE3NTUxODkwNzZ9.t5v9VcrawKZ7cgqs6CEFEzba8cVZl84TORu8DCuHfjE"
 }
-```
+```text
 
 - **Ejemplo Json Response con error 400 evaluación no encontrada:**
 
@@ -30,7 +30,7 @@
         }
     ]
 }
-```
+```text
 
 - **Ejemplos Json Response con error 400 dni no pertenece a la evaluacion**
 
@@ -45,7 +45,7 @@
         }
     ]
 }
-```
+```text
 
 - **Ejemplos Json Response con error 400 error datos de entrada**
 
