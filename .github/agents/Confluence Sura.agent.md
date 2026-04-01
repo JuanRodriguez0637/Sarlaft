@@ -147,6 +147,16 @@ Get-ChildItem $base -Recurse -File | Select-Object @{N='Ruta';E={$_.FullName.Rep
 - Los backticks se preservan: campos BD, endpoints, mensajes, perfiles van con backticks
 - Siempre usar `jq` en las llamadas a Confluence para optimizar tokens
 
+## Paso 9 — Actualizar README.md
+
+Después de generar toda la documentación, **actualiza el archivo `README.md`** en la raíz del repositorio:
+
+1. Lee el `README.md` actual
+2. Actualiza la sección **"Estructura del proyecto"** para reflejar las nuevas carpetas y archivos creados
+3. Si la subsección documentada es nueva, agrégala al árbol de directorios con su descripción
+4. Si ya existía, verifica que la descripción esté vigente
+5. No elimines secciones existentes del README — solo agrega o actualiza
+
 ## Formato de salida
 
 Al finalizar, reporta:
@@ -154,3 +164,4 @@ Al finalizar, reporta:
 2. Cantidad de archivos `.md` generados
 3. Cantidad de adjuntos descargados
 4. Listado de archivos creados con tamaño
+5. Cambios realizados en el `README.md`

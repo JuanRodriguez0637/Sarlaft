@@ -16,6 +16,19 @@ docs/
 │   │   ├── ServicioTerceros/
 │   │   └── ...                       # ~20 servicios con requests/responses JSON
 │   └── img/                          # Diagramas de dominio, clases y BD
+├── MicroservicioWebhook/             # Documentación del microservicio Webhook
+│   ├── Comunicaciones/               # Operaciones intermedias sobre evaluaciones
+│   │   ├── LevantarControlPEPS.md
+│   │   ├── EvaluarEstado.md
+│   │   └── EvaluacionMasiva.md
+│   ├── img/                          # Diagramas de clases y capturas
+│   ├── attachments/                  # PDFs, XLSX (historias, diccionario)
+│   ├── DisenoArquitectura.md
+│   ├── EstructuraProyecto.md
+│   ├── ConfiguracionAmbiente.md
+│   ├── WebhookLogErroresSplunk.md
+│   ├── ConfiguracionHealthCheck.md
+│   └── WebhookSarlaft.md
 ├── AtributosCalidadDesarrollo.md
 ├── ConfiguracionInfraestructura.md
 ├── DocumentacionTecnicaSarlaft.md
@@ -46,7 +59,7 @@ docs/
 |------|-------------|
 | `Documentacion` | Rama principal con la documentación base del proyecto |
 | `MicroservicioSarlaftAPI` | Documentación completa del microservicio SarlaftAPI |
-| `MicroservicioWebhook` | Configuraciones de seguridad y plantillas `.vscode` |
+| `MicroservicioWebhook` | Documentación completa del microservicio Webhook (comunicaciones, healthcheck, splunk) |
 
 ## Configuración del entorno local
 

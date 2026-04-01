@@ -134,7 +134,16 @@ El `index.md` de la subsección debe incluir:
 ```powershell
 Get-ChildItem $base -Recurse -File | Select-Object @{N='Ruta';E={$_.FullName.Replace("$base\",'')}}, @{N='Bytes';E={$_.Length}} | Sort-Object Ruta | Format-Table -AutoSize
 ```
+## 9. Actualizar README.md
 
+Después de generar toda la documentación, **actualizar el archivo `README.md`** en la raíz del repositorio:
+
+1. Leer el `README.md` actual
+2. Actualizar la sección **"Estructura del proyecto"** para reflejar las nuevas carpetas y archivos creados
+3. Si la subsección documentada es nueva, agregarla al árbol de directorios con su descripción
+4. Si ya existía, verificar que la descripción esté vigente
+5. No eliminar secciones existentes del README — solo agregar o actualizar
+6. Reportar los cambios realizados en el `README.md`
 ---
 
 > **Nota:** Este prompt es reutilizable para cualquier subsección del Microservicio SarlaftAPI (Servicios Web, Procesos Carga Masiva, Estructura Proyecto, etc.) — solo cambia `<NOMBRE_SECCION>` por el título de la página raíz en Confluence.
