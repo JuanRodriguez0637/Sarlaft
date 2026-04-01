@@ -1,0 +1,17 @@
+{
+    "validacionesDTO": [
+        {
+            "sarlaft": {
+                "id": "TSTAR-7440 Figura 1",
+                "cliente": {
+                    "tipoPersona": "N"
+                },
+                "riesgo": {
+                    "tipoRiesgo": "INTENSIFICADO"
+                }
+            }
+        }
+    ],
+    "codigoOperacion": "01",
+    "evaluacionId": "TSTAR-7440 Figuras 1"
+}

@@ -1,0 +1,397 @@
+{
+	"info": {
+		"_postman_id": "10db0eb8-0291-45f1-92a8-b74640965d7f",
+		"name": "Escenarios HU 461762",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33144964"
+	},
+	"item": [
+		{
+			"name": "assessment PN CASO 1",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"solicitudDni\": \"C1038098972\",\r\n    \"codigoOperacion\": \"01\",\r\n    \"codigoAplicacion\": \"SEL\",\r\n    \"negocioId\": \"0940000444\",\r\n    \"tomador\": {\r\n        \"personaPep\": \"SI\",\r\n        \"cliente\": {\r\n            \"documento\": {\r\n                \"tipo\": \"C\",\r\n                \"numero\": \"55163358\",\r\n                \"fechaExpedicion\": \"1990-09-17\"\r\n            },\r\n            \"persona\": {\r\n                \"primerNombre\": \"MARIBETH\",\r\n                \"segundoNombre\": \"\",\r\n                \"primerApellido\": \"DIAZ\",\r\n                \"segundoApellido\": \"CHARRY\",\r\n                \"pais\": \"57\"\r\n            },\r\n            \"tipoPersona\": \"N\",\r\n            \"celular\": \"3006138524\",\r\n            \"correo\": \"TATIANAV85@GMAIL.COM\"\r\n        }\r\n    },\r\n    \"asegurados\": [\r\n        {\r\n            \"personaPep\": \"SI\",\r\n            \"administradorPep\": \"no\",\r\n            \"relacionLaboral\": \"S\",\r\n            \"cliente\": {\r\n                \"documento\": {\r\n                    \"tipo\": \"C\",\r\n                    \"numero\": \"55163358\",\r\n                    \"fechaExpedicion\": \"1990-09-17\"\r\n                },\r\n                \"persona\": {\r\n                    \"primerNombre\": \"MARIBETH\",\r\n                    \"segundoNombre\": \"\",\r\n                    \"primerApellido\": \"DIAZ\",\r\n                    \"segundoApellido\": \"CHARRY\",\r\n                    \"pais\": \"57\"\r\n                },\r\n                \"tipoPersona\": \"N\",\r\n                \"celular\": \"3006138524\",\r\n                \"correo\": \"TATIANAV85@GMAIL.COM\"\r\n            }\r\n        }\r\n    ],\r\n    \"polizas\": [\r\n        {\r\n            \"codigoRamo\": \"041\",\r\n            \"codigoProducto\": \"ARL\",\r\n            \"negocio\": \"INDIVIDUAL\",\r\n            \"codigoOficina\": \"099\",\r\n            \"codigoAgente\": \"158\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SARLAFT-API}}/sarlaftserv/assessment",
+					"host": [
+						"{{SARLAFT-API}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"assessment"
+					]
+				},
+				"description": "StartFragment1- Dado que se crea una evaluación de SOAT- 041  \nY es un tomador y/o asegurado igual  \nY es del aplicativo SEL  \nCuando es asesor tipo corredor  \nEntonces se asigne la validación de identidad (EXPERIAN)EndFragment"
+			},
+			"response": []
+		},
+		{
+			"name": "assessment PN CASO 2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"solicitudDni\": \"C1038098972\",\r\n    \"codigoOperacion\": \"01\",\r\n    \"codigoAplicacion\": \"SEL\",\r\n    \"negocioId\": \"0940000444\",\r\n    \"tomador\": {\r\n        \"cliente\": {\r\n            \"documento\": {\r\n                \"tipo\": \"C\",\r\n                \"numero\": \"55163358\",\r\n                \"fechaExpedicion\": \"1990-09-17\"\r\n            },\r\n            \"persona\": {\r\n                \"primerNombre\": \"MARIBETH\",\r\n                \"segundoNombre\": \"\",\r\n                \"primerApellido\": \"DIAZ\",\r\n                \"segundoApellido\": \"CHARRY\",\r\n                \"pais\": \"57\"\r\n            },\r\n            \"tipoPersona\": \"N\",\r\n            \"celular\": \"3006138524\",\r\n            \"correo\": \"TATIANAV85@GMAIL.COM\"\r\n        }\r\n    },\r\n    \"asegurados\": [\r\n        {\r\n            \"personaPep\": \"no\",\r\n            \"administradorPep\": \"no\",\r\n            \"relacionLaboral\": \"S\",\r\n            \"cliente\": {\r\n                \"documento\": {\r\n                    \"tipo\": \"C\",\r\n                    \"numero\": \"55163358\",\r\n                    \"fechaExpedicion\": \"1990-09-17\"\r\n                },\r\n                \"persona\": {\r\n                    \"primerNombre\": \"MARIBETH\",\r\n                    \"segundoNombre\": \"\",\r\n                    \"primerApellido\": \"DIAZ\",\r\n                    \"segundoApellido\": \"CHARRY\",\r\n                    \"pais\": \"57\"\r\n                },\r\n                \"tipoPersona\": \"N\",\r\n                \"celular\": \"3006138524\",\r\n                \"correo\": \"TATIANAV85@GMAIL.COM\"\r\n            }\r\n        }\r\n    ],\r\n    \"polizas\": [\r\n        {\r\n            \"codigoRamo\": \"041\",\r\n            \"codigoAgente\": \"6886\",\r\n            \"codigoProducto\": \"ARL\",\r\n            \"negocio\": \"INDIVIDUAL\",\r\n            \"codigoOficina\": \"099\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SARLAFT-API}}/sarlaftserv/assessment",
+					"host": [
+						"{{SARLAFT-API}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"assessment"
+					]
+				},
+				"description": "StartFragment2- Dado que se crea una evaluación de SOAT- 041  \nY es un tomador y/o asegurado igual  \nY es del aplicativo SEL  \nCuando es asesor diferente a corredor  \nEntonces se asigne la validación de identidad (EXPERIAN)EndFragment"
+			},
+			"response": []
+		},
+		{
+			"name": "assessment PN CASO 3 -NO EXPE",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"solicitudDni\": \"C1038098972\",\r\n    \"codigoOperacion\": \"01\",\r\n    \"codigoAplicacion\": \"14280\",\r\n    \"negocioId\": \"0940000444\",\r\n    \"tomador\": {\r\n        \"personaPep\": \"si\",\r\n        \"cliente\": {\r\n            \"documento\": {\r\n                \"tipo\": \"C\",\r\n                \"numero\": \"34990766\",\r\n                \"fechaExpedicion\": \"1985-01-14\"\r\n            },\r\n            \"persona\": {\r\n                \"primerNombre\": \"ANA\",\r\n                \"segundoNombre\": \"GABRIELA\",\r\n                \"primerApellido\": \"BARON\",\r\n                \"segundoApellido\": \"GUZMAN\",\r\n                \"pais\": \"57\"\r\n            },\r\n            \"tipoPersona\": \"N\",\r\n            \"celular\": \"3006138524\",\r\n            \"correo\": \"TATIANAV85@GMAIL.COM\"\r\n        }\r\n    },\r\n    \"asegurados\": [\r\n        {\r\n            \"personaPep\": \"si\",\r\n            \"administradorPep\": \"no\",\r\n            \"relacionLaboral\": \"S\",\r\n            \"cliente\": {\r\n                \"documento\": {\r\n                    \"tipo\": \"C\",\r\n                    \"numero\": \"34990766\",\r\n                    \"fechaExpedicion\": \"1985-01-14\"\r\n                },\r\n                \"persona\": {\r\n                    \"primerNombre\": \"ANA\",\r\n                    \"segundoNombre\": \"GABRIELA\",\r\n                    \"primerApellido\": \"BARON\",\r\n                    \"segundoApellido\": \"GUZMAN\",\r\n                    \"pais\": \"57\"\r\n                },\r\n                \"tipoPersona\": \"N\",\r\n                \"celular\": \"3006138524\",\r\n                \"correo\": \"TATIANAV85@GMAIL.COM\"\r\n            }\r\n        }\r\n    ],\r\n    \"polizas\": [\r\n        {\r\n            \"codigoRamo\": \"030\",\r\n            \"codigoAgente\": \"158\",\r\n            \"codigoProducto\": \"ARL\",\r\n            \"negocio\": \"INDIVIDUAL\",\r\n            \"codigoOficina\": \"099\"\r\n            \r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SARLAFT-API}}/sarlaftserv/assessment",
+					"host": [
+						"{{SARLAFT-API}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"assessment"
+					]
+				},
+				"description": "StartFragment3- Dado que se crea una evaluación del ramo 030- INCENDIO  \nY es persona naturalY es un PEPY es un tomador y/o asegurado igual  \nY es del aplicativo 14280 - CORE  \nCuando el asesor es tipo corredor  \nEntonces No se asigne la validación de identidad (EXPERIAN)EndFragment"
+			},
+			"response": []
+		},
+		{
+			"name": "assessment PN CASO 4 - NO EXPE",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"solicitudDni\": \"C1038098972\",\r\n\t\"codigoOperacion\": \"01\",\r\n\t\"codigoAplicacion\": \"6919\",\r\n\t\"negocioId\": \"09014024220629981816\",\r\n\t\"asesor\": {\r\n\t\t\"dni\": \"C42889582\",\r\n\t\t\"correo\": \"ldmunoz@sura.com.co\",\r\n\t\t\"celular\": \"3103778293\"\r\n\t},\r\n\t\"tomador\": {\r\n\t\t\"personaPep\": \"No\",\r\n\t\t\"cliente\": {\r\n\t\t\t\"tipoPersona\": \"J\",\r\n\t\t\t\"correo\": \"ldmunoz@sura.com.co\",\r\n\t\t\t\"celular\": \"3103778293\",\r\n\t\t\t\"razonSocial\": \"PROMOGROUP S.A.S\",\r\n\t\t\t\"paisConstitucion\": \"57\",\r\n\t\t\t\"documento\": {\r\n\t\t\t\t\"tipo\": \"A\",\r\n\t\t\t\t\"numero\": \"9014816358\"\r\n\t\t\t},\r\n\t\t\t\"persona\": {\r\n\t\t\t\t\"primerNombre\": \"PROMOGROUP S.A.S\",\r\n\t\t\t\t\"primerApellido\": \"\"\r\n\t\t\t},\r\n\t\t\t\"relaciones\": [\r\n\t\t\t\t{\r\n\t\t\t\t\t\"relacionPeps\": false,\r\n\t\t\t\t\t\"tipo\": \"\",\r\n\t\t\t\t\t\"documento\": {},\r\n\t\t\t\t\t\"persona\": {}\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t}\r\n\t},\r\n\t\"beneficiarios\": [],\r\n\t\"asegurados\": [],\r\n\t\"polizas\": [\r\n\t\t{\r\n\t\t\t\"codigoRamo\": \"080\",\r\n\t\t\t\"codigoProducto\": \"064\",\r\n\t\t\t\"codigoAgente\": \"158\",\r\n\t\t\t\"valorAsegurado\": 7190235.29,\r\n\t\t\t\"valorPrima\": 8000000,\r\n\t\t\t\"medioPago\": \"DEBITO_AUTOMATICO\",\r\n\t\t\t\"negocio\": \"INDIVIDUAL\",\r\n\t\t\t\"codigoOficina\": \"4036\"\r\n\t\t}\r\n\t]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SARLAFT-API}}/sarlaftserv/assessment",
+					"host": [
+						"{{SARLAFT-API}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"assessment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "assessment  CASO 4  Asign:REpresentante Legal PJ PARTE2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cliente\": {\r\n        \"documento\": {\r\n            \"tipo\": \"C\",\r\n            \"numero\": \"55163358\",\r\n            \"fechaExpedicion\": \"1990-09-17\"\r\n        },\r\n        \"persona\": {\r\n            \"primerNombre\": \"MARIBETH\",\r\n            \"segundoNombre\": \"\",\r\n            \"primerApellido\": \"DIAZ\",\r\n            \"segundoApellido\": \"CHARRY\",\r\n            \"pais\": \"57\"\r\n        },\r\n        \"tipoPersona\": \"N\",\r\n        \"celular\": \"3006138524\",\r\n        \"correo\": \"TATIANAV85@GMAIL.COM\"\r\n    },\r\n    \"figuras\": [\r\n        \"REPRESENTANTE_LEGAL\"\r\n    ],\r\n    \"dniClientePadre\": \"A9014816358\",\r\n    \"tipoEmpresa\": \"PYMES\",\r\n    \"banderas\": [],\r\n    \"idEvaluacion\": \"fb790574-eea1-4dce-b1e7-2b7f419803a1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SARLAFT-API}}/sarlaftserv/assessment/figure/add",
+					"host": [
+						"{{SARLAFT-API}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"assessment",
+						"figure",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "assessment PN RE-LG CASO-5 Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"solicitudDni\": \"C1038098972\",\r\n    \"codigoOperacion\": \"01\",\r\n    \"codigoAplicacion\": \"186\",\r\n    \"negocioId\": \"0940000444\",\r\n    \"tomador\": {\r\n        \"personaPep\": \"SI\",\r\n        \"cliente\": {\r\n            \"documento\": {\r\n                \"tipo\": \"C\",\r\n                \"numero\": \"32776065\",\r\n                \"fechaExpedicion\": \"1993-01-29\"\r\n            },\r\n            \"persona\": {\r\n                \"primerNombre\": \"CIELO\",\r\n                \"segundoNombre\": \"DE JESUS\",\r\n                \"primerApellido\": \"DIAZ\",\r\n                \"segundoApellido\": \"HERNANDEZ\",\r\n                \"pais\": \"57\"\r\n            },\r\n            \"tipoPersona\": \"N\",\r\n            \"celular\": \"3166273241\",\r\n            \"correo\": \"TATIANAV85@GMAIL.COM\"\r\n        }\r\n    },\r\n    \"asegurados\": [\r\n        {\r\n            \"personaPep\": \"SI\",\r\n            \"administradorPep\": \"no\",\r\n            \"relacionLaboral\": \"S\",\r\n            \"cliente\": {\r\n                \"documento\": {\r\n                    \"tipo\": \"C\",\r\n                    \"numero\": \"32776065\",\r\n                    \"fechaExpedicion\": \"1993-01-29\"\r\n                },\r\n                \"persona\": {\r\n                    \"primerNombre\": \"CIELO\",\r\n                    \"segundoNombre\": \"DE JESUS\",\r\n                    \"primerApellido\": \"DIAZ\",\r\n                    \"segundoApellido\": \"HERNANDEZ\",\r\n                    \"pais\": \"57\"\r\n                },\r\n                \"tipoPersona\": \"N\",\r\n                \"celular\": \"3166273241\",\r\n                \"correo\": \"TATIANAV85@GMAIL.COM\"\r\n            }\r\n        }\r\n    ],\r\n    \"polizas\": [\r\n        {\r\n            \"codigoRamo\": \"090\",\r\n            \"codigoProducto\": \"ARL\",\r\n            \"negocio\": \"INDIVIDUAL\",\r\n            \"codigoOficina\": \"099\",\r\n            \"codigoAgente\": \"6889\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SARLAFT-API}}/sarlaftserv/assessment",
+					"host": [
+						"{{SARLAFT-API}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"assessment"
+					]
+				},
+				"description": "StartFragment5- Dado que se crea una evaluación del ramo 090- SALUD  \nY es persona naturalY es un PEPY es un tomador y/o asegurado igual  \nY es del aplicativo 186 - GLOBAL WEB  \nCuando el asesor es 6889  \nEntonces se asigne la validación de identidad (EXPERIAN)EndFragment"
+			},
+			"response": []
+		},
+		{
+			"name": "assessment PN RE-LG CASO-5 Copy 2",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"solicitudDni\": \"C1038098972\",\r\n    \"codigoOperacion\": \"01\",\r\n    \"codigoAplicacion\": \"186\",\r\n    \"negocioId\": \"0940000444\",\r\n    \"tomador\": {\r\n        \"personaPep\": \"SI\",\r\n        \"cliente\": {\r\n            \"documento\": {\r\n                \"tipo\": \"C\",\r\n                \"numero\": \"79142489\",\r\n                \"fechaExpedicion\": \"1979-12-06\"\r\n            },\r\n            \"persona\": {\r\n                \"primerNombre\": \"CARLOS\",\r\n                \"segundoNombre\": \"EDUARDO\",\r\n                \"primerApellido\": \"ACOSTA\",\r\n                \"segundoApellido\": \"PINILLA\",\r\n                \"pais\": \"57\"\r\n            },\r\n            \"tipoPersona\": \"N\",\r\n            \"celular\": \"3006138524\",\r\n            \"correo\": \"TATIANAV85@GMAIL.COM\"\r\n        }\r\n    },\r\n    \"asegurados\": [\r\n        {\r\n            \"personaPep\": \"SI\",\r\n            \"administradorPep\": \"no\",\r\n            \"relacionLaboral\": \"S\",\r\n            \"cliente\": {\r\n                \"documento\": {\r\n                    \"tipo\": \"C\",\r\n                    \"numero\": \"79142489\",\r\n                    \"fechaExpedicion\": \"1979-12-06\"\r\n                },\r\n                \"persona\": {\r\n                    \"primerNombre\": \"CARLOS\",\r\n                    \"segundoNombre\": \"EDUARDO\",\r\n                    \"primerApellido\": \"ACOSTA\",\r\n                    \"segundoApellido\": \"PINILLA\",\r\n                    \"pais\": \"57\"\r\n                },\r\n                \"tipoPersona\": \"N\",\r\n                \"celular\": \"3006138524\",\r\n                \"correo\": \"TATIANAV85@GMAIL.COM\"\r\n            }\r\n        }\r\n    ],\r\n    \"polizas\": [\r\n        {\r\n            \"codigoRamo\": \"090\",\r\n            \"codigoProducto\": \"ARL\",\r\n            \"negocio\": \"INDIVIDUAL\",\r\n            \"codigoOficina\": \"099\",\r\n            \"codigoAgente\": \"6889\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SARLAFT-API}}/sarlaftserv/assessment",
+					"host": [
+						"{{SARLAFT-API}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"assessment"
+					]
+				},
+				"description": "StartFragment5- Dado que se crea una evaluación del ramo 090- SALUD  \nY es persona naturalY es un PEPY es un tomador y/o asegurado igual  \nY es del aplicativo 186 - GLOBAL WEB  \nCuando el asesor es 6889  \nEntonces se asigne la validación de identidad (EXPERIAN)EndFragment"
+			},
+			"response": []
+		},
+		{
+			"name": "assessment PN RE-LG CASO-6 Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"solicitudDni\": \"C1038098972\",\r\n    \"codigoOperacion\": \"01\",\r\n    \"codigoAplicacion\": \"71\",\r\n    \"negocioId\": \"0940000444\",\r\n    \"tomador\": {\r\n        \"personaPep\": \"no\",\r\n        \"cliente\": {\r\n            \"tipoPersona\": \"J\",\r\n            \"correo\": \"ldmunoz@sura.com.co\",\r\n            \"celular\": \"3103778293\",\r\n            \"razonSocial\": \"PROMOGROUP S.A.S\",\r\n            \"paisConstitucion\": \"57\",\r\n            \"documento\": {\r\n                \"tipo\": \"A\",\r\n                \"numero\": \"9014816358\"\r\n            },\r\n            \"persona\": {\r\n                \"primerNombre\": \"PROMOGROUP S.A.S\",\r\n                \"primerApellido\": \"\"\r\n            },\r\n            \"relaciones\": [\r\n                {\r\n                    \"relacionPeps\": false,\r\n                    \"tipo\": \"\",\r\n                    \"documento\": {},\r\n                    \"persona\": {}\r\n                }\r\n            ]\r\n        }\r\n    },\r\n    \"polizas\": [\r\n        {\r\n            \"valorAsegurado\": 200000000,\r\n            \"codigoRamo\": \"012\",\r\n            \"codigoProducto\": \"ARL\",\r\n            \"negocio\": \"INDIVIDUAL\",\r\n            \"codigoOficina\": \"099\",\r\n            \"codigoAgente\": \"6889\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SARLAFT-API}}/sarlaftserv/assessment",
+					"host": [
+						"{{SARLAFT-API}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"assessment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "assessment  CASO 6  Asign:REpresentante Legal PJ PARTE2 Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cliente\": {\r\n        \"documento\": {\r\n            \"tipo\": \"C\",\r\n            \"numero\": \"55163358\",\r\n            \"fechaExpedicion\": \"1990-09-17\"\r\n        },\r\n        \"persona\": {\r\n            \"primerNombre\": \"MARIBETH\",\r\n            \"segundoNombre\": \"\",\r\n            \"primerApellido\": \"DIAZ\",\r\n            \"segundoApellido\": \"CHARRY\",\r\n            \"pais\": \"57\"\r\n        },\r\n        \"tipoPersona\": \"N\",\r\n        \"celular\": \"3006138524\",\r\n        \"correo\": \"TATIANAV85@GMAIL.COM\"\r\n    },\r\n    \"figuras\": [\r\n        \"REPRESENTANTE_LEGAL\"\r\n    ],\r\n    \"dniClientePadre\": \"A9014816358\",\r\n    \"tipoEmpresa\": \"PYMES\",\r\n    \"banderas\": [],\r\n    \"idEvaluacion\": \"01d87b80-92da-4ed1-8a81-c54ffd6e896d\"\r\n     \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{SARLAFT-API}}/sarlaftserv/assessment/figure/add",
+					"host": [
+						"{{SARLAFT-API}}"
+					],
+					"path": [
+						"sarlaftserv",
+						"assessment",
+						"figure",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -13,7 +13,7 @@ Adjunto colección de Postman para probar la nueva API Rest de servicios web mod
 
 Adjunto Excel especificando el mapeo de los endpoints anteriores en los nuevos endpoints resultantes, importante tener presente que solo se expusieron nuevos servicios o controladores para manejar el objeto de error personalizado y no se hicieron cambios a nivel de validaciones en los casos de uso, así que lo demás debe de funcionar como lo venía haciendo desde antes:
 
-[`Mapeo Nuevas URLs (3).xlsx`](../../../xlsx/Mapeo%20Nuevas%20URLs%20(3).xlsx)
+[`Mapeo Nuevas URLs (3).xlsx`](./attachments/Mapeo%20Nuevas%20URLs%20(3).xlsx)
 
 Los endpoints coloreados del color que se indica en la figura no se configuraron debido a que alguien mas los configuro previamente y se aclaro que no había que trabajarlos:
 
@@ -33,7 +33,7 @@ Las excepciones identificadas para los endpoints:
 
 Se pueden visualizar en el siguiente archivo de Excel coloreadas de amarillo o verde, las que están sin colorear es porque no se encontraron:
 
-[`RespuestasErroresSarlaft4_HT505291_ParteBrayan.xlsx`](../../../xlsx/RespuestasErroresSarlaft4_HT505291_ParteBrayan.xlsx)
+[`RespuestasErroresSarlaft4_HT505291_ParteBrayan.xlsx`](./attachments/RespuestasErroresSarlaft4_HT505291_ParteBrayan.xlsx)
 
 Las Excepciones identificadas para estos otros endpoints:
 
@@ -47,7 +47,7 @@ Las Excepciones identificadas para estos otros endpoints:
 
 Se pueden visualizar en el siguiente archivo de Excel:
 
-[`EXCEPCIONES_ENCONTRADAS.xlsx`](../../../xlsx/EXCEPCIONES_ENCONTRADAS.xlsx)
+[`EXCEPCIONES_ENCONTRADAS.xlsx`](./attachments/EXCEPCIONES_ENCONTRADAS.xlsx)
 
 ## Sub-páginas
 

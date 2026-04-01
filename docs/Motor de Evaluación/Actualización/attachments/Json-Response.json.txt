@@ -1,0 +1,176 @@
+{
+    "riesgoResult": {
+        "id": "0da5a475-144d-49b8-9f3a-f5ee8861ae7b",
+        "codigoOperacion": "AC",
+        "sarlafts": [{
+                "id": null,
+                "riesgoOriginal": {
+                    "id": "Carga-Sarlaft-HU-83304-1",
+                    "condicion": null,
+                    "tipoRiesgo": "SIMPLIFICADO",
+                    "mensaje": null,
+                    "bloqueante": false,
+                    "causales": [],
+                    "ultimaCausa": ""
+                },
+                "riesgoActualizado": {
+                    "id": null,
+                    "condicion": "HU 83304 1",
+                    "tipoRiesgo": "INTENSIFICADO",
+                    "mensaje": "El cliente es PEP (Persona Expuesta Políticamente), por favor tramite con su Líder",
+                    "bloqueante": false,
+                    "causales": [
+                        "Cliente con riesgo simplificado y recategorizado como PEP por el proceso de actualización"
+                    ],
+                    "ultimaCausa": "Cliente con riesgo simplificado y recategorizado como PEP por el proceso de actualización"
+                },
+                "cliente": {
+                    "dni": "A1234567990",
+                    "peps": true,
+                    "tipoPersona": "J",
+                    "paisConstitucion": "57",
+                    "documento": {
+                        "tipo": "A"
+                    },
+                    "persona": {
+                        "pais": "0"
+                    },
+                    "segmentacion": {
+                        "score": 1.0
+                    },
+                    "relaciones": [{
+                            "tipo": "ACCIONISTA",
+                            "relacionPeps": true,
+                            "fechaBaja": null
+                        }
+                    ],
+                    "paisSegunTipoPersona": "57"
+                },
+                "administradorPep": false,
+                "dataTecnica": {
+                    "test": null,
+                    "descripcion": null,
+                    "flowlog": [
+                        "HU 83304 1",
+                        "HU 83304 4",
+                        "HU 83304 7",
+                        "HU 83304 16"
+                    ],
+                    "banderas": [
+                        "GAFI",
+                        "GAFI"
+                    ],
+                    "lastFlowlog": "HU 83304 16"
+                },
+                "reglasConsecutivas": [{
+                        "id": null,
+                        "condicion": "HU 83304 4",
+                        "tipoRiesgo": "INTENSIFICADO",
+                        "mensaje": "No es posible continuar con el proceso. Debe completar el Conocimiento del Cliente si le aplica.",
+                        "bloqueante": false,
+                        "causales": [
+                            "Cliente con riesgo intensificado y recategorizado como PEP por el proceso de actualización"
+                        ],
+                        "ultimaCausa": "Cliente con riesgo intensificado y recategorizado como PEP por el proceso de actualización"
+                    }, {
+                        "id": null,
+                        "condicion": "HU 83304 7",
+                        "tipoRiesgo": "INTENSIFICADO",
+                        "mensaje": "No es posible continuar con el proceso. Debe completar el Conocimiento del Cliente si le aplica.",
+                        "bloqueante": false,
+                        "causales": [
+                            "Cliente con riesgo simplificado  y recategorizado por SCORE DE RIESGOS por el proceso de actualización"
+                        ],
+                        "ultimaCausa": "Cliente con riesgo simplificado  y recategorizado por SCORE DE RIESGOS por el proceso de actualización"
+                    }, {
+                        "id": null,
+                        "condicion": "HU 83304 16",
+                        "tipoRiesgo": "SIMPLIFICADO",
+                        "mensaje": "Cumple con politicas de SARLAFT. Debe completar el Conocimiento del Cliente si le aplica.",
+                        "bloqueante": false,
+                        "causales": [
+                            "Cliente con riesgo simplificado por el proceso de actualización"
+                        ],
+                        "ultimaCausa": "Cliente con riesgo simplificado por el proceso de actualización"
+                    }
+                ],
+                "evidencias": [{
+                        "consecutivo": "1c961b66-d22f-408d-afe2-a4fed071b63d",
+                        "consecutivoControl": null,
+                        "dni": "A1234567990",
+                        "resultado": "EXITOSO",
+                        "tipo": "GAFI",
+                        "observaciones": "No es Gafi",
+                        "fechaCreacion": "2024-09-04T21:01:30.397+00:00",
+                        "ultimaActualizacion": "2024-09-04T21:01:30.397+00:00",
+                        "codigoAplicacion": "9995",
+                        "bloqueante": false,
+                        "codigoEstadoDocumento": null
+                    }
+                ]
+            }
+        ],
+        "error": null
+    },
+    "validacionesResult": {
+        "validacionesDTO": [{
+                "sarlaft": {
+                    "id": null,
+                    "tipoPersona": "J",
+                    "tipoRiesgo": "INTENSIFICADO",
+                    "cliente": {
+                        "documento": {
+                            "tipo": "A"
+                        }
+                    }
+                },
+                "validaciones": [{
+                        "codigo": "RRCC",
+                        "bloqueante": true
+                    }, {
+                        "codigo": "CLIENTE_ACTIVO",
+                        "bloqueante": true
+                    }
+                ],
+                "flowlog": [
+                    "HU 83305 Validacion 6"
+                ],
+                "lastFlowlog": "HU 83305 Validacion 6"
+            }
+        ],
+        "error": null,
+        "evaluacionId": "0da5a475-144d-49b8-9f3a-f5ee8861ae7b"
+    },
+    "formularioResult": {
+        "id": "0da5a475-144d-49b8-9f3a-f5ee8861ae7b",
+        "sarlafts": [{
+                "id": null,
+                "tipoPersona": "J",
+                "tipoRiesgo": "INTENSIFICADO",
+                "tipoFormulario": "INTENSIFICADO_PJ",
+                "requisitos": [{
+                        "id": null,
+                        "codigo": "2303",
+                        "nombre": "Certificado de Existencia y Representación Legal",
+                        "fechaCreacion": null,
+                        "ultimaActualizacion": null,
+                        "estado": "PENDIENTE",
+                        "vigencia": 30
+                    }, {
+                        "id": null,
+                        "codigo": "2037",
+                        "nombre": "Estados Financieros",
+                        "fechaCreacion": null,
+                        "ultimaActualizacion": null,
+                        "estado": "PENDIENTE",
+                        "vigencia": 0
+                    }
+                ],
+                "flowlog": [
+                    "Regla 6: tipo formulario intensificado PERSONA JURÍDICA"
+                ]
+            }
+        ],
+        "error": null
+    }
+}

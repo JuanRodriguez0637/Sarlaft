@@ -4,6 +4,9 @@
 .vscode/mcp.json
 .vscode/settings.json
 
+# Variables de entorno con credenciales
+.env
+
 # Ceiba Method workspace (auto-generated)
 .vscode/ceiba.code-workspace
 .venv

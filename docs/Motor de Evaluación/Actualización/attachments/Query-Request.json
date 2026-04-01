@@ -1,0 +1,12 @@
+{
+    "validacionesDTO": [
+        {
+            "sarlaft": {
+                "id": "HU 83305 Figura 1",
+                "tipoPersona": "J",
+                "tipoRiesgo": "INTENSIFICADO"
+            }
+        }
+    ],
+    "evaluacionId": "HU 83305 Figuras 1"
+}

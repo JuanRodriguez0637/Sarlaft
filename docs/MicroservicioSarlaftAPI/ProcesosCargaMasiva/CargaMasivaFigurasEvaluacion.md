@@ -12,8 +12,8 @@
 
 - **Plantilla de carga masiva:**
 
-  [`DocumentoCargaMasiva.xlsx`](../../xlsx/DocumentoCargaMasiva.xlsx)
+  [`DocumentoCargaMasiva.xlsx`](./attachments/DocumentoCargaMasiva.xlsx)
 
 - **Archivo de resultado:**
 
-  [`ResultadoSarlaftCargaMasiva.xls`](../../xlsx/ResultadoSarlaftCargaMasiva.xls)
+  [`ResultadoSarlaftCargaMasiva.xls`](./attachments/ResultadoSarlaftCargaMasiva.xls)

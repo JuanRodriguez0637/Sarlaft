@@ -1,0 +1,17 @@
+{
+    "validacionesDTO": [
+        {
+            "sarlaft": {
+                "id": "Error Figura 1",
+                "cliente": null,
+                "riesgo": null
+            },
+            "validaciones": null,
+            "flowlog": [],
+            "lastFlowlog": ""
+        }
+    ],
+    "codigoOperacion": "01",
+    "error": "Error evaluating constraint 'sarlaft.cliente.tipoPersona == \"N\"' in [Rule \"TSTAR-7440 Validacion 1\"]",
+    "evaluacionId": "Error Figuras 1"
+}

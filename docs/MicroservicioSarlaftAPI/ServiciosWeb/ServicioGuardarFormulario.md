@@ -23,4 +23,4 @@
 
 - Reglas de calidad de servicio (Validaciones):
 
-[`Reglas de Calidad Actualizadas Backend.xlsx`](../../xlsx/Reglas%20de%20Calidad%20Actualizadas%20Backend.xlsx)
+[`Reglas de Calidad Actualizadas Backend.xlsx`](./ServicioGuardarFormulario/attachments/Reglas%20de%20Calidad%20Actualizadas%20Backend.xlsx)

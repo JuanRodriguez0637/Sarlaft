@@ -1,0 +1,36 @@
+{
+    "validacionesDTO": [
+        {
+            "sarlaft": {
+                "id": "TSTAR-7440 Figura 1",
+                "cliente": {
+                    "tipoPersona": "N"
+                },
+                "riesgo": {
+                    "tipoRiesgo": "INTENSIFICADO"
+                }
+            },
+            "validaciones": [
+                {
+                    "codigo": "RRCC",
+                    "bloqueante": true
+                },
+                {
+                    "codigo": "DOCUMENT_PN",
+                    "bloqueante": true
+                },
+                {
+                    "codigo": "IDENTITY",
+                    "bloqueante": true
+                }
+            ],
+            "flowlog": [
+                "TSTAR-7440 Validacion 1"
+            ],
+            "lastFlowlog": "TSTAR-7440 Validacion 1"
+        }
+    ],
+    "codigoOperacion": "01",
+    "error": null,
+    "evaluacionId": "TSTAR-7440 Figuras 1"
+}

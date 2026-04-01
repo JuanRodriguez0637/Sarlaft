@@ -1,0 +1,12 @@
+{
+    "validacionesDTO": [
+        {
+            "sarlaft": null,
+            "validaciones": null,
+            "flowlog": [],
+            "lastFlowlog": ""
+        }
+    ],
+    "error": "Error evaluating constraint 'sarlaft.tipoPersona == \"N\"' in [Rule \"HU 83305 Validacion 1\"]",
+    "evaluacionId": "HU 83305 Figuras 1"
+}

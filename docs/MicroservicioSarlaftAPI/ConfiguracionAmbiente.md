@@ -128,5 +128,5 @@ Una vez iniciada la aplicación, verificar su funcionamiento mediante el endpoin
 
 El documento completo en formato Word está disponible en:
 
-📄 **[ConfiguraciónAmbiente_SarlaftAPI.docx](../docx/ConfiguracionAmbiente_SarlaftAPI.docx)**  
+📄 **[ConfiguraciónAmbiente_SarlaftAPI.docx](./attachments/ConfiguracionAmbiente_SarlaftAPI.docx)**  
 *(Descargado desde Confluence - página 1801159141)*
