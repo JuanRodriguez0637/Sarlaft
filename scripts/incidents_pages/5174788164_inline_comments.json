@@ -1,0 +1,15 @@
+{
+  "results": [],
+  "start": 0,
+  "limit": 50,
+  "size": 0,
+  "totalSize": 0,
+  "cqlQuery": "parent = 5174788164 AND type = comment",
+  "searchDuration": 76,
+  "archivedResultCount": 0,
+  "_links": {
+    "base": "https://segurosti.atlassian.net/wiki",
+    "context": "/wiki",
+    "self": "https://segurosti.atlassian.net/wiki/rest/api/search?expand=version,body.storage&cql=parent%3D5174788164+AND+type%3Dcomment"
+  }
+}

@@ -1,0 +1,266 @@
+{
+  "id": "5174788164",
+  "type": "page",
+  "ari": "ari:cloud:confluence:58ec0d4e-99a5-4f6b-a23e-53566ae9f4a3:page/5174788164",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6NThlYzBkNGUtOTlhNS00ZjZiLWEyM2UtNTM1NjZhZTlmNGEzOmNvbnRlbnQvNTE3NDc4ODE2NA==",
+  "status": "current",
+  "title": "Problemas con el link de validación de identidad",
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "712020:afad45fd-0cad-4679-8af4-e69bc40e4887",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Antiguo usuario (Deleted)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/712020:afad45fd-0cad-4679-8af4-e69bc40e4887",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Antiguo usuario (Deleted)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "closed",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://segurosti.atlassian.net/wiki/rest/api/user?accountId=712020:afad45fd-0cad-4679-8af4-e69bc40e4887"
+      }
+    },
+    "when": "2025-12-01T15:39:08.161Z",
+    "friendlyWhen": "dic 01, 2025",
+    "message": "",
+    "number": 2,
+    "minorEdit": false,
+    "ncsStepVersion": "27",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$5174788164.16",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/5174788164"
+    },
+    "_links": {
+      "self": "https://segurosti.atlassian.net/wiki/rest/api/content/5174788164/version/2"
+    }
+  },
+  "ancestors": [
+    {
+      "id": "541622661",
+      "type": "page",
+      "ari": "ari:cloud:confluence:58ec0d4e-99a5-4f6b-a23e-53566ae9f4a3:page/541622661",
+      "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6NThlYzBkNGUtOTlhNS00ZjZiLWEyM2UtNTM1NjZhZTlmNGEzOmNvbnRlbnQvNTQxNjIyNjYx",
+      "status": "current",
+      "title": "Página de inicio de Dominio de Soluciones Corporativas",
+      "macroRenderedOutput": {},
+      "extensions": {
+        "position": 513468044
+      },
+      "_expandable": {
+        "container": "/rest/api/space/EPA",
+        "metadata": "",
+        "restrictions": "/rest/api/content/541622661/restriction/byOperation",
+        "history": "/rest/api/content/541622661/history",
+        "body": "",
+        "version": "",
+        "descendants": "/rest/api/content/541622661/descendant",
+        "space": "/rest/api/space/EPA",
+        "childTypes": "",
+        "schedulePublishInfo": "",
+        "operations": "",
+        "schedulePublishDate": "",
+        "children": "/rest/api/content/541622661/child",
+        "ancestors": "",
+        "draftVersion": ""
+      },
+      "_links": {
+        "self": "https://segurosti.atlassian.net/wiki/rest/api/content/541622661",
+        "tinyui": "/x/hYFII",
+        "editui": "/pages/resumedraft.action?draftId=541622661",
+        "webui": "/spaces/EPA/overview",
+        "edituiv2": "/spaces/EPA/pages/edit-v2/541622661"
+      }
+    },
+    {
+      "id": "1899167783",
+      "type": "page",
+      "ari": "ari:cloud:confluence:58ec0d4e-99a5-4f6b-a23e-53566ae9f4a3:page/1899167783",
+      "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6NThlYzBkNGUtOTlhNS00ZjZiLWEyM2UtNTM1NjZhZTlmNGEzOmNvbnRlbnQvMTg5OTE2Nzc4Mw==",
+      "status": "current",
+      "title": "Subdominio: SOLUCIONES ADMINISTRATIVAS DE TI - SATI",
+      "macroRenderedOutput": {},
+      "extensions": {
+        "position": 269356098
+      },
+      "_expandable": {
+        "container": "/rest/api/space/EPA",
+        "metadata": "",
+        "restrictions": "/rest/api/content/1899167783/restriction/byOperation",
+        "history": "/rest/api/content/1899167783/history",
+        "body": "",
+        "version": "",
+        "descendants": "/rest/api/content/1899167783/descendant",
+        "space": "/rest/api/space/EPA",
+        "childTypes": "",
+        "schedulePublishInfo": "",
+        "operations": "",
+        "schedulePublishDate": "",
+        "children": "/rest/api/content/1899167783/child",
+        "ancestors": "",
+        "draftVersion": ""
+      },
+      "_links": {
+        "self": "https://segurosti.atlassian.net/wiki/rest/api/content/1899167783",
+        "tinyui": "/x/JwAzcQ",
+        "editui": "/pages/resumedraft.action?draftId=1899167783",
+        "webui": "/spaces/EPA/pages/1899167783/Subdominio+SOLUCIONES+ADMINISTRATIVAS+DE+TI+-+SATI",
+        "edituiv2": "/spaces/EPA/pages/edit-v2/1899167783"
+      }
+    },
+    {
+      "id": "1750892627",
+      "type": "page",
+      "ari": "ari:cloud:confluence:58ec0d4e-99a5-4f6b-a23e-53566ae9f4a3:page/1750892627",
+      "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6NThlYzBkNGUtOTlhNS00ZjZiLWEyM2UtNTM1NjZhZTlmNGEzOmNvbnRlbnQvMTc1MDg5MjYyNw==",
+      "status": "current",
+      "title": "Sarlaft 4.0",
+      "macroRenderedOutput": {},
+      "extensions": {
+        "position": 152753629
+      },
+      "_expandable": {
+        "container": "/rest/api/space/EPA",
+        "metadata": "",
+        "restrictions": "/rest/api/content/1750892627/restriction/byOperation",
+        "history": "/rest/api/content/1750892627/history",
+        "body": "",
+        "version": "",
+        "descendants": "/rest/api/content/1750892627/descendant",
+        "space": "/rest/api/space/EPA",
+        "childTypes": "",
+        "schedulePublishInfo": "",
+        "operations": "",
+        "schedulePublishDate": "",
+        "children": "/rest/api/content/1750892627/child",
+        "ancestors": "",
+        "draftVersion": ""
+      },
+      "_links": {
+        "self": "https://segurosti.atlassian.net/wiki/rest/api/content/1750892627",
+        "tinyui": "/x/U4Bca",
+        "editui": "/pages/resumedraft.action?draftId=1750892627",
+        "webui": "/spaces/EPA/pages/1750892627/Sarlaft+4.0",
+        "edituiv2": "/spaces/EPA/pages/edit-v2/1750892627"
+      }
+    },
+    {
+      "id": "1742800723",
+      "type": "page",
+      "ari": "ari:cloud:confluence:58ec0d4e-99a5-4f6b-a23e-53566ae9f4a3:page/1742800723",
+      "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6NThlYzBkNGUtOTlhNS00ZjZiLWEyM2UtNTM1NjZhZTlmNGEzOmNvbnRlbnQvMTc0MjgwMDcyMw==",
+      "status": "current",
+      "title": "Documentación de Incidentes",
+      "macroRenderedOutput": {},
+      "extensions": {
+        "position": 256643958
+      },
+      "_expandable": {
+        "container": "/rest/api/space/EPA",
+        "metadata": "",
+        "restrictions": "/rest/api/content/1742800723/restriction/byOperation",
+        "history": "/rest/api/content/1742800723/history",
+        "body": "",
+        "version": "",
+        "descendants": "/rest/api/content/1742800723/descendant",
+        "space": "/rest/api/space/EPA",
+        "childTypes": "",
+        "schedulePublishInfo": "",
+        "operations": "",
+        "schedulePublishDate": "",
+        "children": "/rest/api/content/1742800723/child",
+        "ancestors": "",
+        "draftVersion": ""
+      },
+      "_links": {
+        "self": "https://segurosti.atlassian.net/wiki/rest/api/content/1742800723",
+        "tinyui": "/x/UwfhZw",
+        "editui": "/pages/resumedraft.action?draftId=1742800723",
+        "webui": "/spaces/EPA/pages/1742800723/Documentaci+n+de+Incidentes",
+        "edituiv2": "/spaces/EPA/pages/edit-v2/1742800723"
+      }
+    }
+  ],
+  "children": {
+    "page": {
+      "results": [],
+      "start": 0,
+      "limit": 25,
+      "size": 0,
+      "_links": {
+        "self": "https://segurosti.atlassian.net/wiki/rest/api/content/5174788164/child/page"
+      }
+    },
+    "_expandable": {
+      "database": "/rest/api/content/5174788164/child/database",
+      "folder": "/rest/api/content/5174788164/child/folder",
+      "attachment": "/rest/api/content/5174788164/child/attachment",
+      "slide": "/rest/api/content/5174788164/child/slide",
+      "comment": "/rest/api/content/5174788164/child/comment",
+      "embed": "/rest/api/content/5174788164/child/embed",
+      "whiteboard": "/rest/api/content/5174788164/child/whiteboard"
+    },
+    "_links": {
+      "self": "https://segurosti.atlassian.net/wiki/rest/api/content/5174788164/child"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<h3><strong>Requisitos previos</strong></h3><p>Para diagnosticar y solucionar problemas relacionados con el link de validaci&oacute;n de identidad, es necesario:</p><ul><li><p><ac:link><ri:page ri:content-title=\"Logs de Experian en Splunk\" ri:version-at-save=\"20\" /><ac:link-body><strong>Acceso a los &iacute;ndices de Splunk</strong></ac:link-body></ac:link> para consultar trazas y logs.</p></li><li><p><strong>Acceso a la base de datos de Producci&oacute;n</strong> para validar parametrizaciones.</p></li><li><p><strong>Acceso a la VPN</strong> para conectarse a los sistemas internos.</p></li></ul><h3><strong>Casos detectados</strong></h3><p>Hasta el momento se han identificado dos escenarios:</p><ol start=\"1\"><li><p><strong>Ramo no parametrizado en la base de datos</strong></p><ul><li><p>El error ocurre cuando el ramo asociado al proceso no est&aacute; configurado correctamente en la base de datos.</p></li></ul></li><li><p><strong>Token expirado</strong></p><ul><li><p>El link de validaci&oacute;n falla porque el token de seguridad ha caducado.</p></li></ul></li></ol><h3><strong>Contextualizaci&oacute;n</strong></h3><p>Para entender c&oacute;mo diagnosticar y resolver estos casos, se anexa un video explicativo:<br /><a href=\"https://suramericana.sharepoint.com/sites/MESA7-CALIDADDEINFORMACIN/_layouts/15/stream.aspx?id=%2Fsites%2FMESA7%2DCALIDADDEINFORMACIN%2FShared%20Documents%2FGeneral%2FProyecto%20SARLAFT%204%2E0%2FDocumentacionDesarrollo%2FSoluci%C3%B3n%20de%20INC%2FProblemasUrlValidacionIdentidad%2Emp4&amp;referrer=StreamWebApp%2EWeb&amp;referrerScenario=AddressBarCopied%2Eview%2Eedd77bc6%2Dc2c9%2D434e%2D9cb9%2Dae14c0bd1dce\"><strong>Video explicativo problemas con la url de validaci&oacute;n de identidad.</strong></a></p><p />",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/5174788164"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "view": "",
+      "export_view": "",
+      "styled_view": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "extensions": {
+    "position": 1742
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/EPA",
+    "schedulePublishInfo": "",
+    "metadata": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "restrictions": "/rest/api/content/5174788164/restriction/byOperation",
+    "history": "/rest/api/content/5174788164/history",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/5174788164/descendant",
+    "space": "/rest/api/space/EPA"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=5174788164",
+    "webui": "/spaces/EPA/pages/5174788164/Problemas+con+el+link+de+validaci+n+de+identidad",
+    "edituiv2": "/spaces/EPA/pages/edit-v2/5174788164",
+    "context": "/wiki",
+    "self": "https://segurosti.atlassian.net/wiki/rest/api/content/5174788164",
+    "tinyui": "/x/RABxNAE",
+    "collection": "/rest/api/content",
+    "base": "https://segurosti.atlassian.net/wiki"
+  }
+}

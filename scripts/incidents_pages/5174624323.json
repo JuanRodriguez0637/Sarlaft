@@ -1,0 +1,266 @@
+{
+  "id": "5174624323",
+  "type": "page",
+  "ari": "ari:cloud:confluence:58ec0d4e-99a5-4f6b-a23e-53566ae9f4a3:page/5174624323",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6NThlYzBkNGUtOTlhNS00ZjZiLWEyM2UtNTM1NjZhZTlmNGEzOmNvbnRlbnQvNTE3NDYyNDMyMw==",
+  "status": "current",
+  "title": "Limpiar Base de datos en laboratorio",
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "712020:afad45fd-0cad-4679-8af4-e69bc40e4887",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Antiguo usuario (Deleted)",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/712020:afad45fd-0cad-4679-8af4-e69bc40e4887",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Antiguo usuario (Deleted)",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "accountStatus": "closed",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://segurosti.atlassian.net/wiki/rest/api/user?accountId=712020:afad45fd-0cad-4679-8af4-e69bc40e4887"
+      }
+    },
+    "when": "2025-12-09T19:19:30.508Z",
+    "friendlyWhen": "dic 09, 2025",
+    "message": "",
+    "number": 4,
+    "minorEdit": false,
+    "ncsStepVersion": "54",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$5174624323.22",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/5174624323"
+    },
+    "_links": {
+      "self": "https://segurosti.atlassian.net/wiki/rest/api/content/5174624323/version/4"
+    }
+  },
+  "ancestors": [
+    {
+      "id": "541622661",
+      "type": "page",
+      "ari": "ari:cloud:confluence:58ec0d4e-99a5-4f6b-a23e-53566ae9f4a3:page/541622661",
+      "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6NThlYzBkNGUtOTlhNS00ZjZiLWEyM2UtNTM1NjZhZTlmNGEzOmNvbnRlbnQvNTQxNjIyNjYx",
+      "status": "current",
+      "title": "Página de inicio de Dominio de Soluciones Corporativas",
+      "macroRenderedOutput": {},
+      "extensions": {
+        "position": 513468044
+      },
+      "_expandable": {
+        "container": "/rest/api/space/EPA",
+        "metadata": "",
+        "restrictions": "/rest/api/content/541622661/restriction/byOperation",
+        "history": "/rest/api/content/541622661/history",
+        "body": "",
+        "version": "",
+        "descendants": "/rest/api/content/541622661/descendant",
+        "space": "/rest/api/space/EPA",
+        "childTypes": "",
+        "schedulePublishInfo": "",
+        "operations": "",
+        "schedulePublishDate": "",
+        "children": "/rest/api/content/541622661/child",
+        "ancestors": "",
+        "draftVersion": ""
+      },
+      "_links": {
+        "self": "https://segurosti.atlassian.net/wiki/rest/api/content/541622661",
+        "tinyui": "/x/hYFII",
+        "editui": "/pages/resumedraft.action?draftId=541622661",
+        "webui": "/spaces/EPA/overview",
+        "edituiv2": "/spaces/EPA/pages/edit-v2/541622661"
+      }
+    },
+    {
+      "id": "1899167783",
+      "type": "page",
+      "ari": "ari:cloud:confluence:58ec0d4e-99a5-4f6b-a23e-53566ae9f4a3:page/1899167783",
+      "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6NThlYzBkNGUtOTlhNS00ZjZiLWEyM2UtNTM1NjZhZTlmNGEzOmNvbnRlbnQvMTg5OTE2Nzc4Mw==",
+      "status": "current",
+      "title": "Subdominio: SOLUCIONES ADMINISTRATIVAS DE TI - SATI",
+      "macroRenderedOutput": {},
+      "extensions": {
+        "position": 269356098
+      },
+      "_expandable": {
+        "container": "/rest/api/space/EPA",
+        "metadata": "",
+        "restrictions": "/rest/api/content/1899167783/restriction/byOperation",
+        "history": "/rest/api/content/1899167783/history",
+        "body": "",
+        "version": "",
+        "descendants": "/rest/api/content/1899167783/descendant",
+        "space": "/rest/api/space/EPA",
+        "childTypes": "",
+        "schedulePublishInfo": "",
+        "operations": "",
+        "schedulePublishDate": "",
+        "children": "/rest/api/content/1899167783/child",
+        "ancestors": "",
+        "draftVersion": ""
+      },
+      "_links": {
+        "self": "https://segurosti.atlassian.net/wiki/rest/api/content/1899167783",
+        "tinyui": "/x/JwAzcQ",
+        "editui": "/pages/resumedraft.action?draftId=1899167783",
+        "webui": "/spaces/EPA/pages/1899167783/Subdominio+SOLUCIONES+ADMINISTRATIVAS+DE+TI+-+SATI",
+        "edituiv2": "/spaces/EPA/pages/edit-v2/1899167783"
+      }
+    },
+    {
+      "id": "1750892627",
+      "type": "page",
+      "ari": "ari:cloud:confluence:58ec0d4e-99a5-4f6b-a23e-53566ae9f4a3:page/1750892627",
+      "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6NThlYzBkNGUtOTlhNS00ZjZiLWEyM2UtNTM1NjZhZTlmNGEzOmNvbnRlbnQvMTc1MDg5MjYyNw==",
+      "status": "current",
+      "title": "Sarlaft 4.0",
+      "macroRenderedOutput": {},
+      "extensions": {
+        "position": 152753629
+      },
+      "_expandable": {
+        "container": "/rest/api/space/EPA",
+        "metadata": "",
+        "restrictions": "/rest/api/content/1750892627/restriction/byOperation",
+        "history": "/rest/api/content/1750892627/history",
+        "body": "",
+        "version": "",
+        "descendants": "/rest/api/content/1750892627/descendant",
+        "space": "/rest/api/space/EPA",
+        "childTypes": "",
+        "schedulePublishInfo": "",
+        "operations": "",
+        "schedulePublishDate": "",
+        "children": "/rest/api/content/1750892627/child",
+        "ancestors": "",
+        "draftVersion": ""
+      },
+      "_links": {
+        "self": "https://segurosti.atlassian.net/wiki/rest/api/content/1750892627",
+        "tinyui": "/x/U4Bca",
+        "editui": "/pages/resumedraft.action?draftId=1750892627",
+        "webui": "/spaces/EPA/pages/1750892627/Sarlaft+4.0",
+        "edituiv2": "/spaces/EPA/pages/edit-v2/1750892627"
+      }
+    },
+    {
+      "id": "1742800723",
+      "type": "page",
+      "ari": "ari:cloud:confluence:58ec0d4e-99a5-4f6b-a23e-53566ae9f4a3:page/1742800723",
+      "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6NThlYzBkNGUtOTlhNS00ZjZiLWEyM2UtNTM1NjZhZTlmNGEzOmNvbnRlbnQvMTc0MjgwMDcyMw==",
+      "status": "current",
+      "title": "Documentación de Incidentes",
+      "macroRenderedOutput": {},
+      "extensions": {
+        "position": 256643958
+      },
+      "_expandable": {
+        "container": "/rest/api/space/EPA",
+        "metadata": "",
+        "restrictions": "/rest/api/content/1742800723/restriction/byOperation",
+        "history": "/rest/api/content/1742800723/history",
+        "body": "",
+        "version": "",
+        "descendants": "/rest/api/content/1742800723/descendant",
+        "space": "/rest/api/space/EPA",
+        "childTypes": "",
+        "schedulePublishInfo": "",
+        "operations": "",
+        "schedulePublishDate": "",
+        "children": "/rest/api/content/1742800723/child",
+        "ancestors": "",
+        "draftVersion": ""
+      },
+      "_links": {
+        "self": "https://segurosti.atlassian.net/wiki/rest/api/content/1742800723",
+        "tinyui": "/x/UwfhZw",
+        "editui": "/pages/resumedraft.action?draftId=1742800723",
+        "webui": "/spaces/EPA/pages/1742800723/Documentaci+n+de+Incidentes",
+        "edituiv2": "/spaces/EPA/pages/edit-v2/1742800723"
+      }
+    }
+  ],
+  "children": {
+    "page": {
+      "results": [],
+      "start": 0,
+      "limit": 25,
+      "size": 0,
+      "_links": {
+        "self": "https://segurosti.atlassian.net/wiki/rest/api/content/5174624323/child/page"
+      }
+    },
+    "_expandable": {
+      "database": "/rest/api/content/5174624323/child/database",
+      "folder": "/rest/api/content/5174624323/child/folder",
+      "attachment": "/rest/api/content/5174624323/child/attachment",
+      "slide": "/rest/api/content/5174624323/child/slide",
+      "comment": "/rest/api/content/5174624323/child/comment",
+      "embed": "/rest/api/content/5174624323/child/embed",
+      "whiteboard": "/rest/api/content/5174624323/child/whiteboard"
+    },
+    "_links": {
+      "self": "https://segurosti.atlassian.net/wiki/rest/api/content/5174624323/child"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<h3 local-id=\"30003a09-dc6f-4a01-b135-6723edef7b0a\"><strong>Requisitos previos</strong></h3><p local-id=\"d780b63a-2f9f-43c6-b909-2a488c68429a\">Antes de realizar el proceso, es necesario:</p><ul local-id=\"dfd17f2d-cc01-44a4-b071-59a9cad82047\"><li local-id=\"fec07809-8e6a-4c36-9a8d-9125c0fca7e2\"><p local-id=\"e7839b03-553f-4b79-a6b0-364bf9c9566d\"><strong>Acceso a la VPN</strong> para conectarse a la base de datos.</p></li><li local-id=\"99ce82c1-b91c-436f-9299-c7b80a9ccdff\"><p local-id=\"34c5006d-ad72-4d17-b697-cd4d59d1bbee\">Tener la base de datos <strong>configurada en un gestor</strong> (normalmente se utiliza <strong>DBeaver</strong>).</p></li><li local-id=\"ac5fbe81-ff04-429d-9858-b4819ae318c2\"><p local-id=\"69aec7e3-5d14-45bf-99b9-284e7f51eb5b\">Contar con los permisos adecuados para ejecutar scripts en el entorno de laboratorio.</p></li></ul><h3 local-id=\"cc841725-6647-48bd-a6c4-ef95656eeb82\"><strong>Informaci&oacute;n sensible</strong></h3><p local-id=\"feb51d6b-2bed-4bf6-a27a-40558ea9addc\">Por motivos de seguridad, <strong>no se muestran las tablas ni los scripts en esta documentaci&oacute;n</strong>.<br />Estos se entregar&aacute;n en el <strong>archivo correspondiente al l&iacute;der responsable</strong>, donde en el <strong>punto n&uacute;mero 1</strong> se detallan las tablas y el script necesario para realizar el proceso.</p><h3 local-id=\"056a7b16-7638-4857-b85b-847e1b927ab7\"><strong>Contextualizaci&oacute;n</strong></h3><p local-id=\"3af791d5-fde6-40a3-b7c4-51d62863ce35\">Se anexa un video explicativo donde se muestra el procedimiento general para limpiar la base de datos en laboratorio:<br /><strong>Video: </strong><a href=\"https://suramericana.sharepoint.com/sites/MESA7-CALIDADDEINFORMACIN/_layouts/15/stream.aspx?id=%2Fsites%2FMESA7%2DCALIDADDEINFORMACIN%2FShared%20Documents%2FGeneral%2FProyecto%20SARLAFT%204%2E0%2FDocumentacionDesarrollo%2FSoluci%C3%B3n%20de%20INC%2FLimpiarBaseDatos%2Emp4&amp;referrer=StreamWebApp%2EWeb&amp;referrerScenario=AddressBarCopied%2Eview%2E544af457%2Da4d5%2D4841%2Dab9e%2Dfc24a32454cd\">Limpieza en base de datos.</a></p><h3 local-id=\"48ad450a-4d3c-4a81-a730-4e434ee3eb7a\"><strong>Observaciones importantes</strong></h3><ul local-id=\"a6ec0788-72f4-438a-b7b9-9047e305d3c0\"><li local-id=\"5e0b5307-7098-4a09-8474-161a2d654f9e\"><p local-id=\"4948586f-18b3-4b70-8c77-305ef834292e\">Validar que se est&aacute; trabajando en el <strong>entorno de laboratorio</strong> antes de ejecutar cualquier script.</p></li><li local-id=\"5e0b5307-7098-4a09-8474-161a2d654f9e\"><p>Tener en cuenta la abreviaci&oacute;n para los <ac:link><ri:page ri:space-key=\"EAV\" ri:content-title=\"Tipos de Identificaci&oacute;n\" ri:version-at-save=\"3\" /><ac:link-body>tipos de identificaci&oacute;n.</ac:link-body></ac:link></p></li></ul>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/5174624323"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "view": "",
+      "export_view": "",
+      "styled_view": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "extensions": {
+    "position": 1395
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/EPA",
+    "schedulePublishInfo": "",
+    "metadata": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "restrictions": "/rest/api/content/5174624323/restriction/byOperation",
+    "history": "/rest/api/content/5174624323/history",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/5174624323/descendant",
+    "space": "/rest/api/space/EPA"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=5174624323",
+    "webui": "/spaces/EPA/pages/5174624323/Limpiar+Base+de+datos+en+laboratorio",
+    "edituiv2": "/spaces/EPA/pages/edit-v2/5174624323",
+    "context": "/wiki",
+    "self": "https://segurosti.atlassian.net/wiki/rest/api/content/5174624323",
+    "tinyui": "/x/Q4BuNAE",
+    "collection": "/rest/api/content",
+    "base": "https://segurosti.atlassian.net/wiki"
+  }
+}

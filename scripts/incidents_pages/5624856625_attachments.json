@@ -1,0 +1,107 @@
+{
+  "results": [
+    {
+      "mediaTypeDescription": "PNG Image",
+      "webuiLink": "/pages/viewpageattachments.action?pageId=5624856625&preview=%2F5624856625%2F5626396738%2Fimage-20260226-225735.png",
+      "fileId": "895ee49c-b4e0-437f-8097-149edb697b88",
+      "downloadLink": "/download/attachments/5624856625/image-20260226-225735.png?version=1&modificationDate=1772146657799&cacheVersion=1&api=v2",
+      "createdAt": "2026-02-26T22:57:37.799Z",
+      "version": {
+        "number": 1,
+        "message": "",
+        "minorEdit": true,
+        "authorId": "635d4d86c97f5473af70e8b4",
+        "createdAt": "2026-02-26T22:57:37.799Z"
+      },
+      "comment": "",
+      "id": "att5626396738",
+      "status": "current",
+      "pageId": "5624856625",
+      "mediaType": "image/png",
+      "title": "image-20260226-225735.png",
+      "fileSize": 26895,
+      "_links": {
+        "download": "/download/attachments/5624856625/image-20260226-225735.png?version=1&modificationDate=1772146657799&cacheVersion=1&api=v2",
+        "webui": "/pages/viewpageattachments.action?pageId=5624856625&preview=%2F5624856625%2F5626396738%2Fimage-20260226-225735.png"
+      }
+    },
+    {
+      "mediaTypeDescription": "PNG Image",
+      "webuiLink": "/pages/viewpageattachments.action?pageId=5624856625&preview=%2F5624856625%2F5626429491%2Fimage-20260226-224639.png",
+      "fileId": "0c088536-2436-4a23-b298-492f06a8881a",
+      "downloadLink": "/download/attachments/5624856625/image-20260226-224639.png?version=1&modificationDate=1772146002019&cacheVersion=1&api=v2",
+      "createdAt": "2026-02-26T22:46:42.019Z",
+      "version": {
+        "number": 1,
+        "message": "",
+        "minorEdit": true,
+        "authorId": "635d4d86c97f5473af70e8b4",
+        "createdAt": "2026-02-26T22:46:42.019Z"
+      },
+      "comment": "",
+      "id": "att5626429491",
+      "status": "current",
+      "pageId": "5624856625",
+      "mediaType": "image/png",
+      "title": "image-20260226-224639.png",
+      "fileSize": 118757,
+      "_links": {
+        "download": "/download/attachments/5624856625/image-20260226-224639.png?version=1&modificationDate=1772146002019&cacheVersion=1&api=v2",
+        "webui": "/pages/viewpageattachments.action?pageId=5624856625&preview=%2F5624856625%2F5626429491%2Fimage-20260226-224639.png"
+      }
+    },
+    {
+      "mediaTypeDescription": "PNG Image",
+      "webuiLink": "/pages/viewpageattachments.action?pageId=5624856625&preview=%2F5624856625%2F5626462284%2Fimage-20260226-224911.png",
+      "fileId": "6e437233-face-4111-bf0b-27f52ba8ffab",
+      "downloadLink": "/download/attachments/5624856625/image-20260226-224911.png?version=1&modificationDate=1772146153307&cacheVersion=1&api=v2",
+      "createdAt": "2026-02-26T22:49:13.307Z",
+      "version": {
+        "number": 1,
+        "message": "",
+        "minorEdit": true,
+        "authorId": "635d4d86c97f5473af70e8b4",
+        "createdAt": "2026-02-26T22:49:13.307Z"
+      },
+      "comment": "",
+      "id": "att5626462284",
+      "status": "current",
+      "pageId": "5624856625",
+      "mediaType": "image/png",
+      "title": "image-20260226-224911.png",
+      "fileSize": 114083,
+      "_links": {
+        "download": "/download/attachments/5624856625/image-20260226-224911.png?version=1&modificationDate=1772146153307&cacheVersion=1&api=v2",
+        "webui": "/pages/viewpageattachments.action?pageId=5624856625&preview=%2F5624856625%2F5626462284%2Fimage-20260226-224911.png"
+      }
+    },
+    {
+      "mediaTypeDescription": "PNG Image",
+      "webuiLink": "/pages/viewpageattachments.action?pageId=5624856625&preview=%2F5624856625%2F5627248703%2Fimage-20260226-225247.png",
+      "fileId": "e2550e39-e78e-4455-a33b-fe82cf1bf2d6",
+      "downloadLink": "/download/attachments/5624856625/image-20260226-225247.png?version=1&modificationDate=1772146369509&cacheVersion=1&api=v2",
+      "createdAt": "2026-02-26T22:52:49.509Z",
+      "version": {
+        "number": 1,
+        "message": "",
+        "minorEdit": true,
+        "authorId": "635d4d86c97f5473af70e8b4",
+        "createdAt": "2026-02-26T22:52:49.509Z"
+      },
+      "comment": "",
+      "id": "att5627248703",
+      "status": "current",
+      "pageId": "5624856625",
+      "mediaType": "image/png",
+      "title": "image-20260226-225247.png",
+      "fileSize": 470796,
+      "_links": {
+        "download": "/download/attachments/5624856625/image-20260226-225247.png?version=1&modificationDate=1772146369509&cacheVersion=1&api=v2",
+        "webui": "/pages/viewpageattachments.action?pageId=5624856625&preview=%2F5624856625%2F5627248703%2Fimage-20260226-225247.png"
+      }
+    }
+  ],
+  "_links": {
+    "base": "https://segurosti.atlassian.net/wiki"
+  }
+}

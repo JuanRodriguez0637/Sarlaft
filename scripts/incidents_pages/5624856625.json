@@ -1,0 +1,267 @@
+{
+  "id": "5624856625",
+  "type": "page",
+  "ari": "ari:cloud:confluence:58ec0d4e-99a5-4f6b-a23e-53566ae9f4a3:page/5624856625",
+  "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6NThlYzBkNGUtOTlhNS00ZjZiLWEyM2UtNTM1NjZhZTlmNGEzOmNvbnRlbnQvNTYyNDg1NjYyNQ==",
+  "status": "current",
+  "title": "Error en el aplicativo de Banca (Negocio en estado PENDIENTE)",
+  "version": {
+    "by": {
+      "type": "known",
+      "accountId": "635d4d86c97f5473af70e8b4",
+      "accountType": "atlassian",
+      "email": "",
+      "publicName": "Francisco Javier Melo Rodríguez",
+      "profilePicture": {
+        "path": "/wiki/aa-avatar/635d4d86c97f5473af70e8b4",
+        "width": 48,
+        "height": 48,
+        "isDefault": false
+      },
+      "displayName": "Francisco Javier Melo Rodríguez",
+      "isExternalCollaborator": false,
+      "isGuest": false,
+      "locale": "es",
+      "accountStatus": "active",
+      "_expandable": {
+        "operations": "",
+        "personalSpace": ""
+      },
+      "_links": {
+        "self": "https://segurosti.atlassian.net/wiki/rest/api/user?accountId=635d4d86c97f5473af70e8b4"
+      }
+    },
+    "when": "2026-02-26T23:03:35.351Z",
+    "friendlyWhen": "feb 26, 2026",
+    "message": "",
+    "number": 1,
+    "minorEdit": false,
+    "ncsStepVersion": "594",
+    "ncsStepVersionSource": "ncs-ack",
+    "confRev": "confluence$content$5624856625.69",
+    "contentTypeModified": false,
+    "_expandable": {
+      "collaborators": "",
+      "content": "/rest/api/content/5624856625"
+    },
+    "_links": {
+      "self": "https://segurosti.atlassian.net/wiki/rest/api/content/5624856625/version/1"
+    }
+  },
+  "ancestors": [
+    {
+      "id": "541622661",
+      "type": "page",
+      "ari": "ari:cloud:confluence:58ec0d4e-99a5-4f6b-a23e-53566ae9f4a3:page/541622661",
+      "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6NThlYzBkNGUtOTlhNS00ZjZiLWEyM2UtNTM1NjZhZTlmNGEzOmNvbnRlbnQvNTQxNjIyNjYx",
+      "status": "current",
+      "title": "Página de inicio de Dominio de Soluciones Corporativas",
+      "macroRenderedOutput": {},
+      "extensions": {
+        "position": 513468044
+      },
+      "_expandable": {
+        "container": "/rest/api/space/EPA",
+        "metadata": "",
+        "restrictions": "/rest/api/content/541622661/restriction/byOperation",
+        "history": "/rest/api/content/541622661/history",
+        "body": "",
+        "version": "",
+        "descendants": "/rest/api/content/541622661/descendant",
+        "space": "/rest/api/space/EPA",
+        "childTypes": "",
+        "schedulePublishInfo": "",
+        "operations": "",
+        "schedulePublishDate": "",
+        "children": "/rest/api/content/541622661/child",
+        "ancestors": "",
+        "draftVersion": ""
+      },
+      "_links": {
+        "self": "https://segurosti.atlassian.net/wiki/rest/api/content/541622661",
+        "tinyui": "/x/hYFII",
+        "editui": "/pages/resumedraft.action?draftId=541622661",
+        "webui": "/spaces/EPA/overview",
+        "edituiv2": "/spaces/EPA/pages/edit-v2/541622661"
+      }
+    },
+    {
+      "id": "1899167783",
+      "type": "page",
+      "ari": "ari:cloud:confluence:58ec0d4e-99a5-4f6b-a23e-53566ae9f4a3:page/1899167783",
+      "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6NThlYzBkNGUtOTlhNS00ZjZiLWEyM2UtNTM1NjZhZTlmNGEzOmNvbnRlbnQvMTg5OTE2Nzc4Mw==",
+      "status": "current",
+      "title": "Subdominio: SOLUCIONES ADMINISTRATIVAS DE TI - SATI",
+      "macroRenderedOutput": {},
+      "extensions": {
+        "position": 269356098
+      },
+      "_expandable": {
+        "container": "/rest/api/space/EPA",
+        "metadata": "",
+        "restrictions": "/rest/api/content/1899167783/restriction/byOperation",
+        "history": "/rest/api/content/1899167783/history",
+        "body": "",
+        "version": "",
+        "descendants": "/rest/api/content/1899167783/descendant",
+        "space": "/rest/api/space/EPA",
+        "childTypes": "",
+        "schedulePublishInfo": "",
+        "operations": "",
+        "schedulePublishDate": "",
+        "children": "/rest/api/content/1899167783/child",
+        "ancestors": "",
+        "draftVersion": ""
+      },
+      "_links": {
+        "self": "https://segurosti.atlassian.net/wiki/rest/api/content/1899167783",
+        "tinyui": "/x/JwAzcQ",
+        "editui": "/pages/resumedraft.action?draftId=1899167783",
+        "webui": "/spaces/EPA/pages/1899167783/Subdominio+SOLUCIONES+ADMINISTRATIVAS+DE+TI+-+SATI",
+        "edituiv2": "/spaces/EPA/pages/edit-v2/1899167783"
+      }
+    },
+    {
+      "id": "1750892627",
+      "type": "page",
+      "ari": "ari:cloud:confluence:58ec0d4e-99a5-4f6b-a23e-53566ae9f4a3:page/1750892627",
+      "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6NThlYzBkNGUtOTlhNS00ZjZiLWEyM2UtNTM1NjZhZTlmNGEzOmNvbnRlbnQvMTc1MDg5MjYyNw==",
+      "status": "current",
+      "title": "Sarlaft 4.0",
+      "macroRenderedOutput": {},
+      "extensions": {
+        "position": 152753629
+      },
+      "_expandable": {
+        "container": "/rest/api/space/EPA",
+        "metadata": "",
+        "restrictions": "/rest/api/content/1750892627/restriction/byOperation",
+        "history": "/rest/api/content/1750892627/history",
+        "body": "",
+        "version": "",
+        "descendants": "/rest/api/content/1750892627/descendant",
+        "space": "/rest/api/space/EPA",
+        "childTypes": "",
+        "schedulePublishInfo": "",
+        "operations": "",
+        "schedulePublishDate": "",
+        "children": "/rest/api/content/1750892627/child",
+        "ancestors": "",
+        "draftVersion": ""
+      },
+      "_links": {
+        "self": "https://segurosti.atlassian.net/wiki/rest/api/content/1750892627",
+        "tinyui": "/x/U4Bca",
+        "editui": "/pages/resumedraft.action?draftId=1750892627",
+        "webui": "/spaces/EPA/pages/1750892627/Sarlaft+4.0",
+        "edituiv2": "/spaces/EPA/pages/edit-v2/1750892627"
+      }
+    },
+    {
+      "id": "1742800723",
+      "type": "page",
+      "ari": "ari:cloud:confluence:58ec0d4e-99a5-4f6b-a23e-53566ae9f4a3:page/1742800723",
+      "base64EncodedAri": "YXJpOmNsb3VkOmNvbmZsdWVuY2U6NThlYzBkNGUtOTlhNS00ZjZiLWEyM2UtNTM1NjZhZTlmNGEzOmNvbnRlbnQvMTc0MjgwMDcyMw==",
+      "status": "current",
+      "title": "Documentación de Incidentes",
+      "macroRenderedOutput": {},
+      "extensions": {
+        "position": 256643958
+      },
+      "_expandable": {
+        "container": "/rest/api/space/EPA",
+        "metadata": "",
+        "restrictions": "/rest/api/content/1742800723/restriction/byOperation",
+        "history": "/rest/api/content/1742800723/history",
+        "body": "",
+        "version": "",
+        "descendants": "/rest/api/content/1742800723/descendant",
+        "space": "/rest/api/space/EPA",
+        "childTypes": "",
+        "schedulePublishInfo": "",
+        "operations": "",
+        "schedulePublishDate": "",
+        "children": "/rest/api/content/1742800723/child",
+        "ancestors": "",
+        "draftVersion": ""
+      },
+      "_links": {
+        "self": "https://segurosti.atlassian.net/wiki/rest/api/content/1742800723",
+        "tinyui": "/x/UwfhZw",
+        "editui": "/pages/resumedraft.action?draftId=1742800723",
+        "webui": "/spaces/EPA/pages/1742800723/Documentaci+n+de+Incidentes",
+        "edituiv2": "/spaces/EPA/pages/edit-v2/1742800723"
+      }
+    }
+  ],
+  "children": {
+    "page": {
+      "results": [],
+      "start": 0,
+      "limit": 25,
+      "size": 0,
+      "_links": {
+        "self": "https://segurosti.atlassian.net/wiki/rest/api/content/5624856625/child/page"
+      }
+    },
+    "_expandable": {
+      "database": "/rest/api/content/5624856625/child/database",
+      "folder": "/rest/api/content/5624856625/child/folder",
+      "attachment": "/rest/api/content/5624856625/child/attachment",
+      "slide": "/rest/api/content/5624856625/child/slide",
+      "comment": "/rest/api/content/5624856625/child/comment",
+      "embed": "/rest/api/content/5624856625/child/embed",
+      "whiteboard": "/rest/api/content/5624856625/child/whiteboard"
+    },
+    "_links": {
+      "self": "https://segurosti.atlassian.net/wiki/rest/api/content/5624856625/child"
+    }
+  },
+  "macroRenderedOutput": {},
+  "body": {
+    "storage": {
+      "value": "<p local-id=\"79498ee72ffa\">Este error se di&oacute; al momento de crear un negocio para el aplicativo banca (9637), se observ&oacute; que este qued&oacute; en estado &ldquo;PENDIENTE&rdquo; a pesar de que se evidenci&oacute; que no se hab&iacute;a ingresado informaci&oacute;n financiera al m&oacute;dulo, con base en lo anterior se esperaba que el m&oacute;dulo rechazara el negocio, sin embargo, como antes se manifesto, el m&oacute;dulo lo dej&oacute; en estado PENDIENTE, la imagen 1 muestra la evidencia el aplicativo:<br /></p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"801\" ac:original-width=\"1157\" ac:custom-width=\"true\" ac:local-id=\"3265c2c34e47\" ac:alt=\"image-20260226-224639.png\" ac:width=\"385\"><ri:attachment ri:filename=\"image-20260226-224639.png\" ri:version-at-save=\"1\" /><ac:caption ac:local-id=\"45417670cfae\"><p>Imagen 1. Imagen del error en la aplicaci&oacute;n.</p></ac:caption></ac:image><p local-id=\"68e69102f571\">Tambi&eacute;n se debe tener en cuenta que los de Banca tienen configurado que la registradur&iacute;a no debe ser as&iacute;ncrona, como se observa en la imagen 2.<br /></p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"163\" ac:original-width=\"800\" ac:custom-width=\"true\" ac:local-id=\"5414f5dd5715\" ac:alt=\"image-20260226-224911.png\" ac:width=\"431\"><ri:attachment ri:filename=\"image-20260226-224911.png\" ri:version-at-save=\"1\" /><ac:caption ac:local-id=\"7408f0313716\"><p>Imagen 2. Registradur&iacute;a s&iacute;ncrona.</p></ac:caption></ac:image><p local-id=\"99ef8b1073e8\">Finalmente se observ&oacute; que este error est&aacute; relacionado con el bug reportado en 2023: <a href=\"https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_workitems/edit/374809/\" local-id=\"1b9410ea9110\" data-card-appearance=\"inline\">https://dev.azure.com/SuraColombia/Gerencia_Tecnologia/_workitems/edit/374809/</a> donde al momento de crear la evaluaci&oacute;n esta se queda en estado PENDIENTE, esto porque no se ha realizado el guardar formulario: donde se evidencia la falta de llamado al servicio &ldquo;/sarlaftserv/api/v1/form/save&rdquo;, entonces al momento de diligenciar el formulario se observ&oacute; el error de la imagen 3, que se podr&iacute;a sintetizar como que no se diligenci&oacute; informaci&oacute;n financiera.<br /></p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"319\" ac:original-width=\"800\" ac:custom-width=\"true\" ac:local-id=\"b84101117505\" ac:alt=\"image-20260226-225247.png\" ac:width=\"408\"><ri:attachment ri:filename=\"image-20260226-225247.png\" ri:version-at-save=\"1\" /><ac:caption ac:local-id=\"f2fa8d9f61cc\"><p>Imagen 3. Error observado en Splunk.</p></ac:caption></ac:image><p local-id=\"9656e5375868\"> En el siguiente JSON se logra observar que no se ha enviado la propiedad que corresponde a informaci&oacute;n financiera<br /></p><ac:structured-macro ac:name=\"code\" ac:schema-version=\"1\" ac:local-id=\"9f2b4cd13ec7\" ac:macro-id=\"d932835a-5dde-41a4-a07a-18b98a4b1433\"><ac:parameter ac:name=\"breakoutMode\">wide</ac:parameter><ac:parameter ac:name=\"breakoutWidth\">1800</ac:parameter><ac:plain-text-body><![CDATA[{\n  \"evaluacionId\": \"4ebc45de-b60b-4408-8fec-6f30d89f4838\",\n  \"relacionLaboral\": false,\n  \"administradorPep\": false,\n  \"sarlafts\": [\n    {\n      \"tipoFigura\": [\n        \"REPRESENTANTE_LEGAL\"\n      ],\n      \"tipoEmpresa\": \"TERCEROS\",\n      \"cliente\": {\n        \"celular\": \"3143652121\",\n        \"correo\": \"angybracho@gmail.com\",\n        \"tipoPersona\": \"N\",\n        \"documento\": {\n          \"tipo\": \"E\",\n          \"numero\": \"397967\",\n          \"fechaExpedicion\": \"1994-06-20\"\n        },\n        \"persona\": {\n          \"primerNombre\": \"ANGY\",\n          \"segundoNombre\": \"NAZARETH\",\n          \"primerApellido\": \"BRACHO\",\n          \"segundoApellido\": \"DIAZ\",\n          \"pais\": \"310\"\n        }\n      }\n    },\n    {\n      \"tipoFigura\": [\n        \"ACCIONISTA\"\n      ],\n      \"personaPep\": false,\n      \"justificacionInformacion\": \"\",\n      \"relacionesPep\": [],\n      \"tipoEmpresa\": \"TERCEROS\",\n      \"cliente\": {\n        \"porParticipacionSocio\": 50,\n        \"tipoPersona\": \"N\",\n        \"documento\": {\n          \"tipo\": \"C\",\n          \"numero\": \"79958793\"\n        },\n        \"persona\": {\n          \"primerNombre\": \"DANIEL\",\n          \"segundoNombre\": \"EDUARDO\",\n          \"primerApellido\": \"PINEDA\",\n          \"segundoApellido\": \"SERRANO\"\n        }\n      }\n    },\n    {\n      \"tipoFigura\": [\n        \"ACCIONISTA\"\n      ],\n      \"personaPep\": false,\n      \"justificacionInformacion\": \"\",\n      \"relacionesPep\": [],\n      \"tipoEmpresa\": \"TERCEROS\",\n      \"cliente\": {\n        \"porParticipacionSocio\": 50,\n        \"tipoPersona\": \"N\",\n        \"documento\": {\n          \"tipo\": \"E\",\n          \"numero\": \"397967\"\n        },\n        \"persona\": {\n          \"primerNombre\": \"ANGY\",\n          \"segundoNombre\": \"NAZARETH\",\n          \"primerApellido\": \"BRACHO\",\n          \"segundoApellido\": \"DIAZ\"\n        }\n      }\n    },\n    {\n      \"tipoFigura\": [\n        \"BENEFICIARIO\"\n      ],\n      \"cliente\": {\n        \"tipoPersona\": \"N\",\n        \"persona\": {\n          \"primerNombre\": \"ANGEL \",\n          \"segundoNombre\": \"DANIEL \",\n          \"primerApellido\": \"PINEDA \",\n          \"segundoApellido\": \"BRACHO\"\n        }\n      }\n    },\n    {\n      \"tipoFigura\": [\n        \"BENEFICIARIO\"\n      ],\n      \"cliente\": {\n        \"tipoPersona\": \"N\",\n        \"persona\": {\n          \"primerNombre\": \"ANTHONY \",\n          \"segundoNombre\": \"DAN \",\n          \"primerApellido\": \"PINEDA \",\n          \"segundoApellido\": \"BRACHO\"\n        }\n      }\n    },\n    {\n      \"tipoFigura\": [\n        \"BENEFICIARIO\"\n      ],\n      \"cliente\": {\n        \"tipoPersona\": \"N\",\n        \"persona\": {\n          \"primerNombre\": \"AARON \",\n          \"segundoNombre\": \"DAVID \",\n          \"primerApellido\": \"PINEDA \",\n          \"segundoApellido\": \"BRACHO\"\n        }\n      }\n    },\n    {\n      \"tipoFigura\": [\n        \"TOMADOR\"\n      ],\n      \"personaPep\": false,\n      \"cuentaConInformacion\": false,\n      \"justificacionInformacion\": \"\",\n      \"tieneRelacionPep\": false,\n      \"relacionesPep\": [\n        {\n          \"relacionPeps\": false\n        }\n      ],\n      \"tipoEmpresa\": \"TERCEROS\",\n      \"cliente\": {\n        \"celular\": \"3143652121\",\n        \"correo\": \"angybracho@gmail.com\",\n        \"tipoPersona\": \"J\",\n        \"razonSocial\": \"BRACHO & CO SAS\",\n        \"paisConstitucion\": \"57\",\n        \"documento\": {\n          \"tipo\": \"A\",\n          \"numero\": \"9007672200\"\n        },\n        \"persona\": {\n          \"primerNombre\": \"BRACHO & CO SAS\"\n        }\n      }\n    }\n  ]\n}]]></ac:plain-text-body></ac:structured-macro><p local-id=\"a7eed064a10e\" /><p local-id=\"18a90bbcc22b\">La soluci&oacute;n a este incidente es pedirles el favor que env&iacute;en la informaci&oacute;n financiera completa y actualizada; se puede evidenciar que la informaci&oacute;n financiera es del 2021 en la imagen 4.<br /></p><ac:image ac:align=\"center\" ac:layout=\"center\" ac:original-height=\"215\" ac:original-width=\"1468\" ac:custom-width=\"true\" ac:local-id=\"7c992ddeecfd\" ac:alt=\"image-20260226-225735.png\" ac:width=\"576\"><ri:attachment ri:filename=\"image-20260226-225735.png\" ri:version-at-save=\"1\" /><ac:caption ac:local-id=\"b04a251823d6\"><p>Imagen 4. Informaci&oacute;n financiera desactualizada</p></ac:caption></ac:image><p local-id=\"26565c71f138\" /><p local-id=\"99a4034b4ab4\" /><p local-id=\"fbde28f04a61\" /><p local-id=\"d40833970da2\"><br /><br /></p>",
+      "representation": "storage",
+      "embeddedContent": [],
+      "_expandable": {
+        "content": "/rest/api/content/5624856625"
+      }
+    },
+    "_expandable": {
+      "editor": "",
+      "atlas_doc_format": "",
+      "view": "",
+      "export_view": "",
+      "styled_view": "",
+      "dynamic": "",
+      "editor2": "",
+      "anonymous_export_view": ""
+    }
+  },
+  "extensions": {
+    "position": 2116
+  },
+  "_expandable": {
+    "childTypes": "",
+    "container": "/rest/api/space/EPA",
+    "schedulePublishInfo": "",
+    "metadata": "",
+    "operations": "",
+    "schedulePublishDate": "",
+    "restrictions": "/rest/api/content/5624856625/restriction/byOperation",
+    "history": "/rest/api/content/5624856625/history",
+    "draftVersion": "",
+    "descendants": "/rest/api/content/5624856625/descendant",
+    "space": "/rest/api/space/EPA"
+  },
+  "_links": {
+    "editui": "/pages/resumedraft.action?draftId=5624856625",
+    "webui": "/spaces/EPA/pages/5624856625/Error+en+el+aplicativo+de+Banca+Negocio+en+estado+PENDIENTE",
+    "edituiv2": "/spaces/EPA/pages/edit-v2/5624856625",
+    "context": "/wiki",
+    "self": "https://segurosti.atlassian.net/wiki/rest/api/content/5624856625",
+    "tinyui": "/x/MYBETwE",
+    "collection": "/rest/api/content",
+    "base": "https://segurosti.atlassian.net/wiki"
+  }
+}
