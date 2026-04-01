@@ -315,8 +315,32 @@ def html_to_md(raw: str, page_id: str = "") -> str:
     md = re.sub(r'\t', '    ', md)           # MD010: tabs → 4 spaces
     md = re.sub(r'\n{3,}', '\n\n', md)       # MD012: max 2 blank lines
     md = re.sub(r'[ \t]+\n', '\n', md)
-    # MD032: fix broken list items (- on its own line followed by content)
+    # MD032 (a): guion solitario seguido de contenido en línea aparte
     md = re.sub(r'^-\s*\n(\S)', r'- \1', md, flags=re.M)
+
+    # MD032 (b): non-list/non-blank → ítem de lista (insertar línea en blanco)
+    _lp = re.compile(r'^[-*+]\s|\d+\.\s')
+    _lns = md.split('\n'); _out2 = []
+    for _i, _ln in enumerate(_lns):
+        _out2.append(_ln)
+        if _i < len(_lns) - 1:
+            _nxt = _lns[_i + 1]
+            if _ln.strip() and not _lp.match(_ln.strip()) and _lp.match(_nxt.strip()):
+                _out2.append('')
+    md = '\n'.join(_out2)
+
+    # heading-order: normalizar jerarquía (evita saltos h1→h3+)
+    _h_prev = 1; _h_out = []
+    for _hl in md.split('\n'):
+        _hm = re.match(r'^(#{1,6})(\s)', _hl)
+        if _hm:
+            _lvl = len(_hm.group(1))
+            if _lvl > _h_prev + 1:
+                _lvl = _h_prev + 1
+                _hl = '#' * _lvl + _hm.group(2) + _hl[len(_hm.group(1)) + 1:]
+            _h_prev = _lvl
+        _h_out.append(_hl)
+    md = '\n'.join(_h_out)
     return md.strip()
 
 

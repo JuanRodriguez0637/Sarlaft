@@ -221,9 +221,61 @@ def fix_file(path: str) -> bool:
     # ── MD010: tabs → 4 espacios ─────────────────────────────────────────
     c = c.replace("\t", "    ")
 
-    # ── MD032: broken list items ("-" solitario → "- contenido") ─────────
+    # ── MD032 (a): broken list items ("-" solitario → "- contenido") ─────
     for _ in range(5):
         c = re.sub(r"\n-\n([^\n\-])", lambda m: "\n- " + m.group(1), c)
+
+    # ── MD032 (b): non-list / non-blank line seguido directamente de ítem ─
+    # Ejemplo: ![img]()\n- ítem  →  ![img]()\n\n- ítem
+    # Se evita actuar dentro de code fences (procesado línea a línea)
+    _list_prefix = re.compile(r'^[-*+]\s|\d+\.\s')
+
+    def _insert_blank_before_lists(text: str) -> str:
+        in_fence = False
+        lines = text.split('\n')
+        out = []
+        for i, line in enumerate(lines):
+            out.append(line)
+            if re.match(r'^(`{3,}|~{3,})', line.strip()):
+                in_fence = not in_fence
+            if in_fence:
+                continue
+            if i < len(lines) - 1:
+                next_line = lines[i + 1]
+                is_blank        = not line.strip()
+                is_list_item    = bool(_list_prefix.match(line.strip()))
+                next_is_list    = bool(_list_prefix.match(next_line.strip()))
+                if not is_blank and not is_list_item and next_is_list:
+                    out.append('')  # blank line before list item
+        return '\n'.join(out)
+
+    c = _insert_blank_before_lists(c)
+
+    # ── heading-order: normalizar jerarquía (axe-linter) ─────────────────
+    # Si un heading salta más de un nivel (e.g. # → ####) se reduce al máximo
+    # permitido (previous_level + 1). Se ignoran bloques de código.
+    def _normalize_heading_order(text: str) -> str:
+        in_fence = False
+        prev_level = 0
+        result = []
+        for line in text.splitlines(keepends=True):
+            if re.match(r'^(`{3,}|~{3,})', line.strip()):
+                in_fence = not in_fence
+            if not in_fence:
+                m = re.match(r'^(#{1,6})(\s)', line)
+                if m:
+                    level = len(m.group(1))
+                    if prev_level == 0:
+                        prev_level = level
+                    else:
+                        if level > prev_level + 1:
+                            level = prev_level + 1
+                            line = '#' * level + m.group(2) + line[len(m.group(1)) + 1:]
+                        prev_level = level
+            result.append(line)
+        return ''.join(result)
+
+    c = _normalize_heading_order(c)
 
     # ── MD040: code fences sin lenguaje ───────────────────────────────────
     def add_language(m):
