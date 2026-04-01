@@ -6,4 +6,4 @@
 
 Cualquier proceso que se deba ejecutar desde Tivoli o un aplicativo externo como el pipeline de DataFactory de Segmentación de Clientes, debe cumplir los siguientes pasos de implementación:
 
-![Pasos del proceso batch](./img/WS_ProcesoBatch-PasosProceso-20220428-205624.jpg)
+![Pasos del proceso batch](./attachments/WS_ProcesoBatch-PasosProceso-20220428-205624.jpg)

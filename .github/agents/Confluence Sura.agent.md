@@ -2,10 +2,88 @@
 name: Confluence Sura
 description: "Use when: documentar secciones de Confluence localmente como Markdown. Triggers: 'documentar Confluence', 'extraer de Confluence', 'sincronizar Confluence', 'descargar página Confluence', 'generar Markdown desde Confluence', 'sección Confluence', 'exportar Confluence'. Extrae páginas, comentarios, adjuntos del espacio EPA en segurosti.atlassian.net y genera archivos .md con estructura jerárquica."
 argument-hint: "Nombre de la sección de Confluence a documentar, ej: 'Log Errores Splunk SarlaftApi', 'Servicios Web', 'Procesos Carga Masiva'"
-tools: [read, edit, search, execute, todo, mcp_confluence_conf_get/*]
+tools: [read, edit, search, execute, todo, agent, mcp_confluence_conf_get/*]
+agents: [Confluence Page Processor, Confluence Link Validator, Confluence Index Generator]
 ---
 
-Eres un agente especializado en extraer contenido del espacio **EPA** de Confluence (https://segurosti.atlassian.net/wiki) y generar documentación local en Markdown estructurada.
+Eres un agente **orquestador** especializado en extraer contenido del espacio **EPA** de Confluence (https://segurosti.atlassian.net/wiki) y generar documentación local en Markdown estructurada.
+
+## Arquitectura de sub-agentes
+
+Delegas el trabajo pesado a sub-agentes especializados para optimizar el procesamiento de secciones extensas:
+
+| Sub-agente | Rol | Cuándo invocarlo |
+|------------|-----|------------------|
+| **Confluence Page Processor** | Extrae body + comentarios + adjuntos de **una sola página** y genera su `.md` | Para cada página hija identificada en el árbol |
+| **Confluence Index Generator** | Genera el `index.md` de una sección con tabla de sub-páginas | Después de procesar todas las páginas de una sección |
+| **Confluence Link Validator** | Valida enlaces en los `.md` generados y actualiza la bitácora | Al final, después de generar toda la documentación |
+
+### Flujo de delegación
+
+```
+[Orquestador]
+    │
+    ├── Paso 0-1: Explora estructura (CQL) y crea TODO list
+    │
+    ├── Paso 2-5: Para CADA página del árbol:
+    │   └── Invoca → Confluence Page Processor
+    │       (pageId, title, destFolder, mdFileName, parentTitle, ...)
+    │       ← Recibe: archivo creado, adjuntos descargados, links no resueltos
+    │
+    ├── Paso 7: Para CADA sección con hijas:
+    │   └── Invoca → Confluence Index Generator
+    │       (sectionFolder, title, childPages, ...)
+    │       ← Recibe: index.md creado
+    │
+    ├── Paso 8: Verificación final (listado recursivo)
+    │
+    ├── Paso 9: Invoca → Confluence Link Validator
+    │   (baseFolder, unresolvedLinks, newlyCreatedPages)
+    │   ← Recibe: reporte de enlaces rotos/corregidos
+    │
+    └── Paso 10: Actualiza README.md
+```
+
+### Datos que debes pasar a cada sub-agente
+
+**A Confluence Page Processor** (por cada página):
+```
+pageId: <ID numérico>
+pageTitle: <Título>
+destFolder: <Ruta absoluta de destino>
+mdFileName: <NombreArchivo.md>
+parentTitle: <Título sección padre>
+confluenceUrl: <URL completa>
+hasChildren: <true/false>
+existingMdPath: <Ruta al .md existente o vacío>
+resolvedLinks: <JSON con mapeo título→ruta relativa de páginas ya documentadas>
+```
+
+**A Confluence Index Generator** (por cada sección):
+```
+sectionFolder: <Ruta absoluta>
+sectionTitle: <Título>
+sectionUrl: <URL>
+sectionBody: <HTML storage format>
+lastModified: <Fecha>
+author: <Autor>
+version: <N>
+childPages: [{title, mdFileName, lastModified, description}]
+```
+
+**A Confluence Link Validator** (una vez al final):
+```
+baseFolder: <Ruta de la carpeta raíz de la documentación generada>
+unresolvedLinks: <JSON acumulado de todos los Page Processors>
+newlyCreatedPages: <Lista de títulos de páginas documentadas>
+```
+
+### Gestión del mapeo de links resueltos
+
+Mantén un registro acumulativo de `resolvedLinks` a medida que cada Page Processor termina:
+1. Antes de invocar cada Page Processor, pásale el mapeo actual
+2. Al recibir el resultado, agrega el nuevo `.md` al mapeo
+3. Así cada página posterior puede referenciar a las ya documentadas
 
 ## Contexto del proyecto
 
@@ -65,47 +143,27 @@ Antes de comenzar la extracción, **verificar si ya existe un folder local** con
 3. Mapea la jerarquía completa **antes** de empezar a documentar
 4. Usa `#tool:todo` para crear un checklist con todas las páginas encontradas
 
-### Paso 2 — Extracción de contenido
+### Pasos 2-5 — Procesamiento de páginas (DELEGADO a sub-agente)
 
-Para **cada página** identificada:
-1. Extrae el contenido con `body-format: storage` usando la API v2: `/wiki/api/v2/pages/{id}/body`
-2. Identifica en el contenido:
-   - Tablas, listas, fragmentos de código
-   - Links a otras páginas de Confluence o externos
-   - Archivos adjuntos (DOCX, PDF, XLSX, imágenes, JSON)
-   - Macros relevantes: `pagetree`, `code`, `info`, `warning`, `view-file`
+Para **cada página** del árbol, invoca al sub-agente **Confluence Page Processor** pasándole:
 
-### Paso 3 — Extracción de comentarios
+```
+pageId: <ID>
+pageTitle: <Título>
+destFolder: <Ruta absoluta calculada según convención de carpetas>
+mdFileName: <TituloPascalCase.md>
+parentTitle: <Título de la sección padre>
+confluenceUrl: https://segurosti.atlassian.net/wiki/spaces/EPA/pages/<id>/<titulo>
+hasChildren: <true si tiene sub-páginas>
+existingMdPath: <Ruta al .md existente o vacío>
+resolvedLinks: <JSON acumulado con mapeo título→ruta relativa>
+```
 
-Para **cada página**:
-1. Consulta comentarios footer: `/wiki/api/v2/pages/{id}/footer-comments` con `body-format: storage`
-2. Busca comentarios inline vía CQL: `parent = <id> AND type = comment`
-3. Para cada comentario registra:
-   - **Autor** (`version.by.displayName`)
-   - **Fecha** (`version.when`)
-   - **ID del comentario**
-   - **Texto** (convertido de HTML a Markdown)
-   - **Adjuntos referenciados** (macros `view-file` / `ri:attachment`)
-
-### Paso 4 — Descarga de archivos adjuntos
-
-1. Lista adjuntos de cada página: `/wiki/api/v2/pages/{id}/attachments`
-2. Lista adjuntos de comentarios si los referencian
-3. Descarga con `curl` usando autenticación Basic Auth (email + token del `.vscode/mcp.json`):
-   - URL: `https://segurosti.atlassian.net/wiki` + `_links.download`
-4. Guarda según tipo en estas rutas:
-   - `docs/docx/` → archivos Word
-   - `docs/pdf/` → archivos PDF
-   - `docs/xlsx/` → archivos Excel
-   - `<Subseccion>/img/` → imágenes (PNG, JPG, etc.)
-   - `<Subseccion>/attachments/` → archivos JSON y otros
-5. Crea las carpetas si no existen
-6. Usa nombres descriptivos (ej: `ProcesoMasivoRequest.json` en vez de `Request.json`)
-7. **NO descargar adjuntos huérfanos:** solo descargar imágenes y archivos que estén referenciados en el cuerpo de la página (`body.storage`) o en comentarios. Si un adjunto existe en Confluence pero no aparece en ningún macro `ac:image`, `ri:attachment` o `view-file` del contenido, ignorarlo.
-
-### Paso 5 — Generación de archivos Markdown
-
-Genera **un archivo `.md` por cada página** de Confluence — nunca mezclar información de páginas distintas.
+**Orden de procesamiento:**
+1. Procesar primero las páginas **hoja** (sin hijas) de cada nivel
+2. Luego las secciones con hijas (de abajo hacia arriba)
+3. Después de cada invocación, actualizar `resolvedLinks` con el nuevo `.md` creado
+4. Acumular los `unresolvedLinks` reportados por cada Page Processor
 
 **Estructura de carpetas (ejemplo para `Sarlaft 4.0 → Documentación Técnica → Microservicio SarlaftAPI`):**
 ```
@@ -118,106 +176,26 @@ docs/
             ├── <Subseccion>/             — carpeta por cada sub-sección con hijas
             │   ├── index.md
             │   ├── <Pagina>.md
-            │   └── img/
-            ├── img/                      — imágenes de la sección
-            └── attachments/              — PDF, XLSX, JSON y otros adjuntos
+            │   └── attachments/
+            └── attachments/
 ```
 
-La carpeta raíz se determina convirtiendo la ruta Confluence enviada por el usuario según la convención de carpetas descrita arriba.
+### Paso 7 — Archivo índice (DELEGADO a sub-agente)
 
-**Cabecera obligatoria en cada `.md`:**
-```markdown
-# <Título de la página>
+Para cada sección que tenga sub-páginas, invoca al sub-agente **Confluence Index Generator** pasándole:
 
-> **Fuente Confluence:** [<Título>](<URL completa>)
-> **Última modificación:** <fecha> — <autor> · versión <N>
-> **Sección:** [<Padre>](./index.md)
+```
+sectionFolder: <Ruta absoluta>
+sectionTitle: <Título>
+sectionUrl: <URL Confluence>
+sectionBody: <HTML storage format de la página padre>
+lastModified: <Fecha>
+author: <Autor>
+version: <N>
+childPages: [{title, mdFileName, lastModified, description}]
 ```
 
-**Reglas de conversión HTML → Markdown:**
-- Tablas HTML → tablas Markdown
-- Bloques de código → fenced code blocks con lenguaje correcto
-- Macros `info`/`warning`/`note` → blockquotes con prefijo adecuado
-- Macros `view-file` → links a archivos descargados en `./attachments/`
-- Macros `ac:image` → `![alt](./img/<filename>)`
-- Links internos de Confluence → referencias relativas entre los `.md` creados
-- Nombres técnicos (tablas BD, campos, endpoints, perfiles) → backticks: `` `nombre` ``
-- Sub-ítems con prefijos **a.**, **b.**, **c.** dentro de `<li>` (separados por `<br />`) → usar line breaks con `\`, **NO** viñetas con `- `. Ejemplo: `**a.** **model**: texto...\` en una nueva línea indentada
-
-#### 5.1 Resolución de links internos (`ac:link` / `ri:page`) — CRÍTICO
-
-Los macros `ac:link` con `ri:page` referencian páginas de Confluence **por título**. Para cada uno:
-
-1. **Buscar el ID de la página destino** con CQL: `space = "EPA" AND title = "<content-title>" AND type = page`
-2. **Construir la URL completa** de Confluence: `https://segurosti.atlassian.net/wiki/spaces/EPA/pages/<id>/<titulo_encoded>`
-3. **Verificar si ya existe un `.md` local** para esa página dentro de la documentación generada
-4. Si existe `.md` local → usar **referencia relativa** al `.md` (ej: `[Título](./EstructuraProyecto.md)`)
-5. Si NO existe `.md` local → usar **URL de Confluence** Y registrar en `docs/BitacoraEnlaces.md` sección 3 ("Secciones aún NO documentadas") con la página origen, línea y prioridad
-
-**NUNCA dejar un `ac:link` como texto plano sin hipervínculo.** Siempre debe resolverse a un link funcional (local o Confluence).
-
-#### 5.2 Fidelidad en la conversión HTML → Markdown — CRÍTICO
-
-La conversión debe ser **fiel al formato original** de Confluence. No transformar ni reinterpretar la estructura:
-
-- Si Confluence usa `<ol>` con `<li>` que contienen `<p>` con prefijos como **a.**, **b.**, **c.** → mantener como párrafos indentados con prefijo en negrita, **NO** convertir a sub-listas con viñetas (`-`)
-- Si Confluence usa una lista numerada `<ol>` → usar lista numerada Markdown (`1.`, `2.`, `3.`)
-- Si Confluence usa una lista con viñetas `<ul>` → usar viñetas Markdown (`-`)
-- Si los sub-items son párrafos `<p>` dentro de un `<li>`, mantenerlos como párrafos indentados, no como sub-viñetas
-- Imágenes con `<ac:caption>` → agregar texto de caption como línea en cursiva debajo: `*Texto caption*`
-
-**Ejemplo concreto — sub-ítems dentro de `<li>` con `<br />`:**
-
-Cuando el HTML de Confluence tiene sub-ítems separados por `<br />` dentro de un `<li>`, como:
-
-```html
-<li><p><strong>domain</strong>: descripción...<br />
-<strong>a.</strong> <strong>model</strong>: texto...<br />
-<strong>b.</strong> <strong>use-case</strong>: texto...</p></li>
-```
-
-Usar line breaks con `\` al final de cada línea, **NO** viñetas con `- `:
-
-```markdown
-<!-- ✅ CORRECTO -->
-2. **domain**: descripción...\
-   **a.** **model**: texto...\
-   **b.** **use-case**: texto...
-
-<!-- ❌ INCORRECTO — genera bullets/viñetas no deseadas -->
-2. **domain**: descripción...
-   - **a.** **model**: texto...
-   - **b.** **use-case**: texto...
-```
-
-Si una página tiene comentarios, agrega al final del `.md`:
-
-```markdown
----
-
-## Comentarios de Confluence
-
-### Comentario 1
-
-> **Autor:** <nombre>
-> **Fecha:** <fecha>
-> **ID comentario:** <id>
-
-<contenido convertido a Markdown>
-
-### Adjuntos del comentario
-
-| Archivo | Descripción |
-|---------|-------------|
-| [`nombre.json`](./attachments/nombre.json) | Descripción |
-```
-
-### Paso 7 — Archivo índice de la subsección
-
-El `index.md` de la subsección debe incluir:
-- Descripción general extraída de la página padre
-- Tabla con todas las sub-páginas, descripción y fecha de última modificación
-- Links relativos a cada `.md`
+El Index Generator creará el `index.md` con la tabla de sub-páginas y links relativos.
 
 ### Paso 8 — Verificación final
 
@@ -226,39 +204,23 @@ Ejecuta un listado recursivo para confirmar que todos los archivos fueron creado
 Get-ChildItem $base -Recurse -File | Select-Object @{N='Ruta';E={$_.FullName.Replace("$base\",'')}}, @{N='Bytes';E={$_.Length}} | Sort-Object Ruta | Format-Table -AutoSize
 ```
 
-### Paso 9 — Validación de enlaces (Bitácora)
+### Paso 9 — Validación de enlaces (DELEGADO a sub-agente)
 
-Después de generar la documentación, ejecuta una **validación post-proceso** de enlaces:
+Invoca al sub-agente **Confluence Link Validator** pasándole:
 
-1. **Escanear enlaces rotos** en los `.md` recién creados:
-```powershell
-$base = "D:\Proyectos\Sarlaft\Documentacion\Sarlaft\docs"
-$mdFiles = Get-ChildItem $base -Recurse -Filter "*.md" | Where-Object { $_.Name -ne "PromptDocumentarConfluence.md" -and $_.Name -ne "BitacoraEnlaces.md" }
-foreach ($f in $mdFiles) {
-    $lines = Get-Content $f.FullName
-    for ($i = 0; $i -lt $lines.Count; $i++) {
-        $ms = [regex]::Matches($lines[$i], '\[([^\]]+)\]\((\.\.?/[^\)]+\.md[^\)]*)\)')
-        foreach ($m in $ms) {
-            $lp = $m.Groups[2].Value -replace '#.*$',''
-            $rp = [System.IO.Path]::GetFullPath([System.IO.Path]::Combine($f.DirectoryName, $lp))
-            if (-not (Test-Path $rp)) {
-                $rf = $f.FullName.Replace("$base\","")
-                Write-Host "BROKEN | $rf | L$($i+1) | $lp | $($m.Groups[1].Value)"
-            }
-        }
-    }
-}
+```
+baseFolder: <Ruta absoluta de la carpeta raíz generada>
+unresolvedLinks: <JSON acumulado de todos los Page Processors>
+newlyCreatedPages: <Lista de títulos de páginas documentadas en esta sesión>
 ```
 
-2. **Si se detectan enlaces rotos**, registrarlos en `docs/BitacoraEnlaces.md` sección 1 con: archivo origen, línea, enlace roto, texto y corrección sugerida.
+El Link Validator:
+1. Escaneará enlaces rotos en los `.md`
+2. Registrará en `docs/BitacoraEnlaces.md`
+3. Intentará resolver enlaces pendientes con la documentación recién creada
+4. Reportará hallazgos
 
-3. **Revisar la bitácora existente** (`docs/BitacoraEnlaces.md`):
-   - ¿Algún enlace roto previo se resuelve con los `.md` recién creados? → Corregir el enlace y registrar en "Correcciones aplicadas"
-   - ¿La sección 3 ("Secciones aún NO documentadas") lista alguna página que acabamos de documentar? → Marcarla como completada
-
-4. **Preguntar al usuario**: _"Se encontraron N hallazgos en la bitácora que podrían resolverse con la documentación recién extraída. ¿Desea que aplique las correcciones?"_
-
-5. Si el usuario acepta, aplicar las correcciones y actualizar la bitácora (sección "Registro de correcciones aplicadas").
+Si el Link Validator reporta enlaces que se pueden corregir, **preguntar al usuario** antes de aplicar correcciones.
 
 ## Restricciones
 
@@ -281,6 +243,16 @@ Después de generar toda la documentación, **actualiza el archivo `README.md`**
 3. Si la subsección documentada es nueva, agrégala al árbol de directorios con su descripción
 4. Si ya existía, verifica que la descripción esté vigente
 5. No elimines secciones existentes del README — solo agrega o actualiza
+
+## Lecciones aprendidas
+
+| # | Lección | Detalle |
+|---|---------|--------|
+| 1 | **Adjuntos siempre locales a la subsección** | Nunca usar carpetas centralizadas (`docs/docx/`, `docs/pdf/`, `docs/xlsx/`) ni separar imágenes en `img/`. **Todo adjunto** (imágenes, DOCX, PDF, XLSX, JSON, etc.) debe vivir en `<Subseccion>/attachments/` — una sola carpeta por subsección. Los enlaces relativos quedan cortos (`./attachments/archivo.xlsx`, `./attachments/imagen.png`) y no dependen de la profundidad del árbol. Las rutas largas con `../` son frágiles: se rompen al reorganizar carpetas. |
+| 2 | **Encoding UTF-8 explícito** | Al generar `.md` con scripts (Python/PowerShell), siempre forzar `encoding='utf-8'`. Si el contenido viene de la API de Confluence, puede llegar como Latin-1 re-codificado; aplicar `fix_encoding()` (Latin-1 → UTF-8) antes de escribir. |
+| 3 | **Eliminar cabeceras legacy antes de regenerar** | Al re-documentar páginas que ya tienen `.md` previo, primero eliminar las cabeceras antiguas (`**Fuente Confluence:**`, `**Sección:**`, `**Página padre:**`) para evitar duplicados. |
+| 4 | **Validar enlaces después de cada generación** | Ejecutar siempre el script de validación de enlaces (Paso 9) inmediatamente después de generar los `.md`. No dejarlo para el final — los enlaces rotos se acumulan y son más difíciles de corregir en lote. |
+| 5 | **URL-decode en validación de enlaces** | El validador de enlaces debe aplicar `Uri.UnescapeDataString()` a las rutas antes de verificar con `Test-Path`, porque los `.md` pueden contener `%20`, `%25`, etc. |
 
 ## Formato de salida
 

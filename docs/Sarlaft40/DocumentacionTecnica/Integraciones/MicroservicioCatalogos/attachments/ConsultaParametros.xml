@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="ConsultaModeloClientes" resourceRoot="" soapui-version="5.6.0" abortOnError="false" runType="SEQUENTIAL" id="526e8c2f-5faa-46ba-a074-29d80b93355c" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" wsaVersion="NONE" name="ws_ConsultaModeloClientesHttpBinding" type="wsdl" bindingName="{http://suramericana/crm/mdc/consultas/binding}ws_ConsultaModeloClientesHttpBinding" soapVersion="1_1" anonymous="optional" definition="http://segdllo02.suranet.com/ServiciosWebSic/services/ConsultaModeloClientesWS?wsdl" id="154a1987-2cc8-4214-b745-5fc429bc150d" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://segdllo02.suranet.com/ServiciosWebSic/services/ConsultaModeloClientesWS?wsdl"><con:part><con:url>http://segdllo02.suranet.com/ServiciosWebSic/services/ConsultaModeloClientesWS?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="ws_ConsultaModeloClientesHttp_Service" targetNamespace="http://suramericana/crm/mdc/consultas/binding" xmlns:Port_0="http://suramericana/crm/mdc/consultas" xmlns:bons0="http://suramericana/crm/mdc/consultas/binding" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import location="http://segdllo02.suranet.com:80/ServiciosWebSic/services/ConsultaModeloClientesWS?wsdl=ConsultaModeloClientes.wsdl" namespace="http://suramericana/crm/mdc/consultas"></wsdl:import>
+  <wsdl:binding name="ws_ConsultaModeloClientesHttpBinding" type="Port_0:ConsultaModeloClientes">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="consultarPersona">
+      <soap:operation soapAction=""/>
+      <wsdl:input name="consultarPersonaRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarPersonaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="technicalException">
+        <soap:fault name="technicalException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="businessException">
+        <soap:fault name="businessException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="consultarIndicadorSalarftCliente">
+      <soap:operation soapAction=""/>
+      <wsdl:input name="consultarIndicadorSalarftClienteRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarIndicadorSalarftClienteResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="technicalException">
+        <soap:fault name="technicalException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="businessException">
+        <soap:fault name="businessException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="consultarParametrosTipoDescripcion">
+      <soap:operation soapAction=""/>
+      <wsdl:input name="consultarParametrosTipoDescripcionRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="consultarParametrosTipoDescripcionResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="technicalException">
+        <soap:fault name="technicalException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="businessException">
+        <soap:fault name="businessException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ws_ConsultaModeloClientesHttpService">
+    <wsdl:port binding="bons0:ws_ConsultaModeloClientesHttpBinding" name="ws_ConsultaModeloClientesHttpPort">
+      <soap:address location="http://segdllo02.suranet.com:80/ServiciosWebSic/services/ConsultaModeloClientesWS"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://segdllo02.suranet.com:80/ServiciosWebSic/services/ConsultaModeloClientesWS?wsdl=ConsultaModeloClientes.wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="ConsultaModeloClientes" targetNamespace="http://suramericana/crm/mdc/consultas" xmlns:bons1="http://suramericana/crm/mdc/clientes" xmlns:bons2="http://exceptions.assets.suramericana.com" xmlns:tns="http://suramericana/crm/mdc/consultas" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://suramericana/crm/mdc/consultas">
+      <xsd:import namespace="http://suramericana/crm/mdc/clientes"/>
+      <xsd:import namespace="http://exceptions.assets.suramericana.com"/>
+      <xsd:element name="consultarPersona">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="persona" nillable="true" type="bons1:InfoPersona"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="consultarPersonaResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="respuestasConsultaPersona" nillable="true" type="bons1:RespuestasConsultaPersona"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="consultarPersonaFault1_businessException" nillable="true" type="bons2:BusinessException"/>
+      <xsd:element name="consultarPersonaFault2_technicalException" nillable="true" type="bons2:TechnicalException"/>
+      <xsd:element name="consultarIndicadorSalarftCliente">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="consultarEstadoSarlaft" nillable="true" type="bons1:EstadoSarlaft"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="consultarIndicadorSalarftClienteResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="respuestaEstadoSarlaft" nillable="true" type="bons1:RespuestaEstadoSarlaft"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="consultarIndicadorSalarftClienteFault1_businessException" nillable="true" type="bons2:BusinessException"/>
+      <xsd:element name="consultarIndicadorSalarftClienteFault2_technicalException" nillable="true" type="bons2:TechnicalException"/>
+      <xsd:element name="consultarParametrosTipoDescripcion">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="parametro" nillable="true" type="bons1:Parametro"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="consultarParametrosTipoDescripcionResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="respuestaListaParametros" nillable="true" type="bons1:RespuestaParametros"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="consultarParametrosTipoDescripcionFault1_businessException" nillable="true" type="bons2:BusinessException"/>
+      <xsd:element name="consultarParametrosTipoDescripcionFault2_technicalException" nillable="true" type="bons2:TechnicalException"/>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://suramericana/crm/mdc/clientes" xmlns:bons0="http://suramericana/crm/mdc/clientes">
+      <xsd:complexType name="RespuestaParametros">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="parametros" type="bons0:Parametros"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Parametros">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="parametro" type="bons0:Parametro"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Parametro">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="tipo" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="pais" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="departamento" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="tipoPersona" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="codigo" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="descripcion" type="xsd:string"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="InfoPersona">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="auditoria" type="bons0:Auditoria"></xsd:element>
+          <xsd:element minOccurs="0" name="persona" type="bons0:Persona"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Persona">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="tipoIdentificacion" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="1" name="numeroIdentificacion" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="nombre1" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="nombre2" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="apellido1" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="apellido2" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="activo" type="xsd:boolean"></xsd:element>
+          <xsd:element minOccurs="0" name="sexo" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="fechaNacimiento" type="xsd:date"></xsd:element>
+          <xsd:element minOccurs="0" name="vive" type="xsd:boolean"/>
+          <xsd:element minOccurs="0" name="celular" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="tipoPersona" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="descripcionTipoPersona" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="estadoCivil" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="descripcionEstadoCivil" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="municipioNacimiento" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="descripcionMunicipioNacimiento" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="municipioIdentificacion" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="descripcionMunicipioIdentificacion" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="fechaExpedicionDni" type="xsd:date"></xsd:element>
+          <xsd:element minOccurs="0" name="profesion" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="descripcionProfesion" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="estudia" type="xsd:boolean"></xsd:element>
+          <xsd:element minOccurs="0" name="ocupacion" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="descripcionOcupacion" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="actividadEconomica" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="descripcionActividadEconomica" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="cargo" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="descripcionCargo" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="numeroHijos" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="numeroPersonasCargo" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="tipoVivienda" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="estrato" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="descripcionTipoVivienda" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="accesoInternet" type="xsd:boolean"></xsd:element>
+          <xsd:element minOccurs="0" name="lugarAccesoWeb" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="descripcionLugarAccesoWeb" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="vehiculoPropio" type="xsd:boolean"></xsd:element>
+          <xsd:element minOccurs="0" name="riesgoConsultable" type="xsd:boolean"></xsd:element>
+          <xsd:element minOccurs="0" name="direcciones" type="bons0:Direcciones"></xsd:element>
+          <xsd:element minOccurs="0" name="uen" type="xsd:string"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Direcciones">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" name="direccion" type="bons0:Direccion"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Direccion">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="tipoDireccion" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="descripcionDireccion" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="direccion" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="direccionCodificada" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="pais" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="descripcionPais" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="departamento" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="descripcionDepartamento" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="municipio" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="descripcionMunicipio" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="telefono" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="extension" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="fax" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="correoElectronico" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="correspondenciaElectronica" type="xsd:boolean"></xsd:element>
+          <xsd:element minOccurs="0" name="correspondenciaFisica" type="xsd:boolean"></xsd:element>
+          <xsd:element minOccurs="0" name="nombreSucursal" type="xsd:string"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="Auditoria">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="compania" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="1" name="modeloDatos" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="1" name="aplicacion" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="1" name="dniUsuario" type="xsd:string"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RespuestasConsultaPersona">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="persona" type="bons0:Persona"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="RespuestaEstadoSarlaft">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="respuesta" type="bons0:EstadoSarlaft"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="EstadoSarlaft">
+        <xsd:sequence>
+          <xsd:element minOccurs="1" name="dni" type="xsd:string"/>
+          <xsd:element minOccurs="1" name="compania" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="vigente" type="xsd:boolean"></xsd:element>
+          <xsd:element minOccurs="0" name="estado" type="xsd:string"></xsd:element>
+          <xsd:element minOccurs="0" name="fechaUltimaActualizacion" type="xsd:date"></xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+    <xsd:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://exceptions.assets.suramericana.com" xmlns:bons0="http://exceptions.assets.suramericana.com">
+      <xsd:complexType name="BusinessException">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="applicationCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="criticality" nillable="true" type="bons0:CRITICALITY"/>
+          <xsd:element minOccurs="0" name="errorCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="message" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="nextBusinessException" type="bons0:BusinessException"/>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:simpleType name="CRITICALITY">
+        <xsd:restriction base="xsd:string">
+          <xsd:enumeration value="DEBUG"/>
+          <xsd:enumeration value="INFO"/>
+          <xsd:enumeration value="WARN"/>
+          <xsd:enumeration value="ERROR"/>
+          <xsd:enumeration value="FATAL"/>
+          <xsd:enumeration value="AS"/>
+        </xsd:restriction>
+      </xsd:simpleType>
+      <xsd:complexType name="TechnicalException">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="applicationCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="criticality" nillable="true" type="bons0:CRITICALITY"/>
+          <xsd:element minOccurs="0" name="errorCode" nillable="true" type="xsd:string"/>
+          <xsd:element minOccurs="0" name="message" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="nextTechnicalException" type="bons0:TechnicalException"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="consultarParametrosTipoDescripcion_technicalExceptionMsg">
+    <wsdl:part element="tns:consultarParametrosTipoDescripcionFault2_technicalException" name="technicalException"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarParametrosTipoDescripcionRequestMsg">
+    <wsdl:part element="tns:consultarParametrosTipoDescripcion" name="consultarParametrosTipoDescripcionParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarPersonaResponseMsg">
+    <wsdl:part element="tns:consultarPersonaResponse" name="consultarPersonaResult"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarParametrosTipoDescripcion_businessExceptionMsg">
+    <wsdl:part element="tns:consultarParametrosTipoDescripcionFault1_businessException" name="businessException"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarIndicadorSalarftCliente_technicalExceptionMsg">
+    <wsdl:part element="tns:consultarIndicadorSalarftClienteFault2_technicalException" name="technicalException"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarIndicadorSalarftClienteResponseMsg">
+    <wsdl:part element="tns:consultarIndicadorSalarftClienteResponse" name="consultarIndicadorSalarftClienteResult"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarIndicadorSalarftClienteRequestMsg">
+    <wsdl:part element="tns:consultarIndicadorSalarftCliente" name="consultarIndicadorSalarftClienteParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarPersonaRequestMsg">
+    <wsdl:part element="tns:consultarPersona" name="consultarPersonaParameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarPersona_businessExceptionMsg">
+    <wsdl:part element="tns:consultarPersonaFault1_businessException" name="businessException"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarIndicadorSalarftCliente_businessExceptionMsg">
+    <wsdl:part element="tns:consultarIndicadorSalarftClienteFault1_businessException" name="businessException"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarPersona_technicalExceptionMsg">
+    <wsdl:part element="tns:consultarPersonaFault2_technicalException" name="technicalException"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="consultarParametrosTipoDescripcionResponseMsg">
+    <wsdl:part element="tns:consultarParametrosTipoDescripcionResponse" name="consultarParametrosTipoDescripcionResult"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="ConsultaModeloClientes">
+    <wsdl:operation name="consultarPersona">
+      <wsdl:input message="tns:consultarPersonaRequestMsg" name="consultarPersonaRequest"></wsdl:input>
+      <wsdl:output message="tns:consultarPersonaResponseMsg" name="consultarPersonaResponse"></wsdl:output>
+      <wsdl:fault message="tns:consultarPersona_technicalExceptionMsg" name="technicalException"></wsdl:fault>
+      <wsdl:fault message="tns:consultarPersona_businessExceptionMsg" name="businessException"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="consultarIndicadorSalarftCliente">
+      <wsdl:input message="tns:consultarIndicadorSalarftClienteRequestMsg" name="consultarIndicadorSalarftClienteRequest"></wsdl:input>
+      <wsdl:output message="tns:consultarIndicadorSalarftClienteResponseMsg" name="consultarIndicadorSalarftClienteResponse"></wsdl:output>
+      <wsdl:fault message="tns:consultarIndicadorSalarftCliente_technicalExceptionMsg" name="technicalException"></wsdl:fault>
+      <wsdl:fault message="tns:consultarIndicadorSalarftCliente_businessExceptionMsg" name="businessException"></wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="consultarParametrosTipoDescripcion">
+      <wsdl:input message="tns:consultarParametrosTipoDescripcionRequestMsg" name="consultarParametrosTipoDescripcionRequest"></wsdl:input>
+      <wsdl:output message="tns:consultarParametrosTipoDescripcionResponseMsg" name="consultarParametrosTipoDescripcionResponse"></wsdl:output>
+      <wsdl:fault message="tns:consultarParametrosTipoDescripcion_technicalExceptionMsg" name="technicalException"></wsdl:fault>
+      <wsdl:fault message="tns:consultarParametrosTipoDescripcion_businessExceptionMsg" name="businessException"></wsdl:fault>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://appslab.suranet.com/ServiciosWebSic/services/ConsultaModeloClientesWS</con:endpoint></con:endpoints><con:operation isOneWay="false" action="" name="consultarIndicadorSalarftCliente" bindingOperationName="consultarIndicadorSalarftCliente" type="Request-Response" outputName="consultarIndicadorSalarftClienteResponse" inputName="consultarIndicadorSalarftClienteRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="4b460464-d6fb-490b-91f1-936e174dea52"><con:settings/><con:call id="9aac7222-2d88-4331-8471-7b44c3d62ca5" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://appslab.suranet.com/ServiciosWebSic/services/ConsultaModeloClientesWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://suramericana/crm/mdc/consultas">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <con:consultarIndicadorSalarftCliente>\r
+         <consultarEstadoSarlaft>\r
+            <dni>?</dni>\r
+            <compania>?</compania>\r
+            <!--Optional:-->\r
+            <vigente>?</vigente>\r
+            <!--Optional:-->\r
+            <estado>?</estado>\r
+            <!--Optional:-->\r
+            <fechaUltimaActualizacion>?</fechaUltimaActualizacion>\r
+         </consultarEstadoSarlaft>\r
+      </con:consultarIndicadorSalarftCliente>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://suramericana/crm/mdc/consultas/binding/ConsultaModeloClientes/consultarIndicadorSalarftClienteRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="" name="consultarParametrosTipoDescripcion" bindingOperationName="consultarParametrosTipoDescripcion" type="Request-Response" outputName="consultarParametrosTipoDescripcionResponse" inputName="consultarParametrosTipoDescripcionRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="61a0a162-6678-4a9f-b454-b4af62d48812"><con:settings/><con:call name="ConsultarPaises" id="66af1662-4e6c-4e09-9f5f-5c4b9f7a5102"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appslab.suranet.com/ServiciosWebSic/services/ConsultaModeloClientesWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://suramericana/crm/mdc/consultas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <con:consultarParametrosTipoDescripcion>
+         <parametro>
+            <tipo>PAISES</tipo>
+            <!--Optional:-->
+            <pais></pais>
+            <!--Optional:-->
+            <departamento></departamento>
+            <!--Optional:-->
+            <tipoPersona></tipoPersona>
+            <!--Optional:-->
+            <codigo></codigo>
+            <!--Optional:-->
+            <descripcion></descripcion>
+         </parametro>
+      </con:consultarParametrosTipoDescripcion>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://suramericana/crm/mdc/consultas/binding/ConsultaModeloClientes/consultarParametrosTipoDescripcionRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call name="ConsultarDepartamentoPaises" id="f92efa29-34ba-4108-87aa-8077035982db"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appslab.suranet.com/ServiciosWebSic/services/ConsultaModeloClientesWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://suramericana/crm/mdc/consultas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <con:consultarParametrosTipoDescripcion>
+         <parametro>
+            <tipo>DEPARTAMENTOS</tipo>
+            <!--Optional:-->
+            <pais>410</pais>
+            <!--Optional:-->
+            <departamento></departamento>
+            <!--Optional:-->
+            <tipoPersona></tipoPersona>
+            <!--Optional:-->
+            <codigo></codigo>
+            <!--Optional:-->
+            <descripcion></descripcion>
+         </parametro>
+      </con:consultarParametrosTipoDescripcion>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://suramericana/crm/mdc/consultas/binding/ConsultaModeloClientes/consultarParametrosTipoDescripcionRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call name="ConsultarActividad" id="72a387d2-d6e0-4f54-ad9d-3cf02a58c5fa"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appslab.suranet.com/ServiciosWebSic/services/ConsultaModeloClientesWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://suramericana/crm/mdc/consultas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <con:consultarParametrosTipoDescripcion>
+         <parametro>
+            <tipo>ACTIVIDADESECO</tipo>
+            <!--Optional:-->
+            <pais></pais>
+            <!--Optional:-->
+            <departamento></departamento>
+            <!--Optional:-->
+            <tipoPersona></tipoPersona>
+            <!--Optional:-->
+            <codigo></codigo>
+            <!--Optional:-->
+            <descripcion></descripcion>
+         </parametro>
+      </con:consultarParametrosTipoDescripcion>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://suramericana/crm/mdc/consultas/binding/ConsultaModeloClientes/consultarParametrosTipoDescripcionRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call name="ConsultarOcupacion" id="fe8cb1a1-35c5-4ada-8ec8-407aba0efec4"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appslab.suranet.com/ServiciosWebSic/services/ConsultaModeloClientesWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://suramericana/crm/mdc/consultas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <con:consultarParametrosTipoDescripcion>
+         <parametro>
+            <tipo>OCUPACIONESCLIENTE</tipo>
+            <!--Optional:-->
+            <pais>57</pais>
+            <!--Optional:-->
+            <departamento></departamento>
+            <!--Optional:-->
+            <tipoPersona></tipoPersona>
+            <!--Optional:-->
+            <codigo>A72</codigo>
+            <!--Optional:-->
+            <descripcion></descripcion>
+         </parametro>
+      </con:consultarParametrosTipoDescripcion>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://suramericana/crm/mdc/consultas/binding/ConsultaModeloClientes/consultarParametrosTipoDescripcionRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call name="TipoIdentiPErsonaNatural" id="5799a321-aa82-42eb-8ddb-10446b2a0b88"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appslab.suranet.com/ServiciosWebSic/services/ConsultaModeloClientesWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://suramericana/crm/mdc/consultas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <con:consultarParametrosTipoDescripcion>
+         <parametro>
+            <tipo>TIPOSDOCUMENTOS1_2</tipo>
+            <pais>57</pais>
+            <tipoPersona>N</tipoPersona>
+         </parametro>
+      </con:consultarParametrosTipoDescripcion>
+   </soapenv:Body>
+]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://suramericana/crm/mdc/consultas/binding/ConsultaModeloClientes/consultarParametrosTipoDescripcionRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call name="TipoIdentiPErsonaJuridica" id="02157330-23d4-4342-b268-8d74b32c623b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appslab.suranet.com/ServiciosWebSic/services/ConsultaModeloClientesWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://suramericana/crm/mdc/consultas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <con:consultarParametrosTipoDescripcion>
+         <parametro>
+            <tipo>TIPOSDOCUMENTOS1_2</tipo>
+            <pais>57</pais>
+            <tipoPersona>J</tipoPersona>
+         </parametro>
+      </con:consultarParametrosTipoDescripcion>
+   </soapenv:Body>
+]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://suramericana/crm/mdc/consultas/binding/ConsultaModeloClientes/consultarParametrosTipoDescripcionRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call name="ConsultarClaseCliente" id="29059c30-1cd4-403e-b37d-8eb820af5d02"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appslab.suranet.com/ServiciosWebSic/services/ConsultaModeloClientesWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://suramericana/crm/mdc/consultas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <con:consultarParametrosTipoDescripcion>
+         <parametro>
+            <tipo>CLASESCLIENTE</tipo>
+            <!--Optional:-->
+            <pais>57</pais>
+            <!--Optional:-->
+            <departamento></departamento>
+            <!--Optional:-->
+            <tipoPersona></tipoPersona>
+            <!--Optional:-->
+            <codigo></codigo>
+            <!--Optional:-->
+            <descripcion></descripcion>
+         </parametro>
+      </con:consultarParametrosTipoDescripcion>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://suramericana/crm/mdc/consultas/binding/ConsultaModeloClientes/consultarParametrosTipoDescripcionRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call name="ConsultarIngresosEgresos" id="f38997ff-83e9-498d-917d-441311d00239"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appslab.suranet.com/ServiciosWebSic/services/ConsultaModeloClientesWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://suramericana/crm/mdc/consultas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <con:consultarParametrosTipoDescripcion>
+         <parametro>
+            <tipo>RANGOSINGRESOSNATJUR</tipo>
+            <!--Optional:-->
+            <pais>57</pais>
+            <!--Optional:-->
+            <departamento></departamento>
+            <!--Optional:-->
+            <tipoPersona>1</tipoPersona>
+            <!--Optional:-->
+            <codigo></codigo>
+            <!--Optional:-->
+            <descripcion></descripcion>
+         </parametro>
+      </con:consultarParametrosTipoDescripcion>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://suramericana/crm/mdc/consultas/binding/ConsultaModeloClientes/consultarParametrosTipoDescripcionRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call name="Cargos" id="5c113fa3-d502-42e7-b7fc-2b35f08159b0"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appslab.suranet.com/ServiciosWebSic/services/ConsultaModeloClientesWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://suramericana/crm/mdc/consultas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <con:consultarParametrosTipoDescripcion>
+         <parametro>
+            <tipo>CARGOS</tipo>
+            <!--Optional:-->
+            <pais>57</pais>
+            <!--Optional:-->
+            <departamento></departamento>
+            <!--Optional:-->
+            <tipoPersona></tipoPersona>
+            <!--Optional:-->
+            <codigo>A72</codigo>
+            <!--Optional:-->
+            <descripcion></descripcion>
+         </parametro>
+      </con:consultarParametrosTipoDescripcion>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://suramericana/crm/mdc/consultas/binding/ConsultaModeloClientes/consultarParametrosTipoDescripcionRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call name="Copy of Cargos" id="5f0d7914-1e4c-4a91-a2c2-06243ad366b0"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appslab.suranet.com/ServiciosWebSic/services/ConsultaModeloClientesWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://suramericana/crm/mdc/consultas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <con:consultarParametrosTipoDescripcion>
+         <parametro>
+            <tipo>PRODUCTOCOMERCIAL</tipo>
+            <!--Optional:-->
+            <pais>57</pais>
+            <!--Optional:-->
+            <departamento></departamento>
+            <!--Optional:-->
+            <tipoPersona></tipoPersona>
+            <!--Optional:-->
+            <codigo>A72</codigo>
+            <!--Optional:-->
+            <descripcion></descripcion>
+         </parametro>
+      </con:consultarParametrosTipoDescripcion>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://suramericana/crm/mdc/consultas/binding/ConsultaModeloClientes/consultarParametrosTipoDescripcionRequest"/><con:wsrmConfig version="1.2"/></con:call><con:call id="77704b4b-471f-4122-b851-70928cb0bc74" name="Request 11"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://appslab.suranet.com/ServiciosWebSic/services/ConsultaModeloClientesWS</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:con="http://suramericana/crm/mdc/consultas">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <con:consultarParametrosTipoDescripcion>
+         <parametro>
+            <tipo>TIPOSDOCUMENTOS1_2</tipo>
+            <pais>57</pais>
+            <tipoPersona>N</tipoPersona>
+            <departamento>33</departamento>
+            <codigo>1</codigo>
+            <descripcion>1</descripcion>
+         </parametro>
+      </con:consultarParametrosTipoDescripcion>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://suramericana/crm/mdc/consultas/binding/ConsultaModeloClientes/consultarParametrosTipoDescripcionRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation isOneWay="false" action="" name="consultarPersona" bindingOperationName="consultarPersona" type="Request-Response" outputName="consultarPersonaResponse" inputName="consultarPersonaRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional" id="28586b6e-ec89-414a-bf22-45c3f1ce3314"><con:settings/></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

@@ -8,7 +8,7 @@ Este nuevo servicio web de healthCheck permite evaluar las conexiones principale
 
 Con la librería de spring actuator `spring-boot-starter-actuator` se logra este objetivo, se incluye la librería en el `build.gradle`
 
-![build.gradle con actuator](./img/image-20240207-200559.png)
+![build.gradle con actuator](./attachments/image-20240207-200559.png)
 
 La validación con la base de datos se hace automáticamente con el indicador por defecto `DataSourceHealthIndicator` que trae la librería, y obtiene el datasource utilizando la información de conexión a la base de datos del archivo `application.yml`.
 
@@ -22,18 +22,18 @@ implementation 'com.azure:azure-messaging-servicebus:7.14.7'
 implementation 'org.reactivecommons:async-service-bus-starter:1.1.39-BETA'
 ```
 
-![ServicebusHealthIndicator](./img/image-20240311-234635.png)
+![ServicebusHealthIndicator](./attachments/image-20240311-234635.png)
 
 Se realiza la siguiente configuración en el **application.yaml**
 
-![Configuración application.yaml](./img/image-20240311-234659.png)
+![Configuración application.yaml](./attachments/image-20240311-234659.png)
 
 Se realiza la siguiente configuración en el archivo **deployment.yml** en el proyecto de configuración para cada ambiente.
 
-![Configuración deployment.yml](./img/image-20240311-234740.png)
+![Configuración deployment.yml](./attachments/image-20240311-234740.png)
 
 Debido al que el microservicio tiene seguridad seus, se presenta una incompatibilidad entre la librería ssosura y actuator para lo cual se debe incluir la siguiente línea en el archivo de splunk dentro de la sección de loggers:
 
 `<logger name="co.com.sura.sso.reactive.listeners" level="ERROR" />`
 
-![Configuración splunk loggers](./img/image-20240311-234809.png)
+![Configuración splunk loggers](./attachments/image-20240311-234809.png)

@@ -42,17 +42,47 @@ docs/
 │   └── ConfiguracionHealthCheck.md
 ├── Sarlaft40/                        # Documentación con jerarquía Confluence Sarlaft 4.0
 │   └── DocumentacionTecnica/
-│       └── MicroservicioSarlaftBatch/  # Microservicio SarlaftBatch (ruta Confluence)
-│           ├── Entidades/              # Entidades genéricas y proceso actualización
-│           │   └── img/
-│           ├── img/                    # Diagramas de procesos y capturas
-│           ├── attachments/            # Archivos drawio
-│           ├── EstructuraProyecto.md
-│           ├── ConfiguracionAmbiente.md
-│           ├── EstructuraProcesos.md
-│           ├── ServiciosWeb.md
-│           ├── ProcesoActualizacion.md
-│           └── ConfiguracionHealthCheck.md
+│       ├── MicroservicioSarlaftAPI/    # Microservicio SarlaftAPI (ruta Confluence)
+│       │   ├── EstructuraProyecto/     # Estructura hexagonal y configuración BD R2DBC
+│       │   ├── ProcesoEvaluacion/      # Evaluación, P8, requisitos, herencia SOAT
+│       │   ├── ProcesosCargaMasiva/    # Carga masiva figuras y resultados Excel
+│       │   ├── ServiciosWeb/           # 26 endpoints REST documentados
+│       │   │   ├── ConsumoNuevosEndpoints/
+│       │   │   ├── CreacionTokenJWT/
+│       │   │   │   └── ParametrizacionTiempoVidaTokenJWT/
+│       │   │   ├── ServicioTerceros/
+│       │   │   └── ...                 # ~20 servicios con requests/responses JSON
+│       │   └── img/                    # Diagramas dominio, clases y BD
+│       ├── MicroservicioSarlaftBatch/  # Microservicio SarlaftBatch (ruta Confluence)
+│       │   ├── Entidades/              # Entidades genéricas y proceso actualización
+│       │   │   └── img/
+│       │   ├── img/                    # Diagramas de procesos y capturas
+│       │   ├── attachments/            # Archivos drawio
+│       │   ├── EstructuraProyecto.md
+│       │   ├── ConfiguracionAmbiente.md
+│       │   ├── EstructuraProcesos.md
+│       │   ├── ServiciosWeb.md
+│       │   ├── ProcesoActualizacion.md
+│       │   └── ConfiguracionHealthCheck.md
+│       ├── MicroservicioWebhook/       # Microservicio Webhook (ruta Confluence)
+│       └── Integraciones/             # Integraciones con microservicios Azure
+│           ├── MicroservicioAsesores/          # Consultas Service Bus red comercial
+│           ├── MicroservicioClientesPEP/       # Validación cliente PEPS
+│           ├── MicroservicioClienteRRCC/       # Consulta riesgo consultable RRCC
+│           ├── MicroservicioAzureActualizacionClienteSura/  # Actualización datos cliente
+│           ├── MicroservicioAzureClientes/     # Integraciones clientes Sura (MDC)
+│           ├── MicroservicioAzureClientesPN/   # Clientes personas naturales
+│           ├── MicroservicioCatalogos/         # Catálogos por mensajería
+│           ├── MicroservicioRequisitos/        # Creación/actualización requisitos
+│           ├── MicroservicioProcesosMasivos/   # Evaluación masiva Sarlaft
+│           ├── MicroservicioP8/                # Integración FileNet P8
+│           ├── MicroservicioAzureWebhook/      # Webhook notificación procesos
+│           ├── MicroservicioCCM/               # Notificaciones CCM (11 funciones)
+│           ├── MicroservicioInformaColombia/    # InformaColombia PJ
+│           ├── MicroservicioIdentity/          # Validación identidad registraduría
+│           └── FrontSarlaft/                   # Capa web: WebComponent y secciones
+│               └── WebComponent/
+│                   └── Secciones/              # Pantallas: Tomador, Apoderado, etc.
 ├── AtributosCalidadDesarrollo.md
 ├── ConfiguracionInfraestructura.md
 ├── DocumentacionTecnicaSarlaft.md

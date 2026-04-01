@@ -19,11 +19,11 @@ Se agrega diagrama de clases basado en los microservicios de webhook llamadas `s
 
 `sarlaft_callback-ms`.
 
-![webhook.Callback-20240507-155301.png](./img/webhook.Callback-20240507-155301.png)
+![webhook.Callback-20240507-155301.png](./attachments/webhook.Callback-20240507-155301.png)
 
 `sarlaft-function_webhook-mi`.
 
-![WEBHOOK_FUNCTIONS-20240507-182617.png](./img/WEBHOOK_FUNCTIONS-20240507-182617.png)
+![WEBHOOK_FUNCTIONS-20240507-182617.png](./attachments/WEBHOOK_FUNCTIONS-20240507-182617.png)
 
 ## Páginas hijas
 

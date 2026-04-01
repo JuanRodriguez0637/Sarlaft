@@ -12,7 +12,7 @@ Basado en el diseño: [Async Request-Reply pattern](https://docs.microsoft.com/e
 
 Por medio de un identificador permite iniciar la ejecución de un proceso.
 
-![Process Init](./img/WS_ProcesoBatch-WS_Process_Init-20220428-205326.jpg)
+![Process Init](./attachments/WS_ProcesoBatch-WS_Process_Init-20220428-205326.jpg)
 
 Request Entrada:
 
@@ -42,11 +42,11 @@ Request Entrada:
 
 Ejemplo Response: Body Empty
 
-![Process Status - Response vacío](./img/image-20220512-155050.png)
+![Process Status - Response vacío](./attachments/image-20220512-155050.png)
 
 Consulta el estado del proceso en ejecución
 
-![Process Status](./img/WS_ProcesoBatch-WS_Process_Status-20220428-205436.jpg)
+![Process Status](./attachments/WS_ProcesoBatch-WS_Process_Status-20220428-205436.jpg)
 
 ## 3. `/process/result`
 
@@ -76,4 +76,4 @@ Datos Salida:
 
 Permite obtener el resultado del proceso
 
-![Process Result](./img/WS_ProcesoBatch-WS_Process_Result-20220426-205124.jpg)
+![Process Result](./attachments/WS_ProcesoBatch-WS_Process_Result-20220426-205124.jpg)

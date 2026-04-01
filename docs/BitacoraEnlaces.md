@@ -34,6 +34,11 @@ Las siguientes páginas de Confluence están referenciadas desde la documentaci�
 |---|----------------------|--------------------|-----------|--------|
 | 1 | [7. Webhook (Assessment)](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/3222994946/7.+Webhook+Assessment) | `MicroservicioWebhook/index.md` L15, `MicroservicioWebhook/WebhookSarlaft.md` L17 | Media | Pendiente |
 | 2 | [Documentación Técnica](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1746830371) (página padre) | `Sarlaft40/DocumentacionTecnica/MicroservicioSarlaftBatch/index.md` L5 | Baja | Pendiente — sección índice padre |
+| 3 | [Respuestas de error (propuesta aun no implementada)](https://segurosti.atlassian.net/wiki/spaces/EPA/pages?title=Respuestas%20de%20error%20%28propuesta%20aun%20no%20implementada%29) | `Integraciones/FrontSarlaft/WebComponent/CambiosIntegracionSOAT.md` L19 | Baja | Pendiente — página externa a Integraciones |
+| 4 | [Creación token JWT](https://segurosti.atlassian.net/wiki/spaces/EPA/pages?title=Creaci%C3%B3n%20token%20JWT) | `Integraciones/FrontSarlaft/WebComponent/Integracion.md` L24 | Media | Pendiente — página en MicroservicioSarlaftAPI |
+| 5 | [Servicio Web Consultar Oficinas Asesor](https://segurosti.atlassian.net/wiki/spaces/EPA/pages?title=Servicio%20Web%20Consultar%20Oficinas%20Asesor.) | `Integraciones/MicroservicioAsesores/ComunicacionServicioOficinasAsesor.md` L8 | Baja | Pendiente — búsqueda por título |
+| 6 | [Servicio Consulta de Clientes](https://segurosti.atlassian.net/wiki/spaces/EPA/pages?title=Servicio%20Consulta%20de%20Clientes) | `Integraciones/MicroservicioAzureClientes/IntegracionConsultaClienteSalesforce.md` L13 | Baja | Pendiente — búsqueda por título |
+| 7 | [Manual de Integración asíncrona con CCM](https://segurosti.atlassian.net/wiki/spaces/EPA/pages?title=Manual%20de%20Integraci%C3%B3n%20as%C3%ADncrona%20con%20CCM) | `Integraciones/MicroservicioCCM/index.md` L9 | Media | Pendiente — página de espacio externo |
 
 ---
 
@@ -53,9 +58,10 @@ No existe un archivo `docs/index.md` a nivel raíz que sirva como punto de entra
 
 | Fecha | Archivo corregido | Descripción del cambio |
 |-------|-------------------|------------------------|
-| 2026-04-01 | `MicroservicioWebhook/index.md` | Enlace "7. Webhook (Assessment)" cambiado de URL Confluence a `./DisenoArquitectura.md` |
-| 2026-04-01 | `MicroservicioWebhook/WebhookSarlaft.md` | Enlace "7. Webhook (Assessment)" cambiado de URL Confluence a `./DisenoArquitectura.md` |
 | 2026-04-01 | `MicroservicioSarlaftAPI/ConsumoNuevosEndpoints.md` | L4: Enlace `../index.md` corregido a URL Confluence padre `Servicios+Web+-+SarlaftAPI` |
+| 2026-04-01 | `Sarlaft40/DocumentacionTecnica/MicroservicioSarlaftAPI/` | **Re-documentación completa:** 56 páginas movidas desde `MicroservicioSarlaftAPI/` a la ruta correcta según jerarquía Confluence. Cabeceras actualizadas con versión, autor y fecha. 13 enlaces rotos corregidos por cambio de profundidad de carpetas. 22 adjuntos descargados. |
+| 2026-04-01 | `Sarlaft40/DocumentacionTecnica/Integraciones/` | **Documentación nueva:** 100 páginas extraídas (15 microservicios + Front Sarlaft). 149 adjuntos descargados (imágenes, PDFs, DOCX, XLSX, JSON). 0 enlaces rotos tras correcciones de nombres con paréntesis y hash. |
+| 2026-04-01 | `Sarlaft40/DocumentacionTecnica/MicroservicioWebhook/` | **Migración adjuntos:** 18 imágenes movidas de `img/` a `attachments/`. Referencias actualizadas en 7 archivos `.md`. Carpeta `img/` eliminada. |
 
 ---
 

@@ -86,12 +86,7 @@ Antes de comenzar la extracción, **verificar si ya existe un folder local** con
   - Si los adjuntos del comentario no están en el comentario mismo, búscalos en la página padre
 - Descarga usando curl con autenticación Basic Auth (email + token del `.env`):
   - URL base: `https://segurosti.atlassian.net/wiki` + `_links.download`
-- Guarda según tipo:
-  - `docs/docx/` → archivos Word
-  - `docs/pdf/` → archivos PDF
-  - `docs/xlsx/` → archivos Excel
-  - `<Subseccion>/img/` → imágenes (PNG, JPG, etc.)
-  - `<Subseccion>/attachments/` → archivos JSON y otros
+- Guarda todo en `<Subseccion>/attachments/` → imágenes (PNG, JPG, etc.), DOCX, PDF, XLSX, JSON y cualquier otro adjunto
 - Crea las carpetas si no existen
 - Nombra los archivos descriptivamente (ej: `ProcesoMasivoRequest.json` en vez de `Request.json`)
 - **NO descargar adjuntos huérfanos:** solo descargar imágenes y archivos que estén referenciados en el cuerpo de la página (`body.storage`) o en comentarios. Si un adjunto existe en Confluence pero no aparece en ningún macro `ac:image`, `ri:attachment` o `view-file` del contenido, ignorarlo.
@@ -111,9 +106,8 @@ docs/
             ├── <Subseccion>/             — carpeta por cada sub-sección con hijas
             │   ├── index.md
             │   ├── <Pagina>.md
-            │   └── img/
-            ├── img/                      — imágenes de la sección
-            └── attachments/              — PDF, XLSX, JSON y otros adjuntos
+            │   └── attachments/           — todos los adjuntos (imágenes, DOCX, PDF, XLSX, JSON, etc.)
+            └── attachments/              — todos los adjuntos de la sección raíz
 ```
 
 La carpeta raíz se determina convirtiendo la ruta Confluence enviada por el usuario según la convención de carpetas descrita arriba.
@@ -133,7 +127,7 @@ La carpeta raíz se determina convirtiendo la ruta Confluence enviada por el usu
   - Bloques de código → fenced code blocks con lenguaje correcto
   - Macros `info`/`warning`/`note` → blockquotes
   - Macros `view-file` → links a archivos descargados en `./attachments/`
-  - Macros `ac:image` → `![alt](./img/<filename>)`
+  - Macros `ac:image` → `![alt](./attachments/<filename>)`
   - Links internos de Confluence → referencias relativas entre los .md creados
   - Nombres técnicos (tablas BD, campos, endpoints, perfiles) → backticks: `` `nombre` ``
 
@@ -272,6 +266,18 @@ Después de generar toda la documentación, **actualizar el archivo `README.md`*
 4. Si ya existía, verificar que la descripción esté vigente
 5. No eliminar secciones existentes del README — solo agregar o actualizar
 6. Reportar los cambios realizados en el `README.md`
+---
+
+## Lecciones aprendidas
+
+| # | Lección | Detalle |
+|---|---------|--------|
+| 1 | **Adjuntos siempre locales a la subsección** | Nunca usar carpetas centralizadas (`docs/docx/`, `docs/pdf/`, `docs/xlsx/`) ni separar imágenes en `img/`. **Todo adjunto** (imágenes, DOCX, PDF, XLSX, JSON, etc.) debe vivir en `<Subseccion>/attachments/` — una sola carpeta por subsección. Los enlaces relativos quedan cortos (`./attachments/archivo.xlsx`, `./attachments/imagen.png`) y no dependen de la profundidad del árbol. Las rutas largas con `../` son frágiles: se rompen al reorganizar carpetas. |
+| 2 | **Encoding UTF-8 explícito** | Al generar `.md` con scripts (Python/PowerShell), siempre forzar `encoding='utf-8'`. Si el contenido viene de la API de Confluence, puede llegar como Latin-1 re-codificado; aplicar `fix_encoding()` (Latin-1 → UTF-8) antes de escribir. |
+| 3 | **Eliminar cabeceras legacy antes de regenerar** | Al re-documentar páginas que ya tienen `.md` previo, primero eliminar las cabeceras antiguas (`**Fuente Confluence:**`, `**Sección:**`, `**Página padre:**`) para evitar duplicados. |
+| 4 | **Validar enlaces después de cada generación** | Ejecutar siempre el script de validación de enlaces (Paso 9) inmediatamente después de generar los `.md`. No dejarlo para el final — los enlaces rotos se acumulan y son más difíciles de corregir en lote. |
+| 5 | **URL-decode en validación de enlaces** | El validador de enlaces debe aplicar `Uri.UnescapeDataString()` a las rutas antes de verificar con `Test-Path`, porque los `.md` pueden contener `%20`, `%25`, etc. |
+
 ---
 
 > **Nota:** Este prompt es reutilizable para cualquier subsección del Microservicio SarlaftAPI (Servicios Web, Procesos Carga Masiva, Estructura Proyecto, etc.) — solo cambia `<NOMBRE_SECCION>` por el título de la página raíz en Confluence.

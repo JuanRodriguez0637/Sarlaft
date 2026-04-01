@@ -6,11 +6,11 @@
 
 El microservicio de Recomercial está construido a partir del generador de legos de Sura en su versión 0.0.21, se basa en arquitectura hexagonal, se aplica programación reactiva e implementación de seguridad a través de SEUS, generando los siguientes componentes (Figura 1):
 
-![Componentes del microservicio](./img/image-20220104-174732.png)
+![Componentes del microservicio](./attachments/image-20220104-174732.png)
 
 El proyecto está dividido en los siguientes subproyectos (Figura 2):
 
-![Subproyectos del microservicio](./img/image-20220104-174757.png)
+![Subproyectos del microservicio](./attachments/image-20220104-174757.png)
 
 1. **applications-app-service**: contiene configuraciones generales del aplicativo, importa los módulos de las otras capas que siguen la Clean Architecture (Dominio e Infraestructura). Es la encargada de la interacción con el framework utilizado, sus complementos y la configuración de la ejecución del microservicio.
 

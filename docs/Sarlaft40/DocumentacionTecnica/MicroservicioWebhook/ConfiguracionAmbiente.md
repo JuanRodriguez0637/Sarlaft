@@ -1,4 +1,4 @@
-﻿# Configuración Ambiente - Microservicio Webhook
+# Configuración Ambiente - Microservicio Webhook
 
 > **Fuente Confluence:** [Configuración Ambiente - Microservicio Webhook](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2314174657/Configuraci%C3%B3n+Ambiente+-+Microservicio+Webhook)
 > **Última modificación:** 2025-10-30 — Diana Muñoz · versión 6
@@ -31,10 +31,10 @@
 
 Para la ejecución del proyecto desde el IntelliJ IDE se proveen tres archivos de configuración de perfilamiento para que se ejecute la aplicación con configuraciones de ambiente diferentes.
 
-![image-20210810-211255.png](./img/image-20210810-211255.png)
+![image-20210810-211255.png](./attachments/image-20210810-211255.png)
 
 dev, lab y local los cuales van configurados segun las dependencias de su ambiente y los cuales defines al momento de la ejecución de la aplicación desde tu IDE
 
-![image-20210810-211311.png](./img/image-20210810-211311.png)
+![image-20210810-211311.png](./attachments/image-20210810-211311.png)
 
 Solo basta definir la variable de entorno `spring.profiles.active=local`

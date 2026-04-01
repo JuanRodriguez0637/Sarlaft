@@ -6,4 +6,4 @@
 
 Este diagrama muestra la interacción de componentes en Sarlaft Webhook
 
-![webhook-sarlaft-ms.png](./img/webhook-sarlaft-ms.png)
+![webhook-sarlaft-ms.png](./attachments/webhook-sarlaft-ms.png)

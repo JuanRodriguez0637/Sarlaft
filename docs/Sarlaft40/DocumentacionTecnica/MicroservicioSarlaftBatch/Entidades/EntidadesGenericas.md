@@ -6,4 +6,4 @@
 
 Entidades utilizadas de forma genérica para cualquier proceso
 
-![Entidades genéricas](./img/WS_ProcesoBatch-Entidades-20220428-205736.jpg)
+![Entidades genéricas](./attachments/WS_ProcesoBatch-Entidades-20220428-205736.jpg)

@@ -1,4 +1,4 @@
-﻿# Estructura Proyecto - Microservicio Webhook
+# Estructura Proyecto - Microservicio Webhook
 
 > **Fuente Confluence:** [Estructura Proyecto - Microservicio Webhook](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/2312274273/Estructura+Proyecto+-+Microservicio+Webhook)
 > **Última modificación:** 2022-01-04 — Diana Muñoz · versión 4
@@ -6,13 +6,13 @@
 
 El microservicio de Webhook está construida a partir del generador de legos de Sura en su versión 0.0.19, se basa en arquitectura hexagonal, se aplica programación reactiva e implementación de seguridad a través de SEUS, generando los siguientes componentes (Figura 1):
 
-![Figura 1. Estructura del proyecto.](./img/image-20210809-200418.png)
+![Figura 1. Estructura del proyecto.](./attachments/image-20210809-200418.png)
 
 *Figura 1. Estructura del proyecto.*
 
 El proyecto está dividido en los siguientes subproyectos (Figura 2):
 
-![Figura 2. Subproyectos.](./img/image-20210809-200516.png)
+![Figura 2. Subproyectos.](./attachments/image-20210809-200516.png)
 
 *Figura 2. Subproyectos.*
 
