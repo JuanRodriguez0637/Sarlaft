@@ -16,3 +16,11 @@
 
 # Método Ceiba - Auto-injected agent skills
 .github/skills/
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+.vs/Sarlaft/v17/.wsuo
+.vs/Sarlaft/v17/DocumentLayout.json
+.vs/Sarlaft/v17/workspaceFileList.bin
+.vsidx
+.vs/Sarlaft/*.vsidx
+.vs/Sarlaft/FileContentIndex/*.vsidx
