@@ -6,106 +6,142 @@ Repositorio de documentación técnica, de negocio y configuraciones del proyect
 
 ```
 docs/
-├── MicroservicioSarlaftAPI/          # Documentación del microservicio principal
-│   ├── EstructuraProyecto/           # Estructura de subproyectos y configuración BD
-│   ├── ProcesoEvaluacion/            # Flujos de evaluación, P8, requisitos, estados
-│   ├── ProcesosCargaMasiva/          # Carga masiva de figuras y resultados Excel
-│   ├── ServiciosWeb/                 # Todos los endpoints REST documentados
-│   │   ├── ConsumoNuevosEndpoints/
-│   │   ├── CreacionTokenJWT/
-│   │   ├── ServicioTerceros/
-│   │   └── ...                       # ~20 servicios con requests/responses JSON
-│   └── img/                          # Diagramas de dominio, clases y BD
-├── MicroservicioWebhook/             # Documentación del microservicio Webhook
-│   ├── Comunicaciones/               # Operaciones intermedias sobre evaluaciones
-│   │   ├── LevantarControlPEPS.md
-│   │   ├── EvaluarEstado.md
-│   │   └── EvaluacionMasiva.md
-│   ├── img/                          # Diagramas de clases y capturas
-│   ├── attachments/                  # PDFs, XLSX (historias, diccionario)
-│   ├── DisenoArquitectura.md
-│   ├── EstructuraProyecto.md
-│   ├── ConfiguracionAmbiente.md
-│   ├── WebhookLogErroresSplunk.md
-│   ├── ConfiguracionHealthCheck.md
-│   └── WebhookSarlaft.md
-├── MicroservicioSarlaftBatch/        # Documentación del microservicio SarlaftBatch (legacy)
-│   ├── Entidades/                    # Entidades genéricas y del proceso de actualización
-│   │   └── img/
-│   ├── img/                          # Diagramas de procesos y capturas
-│   ├── attachments/                  # Archivos drawio
-│   ├── EstructuraProyecto.md
-│   ├── ConfiguracionAmbiente.md
-│   ├── EstructuraProcesos.md
-│   ├── ServiciosWeb.md
-│   ├── ProcesoActualizacion.md
-│   └── ConfiguracionHealthCheck.md
-├── Sarlaft40/                        # Documentación con jerarquía Confluence Sarlaft 4.0
-│   └── DocumentacionTecnica/
-│       ├── MicroservicioSarlaftAPI/    # Microservicio SarlaftAPI (ruta Confluence)
-│       │   ├── EstructuraProyecto/     # Estructura hexagonal y configuración BD R2DBC
-│       │   ├── ProcesoEvaluacion/      # Evaluación, P8, requisitos, herencia SOAT
-│       │   ├── ProcesosCargaMasiva/    # Carga masiva figuras y resultados Excel
-│       │   ├── ServiciosWeb/           # 26 endpoints REST documentados
-│       │   │   ├── ConsumoNuevosEndpoints/
-│       │   │   ├── CreacionTokenJWT/
-│       │   │   │   └── ParametrizacionTiempoVidaTokenJWT/
-│       │   │   ├── ServicioTerceros/
-│       │   │   └── ...                 # ~20 servicios con requests/responses JSON
-│       │   └── img/                    # Diagramas dominio, clases y BD
-│       ├── MicroservicioSarlaftBatch/  # Microservicio SarlaftBatch (ruta Confluence)
-│       │   ├── Entidades/              # Entidades genéricas y proceso actualización
-│       │   │   └── img/
-│       │   ├── img/                    # Diagramas de procesos y capturas
-│       │   ├── attachments/            # Archivos drawio
-│       │   ├── EstructuraProyecto.md
-│       │   ├── ConfiguracionAmbiente.md
-│       │   ├── EstructuraProcesos.md
-│       │   ├── ServiciosWeb.md
-│       │   ├── ProcesoActualizacion.md
-│       │   └── ConfiguracionHealthCheck.md
-│       ├── MicroservicioWebhook/       # Microservicio Webhook (ruta Confluence)
-│       └── Integraciones/             # Integraciones con microservicios Azure
-│           ├── MicroservicioAsesores/          # Consultas Service Bus red comercial
-│           ├── MicroservicioClientesPEP/       # Validación cliente PEPS
-│           ├── MicroservicioClienteRRCC/       # Consulta riesgo consultable RRCC
-│           ├── MicroservicioAzureActualizacionClienteSura/  # Actualización datos cliente
-│           ├── MicroservicioAzureClientes/     # Integraciones clientes Sura (MDC)
-│           ├── MicroservicioAzureClientesPN/   # Clientes personas naturales
-│           ├── MicroservicioCatalogos/         # Catálogos por mensajería
-│           ├── MicroservicioRequisitos/        # Creación/actualización requisitos
-│           ├── MicroservicioProcesosMasivos/   # Evaluación masiva Sarlaft
-│           ├── MicroservicioP8/                # Integración FileNet P8
-│           ├── MicroservicioAzureWebhook/      # Webhook notificación procesos
-│           ├── MicroservicioCCM/               # Notificaciones CCM (11 funciones)
-│           ├── MicroservicioInformaColombia/    # InformaColombia PJ
-│           ├── MicroservicioIdentity/          # Validación identidad registraduría
-│           └── FrontSarlaft/                   # Capa web: WebComponent y secciones
-│               └── WebComponent/
-│                   └── Secciones/              # Pantallas: Tomador, Apoderado, etc.
-├── AtributosCalidadDesarrollo.md
-├── ConfiguracionInfraestructura.md
-├── DocumentacionTecnicaSarlaft.md
-├── EscenarioValidacion_WeSuraSuraEnLinea.md
-├── EvaluacionReclamaciones.md
-├── GestionConfiguracion.md
-├── InterfazConsultaEstadoSarlaft.md
-├── InterfazProcesosMasivos.md
-├── PruebasDesempenoJMeter.md
-├── PruebasIntegracionSoapUI.md
-├── PruebasRegresionSOAT.md
-├── Regresion_CotizadorAutos.md
-├── Regresion_EvidenciasEscenarios.md
-├── Regresion_SEL_SOAT.md
-├── Regresion_SIS_Suramasivos.md
-├── docx/                             # Documentos Word exportados
-├── pdf/                              # Documentos PDF exportados
-└── xlsx/                             # Archivos Excel (carga masiva, resultados)
+├── .markdownlint.json                # Configuración de linting Markdown
+├── BitacoraEnlaces.md                # Bitácora de enlaces rotos y resoluciones
+├── PromptDocumentarConfluence.md     # Prompt de referencia para documentación
+└── Sarlaft40/                        # Documentación con jerarquía Confluence Sarlaft 4.0
+    ├── index.md                       # Índice raíz Sarlaft 4.0
+    ├── docx/                          # Documentos Word exportados
+    ├── xlsx/                          # Archivos Excel (carga masiva, resultados)
+    ├── PreguntasFrecuentes/           # Preguntas frecuentes sobre integración con Sarlaft
+    │   └── index.md                   # FAQ: campos mínimos, webhooks, PEPs, masivos, etc.
+    ├── DocumentacionDeIncidentes/     # Documentación de incidentes Sarlaft 4.0
+    │   ├── index.md                   # Índice con tipos de incidentes y recursos
+    │   ├── SolicitudDeRequestAndRespose.md     # Consulta request/response en Splunk
+    │   ├── SolucionarINCAsignadosEnBMCHelix.md # Gestión de INC en BMC Helix
+    │   ├── LimpiarBaseDeDatosEnLaboratorio.md  # Limpieza BD en laboratorio
+    │   ├── ProblemasConElLinkDeValidacionDeIdentidad.md # Diagnóstico link validación
+    │   ├── ErrorEnElAplicativoDeBancaNegocioEnEstadoPendiente.md # Error Banca PENDIENTE
+    │   └── attachments/               # Imágenes de evidencias de incidentes
+    └── DocumentacionTecnica/          # Documentación técnica completa
+        ├── index.md                   # Índice de documentación técnica
+        ├── PropiedadesPrefetchCountMaxConcurrency.md  # PrefetchCount y MaxConcurrency
+        ├── MicroservicioSarlaftAPI/   # Microservicio principal SarlaftAPI
+        │   ├── index.md               # Índice del microservicio
+        │   ├── ConfiguracionAmbiente.md
+        │   ├── ConfiguracionGarbageCollector.md
+        │   ├── ConfiguracionHealthCheck.md
+        │   ├── EvitarDuplicidadEvidencias.md
+        │   ├── GenerarUrlValidacionIdentidad.md
+        │   ├── ImplementacionCabecerasSeguridad.md
+        │   ├── LogErroresSplunk.md
+        │   ├── ModeloDominioClasesBD.md
+        │   ├── ParametrizacionTimeoutRegistraduria.md
+        │   ├── EstructuraProyecto/     # Estructura hexagonal y configuración BD R2DBC
+        │   ├── ProcesoEvaluacion/      # Evaluación, P8, requisitos, herencia SOAT
+        │   ├── ProcesosCargaMasiva/    # Carga masiva figuras y resultados Excel
+        │   └── ServiciosWeb/           # ~30 endpoints REST documentados
+        │       ├── ConsumoNuevosEndpoints/
+        │       ├── CreacionTokenJWT/
+        │       │   └── ParametrizacionTiempoVidaTokenJWT/
+        │       ├── ServicioTerceros/
+        │       │   ├── ComunicacionBackendMotorSarlaftapi/
+        │       │   └── GuardarFormularioTerceros/
+        │       └── ...                 # ~25 servicios con requests/responses JSON
+        ├── MicroservicioSarlaftBatch/ # Microservicio SarlaftBatch (procesos batch)
+        │   ├── Entidades/              # Entidades genéricas y proceso actualización
+        │   └── attachments/            # Archivos drawio
+        ├── MicroservicioWebhook/      # Microservicio Webhook
+        │   ├── Comunicaciones/         # Operaciones intermedias sobre evaluaciones
+        │   └── attachments/
+        ├── MicroservicioBackweb/      # Microservicio Backweb (evaluaciones, entidades, GAFI)
+        │   ├── ServiciosWeb/           # 16 servicios REST documentados
+        │   └── attachments/
+        ├── MicroservicioPEPS/         # Microservicio PEPS (consulta y marcación PEP)
+        │   ├── DisenoArquitecturaPEPS/ # Diseño, arquitectura e interacción con Sarlaft
+        │   ├── ServiciosWeb_PepsMS/    # Servicios web: marcar y consultar clientes PEP
+        │   └── attachments/
+        ├── MicroservicioSarlaftClientesMS/ # SarlaftClientes (consulta fuentes externas)
+        │   ├── Comunicaciones/         # Integraciones Service Bus
+        │   └── attachments/
+        ├── ConfiguracionPlataformaBase/ # Configuración plataforma base AKS (Dynatrace, RabbitMQ)
+        │   └── attachments/
+        ├── DisenoArquitectura/        # Diseño y arquitectura del sistema Sarlaft 4.0
+        │   ├── DocumentoDisenoTecnico/ # Documento diseño técnico y respuestas de error
+        │   ├── DisenoFuncionalidades/  # 20 diseños funcionales del assessment Sarlaft
+        │   │   └── SimplificarArquitecturaDeComunicacionEnProcesoWebhookPropuestaDeCambio/
+        │   └── attachments/
+        ├── Integraciones/             # Integraciones con microservicios Azure
+        │   ├── MicroservicioAsesores/          # Consultas Service Bus red comercial
+        │   ├── MicroservicioClientesPEP/       # Validación cliente PEPS
+        │   ├── MicroservicioClienteRRCC/       # Consulta riesgo consultable RRCC
+        │   ├── MicroservicioAzureActualizacionClienteSura/  # Actualización datos cliente
+        │   ├── MicroservicioAzureClientes/     # Integraciones clientes Sura (MDC)
+        │   ├── MicroservicioAzureClientesPN/   # Clientes personas naturales
+        │   ├── MicroservicioCatalogos/         # Catálogos por mensajería
+        │   ├── MicroservicioRequisitos/        # Creación/actualización requisitos
+        │   ├── MicroservicioProcesosMasivos/   # Evaluación masiva Sarlaft
+        │   ├── MicroservicioP8/                # Integración FileNet P8
+        │   ├── MicroservicioAzureWebhook/      # Webhook notificación procesos
+        │   ├── MicroservicioCCM/               # Notificaciones CCM (11 funciones)
+        │   ├── MicroservicioInformaColombia/    # InformaColombia PJ
+        │   ├── MicroservicioIdentity/          # Validación identidad registraduría
+        │   └── FrontSarlaft/                   # Capa web: WebComponent y secciones
+        │       └── WebComponent/
+        │           └── Secciones/              # Pantallas: Tomador, Apoderado, etc.
+        ├── InterfacesDeServicio/       # Interfaces de Servicio Sarlaft 4.0
+        │   ├── DescripcionInterfacesPrincipales/ # Especificación técnica completa v1.8
+        │   ├── InterfazProcesosMasivos/  # Validación masiva hasta 100 pólizas (RabbitMQ)
+        │   ├── EscenarioValidacion/      # Escenario WeSura, SuraEnLinea, Salud
+        │   ├── InterfazConsultaEstadoSarlaft/  # Consulta estado para cotizadores
+        │   ├── EvaluacionReclamaciones/  # Assessment para operación de reclamaciones
+        │   └── attachments/              # Colecciones Postman
+        ├── GestionConfiguracion/      # Gestión de la Configuración (lineamientos, cobertura)
+        │   └── ConfiguracionInfraestructura/  # Documentación infraestructura Azure
+        ├── PruebasOrdenAdministrativaSoat/ # Pruebas Orden Administrativa SOAT
+        │   └── attachments/
+        ├── MotorDeEvaluacion/         # Motor de Evaluación: reglas de negocio, riesgo
+        │   ├── DisenoMotorEvaluacion/
+        │   ├── ConfiguracionAmbienteMotorEvaluacion/
+        │   ├── EstructuraProyectoMotorEvaluacion/
+        │   ├── Riesgo/                   # Clasificación de riesgo y reglas de inclusión
+        │   ├── TipoDeFormularioYRequisitos/
+        │   ├── ValidacionesPorFigura/    # Validaciones por figura y excepción Affinity
+        │   ├── Actualizacion/            # Proceso de actualización
+        │   ├── ApiTerceros/              # API terceros: formularios y validaciones
+        │   ├── ServiciosWebSarlaftEngine/ # Evaluación, healthcheck, validaciones
+        │   ├── PruebasAutomatizadasMotor/ # Pruebas automatizadas con Karate
+        │   ├── ModificacionDeAgentesCorredoresYReglasDeNegocio/
+        │   ├── ReglaTablaParametricasPjSoatMotorEvaluacionTipoFormulario/
+        │   └── MotorEvaluacionRetirarEvidenciaDeIdentityParaAsesores/
+        ├── DocumentacionDeSolicitudes/ # Solicitudes (perfilación, cargas)
+        │   ├── PermisoParaFondosura.md
+        │   └── attachments/
+        ├── Front/                     # Proyecto Front Angular (Web Component, monorepo)
+        │   ├── ConfiguracionAmbiente/  # Configuración ambiente local
+        │   ├── Errores/                # Errores conocidos en compilación
+        │   └── attachments/
+        └── AtributosCalidadDesarrollo/ # Criterios de calidad (pruebas, deuda técnica)
+            ├── index.md                # Criterios generales y tabla de sub-páginas
+            ├── PruebasUnitarias.md
+            ├── DocumentacionConfluence.md
+            ├── DeudaTecnica.md
+            ├── AcuerdosDeProyecto.md
+            ├── PruebasIntegracionSoapUI.md
+            ├── PruebasDesempenoJMeter.md
+            ├── PruebasRegresionSarlaftSOAT.md
+            ├── Regresion_CotizadorAutos.md
+            ├── Regresion_EvidenciasEscenarios.md
+            ├── Regresion_SEL_SOAT.md
+            ├── Regresion_SIS_Suramasivos.md
+            └── attachments/
 
 .github/
 └── agents/
     └── Confluence Sura.agent.md      # Agente IA para extracción de Confluence
 ```
+
+> **Total:** 327 archivos Markdown · 480 adjuntos (imágenes, DOCX, PDF, XLSX, JSON, drawio)
 
 ## Ramas
 

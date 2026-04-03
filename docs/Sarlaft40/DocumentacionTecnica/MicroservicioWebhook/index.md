@@ -12,7 +12,7 @@ Los siguiente documentos buscan dar referencias de los cambios efectuados en los
 
 Links asociados a la estructura de webhook.
 
-- [7. Webhook (Assessment)](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/3222994946/7.+Webhook+Assessment)
+- [7. Webhook (Assessment)](../DisenoArquitectura/DisenoFuncionalidades/07WebhookAssessment.md)
 - [Estructura Proyecto - MicroServicio Webhook](./EstructuraProyecto.md)
 
 Se agrega diagrama de clases basado en los microservicios de webhook llamadas `sarlaft_callback-ms` y `sarlaft-function_webhook-mi`.

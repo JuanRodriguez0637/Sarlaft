@@ -1,0 +1,12 @@
+{
+    "requestDni": "C43260574",
+	"application": "118", 
+	"client": {
+        "documentType": "A",
+        "documentNumber": "8001973840",
+        "firstName": null,
+        "secondName": null,
+        "firstSurname": null,
+        "secondSurname": null
+    }
+}

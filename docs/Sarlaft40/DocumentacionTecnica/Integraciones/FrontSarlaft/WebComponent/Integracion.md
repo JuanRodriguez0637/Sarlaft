@@ -21,7 +21,7 @@ Se describen los pasos necesarios para conectarse a sarlaft usando el web compon
   @Input() codigoflujo: string;
 ```
 
-**Token: **Token Jwt de seguridad expuesto por la API. Ver: [Creación token JWT](https://segurosti.atlassian.net/wiki/spaces/EPA/pages?title=Creaci%C3%B3n%20token%20JWT) **Tenant:** typo Json, por definir estructura. Campo usado para manejo de estilos personalizados.**App**: Nombre de la aplicación cliente que esta consumiendo el web component. Esta debe ser exactamente la misma usada durante el consumo o solicitud del token.**Request:** Objeto de negocio que contiene la información requerida para pintar el webcomponent.**Rol:** Indica la figura o Rol que se debe pintar y que esta asociada a la información enviada en campo *Request*. **Tipos permitidos:**
+**Token: **Token Jwt de seguridad expuesto por la API. Ver: [Creación token JWT](../../../MicroservicioSarlaftAPI/ServiciosWeb/CreacionTokenJWT/index.md) **Tenant:** typo Json, por definir estructura. Campo usado para manejo de estilos personalizados.**App**: Nombre de la aplicación cliente que esta consumiendo el web component. Esta debe ser exactamente la misma usada durante el consumo o solicitud del token.**Request:** Objeto de negocio que contiene la información requerida para pintar el webcomponent.**Rol:** Indica la figura o Rol que se debe pintar y que esta asociada a la información enviada en campo *Request*. **Tipos permitidos:**
 ![imagen-20211203-200152.png](./attachments/imagen-20211203-200152.png)
 - **Parámetros de Salida:**
   ` @Output() resultEvent = new EventEmitter();`
