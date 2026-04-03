@@ -2,7 +2,7 @@
 
 > **Fuente Confluence:** [Permisos para Fondosura](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/560103967)
 > **Última modificación:** 2022-09-27 — Miguel Ángel Colorado Restrepo · versión 7
-> **Sección:** [./index.md](./index.md)
+> **Sección:** [Documentación de Solicitudes](./index.md)
 
 <!-- -->
 
