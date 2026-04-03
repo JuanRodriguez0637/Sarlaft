@@ -16,7 +16,7 @@ Con base en los requerimientos solicitados a Sarlaft por parte de SOAT se identi
 
 Asociado al código de error en el campo messageError se pondrá la descripción del error recibida del api de sarlaft
 ![imagen-20211206-145207.png](./attachments/imagen-20211206-145207.png)
-Este cambio incluye crear nuevos endpoints para los servicios de sarlaft 4.0 (esto para evitar reprocesos en los demás aplicativos clientes del api) y dar la respuesta correspondiente a errores de formato, negocio y técnicos definidos en la siguiente pagina: [Respuestas de error (propuesta aun no implementada)](https://segurosti.atlassian.net/wiki/spaces/EPA/pages?title=Respuestas%20de%20error%20%28propuesta%20aun%20no%20implementada%29) teniendo en cuenta el excel indicado 
+Este cambio incluye crear nuevos endpoints para los servicios de sarlaft 4.0 (esto para evitar reprocesos en los demás aplicativos clientes del api) y dar la respuesta correspondiente a errores de formato, negocio y técnicos definidos en la siguiente pagina: [Respuestas de error (propuesta aun no implementada)](../../../DisenoArquitectura/DocumentoDisenoTecnico/RespuestasDeErrorPropuestaAunNoImplementada.md) teniendo en cuenta el excel indicado 
 [respuestasErroresSarlaft4.xlsx](./attachments/respuestasErroresSarlaft4.xlsx)
 
 Componentes afectados: sarlaftapi, sarlaftadmin, sarlaftbatch, webcomponent.

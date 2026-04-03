@@ -10,4 +10,4 @@ La descripción de los servicios web en el aplicativo de sarlaft se encuentran e
 
 [Servicio Web - Sarlaftmdcmi](./ServicioWebSarlaftmdcmi.md)
 
-[Servicio Consulta de Clientes](https://segurosti.atlassian.net/wiki/spaces/EPA/pages?title=Servicio%20Consulta%20de%20Clientes)
+[Servicio Consulta de Clientes](../../MicroservicioSarlaftAPI/ServiciosWeb/ServicioConsultaClientes.md)
