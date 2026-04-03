@@ -2,7 +2,7 @@
 
 > **Fuente Confluence:** [Interfaces de Servicio](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1955070133)  
 > **Última modificación:** 2021-07-29 — Diana Muñoz · versión 6  
-> **Sección:** Sarlaft 4.0 → Documentación Técnica
+> **Sección:** Sarlaft 4.0
 
 Documentación de las interfaces de Servicio del Sarlaft 4.0 para su comunicación con todos los aplicativos de Suramericana.
 

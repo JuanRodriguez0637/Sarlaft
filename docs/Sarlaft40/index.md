@@ -9,4 +9,6 @@
 |---|---------|-------------|
 | 1 | [Documentación Técnica](./DocumentacionTecnica/index.md) | Arquitectura, microservicios, integraciones, front, configuración e interfaces |
 | 2 | [Documentación de Incidentes](./DocumentacionDeIncidentes/index.md) | Incidentes presentados en el aplicativo de Sarlaft 4.0 |
-| 3 | [Preguntas frecuentes - Sarlaft](./PreguntasFrecuentes/index.md) | Preguntas frecuentes sobre integración con Sarlaft |
+| 3 | [Documentación de Solicitudes](./DocumentacionDeSolicitudes/index.md) | Solicitudes y trámites documentados |
+| 4 | [Interfaces de Servicio](./InterfacesDeServicio/index.md) | Interfaces principales, procesos masivos, consulta estado, evaluación reclamaciones |
+| 5 | [Preguntas frecuentes - Sarlaft](./PreguntasFrecuentes/index.md) | Preguntas frecuentes sobre integración con Sarlaft |

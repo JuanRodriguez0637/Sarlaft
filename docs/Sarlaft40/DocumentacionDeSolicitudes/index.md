@@ -2,7 +2,7 @@
 
 > **Fuente Confluence:** [Documentacion de solicitudes](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/541622683)
 > **Última modificación:** 2020-02-27 — Lina Marcela Marín Ochoa · versión 2
-> **Sección:** [./index.md](./index.md)
+> **Sección:** Sarlaft 4.0
 
 <!-- -->
 
