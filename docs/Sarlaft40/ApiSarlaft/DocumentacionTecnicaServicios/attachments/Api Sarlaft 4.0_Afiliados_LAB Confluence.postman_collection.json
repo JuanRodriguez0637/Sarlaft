@@ -1,0 +1,711 @@
+{
+	"info": {
+		"_postman_id": "992fb75f-2782-45e1-86c5-ae25a99c6ecb",
+		"name": "Api Sarlaft 4.0_Afiliados_LAB Confluence",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "688031"
+	},
+	"item": [
+		{
+			"name": "getCatalogos_ConsultaTipoDocumentos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-apikey",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://apisuratest.segurossura.com/sarlaft/v1/catalogos?codigoCatalogo=TIPOSDOCUMENTOS&departamento=&pais=57&tipoPersona=PJ&subCodigoParametro=&fraccionTexto=",
+					"protocol": "https",
+					"host": [
+						"apisuratest",
+						"segurossura",
+						"com"
+					],
+					"path": [
+						"sarlaft",
+						"v1",
+						"catalogos"
+					],
+					"query": [
+						{
+							"key": "codigoCatalogo",
+							"value": "TIPOSDOCUMENTOS"
+						},
+						{
+							"key": "departamento",
+							"value": ""
+						},
+						{
+							"key": "pais",
+							"value": "57"
+						},
+						{
+							"key": "tipoPersona",
+							"value": "PJ"
+						},
+						{
+							"key": "subCodigoParametro",
+							"value": ""
+						},
+						{
+							"key": "fraccionTexto",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCatalogos_ConsultaPaises",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-apikey",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "https://apisuratest.segurossura.com/sarlaft/v1/catalogos?codigoCatalogo=PAISES&pais=&subCodigoParametro=&fraccionTexto=",
+					"protocol": "https",
+					"host": [
+						"apisuratest",
+						"segurossura",
+						"com"
+					],
+					"path": [
+						"sarlaft",
+						"v1",
+						"catalogos"
+					],
+					"query": [
+						{
+							"key": "codigoCatalogo",
+							"value": "PAISES"
+						},
+						{
+							"key": "pais",
+							"value": ""
+						},
+						{
+							"key": "subCodigoParametro",
+							"value": ""
+						},
+						{
+							"key": "fraccionTexto",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCatalogos_ConsultaDepartamentos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-apikey",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "https://apisuratest.segurossura.com/sarlaft/v1/catalogos?codigoCatalogo=DEPARTAMENTOS&pais=57&subCodigoParametro=&fraccionTexto=",
+					"protocol": "https",
+					"host": [
+						"apisuratest",
+						"segurossura",
+						"com"
+					],
+					"path": [
+						"sarlaft",
+						"v1",
+						"catalogos"
+					],
+					"query": [
+						{
+							"key": "codigoCatalogo",
+							"value": "DEPARTAMENTOS"
+						},
+						{
+							"key": "pais",
+							"value": "57"
+						},
+						{
+							"key": "subCodigoParametro",
+							"value": ""
+						},
+						{
+							"key": "fraccionTexto",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCatalogos_ConsultaCiudadesPorDepartamento",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-apikey",
+						"value": ""
+					}
+				],
+				"url": {
+					"raw": "https://apisuratest.segurossura.com/sarlaft/v1/catalogos?codigoCatalogo=CIUDADESDPTO&departamento=05&pais=57&subCodigoParametro=&fraccionTexto=",
+					"protocol": "https",
+					"host": [
+						"apisuratest",
+						"segurossura",
+						"com"
+					],
+					"path": [
+						"sarlaft",
+						"v1",
+						"catalogos"
+					],
+					"query": [
+						{
+							"key": "codigoCatalogo",
+							"value": "CIUDADESDPTO"
+						},
+						{
+							"key": "departamento",
+							"value": "05"
+						},
+						{
+							"key": "pais",
+							"value": "57"
+						},
+						{
+							"key": "subCodigoParametro",
+							"value": ""
+						},
+						{
+							"key": "fraccionTexto",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCatalogos_ConsultaCanales",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-apikey",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://apisuratest.segurossura.com/sarlaft/v1/catalogos?codigoCatalogo=CANALES&departamento=&pais=&subCodigoParametro=&fraccionTexto=",
+					"protocol": "https",
+					"host": [
+						"apisuratest",
+						"segurossura",
+						"com"
+					],
+					"path": [
+						"sarlaft",
+						"v1",
+						"catalogos"
+					],
+					"query": [
+						{
+							"key": "codigoCatalogo",
+							"value": "CANALES"
+						},
+						{
+							"key": "departamento",
+							"value": ""
+						},
+						{
+							"key": "pais",
+							"value": ""
+						},
+						{
+							"key": "subCodigoParametro",
+							"value": ""
+						},
+						{
+							"key": "fraccionTexto",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCatalogos_ConsultaProductos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-apikey",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://apisuratest.segurossura.com/sarlaft/v1/catalogos?codigoCatalogo=COD_SUBRAMOS&departamento=&pais=&subCodigoParametro=090&fraccionTexto=",
+					"protocol": "https",
+					"host": [
+						"apisuratest",
+						"segurossura",
+						"com"
+					],
+					"path": [
+						"sarlaft",
+						"v1",
+						"catalogos"
+					],
+					"query": [
+						{
+							"key": "codigoCatalogo",
+							"value": "COD_SUBRAMOS"
+						},
+						{
+							"key": "departamento",
+							"value": ""
+						},
+						{
+							"key": "pais",
+							"value": ""
+						},
+						{
+							"key": "subCodigoParametro",
+							"value": "090"
+						},
+						{
+							"key": "fraccionTexto",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCatalogos_ConsultaCodigosRamo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-apikey",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://apisuratest.segurossura.com/sarlaft/v1/catalogos?codigoCatalogo=COD_RAMOS&departamento=&pais=&subCodigoParametro=&fraccionTexto=",
+					"protocol": "https",
+					"host": [
+						"apisuratest",
+						"segurossura",
+						"com"
+					],
+					"path": [
+						"sarlaft",
+						"v1",
+						"catalogos"
+					],
+					"query": [
+						{
+							"key": "codigoCatalogo",
+							"value": "COD_RAMOS"
+						},
+						{
+							"key": "departamento",
+							"value": ""
+						},
+						{
+							"key": "pais",
+							"value": ""
+						},
+						{
+							"key": "subCodigoParametro",
+							"value": ""
+						},
+						{
+							"key": "fraccionTexto",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "evaluacion_simplificado",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-apikey",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigoOperacion\": \"01\",\r\n    \"negocioId\": \"01\",\r\n    \"infoPendiente\": true,\r\n    \"codigoAplicacion\": \"01\",\r\n    \"sarlafts\": [\r\n        {\r\n            \"figuras\": [\r\n                \"Tomador\"\r\n            ],\r\n            \"evidencias\":[\r\n               \r\n                {\r\n                    \"tipo\":\"DOCUMENT_PN\",\r\n                    \"observaciones\":\"Exitoso\",\r\n                    \"controlConsecutivo\" : \"4587878\"\r\n                }\r\n            ],\r\n            \"cliente\": {\r\n                \"tipoPersona\": \"N\",\r\n                \"correo\": \"mail_1@mail.com.co\",\r\n                \"celular\": \"3102345670\",\r\n                \"persona\": {\r\n                    \"primerNombre\": \"Nestor\",\r\n                    \"segundoNombre\": \"Fernando\",\r\n                    \"primerApellido\": \"Gomez\",\r\n                    \"segundoApellido\": \"Espitia\",\r\n                    \"pais\": \"57\"\r\n                },\r\n                \"documento\": {\r\n                    \"tipo\": \"P\",\r\n                    \"numero\": \"1036683385\",\r\n                    \"fechaExpedicion\": \"2007-05-27\"\r\n                },\r\n                \"infoFinanciera\": {\r\n                    \"ingresos\": \"20000\",\r\n                    \"egresos\": \"15000\",\r\n                    \"actividadEconomica\": \"N1922\",\r\n                    \"codigoOcupacion\": \"A50\",\r\n                    \"origenFondos\": \"TRABAJO\"\r\n                },\r\n                \"direcciones\": [\r\n                    {\r\n                        \"tipo\": \"RS\",\r\n                        \"pais\": \"57\",\r\n                        \"departamento\": \"25\",\r\n                        \"ciudad\": \"74\",\r\n                        \"direccion\": \"Calle 18 # 145 -45\"\r\n                    }\r\n                ],\r\n                \"relaciones\": [\r\n                    {\r\n                        \"relacionPeps\": true,\r\n                        \"parentescoPeps\": \"01\",\r\n                        \"tipo\": \"FAMILIA\",\r\n                        \"documento\": {\r\n                            \"tipo\": \"C\",\r\n                            \"numero\": \"1036683385\"\r\n                        },\r\n                        \"persona\": {\r\n                            \"primerNombre\": \"Sandra\",\r\n                            \"segundoNombre\": \"Milena\",\r\n                            \"primerApellido\": \"Arevalo\",\r\n                            \"segundoApellido\": \"Espitia\"\r\n                        }\r\n                    }\r\n                ]\r\n            },\r\n            \"tipoRiesgo\": \"SIMPLIFICADO\",\r\n            \"cuentaConInformacion\": false\r\n        }\r\n    ],\r\n    \"poliza\": {\r\n        \"tipoNegocio\": \"INDIVIDUAL\",\r\n        \"codigoRamo\": \"040\",\r\n        \"codigoProducto\": \"A80\",\r\n        \"codigoCanal\": \"CC013\",\r\n        \"valorAsegurado\": 50000000,\r\n        \"valorPrima\": 500000,\r\n        \"medioPago\": \"DEBITO_AUTOMATICO\",\r\n        \"tipoCoaseguro\": \"ACEPTADO\",\r\n        \"licitacionPublica\": false\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apisuratest.segurossura.com/sarlaft/v1/evaluaciones",
+					"protocol": "https",
+					"host": [
+						"apisuratest",
+						"segurossura",
+						"com"
+					],
+					"path": [
+						"sarlaft",
+						"v1",
+						"evaluaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "evaluacion_intensificado_PEPS",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-apikey",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigoOperacion\": \"01\",\r\n    \"negocioId\": \"01\",\r\n    \"infoPendiente\": true,\r\n    \"codigoAplicacion\": \"01\",\r\n    \"sarlafts\": [\r\n        {\r\n            \"figuras\": [\r\n                \"Tomador\"\r\n            ],\r\n            \"evidencias\":[\r\n                {\r\n                    \"tipo\":\"DOCUMENT_PN\",\r\n                    \"observaciones\":\"Exitoso\",\r\n                    \"controlConsecutivo\" : \"4587878\"\r\n                },\r\n                {\r\n                    \"tipo\":\"EXPERIAN\",\r\n                    \"observaciones\":\"Exitoso\",\r\n                    \"controlConsecutivo\" : \"4587878\"\r\n                }\r\n            ],\r\n            \"cliente\": {\r\n                \"tipoPersona\": \"N\",\r\n                \"correo\": \"mail_1@mail.com.co\",\r\n                \"celular\": \"3102345670\",\r\n                \"persona\": {\r\n                    \"primerNombre\": \"Nestor\",\r\n                    \"segundoNombre\": \"Fernando\",\r\n                    \"primerApellido\": \"Gomez\",\r\n                    \"segundoApellido\": \"Espitia\",\r\n                    \"pais\": \"57\"\r\n                },\r\n                \"documento\": {\r\n                    \"tipo\": \"C\",\r\n                    \"numero\": \"32536589\",\r\n                    \"fechaExpedicion\": \"2007-05-27\"\r\n                },\"infoFinanciera\": {\r\n                    \"ingresos\": \"20000\",\r\n                    \"egresos\": \"15000\",\r\n                    \"actividadEconomica\": \"N1922\",\r\n                    \"codigoOcupacion\": \"A50\",\r\n                    \"origenFondos\": \"TRABAJO\"\r\n                },\r\n                \"direcciones\": [\r\n                    {\r\n                        \"tipo\": \"RS\",\r\n                        \"pais\": \"57\",\r\n                        \"departamento\": \"25\",\r\n                        \"ciudad\": \"74\",\r\n                        \"direccion\": \"Calle 18 # 145 -45\"\r\n                    }\r\n                ],\r\n                \"relaciones\": [\r\n                    {\r\n                        \"relacionPeps\": true,\r\n                        \"parentescoPeps\": \"01\",\r\n                        \"tipo\": \"FAMILIA\",\r\n                        \"documento\": {\r\n                            \"tipo\": \"C\",\r\n                            \"numero\": \"1036683385\"\r\n                        },\r\n                        \"persona\": {\r\n                            \"primerNombre\": \"Sandra\",\r\n                            \"segundoNombre\": \"Milena\",\r\n                            \"primerApellido\": \"Arevalo\",\r\n                            \"segundoApellido\": \"Espitia\"\r\n                        }\r\n                    }\r\n                ]\r\n            },\r\n            \"tipoRiesgo\": \"INTENSIFICADO\",\r\n            \"cuentaConInformacion\": true\r\n        }\r\n    ],\r\n    \"poliza\": {\r\n        \"tipoNegocio\": \"INDIVIDUAL\",\r\n        \"codigoRamo\": \"040\",\r\n        \"codigoProducto\": \"A80\",\r\n        \"codigoCanal\": \"CC013\",\r\n        \"valorAsegurado\": 50000000,\r\n        \"valorPrima\": 500000,\r\n        \"medioPago\": \"DEBITO_AUTOMATICO\",\r\n        \"tipoCoaseguro\": \"ACEPTADO\",\r\n        \"licitacionPublica\": false\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apisuratest.segurossura.com/sarlaft/v1/evaluaciones",
+					"protocol": "https",
+					"host": [
+						"apisuratest",
+						"segurossura",
+						"com"
+					],
+					"path": [
+						"sarlaft",
+						"v1",
+						"evaluaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "evaluacion_rechazado_GAFI_bloqueante",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-apikey",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigoOperacion\": \"01\",\r\n    \"negocioId\": \"01\",\r\n    \"infoPendiente\": true,\r\n    \"codigoAplicacion\": \"01\",\r\n    \"sarlafts\": [\r\n        {\r\n            \"figuras\": [\r\n                \"Tomador\"\r\n            ],\r\n            \"evidencias\":[\r\n                {\r\n                    \"tipo\":\"DOCUMENT_PN\",\r\n                    \"observaciones\":\"Exitoso\",\r\n                    \"controlConsecutivo\" : \"4587878\"\r\n                },\r\n                {\r\n                    \"tipo\":\"EXPERIAN\",\r\n                    \"observaciones\":\"Exitoso\",\r\n                    \"controlConsecutivo\" : \"4587878\"\r\n                }\r\n            ],\r\n            \"cliente\": {\r\n                \"tipoPersona\": \"N\",\r\n                \"correo\": \"mail_1@mail.com.co\",\r\n                \"celular\": \"3102345670\",\r\n                \"persona\": {\r\n                    \"primerNombre\": \"Nestor\",\r\n                    \"segundoNombre\": \"Fernando\",\r\n                    \"primerApellido\": \"Gomez\",\r\n                    \"segundoApellido\": \"Espitia\",\r\n                    \"pais\": \"104\"\r\n                },\r\n                \"documento\": {\r\n                    \"tipo\": \"C\",\r\n                    \"numero\": \"32536589\",\r\n                    \"fechaExpedicion\": \"2007-05-27\"\r\n                },\"infoFinanciera\": {\r\n                    \"ingresos\": \"20000\",\r\n                    \"egresos\": \"15000\",\r\n                    \"actividadEconomica\": \"N1922\",\r\n                    \"codigoOcupacion\": \"A50\",\r\n                    \"origenFondos\": \"TRABAJO\"\r\n                },\r\n                \"direcciones\": [\r\n                    {\r\n                        \"tipo\": \"RS\",\r\n                        \"pais\": \"57\",\r\n                        \"departamento\": \"25\",\r\n                        \"ciudad\": \"74\",\r\n                        \"direccion\": \"Calle 18 # 145 -45\"\r\n                    }\r\n                ],\r\n                \"relaciones\": [\r\n                    {\r\n                        \"relacionPeps\": true,\r\n                        \"parentescoPeps\": \"01\",\r\n                        \"tipo\": \"FAMILIA\",\r\n                        \"documento\": {\r\n                            \"tipo\": \"C\",\r\n                            \"numero\": \"1036683385\"\r\n                        },\r\n                        \"persona\": {\r\n                            \"primerNombre\": \"Sandra\",\r\n                            \"segundoNombre\": \"Milena\",\r\n                            \"primerApellido\": \"Arevalo\",\r\n                            \"segundoApellido\": \"Espitia\"\r\n                        }\r\n                    }\r\n                ]\r\n            },\r\n            \"tipoRiesgo\": \"INTENSIFICADO\",\r\n            \"cuentaConInformacion\": true\r\n        }\r\n    ],\r\n    \"poliza\": {\r\n        \"tipoNegocio\": \"INDIVIDUAL\",\r\n        \"codigoRamo\": \"040\",\r\n        \"codigoProducto\": \"A80\",\r\n        \"codigoCanal\": \"CC013\",\r\n        \"valorAsegurado\": 50000000,\r\n        \"valorPrima\": 500000,\r\n        \"medioPago\": \"DEBITO_AUTOMATICO\",\r\n        \"tipoCoaseguro\": \"ACEPTADO\",\r\n        \"licitacionPublica\": false\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apisuratest.segurossura.com/sarlaft/v1/evaluaciones",
+					"protocol": "https",
+					"host": [
+						"apisuratest",
+						"segurossura",
+						"com"
+					],
+					"path": [
+						"sarlaft",
+						"v1",
+						"evaluaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "evaluaciones_rechazado_RRCC",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-apikey",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigoOperacion\": \"01\",\r\n    \"negocioId\": \"01\",\r\n    \"infoPendiente\": true,\r\n    \"codigoAplicacion\": \"01\",\r\n    \"sarlafts\": [\r\n        {\r\n            \"figuras\": [\r\n                \"Tomador\"\r\n            ],\r\n            \"evidencias\":[\r\n                {\r\n                    \"tipo\":\"DOCUMENT_PN\",\r\n                    \"observaciones\":\"Exitoso\",\r\n                    \"controlConsecutivo\" : \"4587878\"\r\n                },\r\n                {\r\n                    \"tipo\":\"EXPERIAN\",\r\n                    \"observaciones\":\"Exitoso\",\r\n                    \"controlConsecutivo\" : \"4587878\"\r\n                }\r\n            ],\r\n            \"cliente\": {\r\n                \"tipoPersona\": \"N\",\r\n                \"correo\": \"mail_1@mail.com.co\",\r\n                \"celular\": \"3102345670\",\r\n                \"persona\": {\r\n                    \"primerNombre\": \"Nestor\",\r\n                    \"segundoNombre\": \"Fernando\",\r\n                    \"primerApellido\": \"Gomez\",\r\n                    \"segundoApellido\": \"Espitia\",\r\n                    \"pais\": \"57\"\r\n                },\r\n                \"documento\": {\r\n                    \"tipo\": \"C\",\r\n                    \"numero\": \"31138584\",\r\n                    \"fechaExpedicion\": \"2007-05-27\"\r\n                },\"infoFinanciera\": {\r\n                    \"ingresos\": \"20000\",\r\n                    \"egresos\": \"15000\",\r\n                    \"actividadEconomica\": \"N1922\",\r\n                    \"codigoOcupacion\": \"A50\",\r\n                    \"origenFondos\": \"TRABAJO\"\r\n                },\r\n                \"direcciones\": [\r\n                    {\r\n                        \"tipo\": \"RS\",\r\n                        \"pais\": \"57\",\r\n                        \"departamento\": \"25\",\r\n                        \"ciudad\": \"74\",\r\n                        \"direccion\": \"Calle 18 # 145 -45\"\r\n                    }\r\n                ],\r\n                \"relaciones\": [\r\n                    {\r\n                        \"relacionPeps\": true,\r\n                        \"parentescoPeps\": \"01\",\r\n                        \"tipo\": \"FAMILIA\",\r\n                        \"documento\": {\r\n                            \"tipo\": \"C\",\r\n                            \"numero\": \"1036683385\"\r\n                        },\r\n                        \"persona\": {\r\n                            \"primerNombre\": \"Sandra\",\r\n                            \"segundoNombre\": \"Milena\",\r\n                            \"primerApellido\": \"Arevalo\",\r\n                            \"segundoApellido\": \"Espitia\"\r\n                        }\r\n                    }\r\n                ]\r\n            },\r\n            \"tipoRiesgo\": \"INTENSIFICADO\",\r\n            \"cuentaConInformacion\": true\r\n        }\r\n    ],\r\n    \"poliza\": {\r\n        \"tipoNegocio\": \"INDIVIDUAL\",\r\n        \"codigoRamo\": \"040\",\r\n        \"codigoProducto\": \"A80\",\r\n        \"codigoCanal\": \"CC013\",\r\n        \"valorAsegurado\": 50000000,\r\n        \"valorPrima\": 500000,\r\n        \"medioPago\": \"DEBITO_AUTOMATICO\",\r\n        \"tipoCoaseguro\": \"ACEPTADO\",\r\n        \"licitacionPublica\": false\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apisuratest.segurossura.com/sarlaft/v1/evaluaciones",
+					"protocol": "https",
+					"host": [
+						"apisuratest",
+						"segurossura",
+						"com"
+					],
+					"path": [
+						"sarlaft",
+						"v1",
+						"evaluaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "evaluacion_Intensificado",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-apikey",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigoOperacion\": \"01\",\r\n    \"negocioId\": \"01\",\r\n    \"infoPendiente\": true,\r\n    \"codigoAplicacion\": \"01\",\r\n    \"sarlafts\": [\r\n        {\r\n            \"figuras\": [\r\n                \"Tomador\"\r\n            ],\r\n            \"evidencias\":[\r\n                {\r\n                    \"tipo\":\"DOCUMENT_PN\",\r\n                    \"observaciones\":\"Exitoso\",\r\n                    \"controlConsecutivo\" : \"4587878\"\r\n                },\r\n                {\r\n                    \"tipo\":\"EXPERIAN\",\r\n                    \"observaciones\":\"Exitoso\",\r\n                    \"controlConsecutivo\" : \"4587878\"\r\n                }\r\n            ],\r\n            \"cliente\": {\r\n                \"tipoPersona\": \"N\",\r\n                \"correo\": \"mail_1@mail.com.co\",\r\n                \"celular\": \"3102345670\",\r\n                \"persona\": {\r\n                    \"primerNombre\": \"Nestor\",\r\n                    \"segundoNombre\": \"Fernando\",\r\n                    \"primerApellido\": \"Gomez\",\r\n                    \"segundoApellido\": \"Espitia\",\r\n                    \"pais\": \"57\"\r\n                },\r\n                \"documento\": {\r\n                    \"tipo\": \"C\",\r\n                    \"numero\": \"1036683385\",\r\n                    \"fechaExpedicion\": \"2007-05-27\"\r\n                },\"infoFinanciera\": {\r\n                    \"ingresos\": \"20000\",\r\n                    \"egresos\": \"15000\",\r\n                    \"actividadEconomica\": \"N1922\",\r\n                    \"codigoOcupacion\": \"A50\",\r\n                    \"origenFondos\": \"TRABAJO\"\r\n                },\r\n                \"direcciones\": [\r\n                    {\r\n                        \"tipo\": \"RS\",\r\n                        \"pais\": \"57\",\r\n                        \"departamento\": \"25\",\r\n                        \"ciudad\": \"74\",\r\n                        \"direccion\": \"Calle 18 # 145 -45\"\r\n                    }\r\n                ],\r\n                \"relaciones\": [\r\n                    {\r\n                        \"relacionPeps\": true,\r\n                        \"parentescoPeps\": \"01\",\r\n                        \"tipo\": \"FAMILIA\",\r\n                        \"documento\": {\r\n                            \"tipo\": \"C\",\r\n                            \"numero\": \"1036683385\"\r\n                        },\r\n                        \"persona\": {\r\n                            \"primerNombre\": \"Sandra\",\r\n                            \"segundoNombre\": \"Milena\",\r\n                            \"primerApellido\": \"Arevalo\",\r\n                            \"segundoApellido\": \"Espitia\"\r\n                        }\r\n                    }\r\n                ]\r\n            },\r\n            \"tipoRiesgo\": \"INTENSIFICADO\",\r\n            \"cuentaConInformacion\": true\r\n        }\r\n    ],\r\n    \"poliza\": {\r\n        \"tipoNegocio\": \"INDIVIDUAL\",\r\n        \"codigoRamo\": \"040\",\r\n        \"codigoProducto\": \"A80\",\r\n        \"codigoCanal\": \"CC013\",\r\n        \"valorAsegurado\": 50000000,\r\n        \"valorPrima\": 500000,\r\n        \"medioPago\": \"DEBITO_AUTOMATICO\",\r\n        \"tipoCoaseguro\": \"ACEPTADO\",\r\n        \"licitacionPublica\": false\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apisuratest.segurossura.com/sarlaft/v1/evaluaciones",
+					"protocol": "https",
+					"host": [
+						"apisuratest",
+						"segurossura",
+						"com"
+					],
+					"path": [
+						"sarlaft",
+						"v1",
+						"evaluaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adjuntarDocumento_2307",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-apikey",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "evaluacionId",
+							"value": "aa6beebe-17ae-4249-a9d6-b5160038d80c",
+							"type": "text"
+						},
+						{
+							"key": "dni",
+							"value": "C1036683385",
+							"type": "text"
+						},
+						{
+							"key": "codigoRequisito",
+							"value": "2307",
+							"type": "text"
+						},
+						{
+							"key": "filePart",
+							"type": "file",
+							"src": "/C:/Users/ladymumu/OneDrive - Seguros Suramericana, S.A/Desktop/sarlaft.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apisuratest.segurossura.com/sarlaft/v1/documentos",
+					"protocol": "https",
+					"host": [
+						"apisuratest",
+						"segurossura",
+						"com"
+					],
+					"path": [
+						"sarlaft",
+						"v1",
+						"documentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "adjuntarDocumento_2305",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-apikey",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "evaluacionId",
+							"value": "aa6beebe-17ae-4249-a9d6-b5160038d80c",
+							"type": "text"
+						},
+						{
+							"key": "dni",
+							"value": "C1036683385",
+							"type": "text"
+						},
+						{
+							"key": "codigoRequisito",
+							"value": "2305",
+							"type": "text"
+						},
+						{
+							"key": "filePart",
+							"type": "file",
+							"src": "/C:/Users/ladymumu/OneDrive - Seguros Suramericana, S.A/Desktop/sarlaft.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://apisuratest.segurossura.com/sarlaft/v1/documentos",
+					"protocol": "https",
+					"host": [
+						"apisuratest",
+						"segurossura",
+						"com"
+					],
+					"path": [
+						"sarlaft",
+						"v1",
+						"documentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "diligenciarFormulario_PN",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-apikey",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"evaluacionId\": \"aa6beebe-17ae-4249-a9d6-b5160038d80c\",\r\n\t\"relacionLaboral\": false,\r\n\t\"administradorPep\": true,\r\n\t\"sarlafts\": [\r\n\t\t{\r\n             \"personaPep\": false,\r\n\t\t\t\"tieneRelacionPep\": false,\r\n\t\t\t\"tipoFigura\": [\r\n\t\t\t\t\"TOMADOR\"\r\n\t\t\t],\r\n\t\t\t\"cliente\": {\r\n\t\t\t\t\"tipoPersona\": \"N\",\r\n                \"correo\": \"mail_1@mail.com.co\",\r\n                \"celular\": \"3102345670\",\r\n                \"persona\": {\r\n                    \"primerNombre\": \"Nestor\",\r\n                    \"segundoNombre\": \"Fernando\",\r\n                    \"primerApellido\": \"Gomez\",\r\n                    \"segundoApellido\": \"Espitia\",\r\n                    \"pais\": \"57\"\r\n                },\r\n                \"documento\": {\r\n                    \"tipo\": \"C\",\r\n                    \"numero\": \"1036683385\",\r\n                    \"fechaExpedicion\": \"2007-05-27\"\r\n                },\"infoFinanciera\": {\r\n                    \"ingresos\": \"20000\",\r\n                    \"egresos\": \"15000\",\r\n                    \"actividadEconomica\": \"N1922\",\r\n                    \"codigoOcupacion\": \"A50\",\r\n                    \"origenFondos\": \"TRABAJO\"\r\n                },\r\n                \"direcciones\": [\r\n                    {\r\n                        \"tipo\": \"RS\",\r\n                        \"pais\": \"57\",\r\n                        \"departamento\": \"25\",\r\n                        \"ciudad\": \"74\",\r\n                        \"direccion\": \"Calle 18 # 145 -45\"\r\n                    }\r\n                ],\r\n                \"relaciones\": [\r\n                    {\r\n                        \"relacionPeps\": true,\r\n                        \"parentescoPeps\": \"01\",\r\n                        \"tipo\": \"FAMILIA\",\r\n                        \"documento\": {\r\n                            \"tipo\": \"C\",\r\n                            \"numero\": \"1036683385\"\r\n                        },\r\n                        \"persona\": {\r\n                            \"primerNombre\": \"Sandra\",\r\n                            \"segundoNombre\": \"Milena\",\r\n                            \"primerApellido\": \"Arevalo\",\r\n                            \"segundoApellido\": \"Espitia\"\r\n                        }\r\n                    }\r\n                ]\r\n\t\t\t}\r\n\t\t}\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apisuratest.segurossura.com/sarlaft/v1/formularios",
+					"protocol": "https",
+					"host": [
+						"apisuratest",
+						"segurossura",
+						"com"
+					],
+					"path": [
+						"sarlaft",
+						"v1",
+						"formularios"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

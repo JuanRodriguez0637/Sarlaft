@@ -1,0 +1,25 @@
+{
+	"fechaConsulta": "2022-09-26T03:52:42",
+	"codigoSeguridad": "NA",
+	"validado": true,
+	"datosRespuestaValidacion": {
+		"rut": null,
+		"tipoPersona": "PERSONA NATURAL EXTRANJERA",
+		"tipoDocumento": "TE",
+		"numeroDocumento": "924104515111981",
+		"nombreCompleto": "CARLOS ALBERTO MORALES MARTINEZ",
+		"nombres": "CARLOS ALBERTO",
+		"primerApellido": "MORALES",
+		"segundoApellido": "MARTINEZ",
+		"codigoEstadoDocumento": "2",
+		"estadoDocumento": "Inactivo",
+		"fechaExpedicion": "2017-08-01T19:00:00",
+		"ciudadExpedicion": "",
+		"departamentoExpedicion": "",
+		"nacionalidad": "VENEZUELA",
+		"fechaNacimiento": null,
+		"estadoCivil": "",
+		"genero": "Hombre",
+		"rangoEdad": "36-45"
+	}
+}

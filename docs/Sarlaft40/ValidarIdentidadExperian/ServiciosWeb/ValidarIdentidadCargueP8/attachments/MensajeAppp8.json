@@ -1,0 +1,25 @@
+{
+	"name": "Documents.identity.p8.upload",
+	"commandId": "9af6b15c-677e-4a94-9ecc-2c281241dd24",
+	"data": {
+		"dni": "X1234567",
+		"idDocumento": "128_propiedadesp8",
+		"mimeType": "application/pdf",
+		"idSarlaft": "c74ad91f-45b3-4a70-852d-43a59fcdc2cc",
+		"nombreArchivo": "X1234567_contrato_128.pdf",
+		"propiedades": [
+			{
+				"nombre": "FEFechaMovimiento",
+				"valor": "2022-02-24"
+			},
+			{
+				"nombre": "NMNroDocumentoId",
+				"valor": "1234567"
+			},
+			{
+				"nombre": "DSTipoDocomentoId",
+				"valor": "X"
+			}
+		]
+	}
+}

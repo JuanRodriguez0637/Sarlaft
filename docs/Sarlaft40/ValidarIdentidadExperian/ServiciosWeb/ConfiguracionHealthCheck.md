@@ -1,0 +1,46 @@
+---
+title: "Configuración HealthCheck con librería actuator - identityvalidatorms"
+confluence_id: 3628826760
+confluence_url: "https://segurosti.atlassian.net/wiki/spaces/EPA/pages/3628826760"
+last_modified: "2024-03-23"
+author: "Julián Andrés Curubo García"
+version: 1
+---
+
+# Configuración HealthCheck con librería actuator - identityvalidatorms
+
+> **Fuente Confluence:** [Configuración HealthCheck con librería actuator - identityvalidatorms](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/3628826760)
+> **Última modificación:** 2024-03-23 — Julián Andrés Curubo García · versión 1
+> **Sección:** [Servicios Web](./index.md)
+
+Este nuevo servicio web de healthCheck permite evaluar las conexiones principales del microservicio de tal forma que cuando desde el aks en azure, se haga el ping para evaluar la salud del microservicio, se evalúe de igual forma la conexión al service bus de azure, y rabbit.
+
+Con la librería de spring actuator `spring-boot-starter-actuator` se logra este objetivo, se incluye la librería en el `build.gradle`
+
+![image-20240207-200559.png](./attachments/image-20240207-200559.png)
+
+La validación con rabbit se hace automáticamente con el indicador por defecto `RabbitHealthIndicator` que trae la librería, y obtiene la conexión a rabbit utilizando la información de conexión del archivo `application.yml`.
+
+La validación con el service bus se utiliza una clase personalizada `ServicebusHealthIndicator` en la cual se usa las dependencias:
+
+```gradle
+implementation 'com.microsoft.azure:azure-servicebus:3.6.7'
+implementation 'com.azure:azure-messaging-servicebus:7.14.7'
+implementation 'org.reactivecommons:async-service-bus-starter:1.1.39-BETA'
+```
+
+![image-20240323-003249.png](./attachments/image-20240323-003249.png)
+
+Se realiza la siguiente configuración en el **application.yaml**
+
+![image-20240323-003316.png](./attachments/image-20240323-003316.png)
+
+Se realiza la siguiente configuración en el archivo **deployment.yml** en el proyecto de configuración para cada ambiente.
+
+![image-20240323-003352.png](./attachments/image-20240323-003352.png)
+
+Debido al que el microservicio tiene seguridad seus, se presenta una incompatibilidad entre la librería `ssosura` y actuator para lo cual se debe incluir la siguiente línea en el archivo de splunk dentro de la sección de loggers:
+
+`<logger name="co.com.sura.sso.reactive.listeners" level="ERROR" />`
+
+![image-20240323-003422.png](./attachments/image-20240323-003422.png)
