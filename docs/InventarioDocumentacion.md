@@ -1,6 +1,6 @@
 # Inventario de Documentación — Sarlaft 4.0 vs Confluence
 
-> **Última actualización:** 2025-04-02
+> **Última actualización:** 2026-04-02
 > **Espacio Confluence:** [EPA — Sarlaft 4.0](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1750892627/Sarlaft+4.0)
 > **Directorio local:** `Sarlaft/docs/Sarlaft40/`
 
@@ -11,13 +11,13 @@
 | Métrica | Valor |
 |---|---|
 | Secciones top-level en Confluence | 14 |
-| Secciones top-level documentadas localmente | 3 |
+| Secciones top-level documentadas localmente | 14 |
 | Subsecciones Doc. Técnica en Confluence | 17 |
-| Subsecciones Doc. Técnica documentadas localmente | 15 |
+| Subsecciones Doc. Técnica documentadas localmente | 17 |
 | **Total secciones en Confluence** | **31** |
-| **Total secciones documentadas** | **18** |
-| **Secciones faltantes** | **13** |
-| Archivos `.md` generados | 325 |
+| **Total secciones documentadas** | **31** |
+| **Secciones faltantes** | **0** |
+| Archivos `.md` generados | 410 |
 
 ---
 
@@ -30,22 +30,21 @@
 | Documentación Técnica | `1746830371` | `DocumentacionTecnica/` | ✅ Documentada |
 | Documentación de Incidentes | `1742800723` | `DocumentacionDeIncidentes/` | ✅ Documentada |
 | Preguntas frecuentes - Sarlaft | `1928167429` | `PreguntasFrecuentes/` | ✅ Documentada |
+| Validar identidad (Experian) | `2370961900` | `ValidarIdentidadExperian/` | ✅ Documentada |
+| API Sarlaft | `2558033927` | `ApiSarlaft/` | ✅ Documentada |
+| Ingesta de datos Teradata | `2595160065` | `IngestaDatosTeradata/` | ✅ Documentada |
+| Automatización Flujos Criticos | `4131979320` | `AutomatizacionFlujosCriticos/` | ✅ Documentada |
+| Interfaces de Servicio | `1955070133` | `InterfacesDeServicio/` | ✅ Documentada |
+| Proceso de Migración | `2596667457` | `ProcesoDeMigracion/` | ✅ Documentada |
+| Proceso de Actualización | `3715006471` | `ProcesoDeActualizacion/` | ✅ Documentada |
+| Proceso de Negocio | `1742800734` | `ProcesoDeNegocio/` | ✅ Documentada |
+| Documentación de Solicitudes | `1746928745` | `DocumentacionDeSolicitudes/` | ✅ Documentada |
+| Segmentación Core | `2739077470` | `SegmentacionCore.md` | ✅ Documentada |
+| Guía de Aprendizaje Sarlaft 4.0 | `3228270786` | `GuiaDeAprendizaje.md` | ✅ Documentada |
 
 ### Pendientes por documentar
 
-| # | Sección Confluence | ID Página | Carpeta Local Esperada | Hijos Directos | Prioridad |
-|---|---|---|---|---|---|
-| 1 | Interfaces de Servicio | `1955070133` | `InterfacesDeServicio/` | 5 | ⚠️ Media |
-| 2 | Proceso de Negocio | `1742800734` | `ProcesoDeNegocio/` | 1 | 🔵 Baja |
-| 3 | Documentación de Solicitudes | `1746928745` | `DocumentacionDeSolicitudes/` | 1 | 🔵 Baja |
-| 4 | Validar identidad (Experian) | `2370961900` | `ValidarIdentidadExperian/` | 4 | 🔴 Alta |
-| 5 | API Sarlaft | `2558033927` | `ApiSarlaft/` | 4 | 🔴 Alta |
-| 6 | Ingesta de datos Teradata | `2595160065` | `IngestaDatosTeradata/` | 3 | 🔴 Alta |
-| 7 | Proceso de Migración | `2596667457` | `ProcesoDeMigracion/` | 3 | ⚠️ Media |
-| 8 | Proceso de Actualización | `3715006471` | `ProcesoDeActualizacion/` | 3 | ⚠️ Media |
-| 9 | Segmentación Core | `2739077470` | `SegmentacionCore/` | 0 | 🔵 Baja |
-| 10 | Guía de Aprendizaje Sarlaft 4.0 - Desarrollo | `3228270786` | `GuiaDeAprendizaje/` | 0 | 🔵 Baja |
-| 11 | Automatización Flujos Criticos | `4131979320` | `AutomatizacionFlujosCriticos/` | 6 | 🔴 Alta |
+> ✅ **Todas las secciones top-level han sido documentadas** (actualización 2026-04-02).
 
 > **Nota sobre "Interfaces de Servicio" (top-level):** Ya existe `DocumentacionTecnica/InterfacesDeServicio/` que documenta interfaces bajo Documentación Técnica. La sección top-level `1955070133` es una página **diferente** con su propio árbol de hijos. Validar si el contenido es distinto o redundante antes de documentar.
 
@@ -74,13 +73,12 @@
 | Configuración Plataforma Base Sarlaft | `2389114940` | `ConfiguracionPlataformaBase/` |
 | Propiedades PrefetchCount y MaxConcurrency | `3403874362` | `PropiedadesPrefetchCountMaxConcurrency.md` |
 | Pruebas Orden Administrativa Soat | `3819175965` | `PruebasOrdenAdministrativaSoat/` |
+| Acceso a URLS necesarias para el equipo base | `1827046088` | `AccesoUrlsEquipoBase.md` |
+| Documentación Procesos BI | `1856536871` | `DocumentacionProcesosBI.md` |
 
 ### Pendientes por documentar
 
-| # | Sección Confluence | ID Página | Carpeta Local Esperada | Prioridad |
-|---|---|---|---|---|
-| 1 | Acceso a URLS necesarias para el equipo base | `1827046088` | `AccesoUrlsEquipoBase/` | ⚠️ Media |
-| 2 | Documentación Procesos BI | `1856536871` | `DocumentacionProcesosBI/` | ⚠️ Media |
+> ✅ **Todas las subsecciones de Documentación Técnica han sido documentadas** (actualización 2026-04-02).
 
 ---
 

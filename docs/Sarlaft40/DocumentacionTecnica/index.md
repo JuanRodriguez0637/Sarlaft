@@ -21,3 +21,5 @@
 | 12 | [Microservicio Webhook](./MicroservicioWebhook/index.md) | Webhook de notificaciones y callbacks |
 | 13 | [Motor de Evaluación](./MotorDeEvaluacion/index.md) | Motor de reglas de negocio: riesgo, validaciones, servicios web, API terceros |
 | 14 | [Propiedades de PrefetchCount y MaxConcurrency](./PropiedadesPrefetchCountMaxConcurrency.md) | Valores de PrefetchCount y MaxConcurrency para optimizar el procesamiento masivo |
+| 15 | [Acceso a URLS necesarias para el equipo base](./AccesoUrlsEquipoBase.md) | URLs de Azure DevOps, SonarQube y Splunk para el equipo base |
+| 16 | [Documentación Procesos BI](./DocumentacionProcesosBI.md) | Documentación de procesos de Business Intelligence |

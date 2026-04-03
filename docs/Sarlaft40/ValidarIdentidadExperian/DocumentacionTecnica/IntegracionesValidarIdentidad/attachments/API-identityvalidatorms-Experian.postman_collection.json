@@ -1,0 +1,393 @@
+{
+	"info": {
+		"_postman_id": "c6e404d9-2b7d-4d5c-8282-04121046fd67",
+		"name": "API-identityvalidatorms-Experian",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33144964"
+	},
+	"item": [
+		{
+			"name": "obtener token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "IMPMASIVOS",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-APP",
+						"value": "SARLAFT",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/v1/security/token",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"security",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "validar identidad",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-APP",
+						"value": "SARLAFT",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"aplicacionOrigen\": \"{{aplicacionOrigen}}\",\r\n    \"tipoDocumento\": \"{{tipoDocumento}}\",\r\n    \"numeroDocumento\": \"{{numeroDocumento}}\",\r\n    \"primerNombre\": \"JUAN\",\r\n    \"segundoNombre\": \"PABLO\",\r\n    \"primerApellido\": \"CASTILLO\",\r\n    \"segundoApellido\": \"OBANDO\",\r\n    \"fechaExpedicion\": \"2009-06-17\",\r\n    \"codigoRamo\": \"{{codigoRamo}}\",\r\n    \"codigoFlujo\": \"{{codigoFlujo}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/v1/identification/validate",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"identification",
+						"validate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inicializar otp",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-APP",
+						"value": "SARLAFT",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"aplicacionOrigen\": \"{{aplicacionOrigen}}\",\r\n    \"tipoDocumento\": \"{{tipoDocumento}}\",\r\n    \"numeroDocumento\": \"{{numeroDocumento}}\",\r\n    \"regValidacion\": \"{{regValidacion}}\",\r\n    \"numeroCelular\": \"{{numCelular}}\",\r\n    \"codigoRamo\": \"{{codigoRamo}}\",\r\n    \"codigoFlujo\": \"{{codigoFlujo}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/v1/otp/initialize",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"otp",
+						"initialize"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generar otp",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-APP",
+						"value": "SARLAFT",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"aplicacionOrigen\": \"{{aplicacionOrigen}}\",\r\n    \"tipoDocumento\": \"{{tipoDocumento}}\",\r\n    \"numeroDocumento\": \"{{numeroDocumento}}\",\r\n    \"regValidacion\": \"{{regValidacion}}\",\r\n    \"idTransaccionOTP\": \"{{idTransaccionOTP}}\",\r\n    \"numeroCelular\": \"{{numCelular}}\",\r\n    \"codigoRamo\": \"{{codigoRamo}}\",\r\n    \"codigoFlujo\": \"{{codigoFlujo}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/v1/otp/generate",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"otp",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "inicializar generar otp",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-APP",
+						"value": "SARLAFT",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"aplicacionOrigen\": \"{{aplicacionOrigen}}\",\r\n    \"tipoDocumento\": \"{{tipoDocumento}}\",\r\n    \"numeroDocumento\": \"{{numeroDocumento}}\",\r\n    \"regValidacion\": \"{{regValidacion}}\",\r\n    \"numeroCelular\": \"{{numCelular}}\",\r\n    \"codigoRamo\": \"{{codigoRamo}}\",\r\n    \"codigoFlujo\": \"{{codigoFlujo}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/v1/otp/initializeGenerate",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"otp",
+						"initializeGenerate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verificar otp",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-APP",
+						"value": "SARLAFT",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"aplicacionOrigen\": \"{{aplicacionOrigen}}\",\r\n    \"tipoDocumento\": \"{{tipoDocumento}}\",\r\n    \"numeroDocumento\": \"{{numeroDocumento}}\",\r\n    \"regValidacion\": \"{{regValidacion}}\",\r\n\t\"idTransaccionOTP\": \"{{idTransaccionOTP}}\",\r\n\t\"codigoOTP\": \"153262\",\r\n    \"codigoRamo\": \"{{codigoRamo}}\",\r\n    \"codigoFlujo\": \"{{codigoFlujo}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/v1/otp/verify",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"otp",
+						"verify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generar cuestionario",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-APP",
+						"value": "SARLAFT",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"aplicacionOrigen\": \"{{aplicacionOrigen}}\",\r\n    \"tipoDocumento\": \"{{tipoDocumento}}\",\r\n    \"numeroDocumento\": \"{{numeroDocumento}}\",\r\n    \"regValidacion\": \"{{regValidacion}}\",\r\n    \"codigoRamo\": \"{{codigoRamo}}\",\r\n    \"codigoFlujo\": \"{{codigoFlujo}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/v1/questionary/generate",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"questionary",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verificar cuestionario",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-APP",
+						"value": "SARLAFT",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"aplicacionOrigen\": {{aplicacionOrigen}},\r\n    \"idCuestionario\": \"{{idCuestionario}}\",\r\n    \"regCuestionario\": \"{{regCuestionario}}\",\r\n    \"tipoDocumento\": {{tipoDocumento}},\r\n    \"numeroDocumento\": {{numeroDocumento}},\r\n    \"respuestas\": [\r\n        {\r\n            \"idPregunta\": \"1\",\r\n            \"idRespuesta\": \"006\"\r\n        },\r\n        {\r\n            \"idPregunta\": \"2\",\r\n            \"idRespuesta\": \"006\"\r\n        },\r\n        {\r\n            \"idPregunta\": \"3\",\r\n            \"idRespuesta\": \"003\"\r\n        },\r\n        {\r\n            \"idPregunta\": \"4\",\r\n            \"idRespuesta\": \"001\"\r\n        }\r\n    ],\r\n\t\"codigoRamo\": {{codigoRamo}},\r\n    \"codigoFlujo\": {{codigoFlujo}}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/v1/questionary/generate",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"v1",
+						"questionary",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

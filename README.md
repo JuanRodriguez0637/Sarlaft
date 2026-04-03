@@ -11,6 +11,8 @@ docs/
 ├── PromptDocumentarConfluence.md     # Prompt de referencia para documentación
 └── Sarlaft40/                        # Documentación con jerarquía Confluence Sarlaft 4.0
     ├── index.md                       # Índice raíz Sarlaft 4.0
+    ├── SegmentacionCore.md            # Segmentación Core: score de riesgo
+    ├── GuiaDeAprendizaje.md           # Guía de Aprendizaje Sarlaft 4.0 - Desarrollo
     ├── docx/                          # Documentos Word exportados
     ├── xlsx/                          # Archivos Excel (carga masiva, resultados)
     ├── PreguntasFrecuentes/           # Preguntas frecuentes sobre integración con Sarlaft
@@ -23,9 +25,62 @@ docs/
     │   ├── ProblemasConElLinkDeValidacionDeIdentidad.md # Diagnóstico link validación
     │   ├── ErrorEnElAplicativoDeBancaNegocioEnEstadoPendiente.md # Error Banca PENDIENTE
     │   └── attachments/               # Imágenes de evidencias de incidentes
+    ├── ValidarIdentidadExperian/      # Validar identidad (Experian) — flujo completo
+    │   ├── index.md                   # Índice con video de revisión técnica
+    │   ├── DefinicionesTecnicas.md    # Definiciones técnicas (placeholder)
+    │   ├── MejoraControlAlertas.md    # Mejora control alertas (no implementado)
+    │   ├── DocumentacionTecnica/      # Documentación técnica del validador
+    │   │   ├── DiagramaArquitecturaEA.md
+    │   │   ├── ActualizacionCertificadoDigital.md # Keystore SOAP DataCrédito
+    │   │   ├── LogsExperianSplunk.md
+    │   │   ├── RechazarEvidenciaIntentosAgotados.md
+    │   │   ├── LogsEndpointsValidadorIdentidad.md
+    │   │   ├── MicroservicioIdentityValidator/  # identity-validator-ms
+    │   │   ├── FrontWebComponent/     # Web Component validación identidad
+    │   │   └── IntegracionesValidarIdentidad/   # 13 integraciones (IV001–IV009)
+    │   │       └── IV001ValidarDocumento/       # Validar con Registraduría
+    │   └── ServiciosWeb/              # Servicios Web del validador
+    │       ├── ValidarIdentidadCargueP8/  # Cargue soporte a P8
+    │       ├── ValidarDocumentoExtranjeros.md
+    │       └── ConfiguracionHealthCheck.md
+    ├── ApiSarlaft/                    # API Sarlaft para consumo externo
+    │   ├── index.md
+    │   ├── ProcesoExposicionApiGee.md # Proceso exposición en ApiGee
+    │   ├── DocumentacionTecnicaServicios/  # Documentación técnica y plantillas
+    │   ├── DisenoAPIS/                # Diseño APIs y entorno Apigee Lab
+    │   └── ImplementacionInterfazCotizador/  # Interfaz gráfica cotizador
+    ├── IngestaDatosTeradata/          # Ingesta de datos desde Teradata
+    │   ├── IngestaDatabriks.md        # Pipeline Databricks
+    │   ├── TrasporteDatafactory.md    # Transporte con Data Factory
+    │   └── GuiaBasicaAzure.md         # Guía básica Azure
+    ├── AutomatizacionFlujosCriticos/  # Automatización Flujos Críticos (KR4)
+    │   ├── index.md                   # F1–F6: conocimiento, medidas, parametrías
+    │   └── F1–F6*.md                  # 6 flujos de excelencia técnica
+    ├── InterfacesDeServicio/          # Interfaces de Servicio (top-level)
+    │   ├── index.md                   # Índice con colecciones Postman
+    │   ├── DescripcionInterfacesPrincipales.md
+    │   ├── InterfazProcesosMasivos.md
+    │   ├── EscenarioValidacionVariosRequest.md
+    │   ├── InterfazConsultaEstadoSarlaft.md
+    │   └── EvaluacionParaReclamaciones.md
+    ├── ProcesoDeMigracion/            # Proceso de Migración de datos
+    │   ├── ModeloClientesVinculaciones.md
+    │   ├── MigracionTipificacion.md
+    │   └── MigracionTransporteModelo/ # Pipelines de migración y carga
+    ├── ProcesoDeActualizacion/        # Proceso de Actualización
+    │   ├── SarlaftsCandidatosActualizar.md
+    │   ├── SolucionDatafactory.md
+    │   └── NuevoDisenoProceso.md
+    ├── ProcesoDeNegocio/              # Proceso de Negocio
+    │   └── TablerosInformacionNegocio.md
+    ├── DocumentacionDeSolicitudes/    # Documentación de Solicitudes (top-level)
+    │   ├── ParametrizacionNuevoSubramo.md  # Parametrización subramo/producto
+    │   └── PermisoParaFondosura.md
     └── DocumentacionTecnica/          # Documentación técnica completa
         ├── index.md                   # Índice de documentación técnica
         ├── PropiedadesPrefetchCountMaxConcurrency.md  # PrefetchCount y MaxConcurrency
+        ├── AccesoUrlsEquipoBase.md    # URLs necesarias para el equipo base
+        ├── DocumentacionProcesosBI.md # Documentación Procesos BI (placeholder)
         ├── MicroservicioSarlaftAPI/   # Microservicio principal SarlaftAPI
         │   ├── index.md               # Índice del microservicio
         │   ├── ConfiguracionAmbiente.md
@@ -141,7 +196,7 @@ docs/
     └── Confluence Sura.agent.md      # Agente IA para extracción de Confluence
 ```
 
-> **Total:** 327 archivos Markdown · 480 adjuntos (imágenes, DOCX, PDF, XLSX, JSON, drawio)
+> **Total:** 410 archivos Markdown · 678 adjuntos (imágenes, DOCX, PDF, XLSX, JSON, drawio)
 
 ## Ramas
 

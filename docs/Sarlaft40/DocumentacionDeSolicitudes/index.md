@@ -1,23 +1,23 @@
+---
+title: "Documentación de Solicitudes"
+confluence_id: 1746928745
+confluence_url: "https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1746928745"
+last_modified: "2025-12-15"
+author: "Antiguo usuario (Deleted)"
+version: 2
+---
+
 # Documentación de Solicitudes
 
-> **Fuente Confluence:** [Documentacion de solicitudes](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/541622683)
-> **Última modificación:** 2020-02-27 — Lina Marcela Marín Ochoa · versión 2
-> **Sección:** Sarlaft 4.0
+> **Fuente Confluence:** [Documentación de Solicitudes](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1746928745)
+> **Última modificación:** 2025-12-15 — Antiguo usuario (Deleted) · versión 2
+> **Sección:** [Sarlaft 4.0](../index.md)
 
-<!-- -->
+Explicación de como deben atenderse cada una de las solicitudes que lleguen para el sistema durante su operación
 
-> **Tip — ¿Qué es una solicitud?**
-> Es un requerimiento que el usuario solicita que no implica una historia de usuario.
+## Sub-páginas
 
-<!-- -->
-
-> **Info**
-> Todas las solicitudes deben ser gestionadas por:
-> **Soporte Plataforma XXX:** <xxx@suramericana.com.co>
-> **Tablero en Jira:** <https://jira.suramericana.com.co/secure/Dashboard.jspa>
-
-## Solicitudes documentadas
-
-| Página | Descripción | Última modificación |
-| -------- | ------------- | --------------------- |
-| [Permisos para Fondosura](./PermisoParaFondosura.md) | Proceso de perfilación de usuarios en Fondosura mediante SEUS 4 | 2022-09-27 — Miguel Ángel Colorado Restrepo |
+| Sub-página | Enlace |
+|---|---|
+| Parametrización de un nuevo subramo o producto | [ParametrizacionNuevoSubramo.md](./ParametrizacionNuevoSubramo.md) |
+| Permisos para Fondosura | [PermisoParaFondosura.md](./PermisoParaFondosura.md) |

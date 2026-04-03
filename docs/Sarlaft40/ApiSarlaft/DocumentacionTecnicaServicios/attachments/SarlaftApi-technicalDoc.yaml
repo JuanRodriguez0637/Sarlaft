@@ -1,0 +1,1588 @@
+openapi: 3.0.1
+info:
+  title: API Sarlaft
+  description: Recursos relacionado con la generación e ingreso de información de sarlaft para personas naturales y jurídicas.
+  version: 1.0.0
+  ##contact: 
+    ##name: Soporte ##TODO
+    ##email: user@sura.com.co
+  ##termsOfService: https://terms.sura.com/service
+  ##license: 
+    ##name: Licencia ##TODO
+    ##url: https://api.sura.com/license
+##externalDocs: 
+  ##description: Guia de inicio rápido
+  ##url: https://api.sura.com/getstarted ##TODO
+tags: 
+ - name: Afiliados
+   description: Proceso creación de sarlaft para Afiliados
+ - name: No Afiliados
+   description: Proceso de creación de sarlaft para No Afiliados
+servers:
+  - url: https://apisuratest.segurossura.com/sarlaft
+    description: servicio de prueba
+    variables:
+      version:
+        enum: 
+          - v1
+        default: v1
+paths:
+  /v1/evaluaciones:
+    put:
+      tags:
+        - Afiliados
+      summary: SERVICIO PARA CREAR Y GUARDAR EVALUACIONES
+      operationId: crearEvaluacionTerceros
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NuevaEvaluacionTerceros'
+        required: true
+      responses:
+        '200':
+          description: Successful Operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EvaluacionTercerosRespuesta'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                errorFormato:
+                  value:
+                    code: 400
+                    id: "formato-006"
+                    mensajePolitica: "Formato incorrecto: Primer nombre o apellido"
+                    detalle: "Identificación <DNI>: Debe ingresar un primer nombre y apellido válido"
+                    tipoError: "FORMATO"              
+                errorNegocio:
+                  value:
+                    code: 400
+                    id: "negocio-033"
+                    mensajePolitica: "Información incompleta: Figura"
+                    detalle: "Identificación <DNI>: Debe ingresar un tipo de figura"
+                    tipoError: "NEGOCIO"                                                                                                   
+        '401':
+          description: Authentication Failure
+        '404':
+          description: Not found
+        '500':
+          description: Internal Server
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                errorTecnico:
+                  value:
+                    code: 400
+                    id: "tecnico-001"
+                    mensajePolitica: "Se ha presentado un error no controlado en el proceso de Sarlaft"
+                    detalle: "Se ha presentado un error no controlado en el proceso de Sarlaft"
+                    tipoError: "TECNICO"                
+    post:
+      tags:
+        - No Afiliados
+      summary: 'SERVICIO PARA CREAR UNA EVALUACION DE SARALFT.'
+      operationId: createNew
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NuevaEvaluacion'
+        required: true
+      responses:
+        '200':
+          description: Successful Operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EvaluacionRespuesta'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                errorFormato:
+                  value:
+                    code: 400
+                    id: "formato-041"
+                    mensajePolitica: "Formato incorrecto: Tipo y número de identificación"
+                    detalle: "Identificación <DNI>: Debe ingresar un número de identificación que cumpla con las longitudes del tipo de identificación"
+                    tipoError: "FORMATO"              
+                errorNegocio:
+                  value:
+                    code: 400
+                    id: "negocio-002"
+                    mensajePolitica: "Información incompleta: Tipo de documento"
+                    detalle: "Identificación <DNI>: El tipo de documento ingresado no se asocia al país de nacimiento/constitución, por favor ingrese el país correcto según el documento de identidad del cliente"
+                    tipoError: "NEGOCIO"
+        '401':
+          description: Authentication Failure
+        '404':
+          description: Not found
+        '500':
+          description: Internal Server
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                errorTecnico:
+                  value:
+                    code: 400
+                    id: "tecnico-001"
+                    mensajePolitica: "Se ha presentado un error no controlado en el proceso de Sarlaft"
+                    detalle: "Se ha presentado un error no controlado en el proceso de Sarlaft"
+                    tipoError: "TECNICO" 
+
+  /v1/documentos:
+    post:
+      tags:
+        - Afiliados
+      summary: SERVICIO PARA ADJUNTAR DOCUMENTOS SOPORTES DE REQUISITOS SOLICITADOS A UNA FIGURA DENTRO DEL PROCESO DE EVALUACIÓN SARLAFT.
+      operationId: upload
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              required:
+                - codigoRequisito
+                - dni
+                - evaluacionId
+                - filePart
+              type: object
+              properties:
+                filePart:
+                  type: string
+                  format: binary
+                  description: Seleccionar el archivo a adjuntar para el requisito deseado
+                evaluacionId:
+                  type: string
+                  example: "07c0a939-1f83-4af2-a909-2e6bbe349cea"
+                  description: Identificación de evaluación a la cual pertenece el sarlaft que se le adjuntará este documento.
+                dni:
+                  type: string
+                  example: "C10172156"
+                  description: Compuesto Tipo documento y Número documento del cliente al que se le adjuntará este documento.
+                codigoRequisito:
+                  type: string
+                  example: "828"
+                  description: Código del requisito al cual se dara cumplimiento con este documento.
+      responses:
+        '200':
+          description: Successful Operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RespuestaUpload'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                errorFormato:
+                  value:
+                    code: 400
+                    id: "formato-012"
+                    mensajePolitica: "Formato incorrecto: Identificador de la evaluación"
+                    detalle: "Debe ingresar un identificador de la evaluación válido"
+                    tipoError: "FORMATO"              
+                errorNegocio:
+                  value:
+                    code: 400
+                    id: "negocio-022"
+                    mensajePolitica: "Información incompleta: Identificador de la evaluación"
+                    detalle: "Debe ingresar un identificador de la evaluación"
+                    tipoError: "NEGOCIO"          
+        '401':
+          description: Authentication Failure
+        '404':
+          description: Not found
+        '500':
+          description: Internal Server
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                errorTecnico:
+                  value:
+                    code: 400
+                    id: "tecnico-001"
+                    mensajePolitica: "Se ha presentado un error no controlado en el proceso de Sarlaft"
+                    detalle: "Se ha presentado un error no controlado en el proceso de Sarlaft"
+                    tipoError: "TECNICO"           
+  /v1/catalogos:
+    get:
+      tags:
+        - Afiliados
+      summary: SERVICIO PARA CONSULTAR CATÁLOGOS
+      operationId: consultarCatalogos
+      parameters:
+        - name: codigoCatalogo
+          in: query
+          required: true
+          description: Código del catálogo a consultar
+          schema:
+            type: string
+        - name: departamento
+          in: query
+          required: false
+          description: Código del departamento
+          schema:
+            type: string
+        - name: pais
+          in: query
+          required: false
+          description: Código del país
+          schema:
+            type: string
+        - name: tipoPersona
+          in: query
+          required: false
+          description: Tipo de persona (N- Natural, J-Jurídica)
+          schema:
+            type: string
+        - name: subCodigoParametro
+          in: query
+          required: false
+          description: Subcódigo del parámetro
+          schema:
+            type: string
+        - name: fraccionTexto
+          in: query
+          required: false
+          description: Fracción del texto a buscar
+          schema:
+            type: string      
+      responses:
+        '200':
+          description: Successful Operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Catalogos'
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                errorFormato:
+                  value:
+                    code: 400
+                    id: "formato-015"
+                    mensajePolitica: "Formato incorrecto: Código de catálogo"
+                    detalle: "Debe ingresar un código de catálogo válido"
+                    tipoError: "FORMATO"              
+                errorNegocio:
+                  value:
+                    code: 400
+                    id: "negocio-029"
+                    mensajePolitica: "Información incompleta: Código de catálogo"
+                    detalle: "Debe ingresar el filtro código de catálogo"
+                    tipoError: "NEGOCIO" 
+        '401':
+          description: Authentication Failure
+        '404':
+          description: Not found
+        '500':
+          description: Internal Server
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                errorTecnico:
+                  value:
+                    code: 400
+                    id: "tecnico-001"
+                    mensajePolitica: "Se ha presentado un error no controlado en el proceso de Sarlaft"
+                    detalle: "Se ha presentado un error no controlado en el proceso de Sarlaft"
+                    tipoError: "TECNICO"          
+  /v1/formularios:
+    post:
+      tags:
+        - No Afiliados
+      summary: SERVICIO PARA GUARDAR LA INFORMACIÓN DEL FORMULARIO DE SARLAFT
+      operationId: guardarEvaluacionTerceros
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GuardarFormularioTerceros'
+        required: true
+      responses:
+        '200':
+          description: Successful Operation
+          content:
+            application/json:
+              schema:
+                type: string
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                errorFormato:
+                  value:
+                    code: 400
+                    id: "formato-042"
+                    mensajePolitica: "Formato incorrecto: Primer nombre o apellido"
+                    detalle: "Identificación <DNI>: Debe ingresar un primer nombre y apellido de longitud válida"
+                    tipoError: "FORMATO"              
+                errorNegocio:
+                  value:
+                    code: 400
+                    id: "negocio-056"
+                    mensajePolitica: "Información no válida:  Identificador de la evaluación"
+                    detalle: "El identificador de la evaluación no se ha encontrado"
+                    tipoError: "NEGOCIO"           
+        '401':
+          description: Authentication Failure
+        '404':
+          description: Not found
+        '500':
+          description: Internal Server
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                errorTecnico:
+                  value:
+                    code: 400
+                    id: "tecnico-001"
+                    mensajePolitica: "Se ha presentado un error no controlado en el proceso de Sarlaft"
+                    detalle: "Se ha presentado un error no controlado en el proceso de Sarlaft"
+                    tipoError: "TECNICO"
+  /v1/token:
+    get:
+      tags:
+        - No Afiliados
+      summary: SERVICIO PARA OBTENER TOKEN DE AUTENTICACIÓN EN INTEGRACIONES CON WEBCOMPONENT
+      operationId: obtenerToken
+      parameters:
+        - name: X-app
+          in: header
+          required: true
+          description: Código de aplicación que desea obtener el token
+          schema:
+            type: string
+      responses:
+          '200':
+            description: Successful Operation
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/JWTToken'                  
+          '400':
+            description: Bad Request
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Error'
+                examples:
+                  errorFormato:
+                    value:
+                      code: 400
+                      id: "formato-042"
+                      mensajePolitica: "Formato incorrecto: Primer nombre o apellido"
+                      detalle: "Identificación <DNI>: Debe ingresar un primer nombre y apellido de longitud válida"
+                      tipoError: "FORMATO"              
+                  errorNegocio:
+                    value:
+                      code: 400
+                      id: "negocio-056"
+                      mensajePolitica: "Información no válida:  Identificador de la evaluación"
+                      detalle: "El identificador de la evaluación no se ha encontrado"
+                      tipoError: "NEGOCIO"
+          '401':
+            description: Authentication Failure
+          '404':
+            description: Not found
+          '500':
+            description: Internal Server
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Error'
+                examples:
+                  errorTecnico:
+                    value:
+                      code: 400
+                      id: "tecnico-001"
+                      mensajePolitica: "Se ha presentado un error no controlado en el proceso de Sarlaft"
+                      detalle: "Se ha presentado un error no controlado en el proceso de Sarlaft"
+                      tipoError: "TECNICO"                                                           
+components:
+  schemas:
+    EvaluacionTercerosRespuesta:
+      type: object
+      properties:
+        id:
+          type: string
+          example: "94d81513-2da4-488c-a637-8330c8ba378a"
+          description: Identificador de la evaluación creada.
+        estado:
+          type: string
+          example: "FINALIZADO"
+          description: Estado de la evaluación creada.
+          enum:
+            - PENDIENTE
+            - FINALIZADO
+            - FINALIZADO_SIN_CARGA
+            - RECHAZADO
+        fechaCreacion:
+          type: string
+          format: date-time
+          example: "2022-05-02T20:17:03.512+00:00"
+        ultimaActualizacion:
+          type: string
+          format: date-time
+          example: "2022-05-02T20:17:03.512+00:00"
+        sarlafts:
+          type: array
+          description: >-
+            Resultado de la validación del sarlaft de los roles recibidos en la
+            solicitud de evaluación
+          items:
+            $ref: '#/components/schemas/SarlaftTercerosRespuesta'
+      description: Indica el resultado de la validación de saralft y evaluación
+    SarlaftTercerosRespuesta:
+      type: object
+      properties:
+        dni:
+          type: string
+          example: "C1036683385"
+          description: Dni de la persona asociada al sarlaft.
+        estado:
+          type: string
+          example: "FINALIZADO"
+          description: >-
+            Estado del del sarlaft. FINALIZADO: Terminado. PENDIENTE: faltan
+            pasos para completar el sarlaft. FINALIZADO_SIN_CARGA: Terminado. RECHAZADO: No cumple con los requisitos.
+          enum:
+            - PENDIENTE
+            - FINALIZADO
+            - FINALIZADO_SIN_CARGA
+            - RECHAZADO
+        fechaCreacion:
+          type: string
+          description: Fecha de creación
+          format: date-time
+        fechaActualizacion:
+          type: string
+          description: >-
+            Fecha de actualización del último sarlaft del cliente. Null para
+            cuando no se tenga información de fecha de actualización. 
+          format: date-time
+        listaControl:
+          type: array
+          description: Lista de controles a aplicar al usuario.
+          items:
+            $ref: '#/components/schemas/Control'
+        soportesPendientes:
+          type: array
+          description: Listado de soportes del sarlaft en estado PENDIENTE
+          items:
+            $ref: '#/components/schemas/Soporte'
+      description: >-
+        Resultado de la validación del sarlaft de los roles recibidos en la
+        solicitud de evaluación
+    Soporte:
+      type: object
+      properties:
+        codigo:
+          type: string
+          example: 2305
+          description: Código del soporte. Valores correspondientes al catálogo con código TIPO_REQUISITO
+        nombre:
+          type: string
+          example: Certificado de ingresos y retenciones
+          description: Nombre del soporte
+      description: Listado de soportes del sarlaft
+    NuevaEvaluacionTerceros:
+      required:
+        - codigoAplicacion
+        - codigoOperacion
+        - negocioId
+      type: object
+      properties:
+        codigoOperacion:
+          maxLength: 2
+          minLength: 0
+          type: string
+          example: "01"
+          description: Código de operación del negocio para el cual se crea la evaluación
+          enum:
+            - "01" : Negocio Nuevo
+            - "RE" : Renovación
+        negocioId:
+          maxLength: 50
+          minLength: 0
+          type: string
+          example: "145454"
+          description: Identificador de negocio
+        codigoAplicacion:
+          maxLength: 50
+          minLength: 0
+          type: string
+          example: "118"
+          description: Código de Aplicación que realiza la solicitud de evaluacion. Código registrado previamente en el aplicativo de Sarlaft 4.0
+        sarlafts:
+          type: array
+          description: Datos de los sarlaft asociados a la evaluación
+          items:
+            $ref: '#/components/schemas/NuevoSarlaftTerceros'
+        poliza:
+          $ref: '#/components/schemas/NuevaPolizaTerceros'
+    NuevaPolizaTerceros:
+      required:
+        - codigoRamo
+        - medioPago
+        - tipoNegocio
+      type: object
+      properties:
+        tipoNegocio:
+          maxLength: 15
+          minLength: 1
+          type: string
+          example: "COLECTIVO"
+          description: 'Tipo de Negocio. INDIVIDUAL: Póliza Individual o COLECTIVO: Póliza colectiva'
+          enum:
+            - INDIVIDUAL
+            - COLECTIVO
+        codigoRamo:
+          maxLength: 3
+          minLength: 1
+          type: string
+          example: "030"
+          description: Código de ramo. Validar posibles valores con el catálogo con código COD_RAMOS
+        codigoProducto:
+          maxLength: 3
+          minLength: 1
+          type: string
+          example: "00"
+          description: Código de producto. Validar posibles valores con el catálogo con código COD_SUBRAMOS
+        codigoCanal:
+          type: string
+          example: "CC013"
+          description: Código de canal. Valores correspondientes al catálogo con código CANALES
+        valorAsegurado:
+          type: number
+          format: double
+          example: 500000
+          description: Valor asegurado en el negocio
+        valorPrima:
+          type: number
+          format: double
+          example: 500000
+          description: Valor de prima del negocio
+        medioPago:
+          type: string
+          example: "DEBITO_AUTOMATICO"
+          description: Medio de pago. En caso de no ser DEBITO_AUTOMATICO enviar nulo.
+          enum:
+            - DEBITO_AUTOMATICO
+        tipoCoaseguro:
+          type: string
+          example: "ACEPTADO"
+          description: 'Código del tipo de Coaseguro: ACEPTADO o CEDIDO'
+          enum:
+            - ACEPTADO
+            - CEDIDO
+        licitacionPublica:
+          type: boolean
+          example: false
+          description: 'True: si la póliza tiene licitación. False: si la póliza no tiene licitación'
+      description: Información de la póliza o negocio
+    NuevoClienteTerceros:
+      type: object
+      properties:
+        tipoPersona:
+          maxLength: 1
+          minLength: 1
+          type: string
+          example: "N"
+          description: Tipo de Persona. Valores correspondientes al catálogo con código TIPO_PERSONA.
+        correo:
+          maxLength: 100
+          minLength: 0
+          type: string
+          example: "mail_1@mail.com.co"
+          description: Correo electrónico del cliente
+        celular:
+          maxLength: 20
+          minLength: 0
+          type: string
+          example: "3102345670"
+          description: Nro. de celular del cliente
+        razonSocial:
+          maxLength: 100
+          minLength: 0
+          type: string
+          example: null
+          description: Razón social del cliente en caso de ser persona Juridica. En caso de ser persona natural enviar nulo.
+        paisConstitucion:
+          maxLength: 20
+          minLength: 0
+          type: string
+          example: null
+          description: País constitución. Valores correspondientes al catálogo con código PAISES.
+        persona:
+          $ref: '#/components/schemas/NuevaPersona'
+        documento:
+          $ref: '#/components/schemas/NuevoDocumento'
+        infoFinanciera:
+          $ref: '#/components/schemas/NuevaInfoFinancieraTerceros'
+        direcciones:
+          type: array
+          description: Dirección del cliente
+          items:
+            $ref: '#/components/schemas/NuevaDireccion'
+        asociaciones:
+          type: array
+          items:
+            $ref: '#/components/schemas/NuevoClienteTerceros'
+        relaciones:
+          type: array
+          description: >-
+            Relaciones PEPS (Persona Expuesta Políticamente). Aplica solo a la figura de
+            tomador
+          items:
+            $ref: '#/components/schemas/NuevaRelacion'
+      description: Información del cliente
+    NuevaInfoFinancieraTerceros:
+      type: object
+      properties:
+        ingresos:
+          type: string
+          example: "20000"
+          description: Valor total de lo que posee una sociedad comercial.
+        egresos:
+          type: string
+          example: "15000"
+          description: Son las obligaciones con la que una empresa financia su actividad
+        actividadEconomica:
+          type: string
+          example: "N1922"
+          description: >-
+            La actividad económica es un proceso en el que se genera o
+            distribuye un producto o un servicio. Valores correspondientes al catálogo con código ACTIVIDAD_ECONOMICA.
+        codigoOcupacion:
+          type: string
+          example: "A50"
+          description: Código correspondiente a la ocupación del cliente. Valores correspondientes al catálogo con código OCUPACION.
+        origenFondos:
+          type: string
+          example: "TRABAJO"
+          description: Declaración de origen de bienes
+      description: Información financiera de una persona natural
+    NuevaDireccion:
+      required:
+        - ciudad
+        - departamento
+        - direccion
+        - pais
+        - tipo
+      type: object
+      properties:
+        tipo:
+          maxLength: 20
+          minLength: 1
+          type: string
+          example: "RS"
+          description: 'Tipo de Dirección Ejemplo(Residencia,Oficina principal) Etc. Valores correspondientes al catálogo con código TIPO_DIRECCION_PN (persona natural) y TIPO_DIRECCION_PJ (persona juridica).'
+          enum:
+            - RS
+            - TR
+            - OP
+            - SC
+            - OR
+        pais:
+          maxLength: 20
+          minLength: 1
+          type: string
+          example: "57"
+          description: País actual. Valor correspondiente al catálogo con código PAISES.
+        departamento:
+          maxLength: 20
+          minLength: 1
+          type: string
+          example: "05"
+          description: Departamento actual. Valor correspondiente al catálogo con código DEPARTAMENTOS.
+        ciudad:
+          maxLength: 20
+          minLength: 1
+          type: string
+          example: "195"
+          description: Ciudad  actual. Valor correspondiente al catálogo con código CIUDADES.
+        direccion:
+          maxLength: 100
+          minLength: 1
+          type: string
+          example: "calle 14 #12-32"
+          description: Nomenclatura de dirección
+      description: Dirección del cliente
+    NuevaRelacion:
+      type: object
+      properties:
+        relacionPeps:
+          type: boolean
+          example: true
+          description: Indicador si es una relación PEPS (Persona Expuesta Políticamente).
+        tipo:
+          maxLength: 20
+          minLength: 1
+          type: string
+          example: "FAMILIA"
+          description: >-
+            Tipo de relación PEPS: CONYUGUE (Conyuge), FAMILIA (Familiar), SOCIO
+            (Socio), ACCIONISTA (Acconista). Valor correspondiente al catálogo con código TIPO_RELACION.
+        parentescoPeps:
+          maxLength: 20
+          minLength: 1
+          type: string
+          example: "01"
+          description: Tipo de parentesco PEPS. Valor correspondiente al catálogo con código PARENTESCO_PN (persona natural) y PARENTESCO_PJ (persona juridica).
+        documento:
+          $ref: '#/components/schemas/NuevoDocumento'
+        persona:
+          $ref: '#/components/schemas/NuevaPersona'
+        porParticipacionAccionista:
+          type: number
+          format: double
+          example: null
+          description: Indica  el porcentaje de participación del accionista.
+        codigoRelacion:
+          maxLength: 15
+          minLength: 0
+          type: string
+          example: null
+          description: >-
+            código de relación: tipo de relación administrativa presidente,
+            representante legal. Valor correspondiente al catálogo con código RELACIONES
+      description: Relación PEPS (Persona Expuesta Políticamente). Aplica solo a la figura de tomador
+    NuevaPersona:
+      type: object
+      properties:
+        primerNombre:
+          maxLength: 100
+          minLength: 0
+          type: string
+          example: "Nestor"
+          description: Primer Nombre
+        segundoNombre:
+          maxLength: 30
+          minLength: 0
+          type: string
+          example: "Fernando"
+          description: Segundo Nombre
+        primerApellido:
+          maxLength: 30
+          minLength: 0
+          type: string
+          example: "Suarez"
+          description: Primer Apellido
+        segundoApellido:
+          maxLength: 30
+          minLength: 0
+          type: string
+          example: "Arevalo"
+          description: Segundo Apellido
+        pais:
+          maxLength: 10
+          minLength: 0
+          type: string
+          example: "57"
+          description: Código del país de nacimiento. Valor correspondiente al catálogo con código PAISES.
+      description: Datos de nombres y apellidos de la persona de parentezco
+    NuevoDocumento:
+      type: object
+      properties:
+        tipo:
+          maxLength: 2
+          minLength: 0
+          type: string
+          example: "C"
+          description: Tipo de Identificación. Valor correspondiente al catálogo con código TIPO_DOCUMENTO.
+        numero:
+          maxLength: 20
+          minLength: 0
+          type: string
+          example: "1036683385"
+          description: Nro. de Identificación
+        fechaExpedicion:
+          type: string
+          format: date-time
+          example: "2007-05-27"
+          description: Fecha de expedición
+      description: Tipo y nro de identificación de la persona de parentezco
+    NuevaEvidenciaTerceros:
+      required:
+        - controlConsecutivo
+        - observaciones
+        - tipo
+      type: object
+      properties:
+        tipo:
+          maxLength: 10
+          minLength: 1
+          type: string
+          example: "CIFIN"
+          description: 'Tipo de Evidencia: CIFIN, RRCC. Valor correspondiente al catálogo con código TIPO_EVIDENCIA.'
+        observaciones:
+          maxLength: 100
+          minLength: 1
+          type: string
+          example: "Observaciones"
+          description: Observaciones de la evidencia que se adjunta
+        controlConsecutivo:
+          maxLength: 100
+          minLength: 1
+          type: string
+          example: "44777"
+          description: >-
+            Consecutivo propio de la evidencia, por ejemplo, para validación de
+            identidad seria el consecutivo de CIFIN.
+    NuevoSarlaftTerceros:
+      required:
+        - evidencias
+      type: object
+      properties:
+        tipoRiesgo:
+          maxLength: 23
+          minLength: 1
+          type: string
+          example: "SIMPLIFICADO"
+          description: Tipo de Riesgo. Valores correspondientes al catálogo con código TIPO_RIESGO
+        cuentaConInformacion:
+          type: boolean
+          example: false
+          description: >-
+            ¿Cuentas con información personal y financiera del asegurado,
+            beneficiario o afianzado?
+        entidadRegimen:
+          type: boolean
+          example: null
+          description: Entidad de régimen. true si es una entidad de régimen especial dictaminada por la reglamentación de Sarlaft 4.0. false en caso contrario
+        entidadFinanciera:
+          type: boolean
+          example: null
+          description: Entidad Financiera. true si es una entidad de financiera dictaminada por la reglamentación de Sarlaft 4.0. false en caso contrario
+        figuras:
+          type: array
+          description: >-
+            Figuras a las cuales se les actualizaran los datos del formulario
+            sarlaft.
+          items:
+            type: string
+            example: "TOMADOR"
+            description: >-
+              Figuras a las cuales se les actualizaran los datos del formulario
+              sarlaft. Valores correspondientes al catálogo con código TIPO_FIGURA
+        cliente:
+          $ref: '#/components/schemas/NuevoClienteTerceros'
+        
+        evidencias:
+          type: array
+          description: Evidencias a adjuntar al sarlaft
+          items:
+            $ref: '#/components/schemas/NuevaEvidenciaTerceros'
+      description: Información de los sarlafts de las personas asociadas a la evaluación
+    GuardarFormularioTerceros:
+      type: object
+      properties:
+        evaluacionId:
+          maxLength: 100
+          minLength: 0
+          type: string
+          example: "fad6c3df-b762-4f05-915a-c19fc93042ec"
+          description: >-
+            Código de evaluación, al cual se actualizaran o crearan los
+            formularios sarlaft.
+        relacionLaboral:
+          type: boolean
+          example: false
+          description: >-
+            Respuesta a la pregunta de relación laboral entre el tomador y los
+            asegurados. true si existe relación laboral, false en caso contrario.
+        administradorPep:
+          type: boolean
+          example: false
+          description: >-
+            ¿Alguno de los administradores (representantes legales, miembros de
+            la Junta Directiva) o socio con una participación superior al 5% de
+            la Persona Jurídica es una Persona Expuesta Políticamente (PEP)?
+        sarlafts:
+          type: array
+          description: >-
+            Figuras a las cuales se les actualizaran los datos del formulario
+            sarlaft.
+          items:
+            $ref: '#/components/schemas/SarlaftFormularioTerceros'
+    SarlaftFormularioTerceros:
+      type: object
+      properties:
+        tipoFigura:
+          type: array
+          items:
+            type: string
+            example: ["TOMADOR", "ASEGURADO"]
+            description: Figura a la cual se actualizara o creara formulario sarlaft. Valores correspondientes al catálogo con código TIPO_FIGURA.
+          description: Figura a la cual se actualizara o creara formulario sarlaft.
+        cuentaConInformacion:
+          type: boolean
+          example: true
+          description: >-
+            ¿Cuentas con información personal y financiera del asegurado,
+            beneficiario o afianzado?
+        justificacionInformacion:
+          type: string
+          example: null
+          description: >-
+            Cuéntanos las razones por las cuales no contabas con la información
+            de los Asegurados, Beneficiarios o Afianzados.
+        tieneRelacionPep:
+          type: boolean
+          example: false
+          description: ¿Tiene alguna persona políticamente Expuesta-PEP?
+        personaPep:
+          type: boolean
+          example: false
+          description: ¿El tomador es una Personas Expuesta Políticamente?
+        cliente:
+          $ref: '#/components/schemas/NuevoCliente'
+      description: >-
+        Figuras a las cuales se les actualizaran los datos del formulario
+        sarlaft.
+    NuevoCliente:
+      type: object
+      properties:
+        tipoPersona:
+          maxLength: 1
+          minLength: 1
+          type: string
+          example: "N"
+          description: Tipo de Persona. Valores correspondientes al catálogo con código TIPO_PERSONA.
+        tipoAsociacion:
+          maxLength: 20
+          minLength: 1
+          type: string
+          example: null
+          description: Tipo de Asociación. Valores correspondientes al catálogo con código RELACIONES.
+        razonSocial:
+          maxLength: 100
+          minLength: 0
+          type: string
+          example: null
+          description: Razón social del cliente en caso de ser persona Juridica. En caso de ser persona natural enviar nulo.
+        paisConstitucion:
+          maxLength: 20
+          minLength: 0
+          type: string
+          example: null
+          description: País constitución. Valores correspondientes al catálogo con código PAISES.
+        correo:
+          maxLength: 100
+          minLength: 0
+          type: string
+          example: "mail_1@mail.com.co"
+          description: Correo electrónico
+        celular:
+          maxLength: 20
+          minLength: 0
+          type: string
+          example: "3102345670"
+          description: Nro. de celular
+        porParticipacionSocio:
+          type: number
+          format: double
+          example: null
+          description: Porcentaje participación cuando el cliente es Accionista
+        documento:
+          $ref: '#/components/schemas/NuevoDocumento'
+        persona:
+          $ref: '#/components/schemas/NuevaPersona'
+        infoFinanciera:
+          $ref: '#/components/schemas/NuevaInfoFinanciera'
+        relaciones:
+          type: array
+          description: >-
+            Relaciones PEPS(Persona Expuesta Políticamente). Aplica solo a la figura de
+            tomador
+          items:
+            $ref: '#/components/schemas/NuevaRelacion'
+        asociaciones:
+          type: array
+          example: null
+          items:
+            $ref: '#/components/schemas/NuevoCliente'
+        direcciones:
+          type: array
+          description: Dirección del cliente
+          items:
+            $ref: '#/components/schemas/NuevaDireccion'
+    NuevaInfoFinanciera:
+      type: object
+      properties:
+        ingresos:
+          type: string
+          example: null
+          description: Valor total de lo que posee una sociedad comercial.
+        egresos:
+          type: string
+          example: null
+          description: Son las obligaciones con la que una empresa financia su actividad
+        activos:
+          type: number
+          format: double
+          example: null
+          description: Valor total de los activos de la compañia.
+        pasivos:
+          type: number
+          format: double
+          example: null
+          description: Valor total de los pasivos de la compañia.
+        actividadEconomica:
+          type: string
+          example: null
+          description: >-
+            La actividad económica es un proceso en el que se genera o
+            distribuye un producto o un servicio. Valores correspondientes al catálogo con código ACTIVIDADESECO.
+        codigoOcupacion:
+          type: string
+          example: null
+          description: Código correspondiente a la ocupación del cliente. Valores correspondientes al catálogo con código OCUPACIONESCLIENTE.
+        origenFondos:
+          type: string
+          example: null
+          description: Declaración de origen de bienes. Máximo 300 caracteres.
+      description: Información financiera de una persona natural
+    EvaluacionRespuesta:
+      type: object
+      properties:
+        id:
+          type: string
+          example: "1f9d710c-9e57-49c9-9275-839b758cf323"
+          description: Identificador de la evaluación
+        estado:
+          type: string
+          example: "PENDIENTE"
+          description: Estado de la evaluación.
+          enum:
+            - PENDIENTE
+            - FINALIZADO
+            - FINALIZADO_SIN_CARGA
+            - RECHAZADO
+        fechaCreacion:
+          type: string
+          format: date-time
+        ultimaActualizacion:
+          type: string
+          format: date-time
+        error:
+          example: null
+          type: string
+        url:
+          type: string
+          example: "https://sarlaft.labsura.com/redirect/iniciar-proceso/C4035AAB3A45F04EE6760B9E81B6B334010CD5956E07836C69A52E5BBD91E8F2"
+          description: >-
+            Url para abrir por el navegador el formulario de Sarlaft, en caso de
+            que este deba ser diligenciado. Campo no aplicaria a este tipo de integración.
+        sarlafts:
+          type: array
+          description: >-
+            Resultado de la validación del sarlaft de los roles recibidos en la
+            solicitud de evaluación
+          items:
+            $ref: '#/components/schemas/SarlaftResponse'
+      description: Indica el resultado de la validación de saralft
+    SarlaftResponse:
+      type: object
+      properties:
+        dni:
+          type: string
+          example: "C11389126"
+          description: Dni de la persona asociada al sarlaft
+        estado:
+          type: string
+          example: "RECHAZADO"
+          description: >-
+            Estado del del sarlaft. FINALIZADO o FINALIZADO_SIN_CARGA: Terminado. PENDIENTE: faltan
+            pasos para completar el sarlaft. RECHAZADO: No cumple con los requisitos. CANCELADO: Cancelado el proceso.
+          enum:
+           - FINALIZADO
+           - PENDIENTE
+           - CANCELADO
+           - RECHAZADO
+           - FINALIZADO_SIN_CARGA
+        requiereFormulario:
+          type: boolean
+          example: false
+          description: >-
+            true: Indica que el Sarlaft del cliente esta desactualizado y de
+            acuerdo con su nivel de riesgo debe ser diligenciado.false: Indica
+            que el Sarlaft del cliente esta actualizado o que de acuerdo con su
+            nivel de riesgo no es necesario actualizar más información.
+        listaControl:
+          type: array
+          description: Lista de controles a aplicar al usuario.
+          items:
+            $ref: '#/components/schemas/Control'
+        fechaCreacion:
+          type: string
+          description: Fecha de creación
+          format: date-time
+        fechaActualizacion:
+          type: string
+          description: >-
+            Fecha de actualización del último sarlaft del cliente. Null para
+            cuando no se tenga información de fecha de actualización. 
+          format: date-time
+        mensajeFormulario:
+          type: string
+          example: null
+          description: >-
+            Estado del del sarlaft. FINALIZADO: Terminado. PENDIENTE: faltan
+            pasos para completar el sarlaft
+        tipoFormulario:
+          type: string
+          example: "INTENSIFICADO"
+          description: Tipo del formulario. Valores correspondientes al catálogo con código TIPO_FORMULARIO.
+      description: >-
+        Resultado de la validación del sarlaft de los roles recibidos en la
+        solicitud de evaluación
+    Control:
+      type: object
+      properties:
+        mensajeControl:
+          type: string
+          example: "RRCC"
+          description: Mensaje del control levantado al dni
+        control:
+          type: string
+          example: "RRCC"
+          description: >-
+            Código del control levantado para el dni, por ejemplo, cuando es un
+            cliente PEPS(Persona Expuesta Políticamente), o pertenece a una lista de control.
+            Valores correspondientes al catálogo con código TIPO_EVIDENCIA.
+        estado:
+          type: string
+          example: "EXITOSO"
+          description: Estado en el que quedó el control. Valores correspondientes al catálogo con código RESULTADO_EVIDENCIA.
+      description: Lista de controles a aplicar al usuario.
+    NuevaEvaluacion:
+      required:
+        - codigoAplicacion
+        - codigoOperacion
+        - negocioId
+        - solicitudDni
+        - tomador
+      type: object
+      properties:
+        evaluacionId:
+          maxLength: 50
+          minLength: 0
+          type: string
+          example: null
+          description: Identificador de la evaluación que se desea reemplazar. Null en caso contrario
+        solicitudDni:
+          maxLength: 30
+          minLength: 0
+          type: string
+          example: "C000000"
+          description: DNI del usuario logueado que realiza la validación
+        codigoAplicacion:
+          maxLength: 5
+          minLength: 0
+          type: string
+          example: "118"
+          description: Código de aplicación  que realiza la solicitud de evaluacion. Código registrado previamente en el aplicativo de Sarlaft 4.0
+        codigoOperacion:
+          maxLength: 2
+          minLength: 0
+          type: string
+          example: "01"
+          description: Código de operación del negocio para el cual se crea la evaluación
+          enum:
+            - "01" : Negocio Nuevo
+            - "RE" : Renovación
+        negocioId:
+          maxLength: 50
+          minLength: 0
+          type: string
+          example: "01"
+          description: Identificador de negocio
+        fechaCreacion:
+          type: string
+          format: date-time
+          example: null
+          description: Fecha de creación
+        ultimaActualizacion:
+          type: string
+          format: date-time
+          example: null
+          description: Última fecha de actualización
+        relacionLaboral:
+          type: string
+          example: null
+          description: >-
+            Respuesta a la pregunta de relación laboral entre el tomador y los
+            asegurados
+          enum:
+            - S
+            - N
+        infoPendiente:
+          type: boolean
+          example: true
+          description: Evaluación en proceso
+        polizas:
+          type: array
+          description: Información de la póliza o negocio
+          items:
+            $ref: '#/components/schemas/NuevaPoliza'
+        tomador:
+          $ref: '#/components/schemas/NuevoSarlaft'
+        afianzado:
+          $ref: '#/components/schemas/NuevoSarlaft'
+        beneficiarios:
+          type: array
+          description: Datos de los beneficarios del seguro
+          items:
+            $ref: '#/components/schemas/NuevoSarlaft'
+        asegurados:
+          type: array
+          description: Datos de los asegurados del seguro
+          items:
+            $ref: '#/components/schemas/NuevoSarlaft'
+        afiliados:
+          type: array
+          description: Datos del afiliado en el seguro
+          items:
+            $ref: '#/components/schemas/NuevoSarlaft'
+    NuevoSarlaft:
+      required:
+        - cliente
+        - evidencias
+      type: object
+      properties:
+        personaPep:
+          maxLength: 5
+          minLength: 0
+          type: string
+          example: "No"
+          description: ¿El tomador es una Persona Expuesta Políticamente?
+          enum:
+            - Si
+            - No
+        administradorPep:
+          maxLength: 5
+          minLength: 0
+          type: string
+          example: "No"
+          description: >-
+            ¿Alguno de los administradores (representantes legales, miembros de
+            la Junta Directiva) o socio con una participación superior al 5% de
+            la Persona Jurídica es una Persona Expuesta Políticamente (PEP)?
+          enum:
+            - Si
+            - No            
+        cliente:
+          $ref: '#/components/schemas/NuevoCliente'
+        evidencias:
+          type: array
+          items:
+            $ref: '#/components/schemas/NuevaEvidencia'
+          description: Evidencias a adjuntar al sarlaft
+      description: Datos del afiliado en el seguro
+    NuevaEvidencia:
+      required:
+        - controlConsecutivo
+        - observaciones
+        - resultado
+        - tipo
+      type: object
+      properties:
+        dni:
+          maxLength: 25
+          minLength: 0
+          type: string
+          example: "C1036683385"
+          description: Dni de la persona a quien se asocia la evidencia. El dni corresponde a la union del tipo de identificación y el número de identificación.
+        resultado:
+          maxLength: 15
+          minLength: 1
+          type: string
+          example: "EXITOSO"
+          description: Resultado de la evidencia. EXITOSA, FALLIDA
+        tipo:
+          maxLength: 10
+          minLength: 1
+          type: string
+          example: "CIFIN"
+          description: 'Tipo de Evidencia: CIFIN, RRCC. Valores correspondientes al catálogo con código TIPO_EVIDENCIA'
+        observaciones:
+          maxLength: 100
+          minLength: 1
+          type: string
+          example: "PRUEBA EVIDENCIA BENEFICIARIO"
+          description: Observaciones de la evidencia que se adjunta
+        controlConsecutivo:
+          maxLength: 100
+          minLength: 1
+          type: string
+          example: "01"
+          description: >-
+            Consecutivo propio de la evidencia, por ejemplo, para validación de
+            identidad el consecutivo de CIFIN.
+        codigoAplicacion:
+          maxLength: 10
+          minLength: 0
+          type: string
+          example: null
+          description: Código de aplicación de quien adjunta la evidencia
+        evaluacionId:
+          maxLength: 50
+          minLength: 0
+          type: string
+          example: null
+          description: Identificador de evaluación del cliente al cual se adjunta la evidencia
+      description: Evidencias a adjuntar al sarlaft
+    NuevaPoliza:
+      required:
+        - codigoOficina
+        - codigoRamo
+        - medioPago
+        - negocio
+      type: object
+      properties:
+        valorAsegurado:
+          type: number
+          description: Valor asegurado
+          format: double
+          example: 500000
+        valorPrima:
+          type: number
+          format: double
+          example: 500000
+          description: Valor de prima
+        medioPago:
+          type: string
+          example: "DEBITO_AUTOMATICO"
+          description: Medio de pago. En caso de no ser DEBITO_AUTOMATICO se puede enviar nulo.
+          enum:
+            - DEBITO_AUTOMATICO
+        codigoCanal:
+          type: string
+          example: "1"
+          description: Código de canal. Valores correspondientes al catálogo con código CANALES
+        codigoRamo:
+          maxLength: 3
+          minLength: 1
+          type: string
+          example: "030"
+          description: Código de ramo. Valores correspondientes al catálogo con código COD_RAMOS
+        codigoProducto:
+          maxLength: 3
+          minLength: 1
+          type: string
+          example: "020"
+          description: Código de producto. Valores correspondientes al catálogo con código COD_SUBRAMOS
+        negocio:
+          maxLength: 15
+          minLength: 1
+          type: string
+          example: "COLECTIVO"
+          description: 'Tipo de Negocio. INDIVIDUAL: Póliza Individual o COLECTIVO: Póliza Colectiva'
+          enum:
+            - INDIVIDUAL
+            - COLECTIVO
+        tipoCoaseguro:
+          type: string
+          example: null
+          description: 'Código del tipo de Coaseguro: ACEPTADO o CEDIDO'
+          enum:
+            - ACEPTADO
+            - CEDIDO
+        codigoOficina:
+          type: string
+          example: "00"
+          description: Código de la oficina del asesor
+        codigoAgente:
+          maxLength: 10
+          minLength: 0
+          type: string
+          example: "4999"
+          description: Código del agente de la entidad
+        licitacionPublica:
+          type: boolean
+          example: false
+          description: 'True: si la póliza tiene licitación. False: la poliza no tiene licitación'
+        codigoPlan:
+          maxLength: 10
+          minLength: 0
+          type: string
+          example: "01"
+          description: Código del plan
+          enum:
+            - 01
+            - 02
+            - 03
+            - 55
+            - 56
+            - 57
+            - 59
+            - 60
+            - 61
+        indProcesoJudicial:
+          type: boolean
+          example: false
+          description: Indicador de proceso Judicial
+        juzgado:
+          maxLength: 300
+          minLength: 0
+          type: string
+          example: false
+          description: Nombre del juzgado
+        ciudadProcesoJudicial:
+          maxLength: 10
+          minLength: 0
+          type: string
+          example: null
+          description: Ciudad de la solicitud del proceso judicial
+        cargaMasiva:
+          type: boolean
+          example: false
+          description: 'True: si tiene composición de carga Masiva. False: no es una póliza con carga masiva'
+      description: Información de la póliza o negocio
+    Catalogo:
+      type: object
+      properties:
+        codigoCatalogo:
+          type: string
+        nombreCatalogo:
+          type: string
+        fechaCreacion:
+          type: string
+          format: date-time
+        ultimaActualizacion:
+          type: string
+          format: date-time
+        fechaBaja:
+          type: string
+          format: date-time
+        parametros:
+          type: array
+          items:
+            $ref: '#/components/schemas/Parametro'
+    Catalogos:
+      type: object
+      properties:
+        catalogos:
+          type: array
+          items:
+            $ref: '#/components/schemas/Catalogo'
+    Parametro:
+      type: object
+      properties:
+        codigoCatalogo:
+          type: string
+        codigoParametro:
+          type: string
+        descripcion:
+          type: string
+        fechaCreacion:
+          type: string
+          format: date-time
+        ultimaActualizacion:
+          type: string
+          format: date-time
+        fechaBaja:
+          type: string
+          format: date-time
+        subCodigoParametro:
+          type: string
+    RespuestaUpload:
+      type: object
+      properties:
+        mensaje:
+          type: string
+          description: Mensaje de respuesta
+        estadoEvaluacion:
+          type: string
+          description: >-
+            Estado de la evaluación. PENDIENTE: Evaluación en proceso.
+            FINALIZADO: Evaluación finalizada.
+        otroRequisitosPendientes:
+          type: boolean
+          description: >-
+            Indica si existen otros requisitos pendientes para la evaluación
+            indicada
+    Error:
+      type: object
+      properties:
+        errors:
+          type: array
+          items:
+            $ref: '#/components/schemas/DetailError'
+    DetailError:
+      type: object
+      properties:
+        id:
+          type: string
+          description: >-
+            Identificador del error presentado.
+        tipo:
+          type: string
+          description: >-
+            Identifica si el error es de NEGOCIO, FORMATO o TÉCNICO.
+          enum:
+            - NEGOCIO
+            - FORMATO
+            - TECNICO
+        mensaje:
+          type: string
+          description: >-
+            Mensaje generico del error presentado.
+        detalle:
+          type: string  
+          description: >-
+            Mensaje especifico del error presentado y acción para corregir el error.
+    JWTToken:
+      type: object
+      properties:
+        token:
+          type: string
+          description: >-
+            Token de autenticación para consumir los servicios de sarlaft.
+        expirationDate:
+          type: string
+          format: date-time
+          description: >-
+            Fecha de expiración del token de autenticación.            
+  securitySchemes: ##TODO
+    BasicAuth:
+      type: http
+      scheme: basic
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+security:
+  - BasicAuth: [] ##TODO
+  - ApiKeyAuth: [] ##TODO
