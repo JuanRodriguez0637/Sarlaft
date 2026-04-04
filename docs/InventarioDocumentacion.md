@@ -1,6 +1,6 @@
 # Inventario de Documentación — Sarlaft 4.0 vs Confluence
 
-> **Última actualización:** 2026-04-02
+> **Última actualización:** 2026-04-03
 > **Espacio Confluence:** [EPA — Sarlaft 4.0](https://segurosti.atlassian.net/wiki/spaces/EPA/pages/1750892627/Sarlaft+4.0)
 > **Directorio local:** `Sarlaft/docs/Sarlaft40/`
 
@@ -17,7 +17,7 @@
 | **Total secciones en Confluence** | **31** |
 | **Total secciones documentadas** | **31** |
 | **Secciones faltantes** | **0** |
-| Archivos `.md` generados | 410 |
+| Archivos `.md` generados | 404 |
 
 ---
 

@@ -8,13 +8,12 @@ Repositorio de documentación técnica, de negocio y configuraciones del proyect
 docs/
 ├── .markdownlint.json                # Configuración de linting Markdown
 ├── BitacoraEnlaces.md                # Bitácora de enlaces rotos y resoluciones
+├── InventarioDocumentacion.md        # Inventario de documentación vs Confluence
 ├── PromptDocumentarConfluence.md     # Prompt de referencia para documentación
 └── Sarlaft40/                        # Documentación con jerarquía Confluence Sarlaft 4.0
-    ├── index.md                       # Índice raíz Sarlaft 4.0
+    ├── index.md                       # Índice raíz Sarlaft 4.0 (14 secciones)
     ├── SegmentacionCore.md            # Segmentación Core: score de riesgo
     ├── GuiaDeAprendizaje.md           # Guía de Aprendizaje Sarlaft 4.0 - Desarrollo
-    ├── docx/                          # Documentos Word exportados
-    ├── xlsx/                          # Archivos Excel (carga masiva, resultados)
     ├── PreguntasFrecuentes/           # Preguntas frecuentes sobre integración con Sarlaft
     │   └── index.md                   # FAQ: campos mínimos, webhooks, PEPs, masivos, etc.
     ├── DocumentacionDeIncidentes/     # Documentación de incidentes Sarlaft 4.0
@@ -27,16 +26,17 @@ docs/
     │   └── attachments/               # Imágenes de evidencias de incidentes
     ├── ValidarIdentidadExperian/      # Validar identidad (Experian) — flujo completo
     │   ├── index.md                   # Índice con video de revisión técnica
-    │   ├── DefinicionesTecnicas.md    # Definiciones técnicas (placeholder)
+    │   ├── DefinicionesTecnicas.md    # Definiciones técnicas
     │   ├── MejoraControlAlertas.md    # Mejora control alertas (no implementado)
     │   ├── DocumentacionTecnica/      # Documentación técnica del validador
+    │   │   ├── index.md               # Índice doc. técnica validador
     │   │   ├── DiagramaArquitecturaEA.md
     │   │   ├── ActualizacionCertificadoDigital.md # Keystore SOAP DataCrédito
     │   │   ├── LogsExperianSplunk.md
     │   │   ├── RechazarEvidenciaIntentosAgotados.md
     │   │   ├── LogsEndpointsValidadorIdentidad.md
     │   │   ├── MicroservicioIdentityValidator/  # identity-validator-ms
-    │   │   ├── FrontWebComponent/     # Web Component validación identidad
+    │   │   ├── FrontWebComponent/     # Web Component validación identidad (7 páginas)
     │   │   └── IntegracionesValidarIdentidad/   # 13 integraciones (IV001–IV009)
     │   │       └── IV001ValidarDocumento/       # Validar con Registraduría
     │   └── ServiciosWeb/              # Servicios Web del validador
@@ -76,7 +76,7 @@ docs/
     ├── DocumentacionDeSolicitudes/    # Documentación de Solicitudes (top-level)
     │   ├── ParametrizacionNuevoSubramo.md  # Parametrización subramo/producto
     │   └── PermisoParaFondosura.md
-    └── DocumentacionTecnica/          # Documentación técnica completa
+    └── DocumentacionTecnica/          # Documentación técnica completa (17 subsecciones)
         ├── index.md                   # Índice de documentación técnica
         ├── PropiedadesPrefetchCountMaxConcurrency.md  # PrefetchCount y MaxConcurrency
         ├── AccesoUrlsEquipoBase.md    # URLs necesarias para el equipo base
@@ -144,18 +144,12 @@ docs/
         │   └── FrontSarlaft/                   # Capa web: WebComponent y secciones
         │       └── WebComponent/
         │           └── Secciones/              # Pantallas: Tomador, Apoderado, etc.
-        ├── InterfacesDeServicio/       # Interfaces de Servicio Sarlaft 4.0
-        │   ├── DescripcionInterfacesPrincipales/ # Especificación técnica completa v1.8
-        │   ├── InterfazProcesosMasivos/  # Validación masiva hasta 100 pólizas (RabbitMQ)
-        │   ├── EscenarioValidacion/      # Escenario WeSura, SuraEnLinea, Salud
-        │   ├── InterfazConsultaEstadoSarlaft/  # Consulta estado para cotizadores
-        │   ├── EvaluacionReclamaciones/  # Assessment para operación de reclamaciones
-        │   └── attachments/              # Colecciones Postman
         ├── GestionConfiguracion/      # Gestión de la Configuración (lineamientos, cobertura)
         │   └── ConfiguracionInfraestructura/  # Documentación infraestructura Azure
         ├── PruebasOrdenAdministrativaSoat/ # Pruebas Orden Administrativa SOAT
         │   └── attachments/
         ├── MotorDeEvaluacion/         # Motor de Evaluación: reglas de negocio, riesgo
+        │   ├── index.md               # Índice Motor de Evaluación (13 subsecciones)
         │   ├── DisenoMotorEvaluacion/
         │   ├── ConfiguracionAmbienteMotorEvaluacion/
         │   ├── EstructuraProyectoMotorEvaluacion/
@@ -169,9 +163,6 @@ docs/
         │   ├── ModificacionDeAgentesCorredoresYReglasDeNegocio/
         │   ├── ReglaTablaParametricasPjSoatMotorEvaluacionTipoFormulario/
         │   └── MotorEvaluacionRetirarEvidenciaDeIdentityParaAsesores/
-        ├── DocumentacionDeSolicitudes/ # Solicitudes (perfilación, cargas)
-        │   ├── PermisoParaFondosura.md
-        │   └── attachments/
         ├── Front/                     # Proyecto Front Angular (Web Component, monorepo)
         │   ├── ConfiguracionAmbiente/  # Configuración ambiente local
         │   ├── Errores/                # Errores conocidos en compilación
@@ -196,7 +187,7 @@ docs/
     └── Confluence Sura.agent.md      # Agente IA para extracción de Confluence
 ```
 
-> **Total:** 410 archivos Markdown · 678 adjuntos (imágenes, DOCX, PDF, XLSX, JSON, drawio)
+> **Total:** 404 archivos Markdown · 667 adjuntos (imágenes, DOCX, PDF, XLSX, JSON, drawio)
 
 ## Ramas
 
@@ -305,11 +296,10 @@ El agente seguirá un flujo de 8 pasos:
 ### Estructura de salida
 
 ```
-docs/MicroservicioSarlaftAPI/<Subseccion>/
+docs/Sarlaft40/<Seccion>/<Subseccion>/
 ├── index.md                    # Índice de la subsección
 ├── <Pagina>.md                 # Una por cada sub-página
-├── img/                        # Imágenes descargadas
-└── attachments/                # JSON y otros adjuntos
+└── attachments/                # Imágenes, JSON y otros adjuntos
 ```
 
 ## Seguridad

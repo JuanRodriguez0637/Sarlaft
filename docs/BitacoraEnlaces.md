@@ -2,7 +2,7 @@
 
 > **Propósito:** Registrar los hallazgos de enlaces entre archivos `.md` que requieren corrección, ya sea porque apuntan a archivos que no existen o porque apuntan a URLs de Confluence cuando ya existe un `.md` local equivalente.
 >
-> **Última actualización:** 2026-04-02 (auditoría global: 334 archivos, 1281 enlaces)
+> **Última actualización:** 2026-04-03 (auditoría global: 402 archivos, 1604 enlaces, 0 rotos)
 
 ---
 
@@ -19,7 +19,7 @@
 | 7 | `Sarlaft40/DocumentacionTecnica/GestionConfiguracion/index.md` | L5 | `../index.md` | Documentación Técnica | ✅ Resuelto — mismo archivo que #1 |
 | 8 | `Sarlaft40/DocumentacionTecnica/index.md` | L4 | `../index.md` | Sarlaft 4.0 | ✅ Resuelto — creado `Sarlaft40/index.md` |
 | 9 | `PreguntasFrecuentes/index.md` | L11,L19 | `../Diseño%20-%20Arquitectura/...` | Documento Diseño Técnico | ✅ Resuelto — corregido a `../Sarlaft40/DocumentacionTecnica/DisenoArquitectura/DocumentoDisenoTecnico/index.md` |
-| 10 | 13× `Motor de Evaluación/*/index.md` | L5 | `../index.md` | Motor de Evaluación | ❌ Pendiente — requiere crear `Motor de Evaluación/index.md` (sección no documentada bajo convención Sarlaft40) |
+| 10 | 13× `MotorDeEvaluacion/*/index.md` | L5 | `../index.md` | Motor de Evaluación | ✅ Resuelto — creado `Sarlaft40/DocumentacionTecnica/MotorDeEvaluacion/index.md` (2026-04-03) |
 
 ---
 
@@ -268,6 +268,10 @@ Estos resolvieron todos los enlaces `../index.md` bajo `Sarlaft40/` (11 enlaces 
 | 2026-04-02 | `Integraciones/MicroservicioAzureClientes/IntegracionConsultaClienteSalesforce.md` | Enlace Confluence “Servicio Consulta de Clientes” corregido a ruta local `../../MicroservicioSarlaftAPI/ServiciosWeb/ServicioConsultaClientes.md` |
 | 2026-04-02 | `PreguntasFrecuentes/index.md` | 2 enlaces Confluence “Documento Diseño Técnico” (L11, L19) corregidos de `../Diseño - Arquitectura/...` a `../Sarlaft40/DocumentacionTecnica/DisenoArquitectura/DocumentoDisenoTecnico/index.md` |
 | 2026-04-02 | **Auditoría global** | Escaneo completo: **334 archivos `.md`**, **1281 enlaces relativos** verificados. **13 rotos** — todos del mismo patrón: 13× `Motor de Evaluación/*/index.md` → `../index.md` (falta `Motor de Evaluación/index.md`). Los 9 rotos previos de sección 1 (#1-#9) todos resueltos gracias a la creación de `Sarlaft40/DocumentacionTecnica/index.md`, `Sarlaft40/index.md` y la corrección de `PreguntasFrecuentes/index.md`. Carpeta legacy `MicroservicioSarlaftClientesMS/` eliminada. |
+| 2026-04-03 | `Sarlaft40/DocumentacionTecnica/MotorDeEvaluacion/` | **Resolución Motor de Evaluación:** Creado `MotorDeEvaluacion/index.md` con 13 subsecciones. Resuelve los 13 enlaces rotos `../index.md` pendientes del item #10. |
+| 2026-04-03 | `Sarlaft40/ValidarIdentidadExperian/` | **Documentación completa:** 39 archivos `.md` extraídos (DocumentacionTecnica: 6 directos + FrontWebComponent 7 + IntegracionesValidarIdentidad 13 + MicroservicioIdentityValidator 3, ServiciosWeb: 3 + ValidarIdentidadCargueP8 2, nivel raíz: 4). Adjuntos descargados en 7 carpetas `attachments/`. |
+| 2026-04-03 | `Sarlaft40/DocumentacionDeSolicitudes/`, `Sarlaft40/InterfacesDeServicio/` | **Reubicación:** Movidas de `DocumentacionTecnica/` a nivel top-level bajo `Sarlaft40/` para alinear con jerarquía real de Confluence. Índices actualizados (DocumentacionTecnica 16→14, Sarlaft40 3→5 secciones). |
+| 2026-04-03 | **Auditoría global** | Escaneo completo: **402 archivos `.md`**, **1604 enlaces relativos** verificados. **0 rotos**. Todos los 10 items de la sección 1 resueltos. |
 
 ---
 
@@ -467,6 +471,32 @@ Todos los enlaces relativos (`./` y `../`) en los 28 archivos `.md` verificados.
 | Archivo | Corrección |
 |---------|------------|
 | `ServiciosWeb/ServicioCambiarEstadoEntidad.md` L26 | Enlace a `request (1).json` corregido a `<./attachments/request (1).json>` (angle-bracket syntax por paréntesis en nombre) |
+
+---
+
+## Validación: Validar Identidad Experian — 2026-04-03
+
+> Validación ejecutada: 2026-04-03 — 39 archivos `.md` escaneados, 0 enlaces rotos.
+
+### Resumen de archivos generados
+
+| Carpeta | Archivos `.md` | Carpetas `attachments/` |
+|---------|---------------|------------------------|
+| `ValidarIdentidadExperian/` | 4 (index + 3 directos) | 0 |
+| `ValidarIdentidadExperian/DocumentacionTecnica/` | 6 (index + 5 directos) | 1 |
+| `ValidarIdentidadExperian/DocumentacionTecnica/FrontWebComponent/` | 7 (index + 6) | 1 |
+| `ValidarIdentidadExperian/DocumentacionTecnica/IntegracionesValidarIdentidad/` | 13 (index + 12 integraciones) | 1 |
+| `ValidarIdentidadExperian/DocumentacionTecnica/IntegracionesValidarIdentidad/IV001ValidarDocumento/` | 2 (index + 1) | 1 |
+| `ValidarIdentidadExperian/DocumentacionTecnica/MicroservicioIdentityValidator/` | 3 (index + 2) | 1 |
+| `ValidarIdentidadExperian/ServiciosWeb/` | 3 (index + 2) | 1 |
+| `ValidarIdentidadExperian/ServiciosWeb/ValidarIdentidadCargueP8/` | 2 (index + 1) | 1 |
+| **Total** | **40** | **7** |
+
+### Enlaces rotos
+
+| Archivo | Enlace | Esperado | Problema |
+|---------|--------|----------|----------|
+| — | — | — | **No se encontraron enlaces rotos** ✅ |
 
 ---
 
