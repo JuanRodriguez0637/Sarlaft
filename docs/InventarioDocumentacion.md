@@ -46,9 +46,9 @@
 
 > ✅ **Todas las secciones top-level han sido documentadas** (actualización 2026-04-02).
 
-> **Nota sobre "Interfaces de Servicio" (top-level):** Ya existe `DocumentacionTecnica/InterfacesDeServicio/` que documenta interfaces bajo Documentación Técnica. La sección top-level `1955070133` es una página **diferente** con su propio árbol de hijos. Validar si el contenido es distinto o redundante antes de documentar.
+> ~~**Nota sobre "Interfaces de Servicio" (top-level):**~~ **RESUELTO (2026-04-03).** Se verificó que la sección top-level `1955070133` es una página diferente a la subsección de Doc. Técnica. La carpeta `DocumentacionTecnica/InterfacesDeServicio/` fue reubicada a `Sarlaft40/InterfacesDeServicio/` para alinear con la jerarquía real de Confluence.
 
-> **Nota sobre "Documentación de Solicitudes":** En local existe `DocumentacionTecnica/DocumentacionDeSolicitudes/`. En Confluence, "Documentación de Solicitudes" (`1746928745`) es hijo **directo** de Sarlaft 4.0, no de Documentación Técnica. Evaluar si reubicar.
+> ~~**Nota sobre "Documentación de Solicitudes":**~~ **RESUELTO (2026-04-03).** La carpeta `DocumentacionTecnica/DocumentacionDeSolicitudes/` fue reubicada a `Sarlaft40/DocumentacionDeSolicitudes/` para reflejar que en Confluence es hijo directo de Sarlaft 4.0.
 
 ---
 
@@ -183,9 +183,9 @@
 
 ## 4. Observaciones
 
-1. **Ubicación incorrecta:** `DocumentacionDeSolicitudes/` existe bajo `DocumentacionTecnica/` en local, pero en Confluence es hijo directo de Sarlaft 4.0. Evaluar si mover a `Sarlaft40/DocumentacionDeSolicitudes/`.
+1. ~~**Ubicación incorrecta:**~~ **RESUELTO (2026-04-03).** `DocumentacionDeSolicitudes/` fue movida de `DocumentacionTecnica/` a `Sarlaft40/DocumentacionDeSolicitudes/`, alineando la estructura local con la jerarquía de Confluence donde es hijo directo de Sarlaft 4.0.
 
-2. **Sección duplicada potencial:** "Interfaces de Servicio" existe como top-level (`1955070133`) Y como subsección de Doc. Técnica (`DocumentacionTecnica/InterfacesDeServicio/`). Verificar si son la misma sección o contenido diferente.
+2. ~~**Sección duplicada potencial:**~~ **RESUELTO (2026-04-03).** Se verificó que "Interfaces de Servicio" top-level (`1955070133`) es una sección diferente. La carpeta `DocumentacionTecnica/InterfacesDeServicio/` fue reubicada a `Sarlaft40/InterfacesDeServicio/` para reflejar la jerarquía real de Confluence. El `index.md` de DocumentacionTecnica fue actualizado (16→14 secciones) y el de Sarlaft40 (3→5 secciones).
 
 3. **Volumen:** Las secciones faltantes suman ~24,500+ páginas descendientes en total (el espacio EPA es muy grande). El volumen real a documentar depende de la profundidad requerida.
 
