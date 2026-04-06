@@ -6,7 +6,7 @@
 
 Durante el proceso de evaluación es necesario comunicarse con el motor en 3 ocasiones para determinar el riesgo, identificar validaciones y determinar el tipo de formulario (incluyendo los requisitos que se deben solicitar al cliente).
 
-### Determinación de Riesgo:
+## Determinación de Riesgo:
 
 El evento se origina en la clase `PrepararEvaluacion` a través del adaptador `MotorGateway` (`calculate`), este utiliza el query `Evaluacion.sarlaft.riesgo` con el cual obtiene el tipo de riesgo de cada uno de los sarlafts dentro de la evaluación.
 

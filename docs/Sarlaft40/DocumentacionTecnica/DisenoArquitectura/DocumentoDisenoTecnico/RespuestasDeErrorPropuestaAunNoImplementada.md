@@ -19,7 +19,7 @@ De acuerdo a los lineamientos de servicios rest en cuanto al manejo de errores [
         }
     ]
 }
-```
+```text
 
 Donde el campo `id` sea incremental para los diferentes errores presentados. El campo `tipo` TECNICO sea constante, el campo `mensaje` inicie con el prefijo "Error presentado: " y XXX corresponda a la falla particular; el campo `detalle` corresponda de un mensaje aclaratorio.
 
@@ -36,7 +36,7 @@ Donde el campo `id` sea incremental para los diferentes errores presentados. El 
         }
     ]
 }
-```
+```text
 
 Donde el campo `id` sea incremental para los diferentes errores presentados. El campo `tipo` NEGOCIO sea constante. Para el caso de error por falta de un campo que es obligatorio, el campo `mensaje` inicie con el prefijo "Información incompleta: " y XXX corresponda al nombre de campo en particular; el campo `detalle` corresponda de un mensaje aclaratorio; para el caso que no sea una regla de obligatoriedad se quita el prefijo "Información incompleta".
 

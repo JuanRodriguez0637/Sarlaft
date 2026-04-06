@@ -13,7 +13,7 @@ Este artículo tiene como propósito simplificar la actual arquitectura de comun
 ## Páginas
 
 | Página | Enlace |
-|--------|--------|
+| -------- | -------- |
 | Diagrama de la arquitectura actual del proceso webhook en Sarlaft 4.0 | [DiagramaDeLaArquitecturaActualDelProcesoWebhookEnSarlaft40.md](./DiagramaDeLaArquitecturaActualDelProcesoWebhookEnSarlaft40.md) |
 | Propuesta 1 - Omitir la comunicación que pasa por Azure Service Bus | [Propuesta1OmitirLaComunicacionQuePasaPorAzureServiceBus.md](./Propuesta1OmitirLaComunicacionQuePasaPorAzureServiceBus.md) |
 | Propuesta 2 - Mantener la comunicación por el Azure Service Bus | [Propuesta2MantenerLaComunicacionPorElAzureServiceBus.md](./Propuesta2MantenerLaComunicacionPorElAzureServiceBus.md) |

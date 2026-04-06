@@ -6,11 +6,11 @@
 
 En esta segunda propuesta se busca mantener la comunicación a través del Azure Service Bus, lanzando comandos provenientes de `sarlaftapi`, pasando por el Azure Service Bus y que escucharía nuevamente el microservicio `sarlaftapi`.
 
-### **Diseño del nuevo proceso de webhook, interacción de componentes, cambio de comunicaciones de mensajería tipo Query a comunicación por servicio rest.**
+## **Diseño del nuevo proceso de webhook, interacción de componentes, cambio de comunicaciones de mensajería tipo Query a comunicación por servicio rest.**
 
-#### **Webhook de finalización**
+### **Webhook de finalización**
 
-##### **Comunicación a través del mecanismo de QUEUE:**
+#### **Comunicación a través del mecanismo de QUEUE:**
 
 ![image-20240515-225311.png](./attachments/image-20240515-225311.png)
 

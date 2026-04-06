@@ -4,9 +4,9 @@
 > **Última modificación:** 2024-05-15 — Julián Andrés Curubo García · versión 2
 > **Sección:** [Simplificar arquitectura de comunicación en proceso webhook - propuesta de cambio](./index.md)
 
-#### **Webhook de finalización**
+## **Webhook de finalización**
 
-##### **Comunicación a través del mecanismo de QUEUE y REST**
+### **Comunicación a través del mecanismo de QUEUE y REST**
 
 En este esquema, el microservicio `sarlaftwebhook` se encarga de recibir el comando `Assessment.define.status` y ejecutar el caso de uso `AssessStatusUseCase#assess`. Este caso de uso busca la información de la aplicación en el Azure Cache de Redis o, en su defecto, en la base de datos del aplicativo sarlaft 4.0 si no la encuentra en caché, con el fin de determinar si se deben aplicar notificaciones. En caso de que la aplicación esté parametrizada para recibir notificaciones, se procede a obtener el estado de la evaluación consultándola en la base de datos de sarlaft 4.0. Se valida que el estado de la evaluación corresponda a alguno de los siguientes estados: `FINALIZADO`, `RECHAZADO`, `PENDIENTE_ACCION_MANUAL`, `FINALIZADO_EXCEPCION`, `FINALIZADO_SIN_CARGA`. Si el estado de la evaluación coincide con alguno de los mencionados anteriormente, se registra un evento en la tabla `tsaf_notificacion` y se lanza el comando `Notification.sarlaft.finished`, el cual es recibido por el microservicio integrador webhook.
 
@@ -26,9 +26,9 @@ Se propone mantener la comunicación que se tiene a través del Azure Service Bu
 
 ## **Diagrama de la arquitectura actual del proceso webhook en Sarlaft 4.0**
 
-#### **Webhook de finalización**
+### **Webhook de finalización**
 
-##### **Comunicación a través del mecanismo de QUEUE y REST**
+#### **Comunicación a través del mecanismo de QUEUE y REST**
 
 Para este mecanismo al eliminar el microservicio `sarlaftwebhook`, se propone:
 

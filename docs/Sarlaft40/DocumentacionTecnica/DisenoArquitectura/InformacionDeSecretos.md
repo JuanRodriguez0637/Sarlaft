@@ -7,7 +7,7 @@
 Los siguientes corresponden a los secretos utilizados por todos los microservicios de Sarlaft 4.0
 
 | **Componente** | **Variable Pipeline** | **SecretoNombre** | **Microservicios** |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Service Bus - Connection String | `var_tf_kv_servicebus_cnx` | `kv-secret-servicebus-cnx` | Sarlaftapi, SarlaftWebhook, SarlaftEngine, SarlaftBackWeb, SarlaftBatch, Sarlaft Clientes ms, Catalogos, Batch MI, P8 MI, Webhook MI, Requisitos MI, Clientes MI, Clientes PJ MI, Clientes PN MI, Identity, CCM MI, PEPS MI, Asesores MI, Identityvalidators MS |
 | Base de Datos Sarlaft - Password - username: `modsarlaftp` | `var_tf_kv_bdsarlaft_transaccional_pwd` | `kv-secret-bdsarlaft-transaccional-pwd` | Sarlaftapi, SarlaftWebhook, SarlaftEngine, SarlaftBackWeb, SarlaftBatch, Sarlaft Clientes ms, Webhook MII, Clientes PJ MI, CCM MI |
 | Usuario Nombrado - Password - Usuario `appsarlaft` | `var_tf_kv_usrsarlaft_pwd` | `kv-secret-usrsarlaft-pwd` | Sarlaftapi, SarlaftBatch, P8 MI, Clientes MI, Clientes PN MI, Identity, PEPS MI, Asesores MI |
@@ -17,7 +17,7 @@ Los siguientes corresponden a los secretos utilizados por todos los microservici
 | RabbitMQ - Password - `seguros.sarlaftmsv.usr` | `var_tf_kv_rabbitmq_sarlaftmsvusr_pwd` | `kv-secret-rabbitmq-sarlaftmsvusr-pwd` | Batch MI |
 | RabbitMQ - Password - `seguros.sarlaftwebhook.usr` | `var_tf_kv_rabbitmq_sarlaftwebhook_pwd` | `kv-secret-rabbitmq-sarlaftwebhook-pwd` | Webhook MI |
 | Secret JWT - Rest | `var_tf_kv_webhookmi_jwt_secret` | `kv-secret-webhookmi-jwt-secret` | Webhook MI |
-| Salesforce - Password - usuario - consultaclientes@sura.com.co | `var_tf_kv_salesforce_pwd` | `kv-secret-salesforce-pwd` | Clientes MI |
+| Salesforce - Password - usuario - <consultaclientes@sura.com.co> | `var_tf_kv_salesforce_pwd` | `kv-secret-salesforce-pwd` | Clientes MI |
 | Salesforce - clave cliente | `var_tf_kv_salesforce_clave` | `kv-secret-salesforce-clave` | Clientes MI |
 | Informa colombia - key | `var_tf_kv_infocolombia_key` | `kv-secret-infocolombia-key` | Clientes PJ MI |
 | Base de Datos Oracle PDN - Password - Usuario - `MODSARLAFT` | `var_tf_kv_oracleusr_pwd` | `kv-secret-oracleusr-pwd` | Clientes PN MI |

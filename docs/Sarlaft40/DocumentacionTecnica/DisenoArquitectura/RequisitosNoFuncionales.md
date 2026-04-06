@@ -9,7 +9,7 @@ El aplicativo de Sarlaft 4.0 esta desarrollado con una arquitectura cuyos driver
 [https://miro.com/app/board/o9J_lWUU2no=/](https://miro.com/app/board/o9J_lWUU2no=/?utm_source=notification&utm_medium=email&utm_campaign=daily-updates&utm_content=go-to-board)
 
 | | Atributo | Descripción |
-|---|---|---|
+| --- | --- | --- |
 | CRÍTICOS | Escalabilidad | El aplicativo de Sarlaft será incorporado como un paso obligatorio en los procesos de expedición, renovación y reclamación en todos los productos o ramos de Seguros obligatorios y voluntarios y por ende, debe ser capaz de atender todas las solicitudes que se reciban de las aplicaciones de negocio que se integren con el aplicativo de Sarlaft. |
 | | Disponibilidad | Se requiere disponibilidad 24/7 para cubrir las disponibilidades que tienen las aplicaciones de negocio que usarían el aplicativo de Sarlaft. |
 | | Interoperabilidad | El aplicativo de Sarlaft se integrará con múltiples plataformas de negocio por lo cual se debe contar con un API de servicios que permita consumir la experiencia de Sarlaft en todas las aplicaciones de negocio que requieran usar la plataforma. |

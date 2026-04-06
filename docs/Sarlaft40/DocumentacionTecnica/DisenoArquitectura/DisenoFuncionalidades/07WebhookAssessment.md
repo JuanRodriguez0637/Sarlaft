@@ -9,7 +9,7 @@
 Este mecanismo permite comunicar al aplicativo que envió la solicitud de crear evaluación el resultado de la misma. Se realiza notificación webhook cuando la evaluación queda en los siguientes estados:
 
 | Estado | Descripción |
-|---|---|
+| --- | --- |
 | `FINALIZADO` | La evaluación ha cumplido todos los pasos: validaciones, formulario, requisitos. Por estar finalizado el negocio puede expedirse. |
 | `RECHAZADO` | Alguna de las validaciones dejo una evidencia en estado FALLIDO y de esta forma la evaluación es rechazada. Por estar rechazado el negocio no puede expedirse. |
 | `PENDIENTE_ACCION_MANUAL` | Estado que aplica solo para la aplicación del cotizador (6919) cuando el único pendiente de la evaluación es la validación de identidad del tomador. Por estar en este estado no se puede aun expedir el negocio, el aplicativo del cotizador (6919) debe completar la evaluación de identidad y adjuntar la evidencia a Sarlaft 4.0 |

@@ -10,13 +10,13 @@ Es de aclara que la validación Peps aplica solo para personas naturales, por es
 
 > **ℹ️ Info:** Solicitud Peps: es una solicitud para habilitar que se puedan expedir negocios para personas marcadas como Peps en el modelo de Sura. Esta solicitud es realizada por el director/gerente de la oficina donde se radica el negocio y tiene una vigencia de 15 días calendario. Esta habitación es realizada por medio del aplicativo de Riesgos Consultables (externo a Sarlaft 4.0). Esta solicitud es un medio por la cual Sura puede evidenciar ante la Superintendencia Financiera que se ha hecho un análisis y conocimiento de las persona que tienen esta marca y representan un mayor riesgo según la norma de sarlaft.
 
-### Escenario persona PEPs marcada en BD de Sura:
+## Escenario persona PEPs marcada en BD de Sura:
 
 Dentro de la evaluación se utiliza la cache de Peps, para identificar aquellos dnis (concatenación del tipo y nro de identificación de la persona), si la persona no se encuentra en la cache, el sistema conoce que no tiene esta marca y continua el proceso dejando la evidencia en estado EXITOSO. Si por el contrario el dni de la persona si se encuentra en cache, el sistema verifica que efectivamente aun tenga la marca de Peps en el modelo de sura correspondiente y que no tenga una solicitud de habilitación Peps activa.
 
 En este punto se puede encontrar que una persona tiene marca Peps y no tiene una solicitud de habilitación vigente ni para el mismo código de oficina asociado a la evaluación, si esta condición no se cumple se genera una evidencia en estado FALLIDO. Si por el contrario se encuentra que una persona tiene marca Peps y tiene una solicitud de habilitación vigente y para el mismo código de oficina asociado a la evaluación, se crea una evidencia en estado EXITOSO.
 
-#### Habilitación PEPS:
+### Habilitación PEPS:
 
 Una vez una evidencia Peps se encuentra en estado FALLIDO, el sarlaft del cliente queda en estado PENDIENTE y por consiguiente la evaluación. Para hacer el levantamiento de control Peps se requiere un paso manual, en el cual el director o gerente de la oficina de radicación de negocio entra al aplicativo de Riesgos Consultables y crea una solicitud de habilitación Peps. Una vez la solicitud ha sido creada, el aplicativo de RRCC emite un mensaje a RabbitMQ a la cola: **`seguros.rrcc.habilitacion`**. El aplicativo de sarlaft 4.0 escucha el mensaje y valida que la solicitud haya sido creada con el mismo código de oficina de radicación indicado en la evaluación pertinente, si es así actualiza la evidencia a estado EXITOSO y deja en el campo `nmcontrol_consecutivo` el numero de solicitud peps por la cual se habilita la evidencia.
 

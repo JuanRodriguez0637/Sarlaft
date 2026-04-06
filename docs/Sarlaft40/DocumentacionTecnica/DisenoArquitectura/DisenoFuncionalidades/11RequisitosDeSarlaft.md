@@ -6,12 +6,12 @@
 
 Un requisito en sarlaft corresponde a un documento que debe adjuntar el cliente en su formulario de sarlaft, estos documentos aplican según el nivel de riesgo del sarlaft y el tipo de persona (Natural o Jurídica) del cliente. La decisión de cuales requisitos se deben solicitar en un sarlaft es tomada por el análisis del Motor a través del query: ***Evaluacion.sarlaft.formulario.requisitos*** al momento de crear la evaluación, también se identifican al momento de agregar una figura o recategorizar el sarlaft.
 
-### Tipos de requisitos:
+## Tipos de requisitos:
 
 Definidos en la tabla `sarlaft.tsaf_tipo_requisito`
 
 | Código Requisito | Nombre | Tipo de Persona | Se sincroniza con el aplicativo de Requisitos |
-|:---:|---|:---:|:---:|
+| :---: | --- | :---: | :---: |
 | 2303 | Certificado de Existencia y Representación Legal | Jurídica | SI |
 | 2037 | Estados Financieros | Jurídica | SI |
 | 2305 | Certificado de ingresos y retenciones | Natural | SI |

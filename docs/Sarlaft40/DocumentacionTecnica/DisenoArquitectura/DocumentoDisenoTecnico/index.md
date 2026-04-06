@@ -9,10 +9,10 @@ El propósito de este documento es dar a conocer a los equipos de tecnología, u
 📎 [DocumentacionTecnicaSarlaft_1.5.pdf](./attachments/DocumentacionTecnicaSarlaft_1.5.pdf)
 📎 [Integraciones_1.xml](./attachments/Integraciones_1.xml)
 
-Diagramas de drawio - Compartido en la ruta: https://suramericana-my.sharepoint.com/:u:/g/personal/ldmunoz_sura_com_co/EU92tgA5W61CkhitZwt2TbgBMWhjd1dTSg0SL0KW7AQCzQ?e=33Loo5
+Diagramas de drawio - Compartido en la ruta: <https://suramericana-my.sharepoint.com/:u:/g/personal/ldmunoz_sura_com_co/EU92tgA5W61CkhitZwt2TbgBMWhjd1dTSg0SL0KW7AQCzQ?e=33Loo5>
 
 ## Páginas
 
 | Página | Enlace |
-|--------|--------|
+| -------- | -------- |
 | Respuestas de error (propuesta aun no implementada) | [RespuestasDeErrorPropuestaAunNoImplementada.md](./RespuestasDeErrorPropuestaAunNoImplementada.md) |

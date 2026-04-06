@@ -7,7 +7,7 @@
 ## Páginas
 
 | Página | Enlace |
-|--------|--------|
+| -------- | -------- |
 | Requisitos No Funcionales | [RequisitosNoFuncionales.md](./RequisitosNoFuncionales.md) |
 | Diagramas de Arquitectura | [DiagramasDeArquitectura.md](./DiagramasDeArquitectura.md) |
 | Contextualización de Arquitectura | [ContextualizacionDeArquitectura.md](./ContextualizacionDeArquitectura.md) |

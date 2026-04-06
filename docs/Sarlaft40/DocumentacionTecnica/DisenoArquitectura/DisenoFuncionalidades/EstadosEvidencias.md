@@ -5,7 +5,7 @@
 > **Sección:** [Diseño Funcionalidades](./index.md)
 
 | Estado | Descripción | Tipos Validaciones en que aplica |
-|---|---|---|
+| --- | --- | --- |
 | EXITOSO | Indica que el resultado de la validación fue exitoso. | Todas |
 | FALLIDO | Indica que el resultado de la validación fue NO exitoso. | Todas |
 | PENDIENTE | Indica que la validación no se ha realizado. | Todas |

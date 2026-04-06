@@ -6,11 +6,11 @@
 
 En esta primera propuesta se busca eliminar la comunicación del Azure Service Bus que se tiene para comunicar el microservicio de `sarlaftapi` con el microservicio de `sarlaftwebhook` a través de comandos y querys.
 
-### **Diseño del nuevo proceso de webhook, interacción de componentes, cambio de comunicaciones de mensajería tipo Query a comunicación por servicio rest.**
+## **Diseño del nuevo proceso de webhook, interacción de componentes, cambio de comunicaciones de mensajería tipo Query a comunicación por servicio rest.**
 
-#### **Webhook de finalización**
+### **Webhook de finalización**
 
-##### **Comunicación a través del mecanismo de QUEUE:**
+#### **Comunicación a través del mecanismo de QUEUE:**
 
 ![image-20240515-224430.png](./attachments/image-20240515-224430.png)
 

@@ -9,7 +9,7 @@ Guía Documentación
 ## Páginas
 
 | Página | Enlace |
-|--------|--------|
+| -------- | -------- |
 | 1. Proceso de la Evaluación (Assessment) | [01ProcesoDelaEvaluacionAssessment.md](./01ProcesoDelaEvaluacionAssessment.md) |
 | 2. Entradas a Evaluación (Assessment) | [02EntradasAEvaluacionAssessment.md](./02EntradasAEvaluacionAssessment.md) |
 | 3. Validaciones (Assessment) | [03ValidacionesAssessment.md](./03ValidacionesAssessment.md) |

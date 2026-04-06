@@ -16,7 +16,7 @@ Las validaciones que se realizan en el proceso de evaluación de sarlaft tiene l
 ### Validación PEPS:
 
 | | |
-|---|---|
+| --- | --- |
 | **CODIGO** | `PEPS` |
 | **TIPO** | Síncrona |
 | **Clase** | `sura.sarlaft4.usecase.assessment.validacion.ValidacionPeps` |
@@ -37,7 +37,7 @@ Esta validación también utiliza la respuesta dada por el cliente a si se consi
 ### Validación GAFI
 
 | | |
-|---|---|
+| --- | --- |
 | **CODIGO** | `GAFI` |
 | **TIPO** | Síncrona |
 | **Clase** | `sura.sarlaft4.usecase.assessment.validacion.ValidacionGafi` |
@@ -52,7 +52,7 @@ Aquellos países que están marcados como bloqueantes (lista negra) indica que e
 ### Validación RRCC
 
 | | |
-|---|---|
+| --- | --- |
 | **CODIGO** | `RRCC` |
 | **TIPO** | Síncrona |
 | **Clase** | `sura.sarlaft4.usecase.assessment.validacion.ValidacionRRCC` |
@@ -67,7 +67,7 @@ Información de consumo del servicio rest de RRCC [Consulta Cliente RRCC](https:
 ### Validación Registraduría
 
 | | |
-|---|---|
+| --- | --- |
 | **CODIGO** | `DOCUMENT_PN` |
 | **TIPO** | Síncrona y Asíncrona |
 | **Clase** | `sura.sarlaft4.usecase.assessment.validacion.ValidacionDocumentoPn` |
@@ -100,7 +100,7 @@ Documentación del componente externo validación de identidad para la integraci
 ### Validación Identidad:
 
 | | |
-|---|---|
+| --- | --- |
 | **CODIGO** | `EXPERIAN`, `CIFIN` |
 | **TIPO** | Asíncrona |
 | **Clase** | `sura.sarlaft4.usecase.assessment.validacion.ValidacionIdentity` (solo crea la evidencia) |
