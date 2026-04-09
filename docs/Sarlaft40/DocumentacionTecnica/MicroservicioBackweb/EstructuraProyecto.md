@@ -6,7 +6,9 @@
 
 ---
 
-Se basa en una arquitectura hexagonal y tiene los siguientes componentes:
+Se basa en **Clean Architecture** y tiene los siguientes componentes:
+
+> ⚠️ **Corrección (2026-04-08):** La documentación original indicaba "arquitectura hexagonal". El `README.md` del proyecto y la convención del equipo denominan este patrón **Clean Architecture**, que es conceptualmente similar pero con separación estricta en capas `domain` (model + usecase) e `infrastructure` (driven-adapters + entry-points).
 
 ![Estructura del proyecto](./attachments/image-20210917-estructura-proyecto.png)
 
@@ -25,91 +27,85 @@ En el archivo de configuración `application.yaml` se encuentran las propiedades
 **2. domain**: La capa de dominio es la capa más interna del proyecto y es la encargada de dar las directivas del proceso teniendo en cuenta la lógica de negocio:
 
 - **model**: representa los objetos de dominio (negocio) del aplicativo, sus características y comportamientos.
-- **use-case**: contiene el único caso de uso (actividad) que se ejecuta en la aplicación desde el proxy de la capa de infraestructura. Interactúa con los modelos para la conversión de los datos encontrados en los repositorios al modelo necesario.
+- **use-case**: contiene los casos de uso (actividades) que se ejecutan en la aplicación desde el proxy de la capa de infraestructura. Interactúan con los modelos para la conversión de los datos encontrados en los repositorios al modelo necesario.
+
+  > ⚠️ **Corrección (2026-04-08):** La documentación original decía "el **único** caso de uso". Según análisis del código con Serena MCP, el módulo contiene **17 casos de uso** organizados en 8 dominios: `assessment`, `entidad`, `gafi`, `peps`, `salariominimo`, `formulario`, `token`, `seus`. El caso de uso más complejo es `GetResultEvaluationUseCase` (~248 líneas, 8 dependencias).
 
 **3. infrastructure**:
 
-- **driven-adapters-async-messages-senders:** adaptador que permite la comunicación para solicitar por query el catálogo de países.
+- **driven-adapters-async-messages-senders:** módulo de adaptadores para comunicación asíncrona sobre **Azure Service Bus** mediante ReactiveCommons (`async-service-bus-starter:1.1.39-BETA`). Contiene los siguientes adaptadores:
+  - `AsesorAsyncAdapter` → apps `sarlaftasesores` (query `List.bureau.find`) y `mdcmi` (query `Clients.client.adviser.validate`)
+  - `CatalogoAsyncAdapter` → app `catalogos` (query `List.parameters.find`)
+  - `PepsAsyncAdapter` → app `peps` (query `Clients.client.uncheckPEP`)
+  - `NotificacionAsyncAdapter` → app `sarlaftwebhook` (command `Assessment.define.status`)
+
+  > ⚠️ **Corrección (2026-04-08):** La documentación original describía este módulo únicamente como "adaptador para solicitar por query el catálogo de países". El código real contiene **4 adaptadores** que cubren 5 microservicios del ecosistema.
 - **driven-adapters-jpa-repository:** aquí se encuentran las implementaciones para el control de persistencia de los objetos de dominio, además de implementaciones concretas para consulta de información de base de datos.
 - **entry-points-reactive-web:** define los diferentes endpoints que se habilitarán en la aplicación, aquí se ubican los controllers que exponen los métodos de API Rest.
 
 **Configuración base de datos**
 
-La configuración de base de datos del proyecto se realiza en base al archivo `application.yml` del proyecto `applications-app-service`, adicional de contener la clase `JpaConfig.java` de configuración para la conexión la cual en un momento dado nos permitirá aplicar las configuraciones que se necesiten a la medida.
+> ⚠️ **Corrección (2026-04-08 — D-03 y D-11):** La documentación original (versión 2022) describía un único datasource con propiedades `spring.datasource.*` y un host PostgreSQL antiguo (`psql-srsarlaftd12576809`). La arquitectura actual usa **dual datasource** desde 2024: separación `connection-write` (escritura) y `connection-read` (lectura). Ver documentación actualizada en [DatasourceConexionesMultiples.md](./DatasourceConexionesMultiples.md).
 
-Properties
+La configuración de base de datos utiliza **dos datasources** (escritura y lectura) configurados en `application.yml` del proyecto `applications-app-service`. La clase `JpaConfig.java` extiende `BaseJpaConfig` para la conexión de escritura, y `ReadOnlyJpaConfig` gestiona la conexión de sólo lectura mediante la anotación `@ReadOnlyRepository`.
+
+Properties (estructura actual — dual datasource)
 
 ```yaml
 spring:
   application:
     name: sarlaftbackweb
-  datasource:
-    driverClassName: "org.postgresql.Driver"
-    url: "jdbc:postgresql://psql-srsarlaftd12576809.postgres.database.azure.com:5432/sarlaftdb?currentSchema=sarlaft&sslmode=require"
-    username: "usuario"
-    password: "password"
   jpa:
     show-sql: true
     database: postgresql
-    databasePlatform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
   redis:
-    host: usuario
-    password: password
+    host: <azure-redis-host>
+    password: <password>
     ssl: true
-    abortConnect: false
     port: 6380
     type: redis
   cache:
-      redis:
-        time-to-live: 6900000
-        cache-null-values: true
+    redis:
+      time-to-live: 6900000
+      cache-null-values: true
+
+connection-write:
+  driver-class-name: org.postgresql.Driver
+  url: "jdbc:postgresql://psql-segsarlaftiacd-eus-b919.postgres.database.azure.com:5432/sarlaftdb?currentSchema=sarlaft&sslmode=require"
+  username: <usuario-escritura>
+  password: <password-escritura>
+
+connection-read:
+  driver-class-name: org.postgresql.Driver
+  url: "jdbc:postgresql://psql-segsarlaftiacd-eus-b919.postgres.database.azure.com:5432/sarlaftdb?currentSchema=sarlaft&sslmode=require"
+  username: <usuario-lectura>
+  password: <password-lectura>
+
 azure:
-  connection-string: url conexion
+  connection-string: <service-bus-connection-string>
 ```
 
-Configuration
+Configuration (patrón actual — dual datasource)
 
 ```java
-...
-
+// JpaConfig: datasource de ESCRITURA (connection-write)
 @Configuration
-public class JpaConfig {
+public class JpaConfig extends BaseJpaConfig {
+    // Extiende BaseJpaConfig del helper jpa-commons
+    // Lee propiedades de connection-write.*
+    // Escanea paquetes: com.sura.backweb.jpa
+}
 
-    @Bean
-    public DBSecret dbSecret(Environment env) {
-        return DBSecret.builder()
-                .url(env.getProperty("spring.datasource.url"))
-                .username(env.getProperty("spring.datasource.username"))
-                .password(env.getProperty("spring.datasource.password"))
-                .build();
-    }
-
-    @Bean
-    public DataSource datasource(DBSecret secret, @Value("${spring.datasource.driverClassName}") String driverClass) {
-        HikariConfig config = new HikariConfig();
-        config.setJdbcUrl(secret.getUrl());
-        config.setUsername(secret.getUsername());
-        config.setPassword(secret.getPassword());
-        config.setDriverClassName(driverClass);
-        return new HikariDataSource(config);
-    }
-
-    @Bean
-    public LocalContainerEntityManagerFactoryBean entityManagerFactory(
-            DataSource dataSource,
-            @Value("${spring.jpa.databasePlatform}") String dialect) {
-        LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
-        em.setDataSource(dataSource);
-        em.setPackagesToScan("com.sura.backweb.jpa");
-
-        JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
-        em.setJpaVendorAdapter(vendorAdapter);
-
-        Properties properties = new Properties();
-        properties.setProperty("hibernate.dialect", dialect);
-        em.setJpaProperties(properties);
-
-        return em;
-    }
+// ReadOnlyJpaConfig: datasource de LECTURA (connection-read)
+@Configuration
+public class ReadOnlyJpaConfig extends BaseJpaConfig {
+    // Lee propiedades de connection-read.*
+    // Los repositorios marcados con @ReadOnlyRepository
+    // usan automáticamente este datasource
 }
 ```
+
+> Ver detalle completo del patrón dual datasource en [DatasourceConexionesMultiples.md](./DatasourceConexionesMultiples.md) y [JpaConfig.md](./JpaConfig.md).

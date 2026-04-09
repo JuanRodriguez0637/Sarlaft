@@ -18,9 +18,11 @@ La validación con el sevice bus se utiliza una clase personalizada `ServicebusH
 
 ```groovy
 implementation 'com.microsoft.azure:azure-servicebus:3.6.7'
-implementation 'com.azure:azure-messaging-servicebus:7.14.7'
+implementation 'com.azure:azure-messaging-servicebus:7.17.3'
 implementation 'org.reactivecommons:async-service-bus-starter:1.1.39-BETA'
 ```
+
+> ⚠️ **Corrección (2026-04-08):** La versión `azure-messaging-servicebus` documentada anteriormente era `7.14.7`. Según el `build.gradle` del módulo `reactive-web`, la versión en uso es `7.17.3`.
 
 ![image-20240311-233939.png](./attachments/image-20240311-233939.png)
 

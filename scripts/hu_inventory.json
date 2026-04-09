@@ -1,0 +1,856 @@
+[
+  {
+    "ID": 1025877,
+    "Titulo": "HU 1025877 — [Formulario]: Modificar el campo de actividad económica",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - [Conocimiento del Cliente] Contrapartes",
+    "Feature": "Feature 1032288 - [Formulario] Modificaciones Formulario"
+  },
+  {
+    "ID": 1026762,
+    "Titulo": "HU 1026762 — [Formulario]: Solicitar a una PN y PJ ingresos y egresos",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - [Conocimiento del Cliente] Contrapartes",
+    "Feature": "Feature 1032288 - [Formulario] Modificaciones Formulario"
+  },
+  {
+    "ID": 1026765,
+    "Titulo": "HU 1026765 — [Formulario]: Solicitar a una PN y PJ activos y pasivos",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1032288 - Formulario Modificaciones Formulario"
+  },
+  {
+    "ID": 1026776,
+    "Titulo": "HU 1026776 — [Formulario]: Tipificar a las personas jurídicas por tipo de sociedad",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - [Conocimiento del Cliente] Contrapartes",
+    "Feature": "Feature 1032288 - [Formulario] Modificaciones Formulario"
+  },
+  {
+    "ID": 1026815,
+    "Titulo": "HU 1026815 — [Motor]: Reglas para evaluar a las figuras de Rentas",
+    "Estado": "New",
+    "Epica": "Sin Epica",
+    "Feature": "Sin Feature"
+  },
+  {
+    "ID": 1026823,
+    "Titulo": "HU 1026823 — [Evaluación]: Reglas para evaluar las figuras de Rentas",
+    "Estado": "New",
+    "Epica": "Sin Epica",
+    "Feature": "Sin Feature"
+  },
+  {
+    "ID": 1026827,
+    "Titulo": "HU 1026827 — [Evaluación]: Crear operaciones para evaluar clientes de Rentas",
+    "Estado": "New",
+    "Epica": "Sin Epica",
+    "Feature": "Sin Feature"
+  },
+  {
+    "ID": 1026983,
+    "Titulo": "HU 1026983 — [Datos mínimos]: Reglas para verificar datos básicos con la Registraduría o Migración",
+    "Estado": "New",
+    "Epica": "Sin Epica",
+    "Feature": "Sin Feature"
+  },
+  {
+    "ID": 1029945,
+    "Titulo": "HU 1029945 — [Monitoreo]: Componente Transversal Monitoreo Listas",
+    "Estado": "New",
+    "Epica": "Epica 1036585 - Monitoreo y Señales de Alerta",
+    "Feature": "Feature 1026784 - [Monitoreo] Proceso en Batch Automático de Listas SARLAFT"
+  },
+  {
+    "ID": 1029968,
+    "Titulo": "HU 1029968 — [Monitoreo]: Componente Transversal Monitoreo Listas - PipeLine Despliegue",
+    "Estado": "New",
+    "Epica": "Epica 1036585 - Monitoreo y Señales de Alerta",
+    "Feature": "Feature 1026784 - Monitoreo Proceso en Batch Automático de L"
+  },
+  {
+    "ID": 1029972,
+    "Titulo": "HU 1029972 — [Monitoreo]: Lista de control (ONU, OFAC, Grupos terroristas) - Infolaft",
+    "Estado": "New",
+    "Epica": "Epica 1036585 - Monitoreo y Señales de Alerta",
+    "Feature": "Feature 1026784 - Monitoreo Proceso en Batch Automático de L"
+  },
+  {
+    "ID": 1029992,
+    "Titulo": "HU 1029992 — [Monitoreo]: Consulta estado Persona jurídica con Informacolombia",
+    "Estado": "New",
+    "Epica": "Epica 1036585 - Monitoreo y Señales de Alerta",
+    "Feature": "Feature 1026784 - Monitoreo Proceso en Batch Automático de L"
+  },
+  {
+    "ID": 1029994,
+    "Titulo": "HU 1029994 — [Monitoreo]: Listas PEP - Infolaft",
+    "Estado": "New",
+    "Epica": "Epica 1036585 - Monitoreo y Señales de Alerta",
+    "Feature": "Feature 1026784 - Monitoreo Proceso en Batch Automático de L"
+  },
+  {
+    "ID": 1030004,
+    "Titulo": "HU 1030004 — [Monitoreo]: Lista Proveedores Fachada DIAN - InfoLaft",
+    "Estado": "New",
+    "Epica": "Epica 1036585 - Monitoreo y Señales de Alerta",
+    "Feature": "Feature 1026784 - Monitoreo Proceso en Batch Automático de L"
+  },
+  {
+    "ID": 1031933,
+    "Titulo": "HU 1031933 — [Monitoreo]: Lista IPS Fachada ADRES",
+    "Estado": "New",
+    "Epica": "Epica 1036585 - Monitoreo y Señales de Alerta",
+    "Feature": "Feature 1026784 - Monitoreo Proceso en Batch Automático de L"
+  },
+  {
+    "ID": 1032311,
+    "Titulo": "HU 1032311 — [Formulario]: Adicionar clausula de tratamiento de datos",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1032288 - Formulario Modificaciones Formulario"
+  },
+  {
+    "ID": 1032876,
+    "Titulo": "HU 1032876 — Integración Modelo de Clientes",
+    "Estado": "New",
+    "Epica": "Sin Epica",
+    "Feature": "Sin Feature"
+  },
+  {
+    "ID": 1035171,
+    "Titulo": "HU 1035171 — [Optimización]: Depuración evaluaciones BD Sarlaft - histórico",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - [Optimización] Base de datos y servicios externos",
+    "Feature": "Feature 1032999 - [Optimización] Servicios externos"
+  },
+  {
+    "ID": 1035498,
+    "Titulo": "HU 1035498 — [Optimización]: Evitar duplicidad en los estados de la validación de identidad- Datos básicos",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - [Optimización] Base de datos y servicios externos",
+    "Feature": "Feature 1032999 - [Optimización] Servicios externos"
+  },
+  {
+    "ID": 1035502,
+    "Titulo": "HU 1035502 — [Optimización]: Evitar duplicidad en los estados de la validación de identidad- Cuestionario",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - Optimización Base de datos y servicios exter",
+    "Feature": "Feature 1032999 - Optimización Servicios externos"
+  },
+  {
+    "ID": 1035971,
+    "Titulo": "HU 1035971 — [Riesgo]: Determinar riesgo único del cliente",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - [Conocimiento del Cliente] Contrapartes",
+    "Feature": "Feature 1033000 - [Tipificación} Administración del riesgo único"
+  },
+  {
+    "ID": 1037054,
+    "Titulo": "HU 1037054 — [Optimización]: Evitar duplicidad en los estados de la consulta con Migración Colombia",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - Optimización Base de datos y servicios exter",
+    "Feature": "Feature 1032999 - Optimización Servicios externos"
+  },
+  {
+    "ID": 1037085,
+    "Titulo": "HU 1037085 — [Optimización]: Reemplazar datos de la consulta del estado del documento",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - Optimización Base de datos y servicios exter",
+    "Feature": "Feature 1032999 - Optimización Servicios externos"
+  },
+  {
+    "ID": 1040402,
+    "Titulo": "HU 1040402 — [Proceso de actualización]: Diligenciamiento del Formulario",
+    "Estado": "New",
+    "Epica": "Epica 1033001 - Proceso de actualización",
+    "Feature": "Feature 1082319 - Proceso de actualización Modificaciones al"
+  },
+  {
+    "ID": 1041011,
+    "Titulo": "HU 1041011 — [Proceso de actualización]: Notificaciones a los Directores y Gerentes de los clientes pendientes",
+    "Estado": "New",
+    "Epica": "Epica 1033001 - Proceso de actualización",
+    "Feature": "Feature 1082320 - [Proceso de actualización] Notificaciones a la Red Comercial"
+  },
+  {
+    "ID": 1041068,
+    "Titulo": "HU 1041068 — [Clientes]: Migración",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - [Conocimiento del Cliente] Contrapartes",
+    "Feature": "Feature 1033000 - [Tipificación} Administración del riesgo único"
+  },
+  {
+    "ID": 1041366,
+    "Titulo": "HU 1041366 — [Reglas transversales]: Herencia por tipo de riesgo",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - [Conocimiento del Cliente] Contrapartes",
+    "Feature": "Feature 1041364 - [Reglas transversales] Modelo de Sarlaft"
+  },
+  {
+    "ID": 1041386,
+    "Titulo": "HU 1041386 — [Aplicativos de negocio]: Vida individual y fondo de ahorro - API",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1046077 - Aplicativos de negocio Reglas para cliente"
+  },
+  {
+    "ID": 1046069,
+    "Titulo": "HU 1046069 — [Reglas transversales]: Analizar clientes con nacionalidad de países GAFI Negro",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1041364 - Reglas transversales Modelo de Sarlaft"
+  },
+  {
+    "ID": 1046075,
+    "Titulo": "HU 1046075 — [Aplicaciones de negocio]: Validación Sarlaft en batch para canales masivos y vida grupo",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1046074 - Aplicativos de negocio Reglas para cliente"
+  },
+  {
+    "ID": 1046415,
+    "Titulo": "HU 1046415 — Formulario]: Back - Parametrizar los códigos de los requisitos por tipo de sociedad",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1032288 - Formulario Modificaciones Formulario"
+  },
+  {
+    "ID": 1046438,
+    "Titulo": "HU 1046438 — [Formulario]: Front - Ajustes para que muestre los requisitos",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1032288 - Formulario Modificaciones Formulario"
+  },
+  {
+    "ID": 1046535,
+    "Titulo": "HU 1046535 — [Formulario]: Relanzamiento de documentos a P8",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1032288 - Formulario Modificaciones Formulario"
+  },
+  {
+    "ID": 1052091,
+    "Titulo": "HU 1052091 — [Reglas transversales]: Reprocesar Fallas técnicas para la Consulta con la Registraduría y Migración",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1041364 - Reglas transversales Modelo de Sarlaft"
+  },
+  {
+    "ID": 1053179,
+    "Titulo": "HU 1053179 — [Reglas Transversales]: Actualización de nombres en tablas paramétricas - Front",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1041364 - Reglas transversales Modelo de Sarlaft"
+  },
+  {
+    "ID": 1053885,
+    "Titulo": "HU 1053885 — [Monitoreo]: Consulta de causales IPS y DIAN Fachada desde Riesgos Consultables para evaluaciones SARLAFT",
+    "Estado": "New",
+    "Epica": "Epica 1036585 - Monitoreo y Señales de Alerta",
+    "Feature": "Feature 1026784 - Monitoreo Proceso en Batch Automático de L"
+  },
+  {
+    "ID": 1055003,
+    "Titulo": "HU 1055003 — [Aplicativos de negocio]: Vida individual y fondo de ahorro - Front Modulo Clientes",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1046077 - Aplicativos de negocio Reglas para cliente"
+  },
+  {
+    "ID": 1056870,
+    "Titulo": "HU 1056870 — [Reglas transversales]: Ajustar el botón Cambiar Estado para permitir el estado Rechazado",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1041364 - Reglas transversales Modelo de Sarlaft"
+  },
+  {
+    "ID": 1066094,
+    "Titulo": "HU 1066094 — [Reglas Transversales]: Incluir fecha de nacimiento y  fecha de constitución en la evaluación",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1041364 - Reglas transversales Modelo de Sarlaft"
+  },
+  {
+    "ID": 1073532,
+    "Titulo": "HU 1073532 — Sincronizar los datos básicos que pide Sarlaft y Contac Manager en línea",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1073128 - Reclamaciones Conexión con Cleims Center"
+  },
+  {
+    "ID": 1073537,
+    "Titulo": "HU 1073537 — Notificar los datos pendientes con la claridad de que información faltaría para completar el proceso en Sarlaft",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1073128 - Reclamaciones Conexión con Cleims Center"
+  },
+  {
+    "ID": 1073547,
+    "Titulo": "HU 1073547 — Bloquear los pagos cuando el sarlarft es rechazado",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1073128 - Reclamaciones Conexión con Cleims Center"
+  },
+  {
+    "ID": 1076668,
+    "Titulo": "HU 1076668 — [Optimización]: Depuración evaluaciones BD Sarlaft -  Onboarding y Configuracion Datafactory",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - Optimización Base de datos y servicios exter",
+    "Feature": "Feature 1035141 - Optimización Depuración evaluaciones BD Sa"
+  },
+  {
+    "ID": 1076693,
+    "Titulo": "HU 1076693 — [Proceso de actualización]: Adicionar botón de cambiar estado de desactualizado a actualizado",
+    "Estado": "New",
+    "Epica": "Epica 1033001 - Proceso de actualización",
+    "Feature": "Feature 1082324 - Proceso de actualización Modificaciones al"
+  },
+  {
+    "ID": 1076922,
+    "Titulo": "HU 1076922 — [Optimización]: Depuración evaluaciones BD Sarlaft - Diseño inicial Pipelines Datafactory",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - Optimización Base de datos y servicios exter",
+    "Feature": "Feature 1035141 - Optimización Depuración evaluaciones BD Sa"
+  },
+  {
+    "ID": 1076945,
+    "Titulo": "HU 1076945 — [Optimización]: Depuración evaluaciones BD Sarlaft -  Implementación pipeline de consulta Datafactory",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - Optimización Base de datos y servicios exter",
+    "Feature": "Feature 1035141 - Optimización Depuración evaluaciones BD Sa"
+  },
+  {
+    "ID": 1076947,
+    "Titulo": "HU 1076947 — [Optimización]: Depuración evaluaciones BD Sarlaft -  Implementación pipeline para el proceso de depuración de evaluaciones a eliminar Datafactory",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - Optimización Base de datos y servicios exter",
+    "Feature": "Feature 1035141 - Optimización Depuración evaluaciones BD Sa"
+  },
+  {
+    "ID": 1076961,
+    "Titulo": "HU 1076961 — [Optimización]: Depuración evaluaciones BD Sarlaft - Automatización del proceso",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - Optimización Base de datos y servicios exter",
+    "Feature": "Feature 1035141 - Optimización Depuración evaluaciones BD Sa"
+  },
+  {
+    "ID": 1076996,
+    "Titulo": "HU 1076996 — [Aplicativos de negocio]: Ajustar el flujo de proceso judicial",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1049120 - Aplicativos de negocio Reglas para reclama"
+  },
+  {
+    "ID": 1077071,
+    "Titulo": "HU 1077071 — [Notificación en la reclamación]: Diseño y creación del modelo de datos",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1049126 - Aplicativos de negocio Notificar en la rec"
+  },
+  {
+    "ID": 1077075,
+    "Titulo": "HU 1077075 — [Notificación en la reclamación]: Carga del Calendario de Días Hábiles",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1049126 - Aplicativos de negocio Notificar en la rec"
+  },
+  {
+    "ID": 1077080,
+    "Titulo": "HU 1077080 — [Notificación en la reclamación]: Crear un disparador programado",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1049126 - Aplicativos de negocio Notificar en la rec"
+  },
+  {
+    "ID": 1077081,
+    "Titulo": "HU 1077081 — [Notificación en la reclamación]: Orquestador de notificaciones",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1049126 - Aplicativos de negocio Notificar en la rec"
+  },
+  {
+    "ID": 1077083,
+    "Titulo": "HU 1077083 — [Notificación en la reclamación]: Gestión de reglas",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1049126 - Aplicativos de negocio Notificar en la rec"
+  },
+  {
+    "ID": 1077085,
+    "Titulo": "HU 1077085 — [Notificación en la reclamación]: Pruebas de integración punta a punta",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1049126 - Aplicativos de negocio Notificar en la rec"
+  },
+  {
+    "ID": 1077087,
+    "Titulo": "HU 1077087 — [Notificación en la reclamación]: Prendido controlado en producción",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1049126 - Aplicativos de negocio Notificar en la rec"
+  },
+  {
+    "ID": 1077124,
+    "Titulo": "HU 1077124 — [Proceso de actualización]: Habilitar funcionalidad para levantar manual la validación de identidad",
+    "Estado": "New",
+    "Epica": "Epica 1033001 - Proceso de actualización",
+    "Feature": "Feature 1082324 - Proceso de actualización Modificaciones al"
+  },
+  {
+    "ID": 1077125,
+    "Titulo": "HU 1077125 — [Modulo de clientes]: Visualizar información del formulario en Resumen para perfil Administrador",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1032288 - Formulario Modificaciones Formulario"
+  },
+  {
+    "ID": 1078435,
+    "Titulo": "HU 1078435 — [Conexión Manual]: Analizar nuevas figuras - Back 1",
+    "Estado": "New",
+    "Epica": "Epica 1046076 - Conexión Modulo de Clientes Reglas para clie",
+    "Feature": "Feature 1046082 - Conexión Manual Analizar nuevas figuras pa"
+  },
+  {
+    "ID": 1078438,
+    "Titulo": "HU 1078438 — [Conexión Manual]: Analizar nuevas figuras - sarlaftclientes",
+    "Estado": "New",
+    "Epica": "Epica 1046076 - Conexión Modulo de Clientes Reglas para clie",
+    "Feature": "Feature 1046082 - Conexión Manual Analizar nuevas figuras pa"
+  },
+  {
+    "ID": 1078446,
+    "Titulo": "HU 1078446 — [Conexión Manual]: Analizar nuevas figuras - Back 2 Motor",
+    "Estado": "New",
+    "Epica": "Epica 1046076 - Conexión Modulo de Clientes Reglas para clie",
+    "Feature": "Feature 1046082 - Conexión Manual Analizar nuevas figuras pa"
+  },
+  {
+    "ID": 1078462,
+    "Titulo": "HU 1078462 — [Conexión Manual]: Analizar nuevas figuras - Api Terceros",
+    "Estado": "New",
+    "Epica": "Epica 1046076 - Conexión Modulo de Clientes Reglas para clie",
+    "Feature": "Feature 1046082 - Conexión Manual Analizar nuevas figuras pa"
+  },
+  {
+    "ID": 1078859,
+    "Titulo": "HU 1078859 — [Asesor de negocio] quiere registrar beneficiarios estructurados en el cotizador para garantizar cumplimiento SARLAFT",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1078852 - Aplicativos de Negocio - Ajustes C S Vida"
+  },
+  {
+    "ID": 1078861,
+    "Titulo": "HU 1078861 — [Asesor de negocio] quiere validar la sumatoria de porcentajes de beneficiarios para garantizar coherencia en la asignación",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1078852 - Aplicativos de Negocio - Ajustes C S Vida"
+  },
+  {
+    "ID": 1078862,
+    "Titulo": "HU 1078862 — [Sistema] quiere manejar de forma diferenciada beneficiarios onerosos y no onerosos para cumplir reglas contractuales",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1078852 - Aplicativos de Negocio - Ajustes C S Vida"
+  },
+  {
+    "ID": 1078863,
+    "Titulo": "HU 1078863 — [Gestor de pólizas] quiere expedir pólizas sin beneficiarios cuando no se cuenta con información mínima para no frenar el negocio",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1078852 - Aplicativos de Negocio - Ajustes C S Vida"
+  },
+  {
+    "ID": 1078865,
+    "Titulo": "HU 1078865 — [Administrador de datos] quiere capturar datos mínimos obligatorios de beneficiarios para fortalecer el monitoreo SARLAFT",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1078852 - Aplicativos de Negocio - Ajustes C S Vida"
+  },
+  {
+    "ID": 1078869,
+    "Titulo": "HU 1078869 — [Analista de vida grupo] quiere evaluar beneficiarios ingresados masivamente para mitigar riesgos SARLAFT sin afectar la expedición",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1078852 - Aplicativos de Negocio - Ajustes C S Vida"
+  },
+  {
+    "ID": 1078873,
+    "Titulo": "HU 1078873 — [Asesor de pólizas] quiere diferenciar modificaciones valorables y no valorables para gestionar correctamente los beneficiarios",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1078852 - Aplicativos de Negocio - Ajustes C S Vida"
+  },
+  {
+    "ID": 1078876,
+    "Titulo": "HU 1078876 — [Sistema] quiere conservar trazabilidad de beneficiarios históricos para garantizar control y auditoría SARLAFT",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1078852 - Aplicativos de Negocio - Ajustes C S Vida"
+  },
+  {
+    "ID": 1078883,
+    "Titulo": "HU 1078883 — [Usuario del sistema] quiere recibir mensajes informativos claros sobre la definición de beneficiarios para evitar errores operativos",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1078852 - Aplicativos de Negocio - Ajustes C S Vida"
+  },
+  {
+    "ID": 1078893,
+    "Titulo": "HU 1078893 — [Administrador de sistemas] quiere sincronizar en línea las actualizaciones de beneficiarios entre canales y core para asegurar consistencia SARLAFT",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1078852 - Aplicativos de Negocio - Ajustes C S Vida"
+  },
+  {
+    "ID": 1078905,
+    "Titulo": "HU 1078905 — [Gestor de vida grupo] quiere una plantilla de carga masiva con campos SARLAFT obligatorios para reducir reprocesos y asegurar calidad",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1078852 - Aplicativos de Negocio - Ajustes C S Vida"
+  },
+  {
+    "ID": 1078907,
+    "Titulo": "HU 1078907 — [Cliente/Usuario de sucursal virtual] quiere designar y actualizar beneficiarios con los datos mínimos SARLAFT para cumplir requisitos y evitar inconsistencias",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1078852 - Aplicativos de Negocio - Ajustes C S Vida"
+  },
+  {
+    "ID": 1079051,
+    "Titulo": "HU 1079051 — [Formulario]: Solicitar requisitos por tipo de sociedad - Back",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1026770 - Formulario Solicitar requisitos por tipo d"
+  },
+  {
+    "ID": 1079058,
+    "Titulo": "HU 1079058 — [Formulario]: Solicitar requisitos por tipo de sociedad - Front",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1026770 - Formulario Solicitar requisitos por tipo d"
+  },
+  {
+    "ID": 1079062,
+    "Titulo": "HU 1079062 — [Formulario]: Solicitar requisitos por tipo de sociedad - Reintentos",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1026770 - Formulario Solicitar requisitos por tipo d"
+  },
+  {
+    "ID": 1081870,
+    "Titulo": "HU 1081870 — [Optimización]: Evitar duplicidad consulta con Registraduría - Front Pantalla Modulo Sarlaft - Datos adicionales",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - Optimización Base de datos y servicios exter",
+    "Feature": "Feature 1035500 - Optimización Evitar duplicidad en los esta"
+  },
+  {
+    "ID": 1081880,
+    "Titulo": "HU 1081880 — [Optimización]: Evitar duplicidad consulta con Registraduría - Front - Validador Identidad - IAC",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - Optimización Base de datos y servicios exter",
+    "Feature": "Feature 1035500 - Optimización Evitar duplicidad en los esta"
+  },
+  {
+    "ID": 1081885,
+    "Titulo": "HU 1081885 — [Optimización]: Evitar duplicidad consulta con Registraduría - Front - Validador Identidad Admon MS (nuevo micro Back)",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - Optimización Base de datos y servicios exter",
+    "Feature": "Feature 1035500 - Optimización Evitar duplicidad en los esta"
+  },
+  {
+    "ID": 1081888,
+    "Titulo": "HU 1081888 — [Optimización]: Evitar duplicidad consulta con Registraduría - Front -  ValidadorIdentidad MS",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - Optimización Base de datos y servicios exter",
+    "Feature": "Feature 1035500 - Optimización Evitar duplicidad en los esta"
+  },
+  {
+    "ID": 1082005,
+    "Titulo": "HU 1082005 — [Formulario]: Requisito opcional \"Ingresos y retenciones\" -  Back Validación Adjuntos",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1057319 - Formulario Cambiar a opcional la solicitud"
+  },
+  {
+    "ID": 1082032,
+    "Titulo": "HU 1082032 — [Formulario]: Requisito opcional \"Ingresos y retenciones\" -  Back Validación Adjuntos - Soluciones pruebas de seguridad",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1057319 - Formulario Cambiar a opcional la solicitud"
+  },
+  {
+    "ID": 1082042,
+    "Titulo": "HU 1082042 — [Formulario]: Requisito opcional \"Ingresos y retenciones\" -  Back Requisitos",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1057319 - Formulario Cambiar a opcional la solicitud"
+  },
+  {
+    "ID": 1082089,
+    "Titulo": "HU 1082089 — [Formulario]: Requisito opcional \"Ingresos y retenciones\" -  Front Requisitos",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1057319 - Formulario Cambiar a opcional la solicitud"
+  },
+  {
+    "ID": 1082241,
+    "Titulo": "HU 1082241 — [Formulario]: Adicionar figura de junta directiva en Datos Directivos - Back",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1035467 - Formulario Adicionar figura de junta direc"
+  },
+  {
+    "ID": 1082249,
+    "Titulo": "HU 1082249 — [Formulario]: Adicionar figura de junta directiva en Datos Directivos - Motor de evaluación y Riesgo",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1035467 - Formulario Adicionar figura de junta direc"
+  },
+  {
+    "ID": 1082267,
+    "Titulo": "HU 1082267 — [Formulario]: Adicionar figura de junta directiva en Datos Directivos - Front",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1035467 - Formulario Adicionar figura de junta direc"
+  },
+  {
+    "ID": 1082270,
+    "Titulo": "HU 1082270 — [Formulario]: Adicionar figura de junta directiva en Datos Directivos - Validación riesgos RRCC",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1035467 - Formulario Adicionar figura de junta direc"
+  },
+  {
+    "ID": 1082272,
+    "Titulo": "HU 1082272 — [Formulario]: Adicionar figura de junta directiva en Datos Directivos - Parametrización formulario Junta Directiva - Front",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1035467 - Formulario Adicionar figura de junta direc"
+  },
+  {
+    "ID": 1082281,
+    "Titulo": "HU 1082281 — [Formulario]: Adicionar figura de junta directiva en Datos Directivos - Parametrización formulario Junta Directiva - Back",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1035467 - Formulario Adicionar figura de junta direc"
+  },
+  {
+    "ID": 1082361,
+    "Titulo": "HU 1082361 — [Proceso de actualización]: Reenvio masivo en el Modulo de Clientes - Back",
+    "Estado": "New",
+    "Epica": "Epica 1033001 - Proceso de actualización",
+    "Feature": "Feature 1040973 - Proceso de actualización Reenvio masivo de"
+  },
+  {
+    "ID": 1082386,
+    "Titulo": "HU 1082386 — [Proceso de actualización]: Reenvio masivo en el Modulo de Clientes - Front",
+    "Estado": "New",
+    "Epica": "Epica 1033001 - Proceso de actualización",
+    "Feature": "Feature 1040973 - Proceso de actualización Reenvio masivo de"
+  },
+  {
+    "ID": 1082387,
+    "Titulo": "HU 1082387 — [Proceso de actualización]: Reenvio masivo en el Modulo de Clientes - Proceso Masivo de Notificaciones",
+    "Estado": "New",
+    "Epica": "Epica 1033001 - Proceso de actualización",
+    "Feature": "Feature 1040973 - Proceso de actualización Reenvio masivo de"
+  },
+  {
+    "ID": 1082389,
+    "Titulo": "HU 1082389 — [Proceso de actualización]: Reenvio masivo en el Modulo de Clientes - Modelo de notificación y reenvio",
+    "Estado": "New",
+    "Epica": "Epica 1033001 - Proceso de actualización",
+    "Feature": "Feature 1040973 - Proceso de actualización Reenvio masivo de"
+  },
+  {
+    "ID": 1083734,
+    "Titulo": "HU 1083734 — [Proceso de actualización]: Retirar opción de cancelar evaluaciones de cancelación en el Modulo de Clientes",
+    "Estado": "New",
+    "Epica": "Epica 1033001 - Proceso de actualización",
+    "Feature": "Feature 1082324 - Proceso de actualización Modificaciones al"
+  },
+  {
+    "ID": 1096171,
+    "Titulo": "HU 1096171 — [Optimización]:  Validador Identidad Admon MS (nuevo micro Back) - Servicios gestion estado cliente",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - Optimización Base de datos y servicios exter",
+    "Feature": "Feature 1037162 - Optimización Gestión del estado del docume"
+  },
+  {
+    "ID": 1096178,
+    "Titulo": "HU 1096178 — [Optimización]:  Validador Identidad Admon MS (nuevo micro Back) - Servicios gestion parametrias validacion",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - Optimización Base de datos y servicios exter",
+    "Feature": "Feature 1037162 - Optimización Gestión del estado del docume"
+  },
+  {
+    "ID": 1096189,
+    "Titulo": "HU 1096189 — [Optimización]:  Validador Identidad Admon MS (nuevo micro Back) - Servicios gestion parametrias validacion parte 2",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - Optimización Base de datos y servicios exter",
+    "Feature": "Feature 1037162 - Optimización Gestión del estado del docume"
+  },
+  {
+    "ID": 1096205,
+    "Titulo": "HU 1096205 — [Optimización]: Validador Identidad Admon MS (nuevo Front) - Gestion estado cliente  Parte 1",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - Optimización Base de datos y servicios exter",
+    "Feature": "Feature 1037162 - Optimización Gestión del estado del docume"
+  },
+  {
+    "ID": 1096228,
+    "Titulo": "HU 1096228 — [Optimización]: Validador Identidad Admon MS (nuevo Front) - Gestion estado cliente  Parte 2",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - Optimización Base de datos y servicios exter",
+    "Feature": "Feature 1037162 - Optimización Gestión del estado del docume"
+  },
+  {
+    "ID": 1096310,
+    "Titulo": "HU 1096310 — [Optimización]: Validador Identidad Admon MS (nuevo Front) - Servicios gestion parametrias validacion  Parte 1",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - Optimización Base de datos y servicios exter",
+    "Feature": "Feature 1037162 - Optimización Gestión del estado del docume"
+  },
+  {
+    "ID": 1096313,
+    "Titulo": "HU 1096313 — [Optimización]:  Validador Identidad Admon MS (nuevo Front) - Servicios gestion parametrias validacion  Parte 2",
+    "Estado": "New",
+    "Epica": "Epica 1079106 - Optimización Base de datos y servicios exter",
+    "Feature": "Feature 1037162 - Optimización Gestión del estado del docume"
+  },
+  {
+    "ID": 1096589,
+    "Titulo": "HU 1096589 — [Aplicativos de negocio]: Cancelaciones Vida con Fondo de ahorro - Modificar servicio de /assessment",
+    "Estado": "New",
+    "Epica": "Epica 1078398 - Aplicativos de negocio Cancelaciones de póli",
+    "Feature": "Feature 1046088 - Aplicativos de negocio Cancelaciones de pó"
+  },
+  {
+    "ID": 1096591,
+    "Titulo": "HU 1096591 — [Aplicativos de negocio]: Cancelaciones Vida con Fondo de ahorro - Cambio en api terceros",
+    "Estado": "New",
+    "Epica": "Epica 1078398 - Aplicativos de negocio Cancelaciones de póli",
+    "Feature": "Feature 1046088 - Aplicativos de negocio Cancelaciones de pó"
+  },
+  {
+    "ID": 1096598,
+    "Titulo": "HU 1096598 — [Aplicativos de negocio]: Cancelaciones Vida con Fondo de ahorro -  Nuevo motor para cancelaciones",
+    "Estado": "New",
+    "Epica": "Epica 1078398 - Aplicativos de negocio Cancelaciones de póli",
+    "Feature": "Feature 1046088 - Aplicativos de negocio Cancelaciones de pó"
+  },
+  {
+    "ID": 1096599,
+    "Titulo": "HU 1096599 — [Aplicativos de negocio]: Cancelaciones Vida con Fondo de ahorro - Ajustar/Revisar impacto en el webhook",
+    "Estado": "New",
+    "Epica": "Epica 1078398 - Aplicativos de negocio Cancelaciones de póli",
+    "Feature": "Feature 1046088 - Aplicativos de negocio Cancelaciones de pó"
+  },
+  {
+    "ID": 1096601,
+    "Titulo": "HU 1096601 — [Aplicativos de negocio]:  Cancelaciones Vida con Fondo de ahorro - Servicio backweb para cambiar estado del front",
+    "Estado": "New",
+    "Epica": "Epica 1078398 - Aplicativos de negocio Cancelaciones de póli",
+    "Feature": "Feature 1046088 - Aplicativos de negocio Cancelaciones de pó"
+  },
+  {
+    "ID": 1096602,
+    "Titulo": "HU 1096602 — [Aplicativos de negocio]: Cancelaciones Vida con Fondo de ahorro -  Pruebas punta a punta de todo el proceso",
+    "Estado": "New",
+    "Epica": "Epica 1078398 - Aplicativos de negocio Cancelaciones de póli",
+    "Feature": "Feature 1046088 - Aplicativos de negocio Cancelaciones de pó"
+  },
+  {
+    "ID": 1096695,
+    "Titulo": "HU 1096695 — [Conexión Manual]: Reglas para pagos de Rentas -  Ajustes al modelo, entidades y servicios",
+    "Estado": "New",
+    "Epica": "Epica 1046076 - Conexión Modulo de Clientes Reglas para clie",
+    "Feature": "Feature 1046084 - Conexión Manual Reglas para asignar riesgo"
+  },
+  {
+    "ID": 1096829,
+    "Titulo": "HU 1096829 — [Conexión Manual]: Reglas para pagos de Rentas -  Ajuste en servicio de resultados de evaluación",
+    "Estado": "New",
+    "Epica": "Epica 1046076 - Conexión Modulo de Clientes Reglas para clie",
+    "Feature": "Feature 1046084 - Conexión Manual Reglas para asignar riesgo"
+  },
+  {
+    "ID": 1096832,
+    "Titulo": "HU 1096832 — [Conexión Manual]: Reglas para pagos de Rentas -  Ajustes para la creación de evaluaciones",
+    "Estado": "New",
+    "Epica": "Epica 1046076 - Conexión Modulo de Clientes Reglas para clie",
+    "Feature": "Feature 1046084 - Conexión Manual Reglas para asignar riesgo"
+  },
+  {
+    "ID": 1096836,
+    "Titulo": "HU 1096836 — [Conexión Manual]: Reglas para pagos de Rentas - Ajustes en reglas del motor de riesgo",
+    "Estado": "New",
+    "Epica": "Epica 1046076 - Conexión Modulo de Clientes Reglas para clie",
+    "Feature": "Feature 1046084 - Conexión Manual Reglas para asignar riesgo"
+  },
+  {
+    "ID": 1096837,
+    "Titulo": "HU 1096837 — [Conexión Manual]: Reglas para pagos de Rentas - Ajustes en la pantalla de \"CREAR EVALUACIÓN\" - Front",
+    "Estado": "New",
+    "Epica": "Epica 1046076 - Conexión Modulo de Clientes Reglas para clie",
+    "Feature": "Feature 1046084 - Conexión Manual Reglas para asignar riesgo"
+  },
+  {
+    "ID": 1097345,
+    "Titulo": "HU 1097345 — [Conexión Manual]: Analizar nuevas figuras - front modulo consultas clientes",
+    "Estado": "New",
+    "Epica": "Epica 1046076 - Conexión Modulo de Clientes Reglas para clie",
+    "Feature": "Feature 1046082 - Conexión Manual Analizar nuevas figuras pa"
+  },
+  {
+    "ID": 1097347,
+    "Titulo": "HU 1097347 — [Conexión Manual]: Analizar nuevas figuras - front redirect",
+    "Estado": "New",
+    "Epica": "Epica 1046076 - Conexión Modulo de Clientes Reglas para clie",
+    "Feature": "Feature 1046082 - Conexión Manual Analizar nuevas figuras pa"
+  },
+  {
+    "ID": 1097349,
+    "Titulo": "HU 1097349 — [Conexión Manual]: Analizar nuevas figuras -  modulo de crear evaluación",
+    "Estado": "New",
+    "Epica": "Epica 1046076 - Conexión Modulo de Clientes Reglas para clie",
+    "Feature": "Feature 1046082 - Conexión Manual Analizar nuevas figuras pa"
+  },
+  {
+    "ID": 1097354,
+    "Titulo": "HU 1097354 — [Conexión Manual]: Analizar nuevas figuras -  Front sarlaftbackweb",
+    "Estado": "New",
+    "Epica": "Epica 1046076 - Conexión Modulo de Clientes Reglas para clie",
+    "Feature": "Feature 1046082 - Conexión Manual Analizar nuevas figuras pa"
+  },
+  {
+    "ID": 1098643,
+    "Titulo": "HU 1098643 — [Riesgo]: Crear evaluaciones sarlaft a las operaciones no conectadas",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1033000 - Tipificación Administración del riesgo úni"
+  },
+  {
+    "ID": 1100215,
+    "Titulo": "HU 1100215 — [Reglas transversales]: Crear evaluación para las figuras de la relación con PEP",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1041364 - Reglas transversales Modelo de Sarlaft"
+  },
+  {
+    "ID": 1102573,
+    "Titulo": "HU 1102573 — [Admon Riesgo]: Creación de evaluaciones SARLAFT batch para operaciones conectadas",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1033000 - Tipificación Administración del riesgo úni"
+  },
+  {
+    "ID": 1102574,
+    "Titulo": "HU 1102574 — [Admon Riesgo]: Generar evaluaciones SARLAFT a partir de información parcial del cliente",
+    "Estado": "New",
+    "Epica": "Epica 1032289 - Conocimiento del Cliente Contrapartes",
+    "Feature": "Feature 1033000 - Tipificación Administración del riesgo úni"
+  }
+]

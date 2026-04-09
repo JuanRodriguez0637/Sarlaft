@@ -1,0 +1,73 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "desarrollo", "desarrollo", "{C3A3E148-C438-358B-42F9-96F636E3C388}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "back", "back", "{2825606E-ED09-6774-35E4-4ED8A3D827F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "892-sarlaft-function_batch-mi", "892-sarlaft-function_batch-mi", "{22709850-3A73-0946-E4F0-0645AD7C3338}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "applications", "applications", "{EEDF7AF1-BB20-D392-B4BA-A70A374F2313}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app-service", "app-service", "{3884465C-6F4D-A08A-D63C-58F3C13FCBC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "extensions", "desarrollo\back\892-sarlaft-function_batch-mi\applications\app-service\extensions.csproj", "{429DF6B3-449D-E376-1C18-05083D1615C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "892-sarlaft-function_identity-mi", "892-sarlaft-function_identity-mi", "{9601D9A4-D7F6-F0DE-A861-6C55C28FB148}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "applications", "applications", "{4D642AF1-D311-196B-7E98-9FAAA855438E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app-service", "app-service", "{17BB67D1-939B-2E07-E65E-7E2D77EC8B6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "extensions", "desarrollo\back\892-sarlaft-function_identity-mi\applications\app-service\extensions.csproj", "{F0166BC9-E8A0-4916-3F26-B6D48426E4CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "892-sarlaft-function_requisitos-mi", "892-sarlaft-function_requisitos-mi", "{018105B7-92FD-D4FE-9A09-8EF9F63AF7F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "applications", "applications", "{AF873A05-7181-1726-EC01-D681687B9559}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app-service", "app-service", "{9A2357B5-0AD9-75DC-33B6-8DF9403840E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "extensions", "desarrollo\back\892-sarlaft-function_requisitos-mi\applications\app-service\extensions.csproj", "{D5E33CF3-7988-DADD-12DB-9C20A849C5F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{429DF6B3-449D-E376-1C18-05083D1615C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{429DF6B3-449D-E376-1C18-05083D1615C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{429DF6B3-449D-E376-1C18-05083D1615C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{429DF6B3-449D-E376-1C18-05083D1615C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0166BC9-E8A0-4916-3F26-B6D48426E4CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0166BC9-E8A0-4916-3F26-B6D48426E4CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0166BC9-E8A0-4916-3F26-B6D48426E4CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0166BC9-E8A0-4916-3F26-B6D48426E4CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5E33CF3-7988-DADD-12DB-9C20A849C5F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5E33CF3-7988-DADD-12DB-9C20A849C5F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5E33CF3-7988-DADD-12DB-9C20A849C5F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5E33CF3-7988-DADD-12DB-9C20A849C5F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2825606E-ED09-6774-35E4-4ED8A3D827F0} = {C3A3E148-C438-358B-42F9-96F636E3C388}
+		{22709850-3A73-0946-E4F0-0645AD7C3338} = {2825606E-ED09-6774-35E4-4ED8A3D827F0}
+		{EEDF7AF1-BB20-D392-B4BA-A70A374F2313} = {22709850-3A73-0946-E4F0-0645AD7C3338}
+		{3884465C-6F4D-A08A-D63C-58F3C13FCBC7} = {EEDF7AF1-BB20-D392-B4BA-A70A374F2313}
+		{429DF6B3-449D-E376-1C18-05083D1615C9} = {3884465C-6F4D-A08A-D63C-58F3C13FCBC7}
+		{9601D9A4-D7F6-F0DE-A861-6C55C28FB148} = {2825606E-ED09-6774-35E4-4ED8A3D827F0}
+		{4D642AF1-D311-196B-7E98-9FAAA855438E} = {9601D9A4-D7F6-F0DE-A861-6C55C28FB148}
+		{17BB67D1-939B-2E07-E65E-7E2D77EC8B6B} = {4D642AF1-D311-196B-7E98-9FAAA855438E}
+		{F0166BC9-E8A0-4916-3F26-B6D48426E4CD} = {17BB67D1-939B-2E07-E65E-7E2D77EC8B6B}
+		{018105B7-92FD-D4FE-9A09-8EF9F63AF7F1} = {2825606E-ED09-6774-35E4-4ED8A3D827F0}
+		{AF873A05-7181-1726-EC01-D681687B9559} = {018105B7-92FD-D4FE-9A09-8EF9F63AF7F1}
+		{9A2357B5-0AD9-75DC-33B6-8DF9403840E7} = {AF873A05-7181-1726-EC01-D681687B9559}
+		{D5E33CF3-7988-DADD-12DB-9C20A849C5F5} = {9A2357B5-0AD9-75DC-33B6-8DF9403840E7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {452358F0-B97E-4222-BCAC-D99ABF343F75}
+	EndGlobalSection
+EndGlobal

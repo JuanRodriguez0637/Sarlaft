@@ -7,7 +7,9 @@
 **Requisitos:**
 
 - Java 21
-- Gradle `8.10.2`
+- Gradle `8.10`
+
+> ⚠️ **Corrección (2026-04-08):** La versión de Gradle documentada anteriormente era `8.10.2`. El archivo `main.gradle` del repositorio especifica `gradleVersion = '8.10'`.
 
 **URL Repositorio:**
 
@@ -19,7 +21,9 @@
 
 **URL Acceso local:**
 
-[http://localhost:6380/sarlaftbackweb/](http://localhost:6380/sarlaftbackweb/resultevaluation)
+[http://localhost:8091/sarlaftbackweb/](http://localhost:8091/sarlaftbackweb/resultevaluation)
+
+> ⚠️ **Corrección (2026-04-08):** La URL documentada anteriormente era `localhost:6380`, que corresponde al puerto de **Redis Cache**, no al aplicativo. El puerto real del microservicio según `application.yaml` es `8091`.
 
 **URL Acceso desarrollo:**
 

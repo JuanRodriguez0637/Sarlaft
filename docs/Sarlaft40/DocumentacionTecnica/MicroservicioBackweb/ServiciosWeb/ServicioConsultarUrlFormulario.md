@@ -10,6 +10,8 @@
 
 - **Perfil de Seus4:** `PF_SARLAFTADMCON`
 
+> ⚠️ **Observación de seguridad (2026-04-08 — D-12):** Aunque el perfil documentado es `PF_SARLAFTADMCON`, el análisis del código fuente del controlador `ConsultarUrlFormularioService` con Serena MCP muestra que el método del handler **no recibe `SsoAuthentication` como parámetro** — sólo recibe `@RequestBody`. Esto significa que la identidad del usuario SSO no se propaga al caso de uso `ConsultarUrlFormularioUseCase`. Se recomienda revisar si el perfil SEUS4 aplica efectivamente o si el endpoint es semi-público (accesible con token JWT sin necesidad de perfil SSO específico).
+
 - **Ejemplo Json Request:**
 
 ```json
