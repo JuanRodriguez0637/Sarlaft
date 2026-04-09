@@ -1,0 +1,549 @@
+{
+  "epics": {
+    "1107349": {
+      "title": "Desarrollos Ceiba - [Formulario]: Datos financieros, requisitos y junta directiva",
+      "state": "New",
+      "priority": "N/A",
+      "child_ids": [
+        1107350,
+        1057319,
+        1035467
+      ]
+    },
+    "1079106": {
+      "title": "Desarrollos Ceiba - [Optimización]: Base de datos y servicios externos",
+      "state": "New",
+      "priority": "N/A",
+      "child_ids": [
+        1032999,
+        1035500,
+        1035141,
+        1037162
+      ]
+    },
+    "1105971": {
+      "title": "Desarrollos Ceiba - [Conocimiento del Cliente]: Formularios y Reglas",
+      "state": "New",
+      "priority": "N/A",
+      "child_ids": [
+        1032288,
+        1105983,
+        1107355,
+        1026770
+      ]
+    }
+  },
+  "features": {
+    "1107350": {
+      "title": "[Formulario]: Datos financieros",
+      "type": "Feature",
+      "state": "New",
+      "hu_ids": [
+        1026762,
+        1025877,
+        1026765
+      ]
+    },
+    "1057319": {
+      "title": "[Formulario]: Cambiar a opcional la solicitud del requisito \"Ingresos y retenciones\"",
+      "type": "Feature",
+      "state": "New",
+      "hu_ids": [
+        1082005,
+        1082032,
+        1082089,
+        1082042
+      ]
+    },
+    "1035467": {
+      "title": "[Formulario]: Adicionar figura de junta directiva en Datos Directivos",
+      "type": "Feature",
+      "state": "New",
+      "hu_ids": [
+        1082272,
+        1082267,
+        1082249,
+        1082241,
+        1082281,
+        1082270
+      ]
+    },
+    "1032999": {
+      "title": "[Optimización]: Servicios externos",
+      "type": "Feature",
+      "state": "New",
+      "hu_ids": [
+        1037054,
+        1035498,
+        1035502,
+        1035171,
+        1037085
+      ]
+    },
+    "1035500": {
+      "title": "[Optimización]: Evitar duplicidad en los estados de la consulta con Registraduría",
+      "type": "Feature",
+      "state": "New",
+      "hu_ids": [
+        1081888,
+        1081870,
+        1081885,
+        1081880
+      ]
+    },
+    "1035141": {
+      "title": "[Optimización]: Depuración evaluaciones BD Sarlaft - Proceso automático",
+      "type": "Feature",
+      "state": "New",
+      "hu_ids": [
+        1076947,
+        1076922,
+        1076668,
+        1076956,
+        1076953,
+        1076961,
+        1076945
+      ]
+    },
+    "1037162": {
+      "title": "[Optimización]: Gestión del estado del documento del cliente",
+      "type": "Feature",
+      "state": "New",
+      "hu_ids": [
+        1096205,
+        1096178,
+        1096189,
+        1096310,
+        1096228,
+        1096171,
+        1096313
+      ]
+    },
+    "1032288": {
+      "title": "[Formulario]: Clasificar a las personas jurídicas por tipo de sociedad",
+      "type": "Feature",
+      "state": "New",
+      "hu_ids": [
+        1046415,
+        1026776,
+        1046535,
+        1046438
+      ]
+    },
+    "1105983": {
+      "title": "[Modelo Sarlaft]: Reglas de negocio",
+      "type": "Feature",
+      "state": "New",
+      "hu_ids": [
+        1041366,
+        1046069,
+        1053179,
+        1056870
+      ]
+    },
+    "1107355": {
+      "title": "[Formulario]. Clausula tratamiento de datos",
+      "type": "Feature",
+      "state": "New",
+      "hu_ids": [
+        1032311
+      ]
+    },
+    "1026770": {
+      "title": "[Formulario]: Solicitar requisitos por tipo de sociedad",
+      "type": "Feature",
+      "state": "New",
+      "hu_ids": [
+        1079051,
+        1079058,
+        1079062
+      ]
+    }
+  },
+  "hus": {
+    "1025877": {
+      "title": "[Formulario]: Modificar el campo de actividad económica",
+      "type": "Historia",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1026762": {
+      "title": "[Formulario]: Solicitar a una PN y PJ ingresos y egresos",
+      "type": "Historia",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1026765": {
+      "title": "[Formulario]: Solicitar a una PN y PJ activos y pasivos",
+      "type": "Historia",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1026776": {
+      "title": "[Formulario]: Tipificar a las personas jurídicas por tipo de sociedad",
+      "type": "Historia",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1032311": {
+      "title": "[Formulario]: Adicionar clausula de tratamiento de datos",
+      "type": "Historia",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1035171": {
+      "title": "[Optimización]: Depuración evaluaciones BD Sarlaft - histórico",
+      "type": "Historia",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1035498": {
+      "title": "[Optimización]: Evitar duplicidad en los estados de la validación de identidad- Datos básicos",
+      "type": "Historia",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1035502": {
+      "title": "[Optimización]: Evitar duplicidad en los estados de la validación de identidad- Cuestionario",
+      "type": "Historia",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1037054": {
+      "title": "[Optimización]: Evitar duplicidad en los estados de la consulta con Migración Colombia",
+      "type": "Historia",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1037085": {
+      "title": "[Optimización]: Reemplazar datos de la consulta del estado del documento",
+      "type": "Historia",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1041366": {
+      "title": "[Reglas transversales]: Herencia por tipo de riesgo",
+      "type": "Historia",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1046069": {
+      "title": "[Reglas transversales]: Analizar clientes con nacionalidad de países GAFI Negro",
+      "type": "Historia",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1046415": {
+      "title": "Formulario]: Back - Parametrizar los códigos de los requisitos por tipo de sociedad",
+      "type": "Historia",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1046438": {
+      "title": "[Formulario]: Front - Ajustes para que muestre los requisitos",
+      "type": "Historia",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1046535": {
+      "title": "[Formulario]: Relanzamiento de documentos a P8",
+      "type": "Historia",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1053179": {
+      "title": "[Reglas Transversales]: Actualización de nombres en tablas paramétricas - Front",
+      "type": "Historia",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1056870": {
+      "title": "[Reglas transversales]: Ajustar el botón Cambiar Estado para permitir el estado Rechazado",
+      "type": "Historia",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1076668": {
+      "title": "[Optimización]: Depuración evaluaciones BD Sarlaft -  Onboarding y Configuracion Datafactory",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1076922": {
+      "title": "[Optimización]: Depuración evaluaciones BD Sarlaft - Diseño inicial Pipelines Datafactory",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1076945": {
+      "title": "[Optimización]: Depuración evaluaciones BD Sarlaft -  Implementación pipeline de consulta Datafactory",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1076947": {
+      "title": "[Optimización]: Depuración evaluaciones BD Sarlaft -  Implementación pipeline para el proceso de depuración de evaluaciones a eliminar Datafactory",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1076953": {
+      "title": "[Optimización]: Depuración evaluaciones BD Sarlaft -Tarea de pruebas Procesos consulta y depuración ambiente laboratorio",
+      "type": "Tarea",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1076956": {
+      "title": "[Optimización]: Depuración evaluaciones BD Sarlaft - Tarea Ejecucion del proceso en producción",
+      "type": "Tarea",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1076961": {
+      "title": "[Optimización]: Depuración evaluaciones BD Sarlaft - Automatización del proceso",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1079051": {
+      "title": "[Formulario]: Solicitar requisitos por tipo de sociedad - Back",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1079058": {
+      "title": "[Formulario]: Solicitar requisitos por tipo de sociedad - Front",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1079062": {
+      "title": "[Formulario]: Solicitar requisitos por tipo de sociedad - Reintentos",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1081870": {
+      "title": "[Optimización]: Evitar duplicidad consulta con Registraduría - Front Pantalla Modulo Sarlaft - Datos adicionales",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1081880": {
+      "title": "[Optimización]: Evitar duplicidad consulta con Registraduría - Front - Validador Identidad - IAC",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1081885": {
+      "title": "[Optimización]: Evitar duplicidad consulta con Registraduría - Front - Validador Identidad Admon MS (nuevo micro Back)",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1081888": {
+      "title": "[Optimización]: Evitar duplicidad consulta con Registraduría - Front -  ValidadorIdentidad MS",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1082005": {
+      "title": "[Formulario]: Requisito opcional \"Ingresos y retenciones\" -  Back Validación Adjuntos",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1082032": {
+      "title": "[Formulario]: Requisito opcional \"Ingresos y retenciones\" -  Back Validación Adjuntos - Soluciones pruebas de seguridad",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1082042": {
+      "title": "[Formulario]: Requisito opcional \"Ingresos y retenciones\" -  Back Requisitos",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1082089": {
+      "title": "[Formulario]: Requisito opcional \"Ingresos y retenciones\" -  Front Requisitos",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1082241": {
+      "title": "[Formulario]: Adicionar figura de junta directiva en Datos Directivos - Back",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1082249": {
+      "title": "[Formulario]: Adicionar figura de junta directiva en Datos Directivos - Motor de evaluación y Riesgo",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1082267": {
+      "title": "[Formulario]: Adicionar figura de junta directiva en Datos Directivos - Front",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1082270": {
+      "title": "[Formulario]: Adicionar figura de junta directiva en Datos Directivos - Validación riesgos RRCC",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1082272": {
+      "title": "[Formulario]: Adicionar figura de junta directiva en Datos Directivos - Parametrización formulario Junta Directiva - Front",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1082281": {
+      "title": "[Formulario]: Adicionar figura de junta directiva en Datos Directivos - Parametrización formulario Junta Directiva - Back",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1096171": {
+      "title": "[Optimización]:  Validador Identidad Admon MS (nuevo micro Back) - Servicios gestion estado cliente",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1096178": {
+      "title": "[Optimización]:  Validador Identidad Admon MS (nuevo micro Back) - Servicios gestion parametrias validacion",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1096189": {
+      "title": "[Optimización]:  Validador Identidad Admon MS (nuevo micro Back) - Servicios gestion parametrias validacion parte 2",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1096205": {
+      "title": "[Optimización]: Validador Identidad Admon MS (nuevo Front) - Gestion estado cliente  Parte 1",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1096228": {
+      "title": "[Optimización]: Validador Identidad Admon MS (nuevo Front) - Gestion estado cliente  Parte 2",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1096310": {
+      "title": "[Optimización]: Validador Identidad Admon MS (nuevo Front) - Servicios gestion parametrias validacion  Parte 1",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    },
+    "1096313": {
+      "title": "[Optimización]:  Validador Identidad Admon MS (nuevo Front) - Servicios gestion parametrias validacion  Parte 2",
+      "type": "Historia técnica",
+      "state": "New",
+      "story_points": null,
+      "assigned_to": null,
+      "priority": null
+    }
+  }
+}
