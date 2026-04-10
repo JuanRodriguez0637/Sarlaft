@@ -218,6 +218,16 @@ El plan se organiza en **3 fases** correspondientes a las épicas, con las featu
 
 ## Detalle de HUs por Sprint
 
+> **⚠️ NOTA IMPORTANTE:** La distribución por sprints **NO proviene de Azure DevOps**. Todas las 48 HUs están en estado "New", sin Sprint asignado, sin Story Points y sin responsable en el backlog.
+>
+> Esta es una **propuesta de planificación** elaborada con base en:
+> - **Dependencias técnicas** entre HUs (Back → Front, IaC → Microservicio, Motor → Validaciones)
+> - **Secuencia lógica** dentro de cada Feature (diseño → implementación → pruebas → producción)
+> - **Agrupación por componente** para minimizar context-switching en los mismos repositorios
+> - **Balanceo de carga** distribuyendo las 48 HUs en 5 sprints de forma proporcional
+>
+> Esta distribución debe ser validada y ajustada por el equipo durante las sesiones de refinamiento y planning.
+
 ### Sprint 1 — 9 HUs
 
 | # | ID | Título | Épica | Feature | Tipo | Repositorios |
